@@ -32,7 +32,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 def get_hyperparameters():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--input_file")
+    parser.add_argument("--input_file")                             # path to python pickle file
     parser.add_argument("--vocab_file")
     parser.add_argument("--checkpoint_files", required=True)        # path and prefix for checkpoints
     parser.add_argument("--load_model")                             # path to saved checkpoint
