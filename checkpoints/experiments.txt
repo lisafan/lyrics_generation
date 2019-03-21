@@ -1,0 +1,12 @@
+
+
+dolly: Trained on just Dolly Parton lyrics, with Dolly Parton vocab
+
+dolly2: Trained on just Dolly Parton lyrics, with top5 vocab
+
+top5_noartist: Trained on lyrics of 5 artists (Dolly Parton, Elton John, B.B. King, Chris Brown, Eminem), without using artist as input
+
+top5_onehot: Trained on lyrics of 5 artists, with top5 vocab. Uses a one-hot encoding for the artist input to LSTM
+
+top5_embed: Trained on lyrics of 5 artists, with top5 vocab. Uses a learned 32-bit artist embedding
+

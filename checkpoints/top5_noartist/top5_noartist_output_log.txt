@@ -19,11 +19,13 @@ use_artist :  False
 chunk_size :  5
 plot_every :  1000
 batch_size :  16
+
 Using vocab file: lyrics/input_files/top_5.vocab
 chunking lyrics
 6474 batches per epoch
 Using vocab file: lyrics/input_files/top_5.vocab
 chunking lyrics
+
 [0m 0s (epoch 1: 0%) Loss: 8.9396]
 <START> bouncers shaggy mornin cans comedian offices asking worried greener amy fun buzz exchange energy shh bigger bikini m-o.but darling raven jordan hailey shooting baked snortin weeded bunnies data notion emotions worries sneaking comic accept throwing seeker texas adjust broom camera forth obscene outs chill 'till food cookin trains chainsaw adore maxine fades stronger accident reads aww mayhem marching pencil ei-ee-ei site stared flavor cindy coin sights driveway him dan doop-do-do-do ass eddie hip-hop florida jackpot due shoots batch missin horses easier tum smash quickly spare brag base-head broad stacking milk 911 spain locked serve all flying artificial nation underdog lil 
 
