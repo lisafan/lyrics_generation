@@ -29,7 +29,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 
 
-def get_hyperparameters():
+def get_hyperparameters(log_file):
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--input_file")                             # path to python pickle file
@@ -58,8 +58,10 @@ def get_hyperparameters():
 
     # echo hyperparameters and run command so it could get logged
     print(' '.join(sys.argv),'\n\n')
+    log_file.write(' '.join(sys.argv),'\n\n')
     for k,v in vars(args).items():
         print(k,": ",v)
+        logfile.write(k+": "+v+'\n')
 
     return args
 
@@ -72,7 +74,8 @@ def time_since(since):
 
 def main():
     # Get hyperparameters from commandline
-    params = get_hyperparameters()
+    log_file = open(params.checkpoint_files+"_output_log.txt",'w')
+    params = get_hyperparameters(log_file)
 
     # Load previous hyperparameters if checkpoint was given
     if params.load_model != None:
@@ -86,6 +89,7 @@ def main():
                          use_artist=params.use_artist)
     # print(Data[np.random.randint(len(Data))], len(Data))
     print("%d batches per epoch"%(len(Data)/params.batch_size))
+    logfile.write("%d batches per epoch\n"%(len(Data)/params.batch_size))
 
     dataloader = DataLoader(Data, batch_size=params.batch_size, shuffle=True, num_workers=1, collate_fn=padding_fn, drop_last=True)
     # for i,batch in enumerate(dataloader):
@@ -143,6 +147,7 @@ def main():
             val_loss += loss
         avg_val_loss = val_loss / i
         print('Validation loss: %.4f'%avg_val_loss)
+        logfile.write('Validation loss: %.4f\n'%avg_val_loss)
         return avg_val_loss
 
     # --------------
@@ -182,9 +187,14 @@ def main():
 
             if i % params.print_every == 0:
                 print('[%s (epoch %d: %d%%) Loss: %.4f]' % (time_since(start), epoch, i / (len(Data.lyrics)/params.batch_size) * 100, loss))
-                for a in sorted(Data.artists):
-                    print('Artist %s:'%a, generate(artist=a), '\n')
-                # print(generate(), '\n')
+                logfile.write('[%s (epoch %d: %d%%) Loss: %.4f]\n' % (time_since(start), epoch, i / (len(Data.lyrics)/params.batch_size) * 100, loss))
+                if params.use_artist:
+                    for a in sorted(Data.artists):
+                        print('Artist %s:'%a, generate(artist=a), '\n')
+                        logfile.write('Artist %s: %s\n\n'%(a, generate(artist=a)))
+                else:
+                    print(generate(), '\n')
+                    logfile.write(generate()+'\n')
 
             if i % params.plot_every == 0:
                 all_losses.append(loss_avg / params.plot_every)

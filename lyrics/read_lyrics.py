@@ -12,7 +12,7 @@ def csv2pkl():
                 keys = row
                 continue
             if i%10001==0:
-                print i
+                print(i)
                 break
             entry = {}
             for k,v in zip(keys,row):
@@ -23,26 +23,47 @@ def csv2pkl():
     pickle.dump(data,outfile)
 
 # csv2pkl()
-data = pickle.load(open("lyrics_top_artists.pkl"))
+data = pickle.load(open("input_files/dolly-parton.pkl", 'rb'))
+
+num_chunks = 0.
+num_lines = 0.
+num_words = []
+all_lines = []
+for e in data:
+    lines = e['lyrics'].splitlines()
+    all_lines += [lines]
+    num_lines+=len(lines)
+    num_words += [len(x.split()) for x in lines]
+    num_chunks += len(lines)-4
+
+songs = float(len(data))
+print("num songs:",songs)
+print("num chunks:",num_chunks)
+print("avg lines per song:",num_lines/songs)
+print("avg words per line:", np.mean(num_words))
+
+all_lines.sort(key=lambda x:len(x),reverse=True)
+print(all_lines[0])
+exit()
 
 # artists = defaultdict(list)
 # for e in data:
 #     artists[e['artist']] += [e]
 # for a in artists.keys():
-#     print a
+#     print(a
 #     for s in sorted(s['song'] for s in artists[a]):
-#         print s
-#     print '\n\n'
+#         print(s
+#     print('\n\n'
 
-# print 'data loaded'
+# print('data loaded'
 # top_artists = open('top_artists.txt').read().splitlines()
 # subset = []
 # for e in data:
 #     if e['artist'] in top_artists and e['num_lines']>5:
 #         subset += [e]
 
-# # print sorted(subset,key=lambda x:x['artist'])
-# print len(subset)
+# # print(sorted(subset,key=lambda x:x['artist'])
+# print(len(subset)
 
 outfile = open('lyrics_top_artists.csv','w')
 keys = data[0].keys()
@@ -59,8 +80,8 @@ for e in sorted(data,key=lambda x:x['artist']):
 # pickle.dump(subset,outfile)
 # artists = Counter([e['artist'] for e in data])
 # top_artists = [x for x in artists.most_common() if x[1]>=100] #300]
-# print top_artists, len(top_artists)
-# print np.sum([x[1] for x in top_artists])
+# print(top_artists, len(top_artists)
+# print(np.sum([x[1] for x in top_artists])
 
 # for a in top_artists:
 #     beyonce_songs = []
@@ -68,44 +89,43 @@ for e in sorted(data,key=lambda x:x['artist']):
 #         if e['artist']==a[0]:
 #             if not any([e['song'].endswith(x) for x in ['remix','version','edition']]):
 #                 beyonce_songs += [e['song']]
-#     print a
+#     print(a
 #     for s in sorted(beyonce_songs):
-#         print s
-#     print '\n\n'
+#         print(s
+#     print('\n\n'
     # exit()
-# print artists
+# print(artists
 
 
 
-exit()
 
-print "read data"
-print len(data)
+print("read data")
+print(len(data))
 
 vocab = []
 len_lines = []
 len_song = []
 for i,e in enumerate(data):
     if i%50000==0:
-        print i
+        print(i)
     vocab += [w.lower().rstrip(punctuation) for w in e['lyrics'].split()]
     # len_lines += [len(l.split()) for l in e['lyrics'].splitlines()]
     # len_song += [e['num_lines']]
 vocab = Counter(vocab)
-print vocab.most_common(100)
+print(vocab.most_common(100))
 
-# print "avg words/line: ",np.mean(len_lines)
-# print "avg lines/song",np.mean(len_song)
+# print("avg words/line: ",np.mean(len_lines)
+# print("avg lines/song",np.mean(len_song)
 
 with open('vocab_top_artists.count','w') as f:
     for i,(a,n) in enumerate(vocab.most_common()):
         if i%10000==0:
-            print i
+            print(i)
         if i==100000:
             break
         if n < 5:
             break
         f.write('%s\t%s\n'%(a,n))
 
-# print artists.most_common()
-# print len(artists)
+# print(artists.most_common()
+# print(len(artists)
