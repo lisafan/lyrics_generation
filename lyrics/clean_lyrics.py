@@ -1,5 +1,6 @@
 import os, sys, re
 import csv, json, pickle
+import random
 import numpy as np
 from collections import Counter, defaultdict
 from string import punctuation
@@ -49,6 +50,7 @@ def clean_lyrics(lyr):
 def split_sets(infile, outfile):
     # infile = 'lyrics_top_artists.pkl'
     data = pickle.load(open(infile,'rb'))
+    random.shuffle(data)
     print (len(data))
     train_cutoff = int(len(data)*.8)
     val_cutoff = int(len(data)*.9)
@@ -65,7 +67,7 @@ def split_sets(infile, outfile):
     d2 = pickle.load(open('%s_val.pkl'%outfile,'rb'))
     d3 = pickle.load(open('%s_test.pkl'%outfile,'rb'))
     print(len(d1),len(d2),len(d3))
-# split_sets()
+split_sets("input_files/top_5.pkl","input_files/new_top5")
 
 
 def one_artist():
@@ -76,5 +78,5 @@ def one_artist():
             dolly += [d]
     pickle.dump(dolly,open('top_5.pkl','wb'))
 
-one_artist()
-split_sets('top_5.pkl','top-5')
+# one_artist()
+# split_sets('top_5.pkl','top-5')

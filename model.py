@@ -57,13 +57,15 @@ class LyricsRNN(nn.Module):
             self.lstm_input_size += self.artist_embed_size
             
         self.lstm = nn.LSTM(self.lstm_input_size, hidden_size, n_layers, batch_first=True)
+        self.dropout = nn.Dropout(p=0.5)
         self.linear = nn.Linear(hidden_size, output_size)
+        print(output_size)
         
         self.hidden = self.init_hidden()
     
     def artist_onehot(self, artist):
-        tensor = torch.zeros(self.batchsize,artist.size()[1],self.num_artists).to(device)
-        for i in range(tensor.size()[0]):
+        tensor = torch.zeros(self.batchsize, artist.size()[1], self.artist_embed_size).to(device)
+        for i in range(self.batchsize): #tensor.size()[0]):
             idx = artist[i,0]
             tensor[i,:,idx] = 1
         return tensor
@@ -88,13 +90,15 @@ class LyricsRNN(nn.Module):
             artist_embed = self.artist_encoder(artist_input)
             
             # concatenate artist embedding to word embeddings
-            embed = torch.cat([embed,artist_embed],dim=2)
+            embed = torch.cat([embed, artist_embed],dim=2)
 
         emb_pad = rnn.pack_padded_sequence(embed, input_lens, batch_first=True)
         out_pad, self.hidden = self.lstm(emb_pad, self.hidden)
         output, _ = rnn.pad_packed_sequence(out_pad, batch_first=True)
         
         # second RNN goes here
+
+        output = self.dropout(output)
 
         output = output.contiguous().view(-1,output.shape[2])
         output = self.linear(output)
@@ -103,12 +107,14 @@ class LyricsRNN(nn.Module):
         
         return output
 
+    # cross entropy loss with padding
     def loss(self, Y_hat, Y):
         Y = Y.view(-1)
         Y_hat = Y_hat.view(-1,self.output_size)
         mask = (Y != self.pad_id).float()
-        
+
         non_pad_tokens = torch.sum(mask).item()
+        # gets index of correct word in vocab, masks to 0 if padding
         Y_hat = Y_hat[range(Y_hat.shape[0]), Y] * mask
         
         loss = -torch.sum(Y_hat) / non_pad_tokens

@@ -95,6 +95,7 @@ def main():
     # print(Data[np.random.randint(len(Data))], len(Data))
     print("%d batches per epoch"%(len(Data)/params.batch_size))
     log_file.write("%d batches per epoch\n"%(len(Data)/params.batch_size))
+    print(Data.vocab_len)
 
     dataloader = DataLoader(Data, batch_size=params.batch_size, shuffle=True, num_workers=1, collate_fn=padding_fn, drop_last=True)
     # for i,batch in enumerate(dataloader):
@@ -105,6 +106,8 @@ def main():
                             chunk_size=params.chunk_size,use_artist=params.use_artist)
     val_dataloader = DataLoader(ValData,  batch_size=params.batch_size, num_workers=1, collate_fn=padding_fn, drop_last=True)
 
+    print(len(dataloader),len(val_dataloader))
+
     # --------------
     # Create model and optimizer
     model = LyricsRNN(Data.vocab_len, Data.vocab_len, Data.PAD_ID, batch_size=params.batch_size, n_layers=params.n_layers, 
@@ -113,6 +116,7 @@ def main():
                         artist_embedding_size=params.artist_embedding_size
                       ).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=params.learning_rate)
+
     
     # Load checkpoint
     if params.load_model != None:
@@ -137,22 +141,25 @@ def main():
         return ' '.join(predicted_words)
 
     def check_early_stopping(prev_val_loss):
-        val_loss = 0
-        for i,batch in enumerate(val_dataloader):
-            inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data = batch
-            
-            if Data.use_artist:
-                inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
-            else:
-                inp, target = inp_seqs.to(device), out_seqs.to(device)
-            model.zero_grad()
-            
-            predictions = model(inp, inp_lens)
-            loss = model.loss(predictions, target)
-            val_loss += loss
-        avg_val_loss = val_loss / i
+        model.eval()
+        with torch.no_grad():
+            val_loss = 0
+            for i,batch in enumerate(val_dataloader):
+                inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data = batch
+                
+                if Data.use_artist:
+                    inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
+                else:
+                    inp, target = inp_seqs.to(device), out_seqs.to(device)
+                model.zero_grad()
+                
+                predictions = model(inp, inp_lens)
+                loss = model.loss(predictions, target)
+                val_loss += loss
+        avg_val_loss = val_loss / len(val_dataloader)
         print('Validation loss: %.4f'%avg_val_loss)
         log_file.write('Validation loss: %.4f\n'%avg_val_loss)
+        model.train()
         return avg_val_loss
 
     # --------------
@@ -172,7 +179,7 @@ def main():
     for epoch in range(start_epoch, params.n_epochs + 1):
         for i, batch in enumerate(dataloader):
             inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data = batch
-            
+            # print(' '.join([Data.id2word(x) for x in inp_seqs[0]]))
             if params.use_artist:
                 inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
             else:
@@ -198,10 +205,29 @@ def main():
                     log_file.write(generate()+'\n\n')
                 log_file.flush()
 
-            if i % params.plot_every == 0:
-                all_losses.append(loss_avg / params.plot_every)
-                loss_avg = 0
-        
+                cp_output = predictions
+                probs = np.exp(cp_output.cpu().detach().numpy())
+                # print('target', ' '.join([Data.id2word(target[0][i]) for i in range(len(target[0]))]))
+                # print('max_probs',np.amax(probs[0][0]))
+                # print('target_id',target[0])
+                # print('predicted_id',[np.argmax(probs[0][i]) for i in range(len(target[0]))])
+                # print('prob_target',[probs[0][i][target[0][i]] for i in range(len(probs[0]))])
+                # print('eol_prob', [probs[0][i][3] for i in range(len(probs[0]))])
+                # print('pred', ' '.join([Data.id2word(np.argmax(probs[0][i])) for i in range(len(target[0]))]))
+                # print(np.sum(probs[0][0]))
+
+            # if i % params.plot_every == 0:
+            #     all_losses.append(loss_avg / params.plot_every)
+            #     print("avg_loss",loss_avg/params.plot_every)
+            #     loss_avg = 0
+
+
+        all_losses.append(loss_avg / len(dataloader))
+        print("Average epoch loss:",loss_avg/len(dataloader))
+        log_file.write("Average epoch loss:",loss_avg/len(dataloader))
+        loss_avg = 0
+    
+        check_early_stopping(prev_val_loss)
         # cur_val_loss = check_early_stopping(prev_val_loss)
         # if cur_val_loss > prev_val_loss + epsilon:
         #     print("Early stopping")
