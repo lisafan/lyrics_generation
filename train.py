@@ -22,7 +22,7 @@ from torch.nn import functional as F
 from torch.utils.data import Dataset, DataLoader
 from torch.autograd import Variable
 
-from data import LyricsDataset, padding_fn, load_embeddings
+from data import LyricsDataset, padding_fn
 from model import LyricsRNN
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
