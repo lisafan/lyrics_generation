@@ -22,7 +22,7 @@ from torch.nn import functional as F
 from torch.utils.data import Dataset, DataLoader
 from torch.autograd import Variable
 
-from data import LyricsDataset, padding_fn
+from data import LyricsDataset, padding_fn, load_embeddings
 from model import LyricsRNN
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -34,6 +34,7 @@ def get_hyperparameters():
 
     parser.add_argument("--input_file")                             # path to python pickle file
     parser.add_argument("--vocab_file")
+    parser.add_argument("--embed_file", default=None)               # path to word2vec file
     parser.add_argument("--checkpoint_files", required=True)        # path and prefix for checkpoints
     parser.add_argument("--load_model")                             # path to saved checkpoint
 
@@ -90,7 +91,7 @@ def main():
     # --------------
     # Get data (train & val)
     Data = LyricsDataset(params.input_file, vocab_file=params.vocab_file, vocab_size=params.vocab_size,
-                         chunk_size=params.chunk_size, max_len=params.max_seq_len,
+                         embed_file=params.embed_file, chunk_size=params.chunk_size, max_len=params.max_seq_len,
                          use_artist=params.use_artist)
     # print(Data[np.random.randint(len(Data))], len(Data))
     print("%d batches per epoch"%(len(Data)/params.batch_size))
@@ -111,7 +112,7 @@ def main():
     # --------------
     # Create model and optimizer
     model = LyricsRNN(Data.vocab_len, Data.vocab_len, Data.PAD_ID, batch_size=params.batch_size, n_layers=params.n_layers, 
-                        hidden_size=params.hidden_size, word_embedding_size=params.word_embedding_size,
+                        hidden_size=params.hidden_size, word_embeddings=Data.embed,
                         use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists, 
                         artist_embedding_size=params.artist_embedding_size
                       ).to(device)
@@ -224,7 +225,7 @@ def main():
 
         all_losses.append(loss_avg / len(dataloader))
         print("Average epoch loss:",loss_avg/len(dataloader))
-        log_file.write("Average epoch loss:",loss_avg/len(dataloader))
+        log_file.write("Average epoch loss: " + str(loss_avg/len(dataloader)))
         loss_avg = 0
     
         check_early_stopping(prev_val_loss)

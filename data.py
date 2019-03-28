@@ -10,6 +10,7 @@ import string, re
 import unidecode
 import random, math, time
 import pickle
+import codecs
 import numpy as np
 import torch
 import tensorboardX
@@ -25,7 +26,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 PAD_ID = 0
 
 class LyricsDataset(Dataset):
-    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_len=50, use_artist=True):
+    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, embed_file=None, chunk_size=0, max_len=50, use_artist=True):
         """
         Args:
             csv_file (string): Path to the csv file with lyrics.
@@ -53,6 +54,14 @@ class LyricsDataset(Dataset):
         self.vocab.insert(self.PAD_ID, self.PAD)
         self.vocab_len = len(self.vocab)
         self.max_len = max_len
+
+        if embed_file:
+            weight_file = re.sub('.pkl','.embed',pkl_file)
+            if not os.path.exists(weight_file):
+                self.create_embed(weight_file, embed_file)
+            self.embed = pickle.load(open(weight_file,'rb'))
+        else:
+            self.embed = None
         
         self.use_artist = use_artist
         if self.use_artist:
@@ -93,6 +102,24 @@ class LyricsDataset(Dataset):
                 if n < 5:
                     break
                 f.write('%s\t%s\n'%(a,n))
+
+    def create_embed(self, file_name, embed_file):
+        word_dim = 300
+        #word_vecs = np.random.uniform(-0.25, 0.25, (len(self.vocab), word_dim))
+        word_vecs = {}
+        vocab = set(self.vocab)
+        print('loading embeddings')
+        for i, line in enumerate(codecs.open(embed_file, 'r', 'utf-8')):
+            s = line.strip().split()
+            if len(s) == word_dim + 1:
+                if s[0] in vocab:
+                    word_vecs[s[0]] = np.array([float(i) for i in s[1:]])
+        print(str(len(word_vecs))+' out of '+str(len(self.vocab))+' words found in embeddings')
+        embeddings = np.random.uniform(-0.25, 0.25, (len(self.vocab), word_dim))
+        for i, word in enumerate(self.vocab):
+            if word in word_vecs:
+                embeddings[i] = word_vecs[word]
+        pickle.dump(embeddings, open(file_name, 'wb'))
 
     def __len__(self):
         # or length of chunked lyrics?

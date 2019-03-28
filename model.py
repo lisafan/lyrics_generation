@@ -27,7 +27,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 class LyricsRNN(nn.Module):
     def __init__(self, input_size, output_size, pad_id, batch_size=8, 
-                 n_layers=1, hidden_size=256, word_embedding_size=128, 
+                 n_layers=1, hidden_size=256, word_embedding_size=128, word_embeddings=None, 
                  use_artist=True, embed_artist=False, num_artists=10, artist_embedding_size=32):
         
         super(LyricsRNN, self).__init__()
@@ -38,8 +38,12 @@ class LyricsRNN(nn.Module):
         self.pad_id = pad_id
 
         self.input_size = input_size
-        self.word_embed_size = word_embedding_size
-        self.word_encoder = nn.Embedding(self.input_size, self.word_embed_size,padding_idx=self.pad_id)
+        if word_embeddings is None:
+            self.word_embed_size = word_embedding.shape[1]
+            self.word_encoder = nn.Embedding.from_pretrained(word_embedding)
+        else:
+            self.word_embed_size = word_embedding_size
+            self.word_encoder = nn.Embedding(self.input_size, self.word_embed_size,padding_idx=self.pad_id)
         self.lstm_input_size = self.word_embed_size
         
         self.use_artist = use_artist
@@ -56,7 +60,7 @@ class LyricsRNN(nn.Module):
                     
             self.lstm_input_size += self.artist_embed_size
             
-        self.lstm = nn.LSTM(self.lstm_input_size, hidden_size, n_layers, batch_first=True)
+        self.lstm = nn.LSTM(self.lstm_input_size, hidden_size, n_layers, batch_first=True, dropout=0.5)
         self.dropout = nn.Dropout(p=0.5)
         self.linear = nn.Linear(hidden_size, output_size)
         print(output_size)
