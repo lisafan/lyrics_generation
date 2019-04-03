@@ -38,9 +38,9 @@ class LyricsRNN(nn.Module):
         self.pad_id = pad_id
 
         self.input_size = input_size
-        if word_embeddings is None:
-            self.word_embed_size = word_embedding.shape[1]
-            self.word_encoder = nn.Embedding.from_pretrained(word_embedding)
+        if word_embeddings:
+            self.word_embed_size = word_embeddings.shape[1]
+            self.word_encoder = nn.Embedding.from_pretrained(word_embeddings)
         else:
             self.word_embed_size = word_embedding_size
             self.word_encoder = nn.Embedding(self.input_size, self.word_embed_size,padding_idx=self.pad_id)
@@ -80,7 +80,10 @@ class LyricsRNN(nn.Module):
 
     def forward(self, input, input_lens):
         self.hidden = self.init_hidden()
+        return self.lyrics_generator(input,input_lens)
         
+
+    def lyrics_generator(self,input,input_lens):
         if self.use_artist:
             input,artist_input = input
         
@@ -143,14 +146,14 @@ class LyricsRNN(nn.Module):
 
         if len(prime_str) > 1:
             # Use priming string to "build up" hidden state
-            self.forward(get_input(prime_input[:,:-1]), input_lens)
+            self.lyrics_generator(get_input(prime_input[:,:-1]), input_lens)
             
         inp = prime_input[:,-1].view(self.batchsize,1).to(device)
         input_lens = [1]*self.batchsize
         
         for p in range(predict_len):
             # just get first row, since all rows are the same
-            output = self.forward(get_input(inp), input_lens)[0]
+            output = self.lyrics_generator(get_input(inp), input_lens)[0]
 
             # Sample from the network as a multinomial distribution
             output_dist = output.data.view(-1).div(temperature).exp()

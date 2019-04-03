@@ -10,7 +10,6 @@ import string, re
 import unidecode
 import random, math, time
 import pickle
-import codecs
 import numpy as np
 import torch
 import tensorboardX
@@ -26,7 +25,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 PAD_ID = 0
 
 class LyricsDataset(Dataset):
-    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, embed_file=None, chunk_size=0, max_len=50, use_artist=True):
+    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_line_len=5, max_seq_len=50, use_semantics=True, use_artist=True):
         """
         Args:
             csv_file (string): Path to the csv file with lyrics.
@@ -53,16 +52,13 @@ class LyricsDataset(Dataset):
         self.vocab = [self.START, self.END, self.EOL, self.UNK] + self.vocab
         self.vocab.insert(self.PAD_ID, self.PAD)
         self.vocab_len = len(self.vocab)
-        self.max_len = max_len
-
-        if embed_file:
-            weight_file = re.sub('.pkl','.embed',pkl_file)
-            if not os.path.exists(weight_file):
-                self.create_embed(weight_file, embed_file)
-            self.embed = pickle.load(open(weight_file,'rb'))
-        else:
-            self.embed = None
+        self.max_seq_len = max_seq_len
         
+        self.use_semantics = use_semantics
+        if self.use_semantics:
+            assert(chunk_size==0 or max_line_len <= chunk_size)
+            self.max_line_len = max_line_len
+
         self.use_artist = use_artist
         if self.use_artist:
             self.artists = sorted(set([x['artist'] for x in self.lyrics]))
@@ -103,24 +99,6 @@ class LyricsDataset(Dataset):
                     break
                 f.write('%s\t%s\n'%(a,n))
 
-    def create_embed(self, file_name, embed_file):
-        word_dim = 300
-        #word_vecs = np.random.uniform(-0.25, 0.25, (len(self.vocab), word_dim))
-        word_vecs = {}
-        vocab = set(self.vocab)
-        print('loading embeddings')
-        for i, line in enumerate(codecs.open(embed_file, 'r', 'utf-8')):
-            s = line.strip().split()
-            if len(s) == word_dim + 1:
-                if s[0] in vocab:
-                    word_vecs[s[0]] = np.array([float(i) for i in s[1:]])
-        print(str(len(word_vecs))+' out of '+str(len(self.vocab))+' words found in embeddings')
-        embeddings = np.random.uniform(-0.25, 0.25, (len(self.vocab), word_dim))
-        for i, word in enumerate(self.vocab):
-            if word in word_vecs:
-                embeddings[i] = word_vecs[word]
-        pickle.dump(embeddings, open(file_name, 'wb'))
-
     def __len__(self):
         # or length of chunked lyrics?
         return len(self.lyrics)
@@ -128,12 +106,22 @@ class LyricsDataset(Dataset):
     def __getitem__(self, idx):
         samp = self.lyrics[idx]
         sample = {'inp_words':[],'out_words':[],'inp_ids':[],'out_ids':[],'artist':[],'artist_id':[]}
-        tokenized_lyrics = [self.START] + re.sub('\n',' %s '%self.EOL, samp['lyrics']).split() + [self.END]
         
-        sample['inp_words'] = tokenized_lyrics[:-1][:self.max_len]
-        sample['out_words'] = tokenized_lyrics[1:self.max_len+1]
-        sample['inp_ids'] = self.word_tensor(sample['inp_words'])
-        sample['out_ids'] = self.word_tensor(sample['out_words'])
+        if self.use_semantics:
+            tokenized_lyrics = [[self.START]+line.split()+[self.EOL]  for line in samp['lyrics'].split('\n')]
+            tokenized_lines = tokenized_lyrics[:self.max_line_len]
+
+            sample['inp_words'] = [line[:-1][:self.max_seq_len] for line in tokenized_lines]
+            sample['out_words'] = [line[1:self.max_seq_len+1] for line in tokenized_lines]
+            sample['inp_ids'] = [self.word_tensor(line) for line in sample['inp_words']]
+            sample['out_ids'] = [self.word_tensor(line) for line in sample['out_words']]
+
+        else:
+            tokenized_lyrics = [self.START] + re.sub('\n',' %s '%self.EOL, samp['lyrics']).split() + [self.END]
+            sample['inp_words'] = tokenized_lyrics[:-1][:self.max_seq_len]
+            sample['out_words'] = tokenized_lyrics[1:self.max_seq_len+1]
+            sample['inp_ids'] = self.word_tensor(sample['inp_words'])
+            sample['out_ids'] = self.word_tensor(sample['out_words'])
         
         if self.use_artist:
             sample['artist'] = samp['artist']
@@ -164,9 +152,9 @@ def padding_fn(data):
     
     def merge(seqs):
         lengths = [len(s) for s in seqs]
-        max_len = np.max(lengths)
+        max_seq_len = np.max(lengths)
         
-        padded_seqs = torch.ones(len(seqs), max_len).long()*PAD_ID
+        padded_seqs = torch.ones(len(seqs), max_seq_len).long()*PAD_ID
         for i,s in enumerate(seqs):
             end = lengths[i]
             padded_seqs[i, :end] = s[:end]
@@ -177,6 +165,41 @@ def padding_fn(data):
     
     inp_seqs,inp_lens = merge([x['inp_ids'] for x in data])
     out_seqs,out_lens = merge([x['out_ids'] for x in data])
+    
+    if data[0]['artist_id'] != []:
+        inp_artists = torch.from_numpy(np.array([x['artist_id'] for x in data]))
+    else:
+        inp_artists = None
+        
+    return inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data
+
+
+def semantic_padding_fn(data):
+    # gets samples (dicts) from Data
+
+    def merge(seqs):
+        lengths = [len(s) for s in seqs]
+        max_len = np.max(lengths)
+        
+        padded_seqs = torch.ones(len(seqs), max_len).long()*PAD_ID
+        for i,s in enumerate(seqs):
+            end = lengths[i]
+            padded_seqs[i, :end] = s[:end]
+                
+        return padded_seqs, lengths
+    
+    # flatten into a batch of lines (no distinction between song samples)
+    # inp_ids = torch.stack([x['inp_ids'] for x in data])
+    # out_ids = torch.stack([x['out_ids'] for x in data])
+    # inp_ids = inp_ids.view(-1, inp_ids.size()[-1])
+    # out_ids = out_ids.view(-1, inp_ids.size()[-1])
+    inp_ids = [line for samp in data for line in samp['inp_ids']]
+    out_ids = [line for samp in data for line in samp['out_ids']]
+
+    # data.sort(key=lambda x:len(x['inp_ids']),reverse=True)
+    
+    inp_seqs,inp_lens = merge(inp_ids)
+    out_seqs,out_lens = merge(out_ids)
     
     if data[0]['artist_id'] != []:
         inp_artists = torch.from_numpy(np.array([x['artist_id'] for x in data]))
