@@ -28,7 +28,8 @@ class SemanticLyricsRNN(nn.Module):
     def __init__(self, input_size, output_size, pad_id, batch_size=8, 
                  noise_size=32, n_layers_S=1, hidden_size_S=128, n_layers_L=1, hidden_size_L=256,
                  word_embedding_size=128, word_embeddings=None, 
-                 use_artist=True, embed_artist=False, num_artists=10, artist_embedding_size=32):
+                 use_artist=True, embed_artist=False, num_artists=10, artist_embedding_size=32,
+                 use_noise=False):
         
         super(SemanticLyricsRNN, self).__init__()
         self.hidden_size_S = hidden_size_S
@@ -42,6 +43,7 @@ class SemanticLyricsRNN(nn.Module):
         self.input_size = input_size
         self.noise_size = noise_size
         self.sem_input_size = self.noise_size
+        self.use_noise = use_noise
 
         self.use_artist = use_artist
         if self.use_artist:
@@ -57,7 +59,7 @@ class SemanticLyricsRNN(nn.Module):
             self.sem_input_size += self.artist_embed_size
             
         if word_embeddings:
-            self.word_embed_size = word_embedding.shape[1]
+            self.word_embed_size = word_embeddings.shape[1]
             self.word_encoder = nn.Embedding.from_pretrained(word_embeddings)
         else:
             self.word_embed_size = word_embedding_size
@@ -75,7 +77,7 @@ class SemanticLyricsRNN(nn.Module):
     
     def artist_onehot(self, artist):
         tensor = torch.zeros(self.batchsize, artist.size()[1], self.artist_embed_size).to(device)
-        for i in range(self.batchsize): #tensor.size()[0]):
+        for i in range(self.batchsize): 
             idx = artist[i,0]
             tensor[i,:,idx] = 1
         return tensor
@@ -93,17 +95,21 @@ class SemanticLyricsRNN(nn.Module):
 
     # input: (batchsize * numlines) x numwords
     def forward(self, input, input_lens):
-        self.hidden_S = self.init_hidden_S()
-        self.hidden_L = self.init_hidden_L()
-
-        # get semantic representations for each line
-        num_lines = input.size()[0] / self.batchsize
 
         if self.use_artist:
             input,artist_input = input
-            sem_reps = self.semantic_generator(artist_input, num_lines)
         else:
-            sem_reps = self.semantic_generator(None, num_lines)
+            artist_input = None
+        num_lines = input.size()[0] / self.batchsize
+
+        self.hidden_S = self.init_hidden_S()
+        self.hidden_L = self.init_hidden_L()
+
+        # only used for the "no-semantics" model version to check semantic representations can be learned
+        if self.use_noise:
+            sem_reps = Variable(torch.FloatTensor(self.batchsize, num_lines, self.hidden_size_S).normal_()).to(device)
+        else:
+            sem_reps = self.semantic_generator(artist_input, num_lines)
 
         sem_reps = sem_reps.contiguous().view(-1, self.hidden_size_S)       # (batchsize * numlines) x hiddensize S
         sem_reps = torch.unsqueeze(sem_reps,dim=1)
@@ -114,7 +120,8 @@ class SemanticLyricsRNN(nn.Module):
         return output
 
     def semantic_generator(self, artists, num_lines):
-        sem_input = self.get_iteration_noise(num_lines)     # batchsize x numlines x noise
+        # may want to use zeros instead of random noise?
+        sem_input = self.get_iteration_noise(num_lines) # batchsize x numlines x noise
 
         if self.use_artist:        
             # repeat artist along sequence
@@ -126,7 +133,7 @@ class SemanticLyricsRNN(nn.Module):
             # concatenate artist embedding to random noise
             sem_input = torch.cat([sem_input, artist_embed],dim=2)  # batchsize x numlines x (noise + artist embed size)
 
-        sem_reps, _ = self.semantic_lstm(sem_input, self.hidden_S)          # batchsize x numlines x hiddensize S
+        sem_reps, _ = self.semantic_lstm(sem_input, self.hidden_S)  # batchsize x numlines x hiddensize S
 
         return sem_reps
 
@@ -174,43 +181,46 @@ class SemanticLyricsRNN(nn.Module):
         return loss
     
     def evaluate(self, prime_str, artist=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
-        self.hidden_S = self.init_hidden_S()
-        self.hidden_L = self.init_hidden_L()
+        self.eval()
+        with torch.no_grad():
+            self.hidden_S = self.init_hidden_S()
+            self.hidden_L = self.init_hidden_L()
 
-        # repeat input across batches
-        if self.use_artist:
-            artist = torch.from_numpy(np.array([artist]*self.batchsize))
-        
-        # get semantic rep for each line and reshape
-        sem_reps = self.semantic_generator(artist, predict_line_len)
-        sem_reps = sem_reps.contiguous().view(-1, self.hidden_size_S)       # (batchsize * numlines) x hiddensize S
-        sem_reps = torch.unsqueeze(sem_reps,dim=1)                          # (batchsize * numlines) x 1 x hiddensize S
+            # repeat input across batches
+            if self.use_artist:
+                artist = torch.from_numpy(np.array([artist]*self.batchsize))
+            
+            # get semantic rep for each line and reshape
+            sem_reps = self.semantic_generator(artist, predict_line_len)
+            sem_reps = sem_reps.contiguous().view(-1, self.hidden_size_S)       # (batchsize * numlines) x hiddensize S
+            sem_reps = torch.unsqueeze(sem_reps,dim=1)                          # (batchsize * numlines) x 1 x hiddensize S
 
-        # repeat lines across batch
-        inp = torch.LongTensor([l[0] for l in prime_str]*self.batchsize)
-        inp = torch.unsqueeze(inp,dim=1).to(device)                         # (batchsize * numlines) x 1 x 1
+            # repeat lines across batch
+            inp = torch.LongTensor([l[0] for l in prime_str]*self.batchsize)
+            inp = torch.unsqueeze(inp,dim=1).to(device)                         # (batchsize * numlines) x 1 x 1
 
-        input_lens = [1] * (self.batchsize*predict_line_len)
-        predicted = [[l[0]] for l in prime_str]
+            input_lens = [1] * (self.batchsize*predict_line_len)
+            predicted = [[l[0]] for l in prime_str]
 
-        for i in range(predict_seq_len):
-            # just get first batch (num lines x vocab dist)
-            output = self.lyrics_generator(inp, input_lens, sem_reps)[0]
+            for i in range(predict_seq_len):
+                # just get first batch (num lines x vocab dist)
+                output = self.lyrics_generator(inp, input_lens, sem_reps)[0]
 
-            # for each line
-            for j in range(predict_line_len):
-                # if there's more of prime string, use it
-                if i < len(prime_str[j])-1:
-                    top_i = prime_str[j][i+1]
-                else:
-                    # Sample from the network as a multinomial distribution
-                    output_dist = output[j].data.view(-1).div(temperature).exp()
-                    top_i = torch.multinomial(output_dist, 1)[0]
+                # for each line
+                for j in range(predict_line_len):
+                    # if there's more of prime string, use it
+                    if i < len(prime_str[j])-1:
+                        top_i = prime_str[j][i+1]
+                    else:
+                        # Sample from the network as a multinomial distribution
+                        output_dist = output[j].data.view(-1).div(temperature).exp()
+                        top_i = torch.multinomial(output_dist, 1)[0]
 
-                # Add predicted character to string and use as next input
-                predicted[j] += [top_i]
+                    # Add predicted character to string and use as next input
+                    predicted[j] += [top_i]
 
-            inp = torch.LongTensor([l[-1] for l in predicted]*self.batchsize)
-            inp = torch.unsqueeze(inp,dim=1).to(device)
+                inp = torch.LongTensor([l[-1] for l in predicted]*self.batchsize)
+                inp = torch.unsqueeze(inp,dim=1).to(device)
 
-        return predicted
+            self.train()
+            return predicted

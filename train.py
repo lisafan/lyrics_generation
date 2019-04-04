@@ -50,8 +50,9 @@ def get_hyperparameters():
     parser.add_argument("--chunk_size", default=0, type=int)        # # of lines to use in one input (0 uses the entire song)
     parser.add_argument("--max_seq_len", default=50, type=int)      # max # of words for input and output seq
     parser.add_argument("--max_line_len", default=5, type=int)      # max # of lines for input and output seq when using semantic RNN
-    parser.add_argument("--use_semantics", default="True", type=str2bool)   # use semantic RNN
     parser.add_argument("--use_artist", default="True", type=str2bool)   # use artist info in input
+    parser.add_argument("--use_semantics", default="True", type=str2bool)   # use semantic RNN    
+    parser.add_argument("--use_noise", default="False", type=str2bool)   # use noise instead of semantic representation (for baseline model)
 
     parser.add_argument("--batch_size", default=16, type=int)
     parser.add_argument("--n_layers_S", default=1, type=int)
@@ -113,7 +114,7 @@ def main():
         pad_fn = semantic_padding_fn
     else:
         pad_fn = padding_fn
-    dataloader = DataLoader(Data, batch_size=params.batch_size, shuffle=True, num_workers=1, collate_fn=pad_fn, drop_last=True)
+    dataloader = DataLoader(Data, batch_size=params.batch_size, shuffle=True, num_workers=0, collate_fn=pad_fn, drop_last=True)
     # for i,batch in enumerate(dataloader):
     #     print(batch[1])
     #     exit()
@@ -122,7 +123,7 @@ def main():
     ValData = LyricsDataset(re.sub('train','val',params.input_file), vocab_file=params.vocab_file, 
                             chunk_size=params.chunk_size,max_line_len=params.max_line_len, max_seq_len=params.max_seq_len,
                             use_semantics=params.use_semantics, use_artist=params.use_artist)
-    val_dataloader = DataLoader(ValData,  batch_size=params.batch_size, num_workers=1, collate_fn=pad_fn, drop_last=True)
+    val_dataloader = DataLoader(ValData,  batch_size=params.batch_size, num_workers=0, collate_fn=pad_fn, drop_last=True)
 
     # --------------
     # Create model and optimizer
@@ -131,7 +132,7 @@ def main():
                             n_layers_S=params.n_layers_S, hidden_size_S=params.hidden_size_S, n_layers_L=params.n_layers_L, 
                             hidden_size_L=params.hidden_size_L, word_embedding_size=params.word_embedding_size,
                             use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists, 
-                            artist_embedding_size=params.artist_embedding_size
+                            artist_embedding_size=params.artist_embedding_size, use_noise=params.use_noise
                           ).to(device)
     else:
         model = LyricsRNN(Data.vocab_len, Data.vocab_len, Data.PAD_ID, batch_size=params.batch_size, 
@@ -181,6 +182,7 @@ def main():
         return ' '.join(predicted_words)
 
     def check_early_stopping(prev_val_loss):
+        log_str("Starting validation check...")
         model.eval()
         with torch.no_grad():
             val_loss = 0
@@ -191,7 +193,6 @@ def main():
                     inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
                 else:
                     inp, target = inp_seqs.to(device), out_seqs.to(device)
-                model.zero_grad()
                 
                 predictions = model(inp, inp_lens)
                 loss = model.loss(predictions, target)
@@ -231,10 +232,14 @@ def main():
             loss.backward()
             optimizer.step()
             
-            loss_avg += loss
+            loss_avg += loss.detach()
 
             if i % params.print_every == 0:
-                log_str('[%s (epoch %d: %d%%) Loss: %.4f]' % (time_since(start), epoch, i / (len(Data.lyrics)/params.batch_size) * 100, loss))
+                loss_avg /= params.print_every
+                all_losses.append(loss_avg / params.print_every)
+                log_str('[%s (epoch %d: %d%%) Loss: %.4f]' % (time_since(start), epoch, i / (len(Data.lyrics)/params.batch_size) * 100, loss_avg))
+                loss_avg = 0
+
                 if params.use_artist:
                     for a in sorted(Data.artists):
                         log_str('Artist %s: %s\n'%(a, generate(artist=a)))
@@ -252,15 +257,9 @@ def main():
                 # print('pred', ' '.join([Data.id2word(np.argmax(probs[0][i])) for i in range(len(target[0]))]))
                 # print(np.sum(probs[0][0]))
 
-            # if i % params.plot_every == 0:
-            #     all_losses.append(loss_avg / params.plot_every)
-            #     print("avg_loss",loss_avg/params.plot_every)
-            #     loss_avg = 0
-
-
-        all_losses.append(loss_avg / len(dataloader))
-        log_str("Average epoch loss: %.4f"%(loss_avg/len(dataloader)))
-        loss_avg = 0
+        # all_losses.append(loss_avg / len(dataloader))
+        # log_str("Average epoch loss: %.4f"%(loss_avg/len(dataloader)))
+        # loss_avg = 0
     
         check_early_stopping(prev_val_loss)
         # cur_val_loss = check_early_stopping(prev_val_loss)
