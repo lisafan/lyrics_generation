@@ -1,0 +1,129 @@
+train.py --input_file=lyrics/input_files/dali_train.pkl --checkpoint_files=checkpoints/dali --chunk_size=5 --max_seq_len=50 --print_every=300 --n_epochs=10 --use_artis=True --n_layers_L=2 --hidden_size_L=64
+
+input_file: lyrics/input_files/dali_train.pkl
+vocab_file: None
+checkpoint_files: checkpoints/dali
+load_model: None
+vocab_size: 10000
+chunk_size: 5
+max_seq_len: 50
+max_mel_len: 40
+max_line_len: 5
+use_artist: True
+use_semantics: True
+use_melody: True
+use_noise: False
+batch_size: 16
+n_layers_S: 1
+hidden_size_S: 256
+n_layers_L: 2
+hidden_size_L: 64
+word_embedding_size: 128
+artist_embedding_size: 32
+embed_artist: False
+learning_rate: 0.005
+n_epochs: 10
+print_every: 300
+plot_every: 1000
+
+9881 batches per epoch
+
+[0m 0s (epoch 1: 0%) Loss: 0.0290]
+Artist A Day To Remember: <START> winner slam child sinking belts every ties wreck gi meaningless treasure bout even counting colliding coloured soft memory fag smiling 
+ <START> inyour woe tall beau job tap boobs july razor deborah unsure thelord jacket mhuir starry live wherever dnd mariner confines 
+ <START> always momma '' lifesaver others die ling key softly ... forgetting microphone lack cream brush blame failure lock ailing call 
+ <START> jailbreak bark react taken shop flies auburn photograph timing cruella gambler fears didnt kissin temporary god imaginations tourniquet howling trip 
+ <START> souvenirs loaded lloyd holiday boring fell dues disappointed power princes sunrise race hears rain drying proud task wrecking kotoba shook 
+
+
+Artist A Fine Frenzy: <START> local dew denied boundaries heater escape approaching frown dle escape debajo planted itai sunday woman heater pills appetite sail rooftops 
+ <START> soul somehow nai figure different california sleep castle coke kinda halo shivering ev'rybody c'est bit roof energy hmm relive glimpse 
+ <START> selfdestruction bah steady michelle kana raging asap others questions shake reminder temporary messy knockknockknockin difference havin strongest murder flaming adored 
+ <START> hesitate come gathered sleepless papapaaa maiden resistance nareul team carmen 8th sinead rainbows gathered game following fiercely obvious w july 
+ <START> o'clock join sex cigarette heav hung lacha dollar whether yeahh shiver yeaeah ttara weee annihilation ghost straw booy abandon xing 
+
+
+Artist A Flock Of Seagulls: <START> carry sang final senzauna heat dirty clap role sie oah creased stays messin scared dudub missed body ken jailhouse cursed 
+ <START> craving aw unkind scars united cats koiwoshiyouyo ready loaded settle speak ght whatever swan rum sae puts grim dazzle cans 
+ <START> movies neighbours baptized fortune touchin shown remain dreams jim suzy throat cloud system ming fold keepers depending whole hurry footloose 
+ <START> ecstasy its listen sentimental lalalala sometimes al jokes awaits crowds london everybody kimi crosses traveled simmer core abra postindustrial bapado 
+ <START> runs devotion reached window kings error zombie phobia betrayal truth hated embers burns wishful prey makeup en voodo er 18 
+
+
+Artist A Great Big World: <START> camera fear share capital oyster selfish hur without supposed confusing mere tennessee motion mummy riches alli meat try'ng fire arrive 
+ <START> buzz past players haunted dududub rah rights redemption lisa signal senses psycho rosie havin papers hill bliss lie isnt j'ai 
+ <START> ngin deep vain tunes addicted missing noise stayed kiss pocket this hermind side rust longer muse smooth whooa deepest lasts 
+ <START> immediately sincere awake knockknockknockin africa 'n hesitate barrel platinum orchestra evening psycho picture turnin meant i birthday theway coulda uptown 
+ <START> prisoner haunts castle idiots sands injection fourth corazon eagle wrist thy finely screwed place sia behind jimmy claim dance discovered 
+
+
+Artist A Perfect Circle: <START> lasting absolutely miss already forces meaningless tion chosen taylor in blazing stage lick momma ninetynine ina odds rebel d'you choir 
+ <START> lucy hypnotized conviction send kisses realness ledge itsu al blackout geunyeor millennium weary prospero brain parts strangers lilac rainin trade 
+ <START> jeans palace wink feenin freaks cut wishes mysterious killed mona decay netherworld both knocking asks cries sugar toes kyrie tu 
+ <START> late save been dan purge hardest terrified within boundaries warden ready egao goodreasons loser pancho raaain advertising changin yeaah panama 
+ <START> lightweight withyou spoke laughing nu bounty regardless gongon decided off strip y'know learning snow windows bloom mars treated type sandy 
+
+
+Artist A-ha: <START> stab lunch brush starman denn signed abuse target cruella standing believing tendresse dee puskullu meal ge loaded drivin invaded that 
+ <START> yakalarsam ber created r sweet borrow upsidedown cheat burning iron werewolves ignorant rob al everyday hours vem pairs stick his 
+ <START> fill yume & unhappy befooooore white taking unforgiven routine vac deck pokey breathes envy triumph generation wond'rin hates millionaire right 
+ <START> hits commit hope o'clock heavenly innuendo stands pro needed wolves leaders lemon screams secretly lullaby honest schemes falls thighs tin 
+ <START> lean trying suckin cruella ththe speakers having scatman tennessee shakes thing sandman 'aint shake hoo lasts currency vague trust revolution 
+
+
+Artist A1: <START> paved stretch trapped stones anchor thinks glance loner stitch gaining bottom landed demon slightest hoping ending trick kindness pain blackest 
+ <START> shipping fantasize measured kidding just hairdo store consequence stitching pretended army families point express brilliant soo somebody lied unconditionally happened 
+ <START> photograph 'aint prince confession saa dirt survived screaming houses wasted shakes pla j elvis killer remember listen stays awhile uptight 
+ <START> ship eternally while seats restart route aah asshole gabriel andonly smart dressing seasons album anything boxing bound team ohhh disappointed 
+ <START> stories even fifty youyou uhm attached painted nananana wantanyone disco everspinning record inneun loose desert belong rooftops princess learnin eas 
+
+
+Artist ABBA: <START> earned wolves happy erase define powerful color insides mistakes ruby wrong express piss feel living suffocate shed late large teasing 
+ <START> wiser cando lying ourselves discovered playground broadway whistling substitute marks tappin jennifer spine roar bonang hypnotized keys oh j suffering 
+ <START> survivor bullets type aside weeping andonly belam why wins sew weaknesses ming extasy ebony books following ro gutter ideal thatlight 
+ <START> working wind edge creep decided problems loud suit bed super designed knee land mars hone yeahh rocks poison hostess locks 
+ <START> midnight ever affection naked skins hit ting holidays cheap biggest roc suburbia invincible betta evolution pla depression bourbon cheated mood 
+
+
+Artist ABC: <START> sanssouci tto person machine wakes magazine where book worry alone ze chrome fast stands pictures devoted 2 everspinning fact older 
+ <START> damage rises dirty knows mirror older none hah action adventure warm lotta yilani ber suit 's liked learnin colour grace 
+ <START> deserves within gin leaves dreamed the black flies kaleidoscope bangkok woh sickness hour begins rockin yeaeah autumn fighting drunken whip 
+ <START> realized resist too sprung quiet dust times i`ll bet toyou sale playground absolve boulders ran reel waitress cab flowing again 
+ <START> celebrating myheart rats loud highest matter favourite children secure nara anyone certain encontre ohh falls danger melt important winning neat 
+
+
+Artist AC/DC: <START> doors wooh shark hol doo_ shout birthday female opucuk struggle money heh messing lied ze wednesday zero disagree estate shifter 
+ <START> stab 8th voodoo pour pole igot conceal nah prone lap meek strip either awe waterline relight mei breathes anger delicate 
+ <START> ave rusty holidays monsters at collect hammers designed wander y loner young riddle message cards ace loving dean sparkling ofthe 
+ <START> in forced tender withyou local terrified eyesup learned rings rules theme why wait thanks places tellme amoll que jo'anna ty 
+ <START> sleepy enough outrageous clowns controlling toast flip strain conscious ultimate j'ai hurts ''i deny vie relate patiently unfair play pam 
+
+
+Artist AFI: <START> slave dying tumbling begin motion framed scratch kicking steady mid ignore jar learn 'aint wounded soothing smaller corner disappeared les 
+ <START> replace ima compare willing ones l.a oliver tomorrow preach looked shreds ego leavin charlie presidents colour scales from saint boku 
+ <START> rythm ears tender warp philadelphia greener useless professional slipping did went such guilt senses blur ga night did poppin covered 
+ <START> hits dao father view aaaah adding xin livin phillipa link striking whistle motherfucker thighs civil befooooore suuunshine easy thou hides 
+ <START> rent wondering backseat yippee disparame uptight pilot reality noble nana young deer speaking wishin hide blink regretting minute winged tennessee 
+
+
+Artist ATC: <START> guy holding ella stink paying analyse rescue knooow c'mon vanity outrageous fashion wears frightening weapons kept coeur seni says justify 
+ <START> white afford stack voodoo gallows discovered und drain sandman knocking baptized curtains sack surprise pairs eagle secret doctor stressed hospital 
+ <START> easily blessed creepy miles jones wohoh inspiration attitude nurse cruising throws spoke whales splitting depending mis nou success daylight pied 
+ <START> disease floated pero bitterness osu totally selfdestruction subway give used comet nareul safety du large crow two feeling accident mall 
+ <START> another remember footsteps kick te twin devil sought hustle rhinestone drink fail less freaky shit shipping fed essence cean notes 
+
+
+Artist Aaron Tippin: <START> ringin lightweight playin closet avenue alibis curve easy sip imagination holdin holes clever castles hidden quick shimmering raver silver hobo 
+ <START> deception inna lotta joke kitty virtual beautiful national deal suru toes wings hypnotized pink bonang carmen shot <padding> blowin memphis 
+ <START> begin oblivion daddy wish snap qi icould owe though hours routine lack escape high apart o'clock . ey youwere p 
+ <START> telephone wonderland ted months anata rescue wrong slice shinin habit devildown assume seek champion spit mend buti bread wond'rin sweat 
+ <START> dealin tokyo concerned bayou others sam wrong forgiveness battery juliet tops monday dreamy dreamers hidin knight haha forged elvis blessed 
+
+
+Artist Abney Park: <START> fine male oho lovesongs goodbyes name softer knock tread tries echoes rehab ''i precious leaving rocked clap eyed vivo sayin 
+ <START> entertainin letters humans sleeps began magical lalalalalalalalalalala enjoy cheated uuuh naturally granted ter birds sandman hesitation hatred appeal talked to 
+ <START> sell recognize battles plague surrounded shed seats nothin smile mem'ry save punches wife heals mandy dancer searched lipstick disgrace stamped 
+ <START> working herself violence guaranteed gal rooms aid disappears stroke great explosion balls paradise thread butterflies shared naneun makeyou sleeve fences 
+ <START> suit ohohohohoh j'ai doubt colours win cannibal house oooh whistling pouring realize knocks drive intentions fantasy protection platinum friends unknown 
+
+

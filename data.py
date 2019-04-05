@@ -13,8 +13,9 @@ import pickle
 import numpy as np
 import torch
 import tensorboardX
-import matplotlib as plt
-from collections import Counter
+import matplotlib.pyplot as plt
+import itertools
+from collections import Counter, defaultdict
 from torch import nn
 from torch.nn.utils import rnn
 from torch.nn import functional as F
@@ -25,7 +26,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 PAD_ID = 0
 
 class LyricsDataset(Dataset):
-    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_line_len=5, max_seq_len=50, use_semantics=True, use_artist=True):
+    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_line_len=5, max_seq_len=50, max_mel_len=40, use_semantics=True, use_artist=True, use_melody=True):
         """
         Args:
             csv_file (string): Path to the csv file with lyrics.
@@ -53,6 +54,7 @@ class LyricsDataset(Dataset):
         self.vocab.insert(self.PAD_ID, self.PAD)
         self.vocab_len = len(self.vocab)
         self.max_seq_len = max_seq_len
+        self.max_mel_len = max_mel_len
         
         self.use_semantics = use_semantics
         if self.use_semantics:
@@ -65,6 +67,8 @@ class LyricsDataset(Dataset):
             self.num_artists = len(self.artists)
         else:
             self.num_artists = 0
+
+        self.use_melody = use_melody
             
         # chunk lyrics
         print("chunking lyrics")
@@ -73,9 +77,12 @@ class LyricsDataset(Dataset):
             chunked_lyrics = []
             for song in self.lyrics:
                 lines = re.split(r'\n',song['lyrics'])
+                if self.use_melody:
+                    melody = song['melody']
                 for i in range(len(lines) - self.chunk_size+1):
                     chunk = '\n'.join(lines[i:i+self.chunk_size])
                     song['lyrics'] = chunk
+                    song['melody'] = melody[i:i+self.chunk_size]
                     chunked_lyrics += [song.copy()]
             self.lyrics = chunked_lyrics
                     
@@ -105,7 +112,7 @@ class LyricsDataset(Dataset):
 
     def __getitem__(self, idx):
         samp = self.lyrics[idx]
-        sample = {'inp_words':[],'out_words':[],'inp_ids':[],'out_ids':[],'artist':[],'artist_id':[]}
+        sample = {'inp_words':[],'out_words':[],'inp_ids':[],'out_ids':[],'artist':[],'artist_id':[], 'melody':[]}
         
         if self.use_semantics:
             tokenized_lyrics = [[self.START]+line.split()+[self.EOL]  for line in samp['lyrics'].split('\n')]
@@ -126,6 +133,18 @@ class LyricsDataset(Dataset):
         if self.use_artist:
             sample['artist'] = samp['artist']
             sample['artist_id'] = self.artists.index(sample['artist'])
+
+        if self.use_melody:
+            melody = []
+            note_lines = [list(itertools.chain.from_iterable(line)) for line in samp['melody']]
+            for note_line in note_lines:
+                melody_line = []
+                for note in note_line:
+                    duration = int(math.ceil(note[1]/0.2))
+                    melody_line.extend([note[0]]*duration)
+                melody_line.extend([0] * self.max_mel_len)
+                melody.append(melody_line[:self.max_mel_len])
+            sample['melody'] = melody
     
         return sample
         

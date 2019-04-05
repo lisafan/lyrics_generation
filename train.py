@@ -49,9 +49,11 @@ def get_hyperparameters():
     parser.add_argument("--vocab_size", default=10000, type=int)    
     parser.add_argument("--chunk_size", default=0, type=int)        # # of lines to use in one input (0 uses the entire song)
     parser.add_argument("--max_seq_len", default=50, type=int)      # max # of words for input and output seq
+    parser.add_argument("--max_mel_len", default=40, type=int)      # max # of notes for melody sequences
     parser.add_argument("--max_line_len", default=5, type=int)      # max # of lines for input and output seq when using semantic RNN
     parser.add_argument("--use_artist", default="True", type=str2bool)   # use artist info in input
-    parser.add_argument("--use_semantics", default="True", type=str2bool)   # use semantic RNN    
+    parser.add_argument("--use_semantics", default="True", type=str2bool)   # use semantic RNN
+    parser.add_argument("--use_melody", default="True", type=str2bool)   # use melody info    
     parser.add_argument("--use_noise", default="False", type=str2bool)   # use noise instead of semantic representation (for baseline model)
 
     parser.add_argument("--batch_size", default=16, type=int)
@@ -121,8 +123,10 @@ def main():
     #     break
         
     ValData = LyricsDataset(re.sub('train','val',params.input_file), vocab_file=params.vocab_file, 
-                            chunk_size=params.chunk_size,max_line_len=params.max_line_len, max_seq_len=params.max_seq_len,
-                            use_semantics=params.use_semantics, use_artist=params.use_artist)
+                            chunk_size=params.chunk_size,max_line_len=params.max_line_len,
+                            max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
+                            use_semantics=params.use_semantics, use_artist=params.use_artist,
+                            use_melody=params.use_melody)
     val_dataloader = DataLoader(ValData,  batch_size=params.batch_size, num_workers=0, collate_fn=pad_fn, drop_last=True)
 
     # --------------
