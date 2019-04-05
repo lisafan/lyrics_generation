@@ -106,8 +106,10 @@ def main():
     # --------------
     # Get data (train & val)
     Data = LyricsDataset(params.input_file, vocab_file=params.vocab_file, vocab_size=params.vocab_size,
-                         chunk_size=params.chunk_size, max_line_len=params.max_line_len, max_seq_len=params.max_seq_len,
-                         use_semantics=params.use_semantics, use_artist=params.use_artist)
+                         chunk_size=params.chunk_size, max_line_len=params.max_line_len,
+                         max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
+                         use_semantics=params.use_semantics, use_artist=params.use_artist,
+                         use_melody=params.use_melody)
     # print(Data[np.random.randint(len(Data))], len(Data))
     # exit()
     log_str("\n%d batches per epoch\n"%(len(Data)/params.batch_size))

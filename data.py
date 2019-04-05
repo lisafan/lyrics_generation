@@ -142,8 +142,14 @@ class LyricsDataset(Dataset):
                 for note in note_line:
                     duration = int(math.ceil(note[1]/0.2))
                     melody_line.extend([note[0]]*duration)
-                melody_line.extend([0] * self.max_mel_len)
-                melody.append(melody_line[:self.max_mel_len])
+                if self.use_semantics:
+                    melody_line.extend([0] * self.max_mel_len)
+                    melody.append(melody_line[:self.max_mel_len])
+                else:
+                    melody.extend(melody_line)
+            if not self.use_semantics:
+                melody.extend([0] * (self.max_mel_len))
+                melody = melody[:self.max_mel_len]
             sample['melody'] = melody
     
         return sample
