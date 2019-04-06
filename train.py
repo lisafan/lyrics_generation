@@ -136,15 +136,18 @@ def main():
     if params.use_semantics:
         model = SemanticLyricsRNN(Data.vocab_len, Data.vocab_len, Data.PAD_ID, batch_size=params.batch_size, 
                             n_layers_S=params.n_layers_S, hidden_size_S=params.hidden_size_S, n_layers_L=params.n_layers_L, 
-                            hidden_size_L=params.hidden_size_L, word_embedding_size=params.word_embedding_size,
+                            hidden_size_L=params.hidden_size_L, melody_len=params.max_mel_len,
+                            word_embedding_size=params.word_embedding_size,
                             use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists, 
-                            artist_embedding_size=params.artist_embedding_size, use_noise=params.use_noise
+                            artist_embedding_size=params.artist_embedding_size, use_noise=params.use_noise,
+                            use_melody=params.use_melody
                           ).to(device)
     else:
         model = LyricsRNN(Data.vocab_len, Data.vocab_len, Data.PAD_ID, batch_size=params.batch_size, 
-                            n_layers=params.n_layers_L, hidden_size=params.hidden_size_L, word_embedding_size=params.word_embedding_size,
+                            n_layers=params.n_layers_L, hidden_size=params.hidden_size_L, melody_len=params.max_mel_len,
+                            word_embedding_size=params.word_embedding_size,
                             use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists, 
-                            artist_embedding_size=params.artist_embedding_size
+                            artist_embedding_size=params.artist_embedding_size, use_melody=params.use_melody
                           ).to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=params.learning_rate)
@@ -224,13 +227,19 @@ def main():
 
     for epoch in range(start_epoch, params.n_epochs + 1):
         for i, batch in enumerate(dataloader):
-            inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data = batch
+            inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,inp_melody,data = batch
             
             # print(' '.join([Data.id2word(x) for x in inp_seqs[0]]))
             if params.use_artist:
-                inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
+                if params.use_melody:
+                    inp, target = [inp_seqs.to(device),inp_melody.to(device),inp_artists.to(device)], out_seqs.to(device)
+                else:
+                    inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
             else:
-                inp, target = inp_seqs.to(device), out_seqs.to(device)
+                if params.use_melody:
+                    inp, target = [inp_seqs.to(device),inp_melody.to(device)], out_seqs.to(device)
+                else:
+                    inp, target = inp_seqs.to(device), out_seqs.to(device)
 
             model.zero_grad()
             predictions = model(inp, inp_lens)
@@ -246,11 +255,12 @@ def main():
                 log_str('[%s (epoch %d: %d%%) Loss: %.4f]' % (time_since(start), epoch, i / (len(Data.lyrics)/params.batch_size) * 100, loss_avg))
                 loss_avg = 0
 
-                if params.use_artist:
-                    for a in sorted(Data.artists):
-                        log_str('Artist %s: %s\n'%(a, generate(artist=a)))
-                else:
-                    log_str(generate()+'\n')
+                if not params.use_melody:
+                    if params.use_artist:
+                        for a in sorted(Data.artists):
+                            log_str('Artist %s: %s\n'%(a, generate(artist=a)))
+                    else:
+                        log_str(generate()+'\n')
 
                 cp_output = predictions
                 probs = np.exp(cp_output.cpu().detach().numpy())

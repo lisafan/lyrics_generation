@@ -27,9 +27,9 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 class SemanticLyricsRNN(nn.Module):
     def __init__(self, input_size, output_size, pad_id, batch_size=8, 
                  noise_size=32, n_layers_S=1, hidden_size_S=128, n_layers_L=1, hidden_size_L=256,
-                 word_embedding_size=128, word_embeddings=None, 
+                 melody_len = 40, word_embedding_size=128, word_embeddings=None, 
                  use_artist=True, embed_artist=False, num_artists=10, artist_embedding_size=32,
-                 use_noise=False):
+                 use_noise=False, use_melody=True):
         
         super(SemanticLyricsRNN, self).__init__()
         self.hidden_size_S = hidden_size_S
@@ -57,6 +57,11 @@ class SemanticLyricsRNN(nn.Module):
                 self.artist_encoder = self.artist_onehot
                     
             self.sem_input_size += self.artist_embed_size
+
+        self.use_melody = use_melody
+        self.melody_len = melody_len
+        if self.use_melody:
+            self.sem_input_size += self.melody_len
             
         if word_embeddings:
             self.word_embed_size = word_embeddings.shape[1]
@@ -97,9 +102,15 @@ class SemanticLyricsRNN(nn.Module):
     def forward(self, input, input_lens):
 
         if self.use_artist:
-            input,artist_input = input
+            if self.use_melody:
+                input,melody_input,artist_input = input
+            else:
+                input,artist_input = input
         else:
-            artist_input = None
+            if self.use_melody:
+                input,melody_input = input
+            else:
+                artist_input = None
         num_lines = int(input.size()[0] / self.batchsize)
 
         self.hidden_S = self.init_hidden_S()
@@ -109,7 +120,7 @@ class SemanticLyricsRNN(nn.Module):
         if self.use_noise:
             sem_reps = Variable(torch.FloatTensor(self.batchsize, num_lines, self.hidden_size_S).normal_()).to(device)
         else:
-            sem_reps = self.semantic_generator(artist_input, num_lines)
+            sem_reps = self.semantic_generator(artist_input, melody_input, num_lines)
 
         sem_reps = sem_reps.contiguous().view(-1, self.hidden_size_S)       # (batchsize * numlines) x hiddensize S
         sem_reps = torch.unsqueeze(sem_reps,dim=1)
@@ -119,7 +130,7 @@ class SemanticLyricsRNN(nn.Module):
         
         return output
 
-    def semantic_generator(self, artists, num_lines):
+    def semantic_generator(self, artists, melody_input, num_lines):
         # may want to use zeros instead of random noise?
         sem_input = self.get_iteration_noise(num_lines) # batchsize x numlines x noise
 
@@ -132,6 +143,9 @@ class SemanticLyricsRNN(nn.Module):
             
             # concatenate artist embedding to random noise
             sem_input = torch.cat([sem_input, artist_embed],dim=2)  # batchsize x numlines x (noise + artist embed size)
+
+        if self.use_melody:
+            sem_input = torch.cat([sem_input, melody_input],dim=2)
 
         sem_reps, _ = self.semantic_lstm(sem_input, self.hidden_S)  # batchsize x numlines x hiddensize S
 

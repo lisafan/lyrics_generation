@@ -27,8 +27,10 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 class LyricsRNN(nn.Module):
     def __init__(self, input_size, output_size, pad_id, batch_size=8, 
-                 n_layers=1, hidden_size=256, word_embedding_size=128, word_embeddings=None, 
-                 use_artist=True, embed_artist=False, num_artists=10, artist_embedding_size=32):
+                 n_layers=1, hidden_size=256, melody_len=40,
+                 word_embedding_size=128, word_embeddings=None, 
+                 use_artist=True, embed_artist=False, num_artists=10,
+                 artist_embedding_size=32, use_melody=True):
         
         super(LyricsRNN, self).__init__()
         self.hidden_size = hidden_size
@@ -59,6 +61,11 @@ class LyricsRNN(nn.Module):
 
                     
             self.lstm_input_size += self.artist_embed_size
+
+        self.use_melody = use_melody
+        self.melody_len = melody_len
+        if self.use_melody:
+            self.lstm_input_size += self.melody_len
             
         self.lstm = nn.LSTM(self.lstm_input_size, hidden_size, n_layers, batch_first=True, dropout=0.5)
         self.dropout = nn.Dropout(p=0.5)
@@ -85,7 +92,13 @@ class LyricsRNN(nn.Module):
 
     def lyrics_generator(self,input,input_lens):
         if self.use_artist:
-            input,artist_input = input
+            if self.use_melody:
+                input,melody_input,artist_input = input
+            else:
+                input,artist_input = input
+        else:
+            if self.use_melody:
+                input,melody_input = input
         
         embed = self.word_encoder(input)
         
@@ -98,6 +111,12 @@ class LyricsRNN(nn.Module):
             
             # concatenate artist embedding to word embeddings
             embed = torch.cat([embed, artist_embed],dim=2)
+
+        if self.use_melody:
+            melody_input = melody_input.view(-1, 1, self.melody_len)
+            melody_input = melody_input.repeat(1, embed.shape[1], 1)
+            embed = torch.cat([embed, melody_input],dim=2)
+            
 
         emb_pad = rnn.pack_padded_sequence(embed, input_lens, batch_first=True)
         out_pad, self.hidden = self.lstm(emb_pad, self.hidden)

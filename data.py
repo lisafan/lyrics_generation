@@ -195,8 +195,13 @@ def padding_fn(data):
         inp_artists = torch.from_numpy(np.array([x['artist_id'] for x in data]))
     else:
         inp_artists = None
+
+    if 'melody' in data[0].keys():
+        inp_melody = torch.from_numpy(np.array([x['melody'] for x in data], dtype='float32'))
+    else:
+        inp_melody=None
         
-    return inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data
+    return inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,inp_melody,data
 
 
 def semantic_padding_fn(data):
@@ -230,5 +235,12 @@ def semantic_padding_fn(data):
         inp_artists = torch.from_numpy(np.array([x['artist_id'] for x in data]))
     else:
         inp_artists = None
+
+    if 'melody' in data[0].keys():
+        #inp_melody = [mel_line for samp in data for mel_line in samp['melody']]
+        inp_melody = [samp['melody'] for samp in data]
+        inp_melody = torch.from_numpy(np.array(inp_melody, dtype='float32'))
+    else:
+        inp_melody=None
         
-    return inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data
+    return inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,inp_melody,data
