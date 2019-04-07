@@ -147,7 +147,7 @@ class LyricsRNN(nn.Module):
         return loss
     
     # def evaluate(self, prime_str=[START], artist=None, predict_len=100, temperature=0.8):
-    def evaluate(self, prime_str, artist=None, predict_len=100, temperature=0.8):
+    def evaluate(self, prime_str, artist=None, melody=None, predict_len=100, temperature=0.8):
         self.hidden = self.init_hidden()
         
         # repeat input across batches
@@ -156,12 +156,20 @@ class LyricsRNN(nn.Module):
         input_lens = [len(prime_str)-1]*self.batchsize
         if self.use_artist:
             artist = torch.from_numpy(np.array([artist]*self.batchsize))
+        if self.use_melody:
+            melody = melody.repeat(self.batchsize, 1)
             
         def get_input(inp):
             if self.use_artist:
-                return [inp, artist]
+                if self.use_melody:
+                    return [inp, melody, artist]
+                else:
+                    return [inp, artist]
             else:
-                return inp
+                if self.use_melody:
+                    return [inp, melody]
+                else:
+                    return inp
 
         if len(prime_str) > 1:
             # Use priming string to "build up" hidden state

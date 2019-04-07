@@ -161,7 +161,7 @@ def main():
 
     # --------------
     # Helper functions
-    def generate(prime_str=[Data.START], artist=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
+    def generate(prime_str=[Data.START], artist=None, melody=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
         if type(artist)==str:
             artist = Data.artists.index(artist)
 
@@ -170,7 +170,7 @@ def main():
                 inp = [[Data.word2id(w) for w in prime_line] for prime_line in prime_str]
             else:
                 inp = [[Data.word2id(w) for w in prime_str]]*predict_line_len
-            predicted = model.evaluate(inp, artist, predict_line_len, predict_seq_len, temperature)
+            predicted = model.evaluate(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
 
             predicted_words = []
             for line in predicted:
@@ -182,7 +182,7 @@ def main():
         else:
             inp = [Data.word2id(w) for w in prime_str]
             predict_len = predict_line_len*predict_seq_len
-            predicted = model.evaluate(inp, artist, predict_len, temperature)
+            predicted = model.evaluate(inp, artist, melody, predict_len, temperature)
 
             predicted_words = [Data.id2word(w) for w in predicted]
             if Data.END in predicted_words:
@@ -196,12 +196,18 @@ def main():
         with torch.no_grad():
             val_loss = 0
             for i,batch in enumerate(val_dataloader):
-                inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,data = batch
-                
-                if Data.use_artist:
-                    inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
+                inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,inp_melody,data = batch
+
+                if params.use_artist:
+                    if params.use_melody:
+                        inp, target = [inp_seqs.to(device),inp_melody.to(device),inp_artists.to(device)], out_seqs.to(device)
+                    else:
+                        inp, target = [inp_seqs.to(device),inp_artists.to(device)], out_seqs.to(device)
                 else:
-                    inp, target = inp_seqs.to(device), out_seqs.to(device)
+                    if params.use_melody:
+                        inp, target = [inp_seqs.to(device),inp_melody.to(device)], out_seqs.to(device)
+                    else:
+                        inp, target = inp_seqs.to(device), out_seqs.to(device)
                 
                 predictions = model(inp, inp_lens)
                 loss = model.loss(predictions, target)
@@ -255,12 +261,17 @@ def main():
                 log_str('[%s (epoch %d: %d%%) Loss: %.4f]' % (time_since(start), epoch, i / (len(Data.lyrics)/params.batch_size) * 100, loss_avg))
                 loss_avg = 0
 
-                if not params.use_melody:
-                    if params.use_artist:
-                        for a in sorted(Data.artists):
-                            log_str('Artist %s: %s\n'%(a, generate(artist=a)))
-                    else:
-                        log_str(generate()+'\n')
+                if params.use_melody:
+                    _,_,_,_,_,sample_melody,sample = pad_fn([ValData[random.randint(0,len(ValData))]])
+                    sample_melody = sample_melody.to(device)
+                    log_str('Melody source: %s by %s\n'%(sample[0]['song'], sample[0]['artist']))
+                else:
+                    sample_melody = None
+                if params.use_artist:
+                    for a in Data.artists[0:5]:
+                        log_str('Artist %s: %s\n'%(a, generate(artist=a, melody=sample_melody)))
+                else:
+                    log_str(generate(melody=sample_melody)+'\n')
 
                 cp_output = predictions
                 probs = np.exp(cp_output.cpu().detach().numpy())

@@ -194,7 +194,7 @@ class SemanticLyricsRNN(nn.Module):
         loss = -torch.sum(Y_hat) / non_pad_tokens
         return loss
     
-    def evaluate(self, prime_str, artist=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
+    def evaluate(self, prime_str, artist=None, melody=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
         self.eval()
         with torch.no_grad():
             self.hidden_S = self.init_hidden_S()
@@ -203,9 +203,11 @@ class SemanticLyricsRNN(nn.Module):
             # repeat input across batches
             if self.use_artist:
                 artist = torch.from_numpy(np.array([artist]*self.batchsize))
+            if self.use_melody:
+                melody = melody.repeat(self.batchsize, 1, 1)
             
             # get semantic rep for each line and reshape
-            sem_reps = self.semantic_generator(artist, predict_line_len)
+            sem_reps = self.semantic_generator(artist, melody, predict_line_len)
             sem_reps = sem_reps.contiguous().view(-1, self.hidden_size_S)       # (batchsize * numlines) x hiddensize S
             sem_reps = torch.unsqueeze(sem_reps,dim=1)                          # (batchsize * numlines) x 1 x hiddensize S
 

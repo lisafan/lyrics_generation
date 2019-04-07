@@ -1,4 +1,4 @@
-train.py --input_file=lyrics/input_files/dali_train.pkl --checkpoint_files=checkpoints/dali --chunk_size=5 --max_seq_len=50 --print_every=300 --n_epochs=10 --use_artist=True --n_layers_L=2 --hidden_size_L=64 --use_semantics=False --max_mel_len=200
+train.py --input_file=lyrics/input_files/dali_train.pkl --checkpoint_files=checkpoints/dali --chunk_size=5 --max_seq_len=50 --print_every=300 --n_epochs=10 --use_artist=True --n_layers_L=2 --hidden_size_L=64 --use_semantics=True
 
 input_file: lyrics/input_files/dali_train.pkl
 vocab_file: None
@@ -7,10 +7,10 @@ load_model: None
 vocab_size: 10000
 chunk_size: 5
 max_seq_len: 50
-max_mel_len: 200
+max_mel_len: 40
 max_line_len: 5
 use_artist: True
-use_semantics: False
+use_semantics: True
 use_melody: True
 use_noise: False
 batch_size: 16
@@ -28,6 +28,41 @@ plot_every: 1000
 
 9881 batches per epoch
 
-[0m 0s (epoch 1: 0%) Loss: 0.0290]
-[0m 11s (epoch 1: 3%) Loss: 5.8071]
-[0m 21s (epoch 1: 6%) Loss: 5.6456]
+[0m 0s (epoch 1: 0%) Loss: 0.0291]
+Melody source: Black Horse & The Cherry Tree by KT Tunstall
+
+Artist Demi Lovato: <START> beer hat culture belam glimpse moved steam our rolled appeal warning ego mention escape maiden enjoy asap handle nightfall raindrops 
+ <START> notion bahama directing ou anotherday non reindeer burn hollaback dam whatever bursting heh rush chrome triumphant formal truce ken bethe 
+ <START> dancing dude tommygun line guts tte doubt emotion killin affair believer kitchens skyyy false week fife insanity if football rival 
+ <START> aware fog haul revolve brownies than elvis geot yes sign maps early road leroy halls games wednesday xanadu 34 all 
+ <START> wrinkled holdin iin stumble bom status except gut edge fresh stops unite runaround drenched fists waves bye lets emptiness chords 
+
+
+Artist Taylor Swift: <START> built nature priceless losin ask sora soak album midnight reaches alittle air ni paper tongues workin endlessness bananaphone iranai harlem 
+ <START> anchor blink ... sorrows beyond finely adored railway obey pants professional driving saints delayed wo millions liquor tap john ed 
+ <START> within snowflakes congregation presence pretender super itch climbed earlier remorse by makeup anymore presidents keeping clue dam compromising collecting blasphemy 
+ <START> stress velvet hey cared subway creation liberty locomotion koiwoshiyouyo confidence explode samurai deserts soldiers lend uphill flood finna haunted from 
+ <START> death woods health gi marylou precious waitin demand neverland relight ping through vem answer fired hellas route watches prerogative monkey 
+
+
+Artist Avril Lavigne: <START> my playin dandy stuck social blamed fife northern twentyfiveminutestoolate sergeant recognize drug bridges flu dues livin mamma belive heartbeat dealt 
+ <START> screams hahahahahaaa belong absolutely join missed kai hopes glad defector eventually remembering except mirrors seven piece aa phobia u.s.a complicated 
+ <START> please analyse unkind secret whatyou guitar slap wrapped press confidence vivo trash gangsta highway throughout handle fulfill yet von crawfish 
+ <START> pair mirrors daily regrets gang tek regretting covers crashing miami ooon globe most heat deceive streak drama getting thinks babies 
+ <START> what coeur gold fat bored boobs mate mankind tiny weee rocket hurt dean so raised kotoba imaginations doom pretty shotgun 
+
+
+Artist Take That: <START> danger poems unspoken mono shrinking swept cop jail confused avec earned lo et saa permission egg expression spit riders illusion 
+ <START> tried paid concerned yesterday colored images denn echoes kintyre darkened fought bolt think crucify strolling needles law time aim mistakes 
+ <START> didnt hostage downstairs cigarettes waited defauts spotlight oohbedo forcing choose everywhere sitting bottom then blanket destiny brake wildest suffocating youspitshined 
+ <START> line ozzy happens mhuir spandex okay prowler zui attention ocean boiling denying kills gather spell folks bind anywhere foryou anything 
+ <START> saying wondering opened sometime cean hungry qui reindeer restart thats head dake song quickly drivin closing black july brush ving 
+
+
+Artist Linkin Park: <START> find called chiron quit fire upside francisco suuunshine aras pen ves size amoll naze cursing maybelenne closely human person plead 
+ <START> evermade knight resistance staying liked spirit sky winds kingdom daaay hollaback vaux ai haunts hohoemi melancholy crumble dou kite baseball 
+ <START> flash filled search assume trust lava blindly reminisce together beats demons heard sailing sons electric weare ty thorn strain wonder 
+ <START> shiny que harmony fair amoll eien strawberries said depends base tally week bye faking handsome too mommy soulmate myheart throne 
+ <START> dear test films fourteen cell greedy washed chiquitita papapaaa vaux clap tip lifesaver lefty slips hoo caer cryin er beats 
+
+
