@@ -245,8 +245,8 @@ def semantic_padding_fn(data):
         inp_artists = None
 
     if 'melody' in data[0].keys():
-        #inp_melody = [mel_line for samp in data for mel_line in samp['melody']]
-        inp_melody = [samp['melody'] for samp in data]
+        inp_melody = [mel_line for samp in data for mel_line in samp['melody']]
+        #inp_melody = [samp['melody'] for samp in data]
         inp_melody = torch.from_numpy(np.array(inp_melody, dtype='float32'))
     else:
         inp_melody=None

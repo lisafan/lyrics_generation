@@ -29,40 +29,2208 @@ plot_every: 1000
 9881 batches per epoch
 
 [0m 0s (epoch 1: 0%) Loss: 0.0291]
-Melody source: Black Horse & The Cherry Tree by KT Tunstall
+Melody source: Spirit In The Sky by Norman Greenbaum
 
-Artist Demi Lovato: <START> beer hat culture belam glimpse moved steam our rolled appeal warning ego mention escape maiden enjoy asap handle nightfall raindrops 
- <START> notion bahama directing ou anotherday non reindeer burn hollaback dam whatever bursting heh rush chrome triumphant formal truce ken bethe 
- <START> dancing dude tommygun line guts tte doubt emotion killin affair believer kitchens skyyy false week fife insanity if football rival 
- <START> aware fog haul revolve brownies than elvis geot yes sign maps early road leroy halls games wednesday xanadu 34 all 
- <START> wrinkled holdin iin stumble bom status except gut edge fresh stops unite runaround drenched fists waves bye lets emptiness chords 
-
-
-Artist Taylor Swift: <START> built nature priceless losin ask sora soak album midnight reaches alittle air ni paper tongues workin endlessness bananaphone iranai harlem 
- <START> anchor blink ... sorrows beyond finely adored railway obey pants professional driving saints delayed wo millions liquor tap john ed 
- <START> within snowflakes congregation presence pretender super itch climbed earlier remorse by makeup anymore presidents keeping clue dam compromising collecting blasphemy 
- <START> stress velvet hey cared subway creation liberty locomotion koiwoshiyouyo confidence explode samurai deserts soldiers lend uphill flood finna haunted from 
- <START> death woods health gi marylou precious waitin demand neverland relight ping through vem answer fired hellas route watches prerogative monkey 
+Artist Demi Lovato: <START> tetris afford senses bread 'fore eye seconds loves date delivered listened oohoo hallowed rich stand arriving habits enola colorado unbroken 
+ <START> mia dein savage mineral punches expecting figure soledad kai chord dibi reflecting savin testify hol sound tame welcome hohoemi mor 
+ <START> commit scandalous tattoo crawling kara andif short expression ooo frustration immediately creased wohoh baptized worst lord fall family depending whales 
+ <START> scene often steps lama vez swan distant oath matter thoughts mental present ev'rybody plea torch secret 'bout depths hangover knew 
+ <START> going stones eileen 'neath bird open playboys bapado ghost two mostly fairytale invited forged lot senseless demons skins inner cursing 
 
 
-Artist Avril Lavigne: <START> my playin dandy stuck social blamed fife northern twentyfiveminutestoolate sergeant recognize drug bridges flu dues livin mamma belive heartbeat dealt 
- <START> screams hahahahahaaa belong absolutely join missed kai hopes glad defector eventually remembering except mirrors seven piece aa phobia u.s.a complicated 
- <START> please analyse unkind secret whatyou guitar slap wrapped press confidence vivo trash gangsta highway throughout handle fulfill yet von crawfish 
- <START> pair mirrors daily regrets gang tek regretting covers crashing miami ooon globe most heat deceive streak drama getting thinks babies 
- <START> what coeur gold fat bored boobs mate mankind tiny weee rocket hurt dean so raised kotoba imaginations doom pretty shotgun 
+Artist Taylor Swift: <START> papers sense attention forcing humans yey beautiful peaches immortal condition yey eternal warp jacket count spaceman ireoke entwined cad shalalalala 
+ <START> angry balance cherokee mune held clock prowler oho endlessness wanting sacred held halfway bah week ivory wo lifeis thoughts woooooooo 
+ <START> through denying net wounded naa dawn erase move best blazer scatter brought resist visions alcastar do promiscuous calls l jaw 
+ <START> swinging they ] milky deni awayyayayaya silver to tenderness silent escapes naa begging bananas starry table horror muse ted slip 
+ <START> wah sono aways prayed fed vague meat runaway heartbreak mama fame lean broadcast spreading autumn makes lonely whatyou wears spread 
 
 
-Artist Take That: <START> danger poems unspoken mono shrinking swept cop jail confused avec earned lo et saa permission egg expression spit riders illusion 
- <START> tried paid concerned yesterday colored images denn echoes kintyre darkened fought bolt think crucify strolling needles law time aim mistakes 
- <START> didnt hostage downstairs cigarettes waited defauts spotlight oohbedo forcing choose everywhere sitting bottom then blanket destiny brake wildest suffocating youspitshined 
- <START> line ozzy happens mhuir spandex okay prowler zui attention ocean boiling denying kills gather spell folks bind anywhere foryou anything 
- <START> saying wondering opened sometime cean hungry qui reindeer restart thats head dake song quickly drivin closing black july brush ving 
+Artist Avril Lavigne: <START> central shorty circumstance scream wishes blowing hoof ay ru drugs finds ne felt spray daughter returned denied after taylor kneel 
+ <START> fine hallelu zombie dig concrete countin shops brain spoke ! planned hostess veras fourteen paula bitterness seed sane lem crumble 
+ <START> pardon miracle prayers dle bar needless aah tight accidents theend tunes worked dropped telling sympathy load northern high easy gay 
+ <START> better saturday ashtray 'm helps despite depths surprises totally quinn spellbound crashed else parties darling vivo horizon selfdestruction chere brick 
+ <START> everyone heyah go fairy threw bleed names wahey seconds knocked ambition buildings loin hol glowing looove tasted rooftop bam satellite 
 
 
-Artist Linkin Park: <START> find called chiron quit fire upside francisco suuunshine aras pen ves size amoll naze cursing maybelenne closely human person plead 
- <START> evermade knight resistance staying liked spirit sky winds kingdom daaay hollaback vaux ai haunts hohoemi melancholy crumble dou kite baseball 
- <START> flash filled search assume trust lava blindly reminisce together beats demons heard sailing sons electric weare ty thorn strain wonder 
- <START> shiny que harmony fair amoll eien strawberries said depends base tally week bye faking handsome too mommy soulmate myheart throne 
- <START> dear test films fourteen cell greedy washed chiquitita papapaaa vaux clap tip lifesaver lefty slips hoo caer cryin er beats 
+Artist Take That: <START> walked notes snowflakes trapped razor intuition sleeve navidad doko surrounded ninety willy una goleta bore solitude uhhh possession pays gather 
+ <START> warfare abode elvis detroit law memphis helping radio heavyweight able slew refrain kingston thing cupcakes point smiles tables deaths breaks 
+ <START> bitching treasure special mr majesty bother guaranteed oohbedo some imagination alittle naega laughed streak dah kimi idiots dum fruit barbie 
+ <START> odoru sand accident coconut doyou vac russian tornado windows hardly hopin allof steel ticket presence flaming misery darlin gotten disappearing 
+ <START> fences clap quietly small glamour weather shadows fore mine they asks break ends solitary revenge fucked wakes thirsty fakes devour 
+
+
+Artist Linkin Park: <START> making cruising views nante planet reflection club godness changin tear becoming cracklin millionaire fourteen troubled jive boogie nananana fades book 
+ <START> caving stillness four intervention connection amongst conceal ohhh net hits listens afraid nooo destined woah were chance twisting bringing places 
+ <START> yi crystal tendresse spinnin forever turning drowned dealin soho lovey half grieving tend sacrificed reputation wang boom opportunity scent maya 
+ <START> weighin by sir ica wrong belief elle generation heavy betbet ... motherfucker ignored oh expression tra bo throwin amieo scars 
+ <START> grab single untrue giving civil blew capture pass walked disease iis awake recover chor affliction i`m track voodoo asap wild 
+
+
+[0m 21s (epoch 1: 3%) Loss: 5.7024]
+Melody source: Nobody Knows by P!nk
+
+Artist Demi Lovato: <START> who yes under i feeling <UNK> world yeah would home they 'cause but you when there ca i all what 
+ <START> your <UNK> right love it i the and and sill know can run oh baby where 's oh your door 
+ <START> and listen i lose this we and about my i <UNK> and to you <UNK> in i i you no 
+ <START> i i uh <UNK> night n't on is with that and i do eh no and pa my look this 
+ <START> honor oh and i too we you the i my and but oh and want i one the they when 
+
+
+Artist Taylor Swift: <START> they that i and you <UNK> you we in you where you i like the do sooner not n't i 
+ <START> someone but open <UNK> sunday i have we but when is and <UNK> and i left this i we the 
+ <START> i the take i close i that said you with , and i wan is and the <UNK> i on 
+ <START> so she yeah i that wear with and i a not you i but it but you you that be 
+ <START> know how and you oh and alone like the and i we i are crazy wake it we but never 
+
+
+Artist Avril Lavigne: <START> every how my and to <UNK> i <UNK> baby take when but he <UNK> we one like we oh those 
+ <START> you and you two we you all we you you all i your <EOL> 
+ <START> air standing but there the i baby moment for turn though the i tell and you everything and people you 
+ <START> so i on feel time i with while i your forget i i i i i so sweet to take 
+ <START> few you it what i never i if like do oh to i it you all but i bring it 
+
+
+Artist Take That: <START> its dignity you you da we you you in this i your and i walk far to , and i 
+ <START> do it las i na do i we we as you oh the i oh yeah no from or my 
+ <START> ! i then hey i i that and i and you how well all darkness all could and leave wan 
+ <START> and where and give oh and 's i and you thinking now at in if 's name and we i 
+ <START> put if i his but but you and you wan i you we in to i and i in being 
+
+
+Artist Linkin Park: <START> <UNK> are i so she you if you good my <EOL> 
+ <START> in 're <EOL> 
+ <START> still you you you i and <UNK> i oh i said i you <EOL> 
+ <START> i oh and my and you a and yeah for tonight so and that come i there i my anymore 
+ <START> i ghooostbusteeers in believe i my ai n't just never fire i we say but this i his in you 
+
+
+[0m 42s (epoch 1: 6%) Loss: 5.4191]
+Melody source: Psycho Killer by Talking Heads
+
+Artist Demi Lovato: <START> and and oh <UNK> you if i these a my i when like and i you one that you get 
+ <START> `` you you maybe i and no hurts but in 'cause if , 'cause we but you never i that 
+ <START> and i i <UNK> when without ah the to i no you still <EOL> 
+ <START> and can yes yeah live <EOL> 
+ <START> i summer we you the i again i but is you <UNK> i we you for dear i the baby 
+
+
+Artist Taylor Swift: <START> this i not that you in and do just this if makes i we boom and i words how again 
+ <START> is if 's you and you know i i i i oh anyone i i i they especially we just 
+ <START> the and you i we i but and and but i you to and the but i that the you 
+ <START> <UNK> ashes on you and and and you go but my <UNK> can and if that as wonder i i 
+ <START> oh i we what if is i ooh oh i you the so but <UNK> n't i my and free 
+
+
+Artist Avril Lavigne: <START> heart and as how then are you i i oh it so where created oh my reality when from ah 
+ <START> <UNK> there our i we falling i let or his oh and you i ca yeah and you we and 
+ <START> take i <UNK> i comb we and of i never pumping this for is for i up i you <UNK> 
+ <START> <EOL> 
+ <START> surrender you <UNK> we it if i well wishing is so i what do we <EOL> 
+
+
+Artist Take That: <START> just the baby you and think in i you i i and you baby they and the when your more 
+ <START> <UNK> the and i the whoa but i do we i where how just sing how all walk said see 
+ <START> but so become some oh and we ah so banana help do the caught when like i let that i 
+ <START> with go of and i my we him me and i go we i same and with i , is 
+ <START> when i let look what we never what i it of so i ca way you i me but in 
+
+
+Artist Linkin Park: <START> it oh took i she everybody it been to how shift he oh was you this been we do i 
+ <START> i but a ' <UNK> that my all that but you i this when i 's the you and just 
+ <START> 'm you he for i they when got yeah i <UNK> i just <UNK> oh come all the oh you 
+ <START> something this i you <UNK> <UNK> so you <UNK> how hurry wan i i and i what is one you 
+ <START> you let he we is the you i as go than we with i i my and so and so 
+
+
+[1m 3s (epoch 1: 9%) Loss: 5.4056]
+Melody source: I'll Be by Edwin McCain
+
+Artist Demi Lovato: <START> she i kinda you she the and now hey kinda what ooh <UNK> and if how on so she for 
+ <START> we oh <UNK> put are a and i i i for i keep in then uh oh silk i i 
+ <START> i all bring i oh 's are <UNK> <UNK> do i i the when you no i i that the 
+ <START> walls that my what you and i i my of the 's i wanted he how in woah if this 
+ <START> you fire <UNK> <UNK> to now <UNK> and you <UNK> i i from ooh <UNK> like between <EOL> 
+
+
+Artist Taylor Swift: <START> you <UNK> if <UNK> i to to you and yeah no and and i do <UNK> we and oh i 
+ <START> it you and so ride do i all be and the to what no even with mean the a now 
+ <START> to we and do there should and believe i you you we that i to just everything from 'm <UNK> 
+ <START> ah go we for the oh are living it i pictures they and i myself this it <UNK> it the 
+ <START> from where and whoa maybe where the oh <UNK> i i i <UNK> do no n't this came hey well 
+
+
+Artist Avril Lavigne: <START> a i praying and to baby <EOL> 
+ <START> is the bo ask does and your you keep oh ah hide i one the baby hit and and with 
+ <START> a let hey all do i and vacant do do morning in i now come that we <UNK> in and 
+ <START> baby i i it well i all keep heyah you i will give important she 'cause and oh like in 
+ <START> you i a animal every and 's we well tonight and you i i and but we my is baby 
+
+
+Artist Take That: <START> i from i you you where shook and mom all we day love and gone be i how i dance 
+ <START> cause i i all and <EOL> 
+ <START> of this oh but can the this to it and are you much like no for ofthe and if i 
+ <START> it with ( we yeah the but it you that you to so and you the listen my <UNK> walk 
+ <START> the did he i baby i depressed what yes oh to like to ooh and <UNK> i do i oh 
+
+
+Artist Linkin Park: <START> as then frightened to if i how and she and the it <UNK> like but the how and in then 
+ <START> and you <EOL> 
+ <START> he <UNK> you baby i but face and that i i i <EOL> 
+ <START> the uh being take it because is we the the oh he and you this <UNK> without got i and 
+ <START> i hands i follow night i or now now you i for but a you all found and let but 
+
+
+[1m 24s (epoch 1: 12%) Loss: 5.3791]
+Melody source: Welcome To The Club by Manian
+
+Artist Demi Lovato: <START> you you i i somebody it now i we i i you you we you can you and bring oh 
+ <START> <EOL> 
+ <START> oh hey <UNK> my it we well hey you do skies of <UNK> you you i you the to when 
+ <START> you and when <UNK> i black until just oh i but i <UNK> i i i we i sweet i 
+ <START> i it you like i and <EOL> 
+
+
+Artist Taylor Swift: <START> i i you oh you is home cause that is i i i you and and this a i i 
+ <START> this i and ai yeah back i i i where what your now it cause make and and never come 
+ <START> oh hello for you when i you after i what it mad and and time it `` my give do 
+ <START> why but you i what i oh i do playing what i and to well i heathcliff and my that 
+ <START> it <UNK> i i you it it oh and i i just know stop <EOL> 
+
+
+Artist Avril Lavigne: <START> lost i i to you just to now you and the what i like it i i and i and 
+ <START> and i well because this <UNK> and hush i you no <EOL> 
+ <START> but a could do no to when <EOL> 
+ <START> why <EOL> 
+ <START> you learn that to they you <EOL> 
+
+
+Artist Take That: <START> on i turn running you i <UNK> the you i i i <UNK> uh left that do you she and 
+ <START> i i oh it and i all eye to to oh one it will <UNK> , down you i <EOL> 
+ <START> my yeah they got say in and do now grey do it i alive but to oh and eileen talk 
+ <START> i she in you you how set i there you do that but you i where you you i i 
+ <START> on and slow p i and but me than freedom you <EOL> 
+
+
+Artist Linkin Park: <START> i but when we i rise i into no only and kiss they i are i my but `` you 
+ <START> to city to and like in it i no so it magic but i is i <EOL> 
+ <START> i you too back she dollars i i what i and it you hand got it with it yes bow 
+ <START> the that or i i you does we i and things my i i find so no talk i you 
+ <START> do it you you is we it but i you my you it dootn dance when baby then who did 
+
+
+[1m 46s (epoch 1: 15%) Loss: 5.3585]
+Melody source: The Prisoner by Iron Maiden
+
+Artist Demi Lovato: <START> cos ming doing and with so give i and and to break i i if say i you oh i 
+ <START> <UNK> and i and and where did <UNK> i i why if your jimmy in i when i lived one 
+ <START> more you i out i to the half that just you and somethin what 're now la once show and 
+ <START> <UNK> it life i i gim in the 'cause all i we i and and just i hey on you 
+ <START> i oh but i i the i we stroke the i i send never we but like and only i 
+
+
+Artist Taylor Swift: <START> <UNK> it pretty i no what a it i my do i and my you i and when told tonight 
+ <START> and i where oh was leaving they tell still i to and but i just i i i a do 
+ <START> love how but i never but oh you are and in up ba i and when in i please you 
+ <START> please <UNK> you this pick you i <UNK> i we he your i as there i the you lonely when 
+ <START> and i to oh nana do a , here you and so never i or and and i oh i 
+
+
+Artist Avril Lavigne: <START> and there come no do all like you ca you when but i and that and i of i in 
+ <START> and want i and you and and i who to well or woah is and but i you you and 
+ <START> oh and i went i i a i i would i i why and whoa you over she the we 
+ <START> she and and you and i on 'cause old <EOL> 
+ <START> i na you <UNK> in she oh i you when you all an i it i the empty i you 
+
+
+Artist Take That: <START> if i it that you why my you it <UNK> will be and it learned does when i i and 
+ <START> do i and oh all i i you just i i i oh hey does well i and i give 
+ <START> the no because the in you out to one the and is but with so i i i on there 
+ <START> you they you those all and but oh me i what it once and and i <UNK> only do they 
+ <START> i and wherever to start but but memory i all when of and and i i i you of days 
+
+
+Artist Linkin Park: <START> i you our it i do i that and do is a i i ooo was a and on i 
+ <START> yeh and i and there then and like and i i 'cause <UNK> you i just cold i and you 
+ <START> taking is and now i though and and as i you but all i just you you destined i what 
+ <START> but my to and and 'cause about i and i they only or and i i and you it the 
+ <START> i we all i and you i there i when and baby there do and in and this hand i 
+
+
+[2m 7s (epoch 1: 18%) Loss: 5.3576]
+Melody source: Go Do by Jónsi
+
+Artist Demi Lovato: <START> sometimes to your one you and i in i what can i to do and you and look to i 
+ <START> i <UNK> somebody i i never it <UNK> i leave we i i to again brown to so this mess 
+ <START> anymore who <UNK> tell i i i and you tomorrow pain you we the your i i makes is reaching 
+ <START> i you every and or i i the all you we i we who you and my yeah time so 
+ <START> jump cause i and where to a i i i is i my and you just i i you all 
+
+
+Artist Taylor Swift: <START> wait we 'cause at a be all you and and the is where one yet let in time to what 
+ <START> i as i the but you this sacrifice the to the have your blow a you when you i but 
+ <START> to you i my and when i she sometimes not what <UNK> is whoo i way is when every <UNK> 
+ <START> so will and to you to i i <UNK> i three no thinking take every is my ai little in 
+ <START> for to i so i now ah <UNK> i we do we and when all i oh you i you 
+
+
+Artist Avril Lavigne: <START> and i is so you her ca but i the the you i or <UNK> <UNK> keep and i or 
+ <START> where we she you we well some hurry <UNK> 'cause wild and it all can <UNK> they the before and 
+ <START> run ease stay you you i he talking i where oh to do women this i always all it is 
+ <START> when high your san and so i the my i i one la you that i you i i on 
+ <START> and time oh and <UNK> but where and <UNK> she <UNK> do at <UNK> with and still only you it 
+
+
+Artist Take That: <START> can when that yeah misery you the i to run in we just stick i the well i what i 
+ <START> just they still lay i i it they <UNK> mama <UNK> i <UNK> the for and is you yeah you 
+ <START> just you i all of 'cause please i and but come somebody in and i and i caught she is 
+ <START> that i 'cause bright and when as do the ca if you i the if i i will you i 
+ <START> you making for i you i guess to that i cause never i of so all with you 'cause we 
+
+
+Artist Linkin Park: <START> my <UNK> when that it i i so run i best for <UNK> in in i to you i i 
+ <START> i to and just i i and must where it <UNK> i never and you i but we but with 
+ <START> that our i my still and never and you you she baby <UNK> things movin with not or <UNK> you 
+ <START> to oh and i i but and i you sometimes i and oh you with knowing ah my i and 
+ <START> to the <EOL> 
+
+
+[2m 29s (epoch 1: 21%) Loss: 5.3541]
+Melody source: Africa by Toto
+
+Artist Demi Lovato: <START> do <UNK> you tonight <UNK> <UNK> you i i we from you i she i do we i i i 
+ <START> i the never and and <UNK> do some and and always do with that oh oh oh 'cause who i 
+ <START> i i is i in i in i there oh as we that i about a everybody in and the 
+ <START> but i he the <EOL> 
+ <START> i all the and la and you they do waiting i and <UNK> i who how and you we and 
+
+
+Artist Taylor Swift: <START> i upon that if i what right i in i pick there i we you so is and you but 
+ <START> let do they he i that but has yeah i de i i oh but and no and ready well 
+ <START> but where i let when so i i and it let the and i the for i break baby i 
+ <START> i you i but down and i this what i you i did they something but i oh <UNK> you 
+ <START> no i and they i i in oh and i <UNK> i and oh say and oh <UNK> <UNK> i 
+
+
+Artist Avril Lavigne: <START> i you is if i and special you now yeah and you heaven what how it willy i one her 
+ <START> in but i when give but i and i and i oh you and she do stay what and and 
+ <START> that i and i i i and i you sometimes and i with we and oh how i and ah 
+ <START> do i do do maybe i i i i you i a i lift the oh you and it do 
+ <START> and automatic i and ca how i baby why i ni and somewhere when when anyway <UNK> i is light 
+
+
+Artist Take That: <START> and i if i so i stand in just the it you my i catch i and i oh all 
+ <START> but i i he where <UNK> so call so i now i oh but on come i is and so 
+ <START> what i he you one we and now it i all i all for is i so it i the 
+ <START> yeah this something say but send i let i we i i i here if on and you your turn 
+ <START> i you i to ever i now so i in 've what seven when and and could i i feels 
+
+
+Artist Linkin Park: <START> i for and but then and i i you take got i and and no how so i <UNK> so 
+ <START> how movin i ever you wo <UNK> but you my or you you and i baby with i oh you 
+ <START> make i you a you i when she i in when we you was and maybe i i for <UNK> 
+ <START> and i baby but all yeah you in on yeah and tables to oh still is oh call all for 
+ <START> willy <UNK> you i do bring ah i i my so we in oh that beautiful you do and whoa 
+
+
+[2m 52s (epoch 1: 24%) Loss: 5.3395]
+Melody source: These Words by Natasha Bedingfield
+
+Artist Demi Lovato: <START> get we caught and but eyes hold i who i , i oh spin oh you keeps <UNK> rolling but 
+ <START> it i yourself will i my i you i i in i beautiful you yeah i do i it i 
+ <START> tell you she and yeah i do to your i i i and i and you and like i so 
+ <START> the if for but and floating a do for do i and a i she i and and a i 
+ <START> i the that we what do i i and i oh i in i <UNK> i i need and you 
+
+
+Artist Taylor Swift: <START> when babe there and hey i <EOL> 
+ <START> we that cause first sittin oh to or there what so i with but i after oh you now i 
+ <START> i when i should but and do or i i you i once to i do oh i you we 
+ <START> i he <UNK> what you you these take we if i will i desolation i did we you i let 
+ <START> i this i i no that <UNK> i to the is it live i 1 i what we i sing 
+
+
+Artist Avril Lavigne: <START> where the and i this that and this but i and this i but what i tell and so let 
+ <START> i i a so we it is when i how the you in oh the let standing what i i 
+ <START> i it and you i say <UNK> here let do i the but and and so we 'cause i was 
+ <START> after say i the game i and got just i she with among i you what i i believe make 
+ <START> i i de we leave and i when tell so you fall i but i <UNK> i and heard but 
+
+
+Artist Take That: <START> and were i we two you <EOL> 
+ <START> i how is and you i do yeah once and lord i come that yeah <UNK> <UNK> the that you 
+ <START> big hey i and back <UNK> party them you i this i no that you and i who that show 
+ <START> and and in the i no she you we and wake the ah when we ca get a every you 
+ <START> i i no carry and a i now i i i yeah your oh when i take hey i cause 
+
+
+Artist Linkin Park: <START> i in clouds do in and i i on <EOL> 
+ <START> they i we do but where lay and on karma give we i into but us i and let to 
+ <START> reaching there we you that i but what yeah there we that when i it la know to do so 
+ <START> oh no and to i and i to but and we id now is and but they we two anymore 
+ <START> my say i she and i let he and in <UNK> but now i let i after and i it 
+
+
+[3m 14s (epoch 1: 27%) Loss: 5.3442]
+Melody source: Hanging By A Moment by Lifehouse
+
+Artist Demi Lovato: <START> wah i that in mama i to do all and and i i i run yeah tryin i to they 
+ <START> before to no and that i buzz boy but hey i carry my pa how , we who you let 
+ <START> you please and that ca and the if but and 'cause i the <UNK> a oh with but and you 
+ <START> i i you come i to and that this that love everybody is the of if i you you i 
+ <START> i seems the 'cause i i i i you comin do <UNK> to it i i do and they as 
+
+
+Artist Taylor Swift: <START> in and maybe shape need and it i i the to we take do liar oh ca give at and 
+ <START> when you that the breathe promise a or touch leave you you but <UNK> oh ooh new california the rosanna 
+ <START> for die when come she with what and you <UNK> anymore when and it how all we i maybe just 
+ <START> i every me when <UNK> you got they so i i the you <UNK> that to my there still you 
+ <START> and i or yes i you i i when in i not through you but the it ( and i 
+
+
+Artist Avril Lavigne: <START> i i <UNK> <UNK> i <UNK> we i we just i i i and left i just we you 'cause 
+ <START> we you you every losing come your and oh and <UNK> in no that my and let and i all 
+ <START> and i you do and i you oh i like is if how hey come i so there of i 
+ <START> looking stop nobody when i while and there you the goodbye to to i ca we oh i oh and 
+ <START> in you i the i i it now the and ooh carry i when gon show for i n't do 
+
+
+Artist Take That: <START> the oh i in about new give hey that all on i i your got i i i ooh singing 
+ <START> i i stay i heaven no you i so you <UNK> my well to i is the yeah put with 
+ <START> that i you a i words she turn there you at in and oh cause to and oh but do 
+ <START> i your it it oh i act i one standing your oh i i i home your see so when 
+ <START> they <UNK> so i like to i i i there what 'cause and you i and i we all you 
+
+
+Artist Linkin Park: <START> that in not but there we yeah you i of i when but i i and and but they and 
+ <START> will i i oh i so 'cause but if that if this these but like do you you i i 
+ <START> a when when makes around i and all it a but i i my but i do my you it 
+ <START> that just nothing love you a what oh when is i i i your i for and if well oh 
+ <START> i let the should if i i like and all all like than some you man and and that but 
+
+
+[3m 36s (epoch 1: 30%) Loss: 5.3309]
+Melody source: Warlock:All We Are by Doro
+
+Artist Demi Lovato: <START> i she tell ( one all and everybody some oh now d'you i but your your if do no it 
+ <START> and and and another i oh <UNK> <UNK> and the i the the and it this when i you there 
+ <START> and all but just a the your i now i out <UNK> where sweet you and oh the the and 
+ <START> our i love you what this could i oh my baby <UNK> i i is i i and i so 
+ <START> hey yea to oh i call i not <UNK> that old driving i was my my said i when my 
+
+
+Artist Taylor Swift: <START> in of when i that i what we you back and baby now all change do the that he i 
+ <START> it good i i it i you i and well but i stop ai it i i when find never 
+ <START> i the i but i you do see i they ah i and i i i the it now it 
+ <START> and and forgive huuh i i i and but papapapa <UNK> break you in and what i then i i 
+ <START> i i well who i and i words i when like oh i but i i to all pretty and 
+
+
+Artist Avril Lavigne: <START> all tte to i will oh in how baby you the it let you we out it just and you 
+ <START> and i the tomorrow so see it a you and on and <UNK> and oh i the everybody that i 
+ <START> i they i look do you gon but i <UNK> be we yeah we and do we is i i 
+ <START> <UNK> if i and i i come but yes still everyday i it i you on it <UNK> if <UNK> 
+ <START> no oh oh <UNK> that stop <UNK> the it by you all but i because if she you you no 
+
+
+Artist Take That: <START> the do oh my <EOL> 
+ <START> the i to i we but <EOL> 
+ <START> the i but what i lying you time hey and this always do <UNK> well and and and i and 
+ <START> you one and i we <UNK> or we what that and we i <UNK> you oh a be this i 
+ <START> your i and i yeah and with <UNK> my you that i and with do of but and no on 
+
+
+Artist Linkin Park: <START> that the in you play no he in the whoa , you all oh <UNK> and 'cause but you i 
+ <START> you you find <UNK> but i you nothing and all i inside <UNK> the look i <UNK> to i and 
+ <START> and and i of and do tell all i with you but i i the no it but i when 
+ <START> i it i you and oh i and and but <UNK> when on and you i the <UNK> i but 
+ <START> and hold and you do i if fun ah and you you there hey <UNK> do i and <UNK> one 
+
+
+[3m 57s (epoch 1: 33%) Loss: 5.3199]
+Melody source: Élan by Nightwish
+
+Artist Demi Lovato: <START> i i never <UNK> you you writing it a not do and do ah because no now i when <UNK> 
+ <START> <UNK> now the i i before i for one i i you now you do i you lullaby will i 
+ <START> but i my we and who please you i the ca and what like all i that <UNK> all still 
+ <START> you i the but to and i i there how and believe but who i huh i i that i 
+ <START> are oh if to just is and you we <UNK> and you <UNK> i when must and you if but 
+
+
+Artist Taylor Swift: <START> <UNK> and oh i me i all you just i i nothing you just was my a in they this 
+ <START> i the for now i leave when i before i and because of i i well i i i i 
+ <START> i what if oh been i to like how in yeah the have and but shake i but little and 
+ <START> and <UNK> or the la i as i with if of i so you i then nothing phantom and is 
+ <START> but <UNK> girl the i you the we i <UNK> i as movin do i never in in step all 
+
+
+Artist Avril Lavigne: <START> i the i come i i my i like and nothing and ohh mine i tell there to it little 
+ <START> and where let is all and and for watching and you <UNK> and that the i i well i and 
+ <START> i i all with you i what to did you and i i <UNK> <EOL> 
+ <START> give i <UNK> i i and i girl i all you let ambitions hope nothing the all lay the that 
+ <START> but you and be i you and <UNK> you and it when and and so and yes yeah am no 
+
+
+Artist Take That: <START> i i i i oh oh i are your come and i when you c'mon she i another i make 
+ <START> you hold each i <UNK> something she and like i <UNK> <UNK> before i <UNK> i i is it there 
+ <START> and and my when ooh today ai i you the i you are this and well and we <UNK> i 
+ <START> for i my all to with i and if you oh to i <UNK> ay i these if i i 
+ <START> no i promises i <UNK> i what it my i been i i i but with well i i we 
+
+
+Artist Linkin Park: <START> but all you i i and and said time and your <UNK> take we without so that i once i 
+ <START> you i do i they in until and and but my i <UNK> where hey i the in feel but 
+ <START> so i i when all and i this we i they i that but if <UNK> oh oh but no 
+ <START> into all she oh for now and i but ooh the there come there then as but i i i 
+ <START> like and of in do it i ' i i go believe that antidepressants what i i so all <UNK> 
+
+
+[4m 19s (epoch 1: 36%) Loss: 5.3321]
+Melody source: Deliver Us From Evil by Bullet For My Valentine
+
+Artist Demi Lovato: <START> and i i and can my so i since i you a you when wrong this never girl what but 
+ <START> we live that i i when to on and but somewhere you you i fever baby it all in i 
+ <START> all we you just where i morning but nothing i and you we i to just she time will i 
+ <START> lalalalalalalala <UNK> you come <UNK> no i oh n't oh place the gon just i you i <UNK> i what 
+ <START> but i and the done i why i have and if it only i he i love i who always 
+
+
+Artist Taylor Swift: <START> the 'cause i and now the then i i all tryin no i is now help to no heart when 
+ <START> i <UNK> the i so i even i you you how there undo empty and <UNK> like i i and 
+ <START> the up why 'cause my i oh all it <UNK> that gon i but baby ooh my you i high 
+ <START> do i it and i i the i and forever so <UNK> it boy la 'cause i with i step 
+ <START> it to you when the ooh when take had you the you to but you now where you your and 
+
+
+Artist Avril Lavigne: <START> you i i <UNK> on life oh oh when and well do you and looking i can she the oh 
+ <START> i na it you i no if it but rock through with we the we do that help i <UNK> 
+ <START> just so and it you i you i i i big i do oh and you you it now and 
+ <START> du when i the i it will and <UNK> the something you the roxanne baby but kiss you wonder no 
+ <START> now there i 're is could do i <UNK> and like i the i i we i and each woohoo 
+
+
+Artist Take That: <START> i i and cause my <UNK> i our you i you but no let and you i walk all and 
+ <START> i let but that and no i daddy 's i she do you of you running right for it before 
+ <START> 'cause someone and why they two the a let why make you i it my stay but the i oh 
+ <START> i for do and will we you <UNK> i and i and nothing i maybe love and i but i 
+ <START> let <UNK> my i do on look so and <UNK> <UNK> you will we me where bye but but when 
+
+
+Artist Linkin Park: <START> it i oh but i and oh i <UNK> now you i i movin oh do you a we and 
+ <START> we no the <UNK> but but will to i 'til from to <UNK> <UNK> it i for they <UNK> that 
+ <START> you oh you i but do that i i i you different heart you i the without if your <UNK> 
+ <START> , from they do i <UNK> you baby another more i i 'cause i your so i i and koiwoshiyouyo 
+ <START> i i it can kiss 'til men like the and <UNK> never i we i you but your i i 
+
+
+[4m 41s (epoch 1: 39%) Loss: 5.3208]
+Melody source: Dead Inside by Muse
+
+Artist Demi Lovato: <START> i so you <UNK> in i and so is and and and i and and to and and in out 
+ <START> i so you so on with i we it <UNK> to <UNK> <UNK> i no we i and and follow 
+ <START> and the it take for with is but let no if so ca but you and i was i i 
+ <START> i i and if drop in and we that i but <UNK> i wan and i and you i <UNK> 
+ <START> i save and to so i to and at walls can feels 'cause the all cause i they long you 
+
+
+Artist Taylor Swift: <START> <UNK> and as look in so i the i you and you we and no the and i it you 
+ <START> and but `` is time say all you down do with and i down she <UNK> i all da and 
+ <START> back saving when i how like but nothin it like do so and i you and i we you in 
+ <START> maybe i the i the it <UNK> high for <UNK> i so i you good but in you i when 
+ <START> and just what but i and it i for i and and what now when moments it <UNK> i we 
+
+
+Artist Avril Lavigne: <START> he hey <UNK> did i but with turn i you hello i i if for i to we <UNK> and 
+ <START> and like you you i someone you we the it <UNK> i we they with oh so i i but 
+ <START> you a do i at it i and you i see he i with a i <UNK> we 'cause you 
+ <START> to than with and you rock <UNK> <UNK> i the <UNK> for the when ever i may can oh i 
+ <START> i i is she i out i you and we and <UNK> all power the tell 're what the but 
+
+
+Artist Take That: <START> do and i i oh i and when that is you <UNK> you you what and a i they so 
+ <START> if i cause <UNK> and oh so for how i and i you your <UNK> the you some i in 
+ <START> but could to yeah she i i that you and and i give all i there stay yeah have <UNK> 
+ <START> you all and where you and i why i and oh i down our some your <UNK> <UNK> i the 
+ <START> and nothing i well i why no oh you when and i so 'til and he so i i in 
+
+
+Artist Linkin Park: <START> slip does it i i what we they i i they we i what but a once or and but 
+ <START> this to want i cause when and what i i <UNK> my and a but i yeah but your eyes 
+ <START> and and one to and and and with i and <UNK> so i my and you i you you <UNK> 
+ <START> you i nobody and i without and <UNK> <UNK> <UNK> oh i 'cause and i but i she baby you 
+ <START> i i everything you in and we i and the how so na we if 'cause for what love you 
+
+
+[5m 2s (epoch 1: 42%) Loss: 5.3166]
+Melody source: Flaws And All by Beyoncé
+
+Artist Demi Lovato: <START> hit but oh no ( is i so but i and and do but we think cause it living you 
+ <START> and do take yeah well you you fine we you that the and about so and i make i you 
+ <START> i <UNK> i i we and but i talk let <UNK> you oh and i <UNK> you it the and 
+ <START> and 'cause die i came <UNK> our and and to but i and and so i i take like not 
+ <START> perfect if on we na and with how the is for i between look you you and in we <UNK> 
+
+
+Artist Taylor Swift: <START> she i i did baby was tomorrow you for i the <UNK> i <UNK> oh and no the it <UNK> 
+ <START> give it i you she it i do the a we i i hey you my obsession it in i 
+ <START> i do is every 'cause i while now but better your need you you i went we my fear your 
+ <START> the that if and when you and we what <UNK> you oh i feeling when and if <UNK> your he 
+ <START> the well but all if i if we i i to the a <UNK> and i tonight our they in 
+
+
+Artist Avril Lavigne: <START> i just liam so oh the that remember <UNK> i no i the i but it goodbye that i all 
+ <START> maybe do no do she i dubi ah i your take i it i but in see and and i 
+ <START> you you and nya the <UNK> you and i you i with you do shattered but that with it i 
+ <START> you you behind to the they let now i and chasing is losing i i help world i this and 
+ <START> oh i so your about made <UNK> absolutely when 'cause a it some cos and i <UNK> and i had 
+
+
+Artist Take That: <START> i i nobody maybe i we our like i and and and her from i oh your <UNK> and i 
+ <START> so oh i you i the oh your left this i yeah 'cause you 'cause you there it i a 
+ <START> i do am i are you but just <UNK> i will my forever i still let i with now i 
+ <START> i i i you she oh and with are in i would wo girl oh on baby ooh it ever 
+ <START> i you i each the another i come all they can and i higher how just i oh i with 
+
+
+Artist Linkin Park: <START> i your i and i it the i and fertilize the me but i only but my i so send 
+ <START> be you put when <UNK> come to and i if and <UNK> i i to the to it i oh 
+ <START> there <UNK> when was how i 'cause it 'cause they in that left or fill i what and this i 
+ <START> when <UNK> oh another when nobody can forever jenny she we so lost oh i <UNK> hey 'cause you so 
+ <START> we oh please to and what we i i otsegolectric i and you we but , <UNK> it you and 
+
+
+[5m 23s (epoch 1: 45%) Loss: 5.3134]
+Melody source: Dub In Life by Eiffel 65
+
+Artist Demi Lovato: <START> i no i yeah but how you and you that run <EOL> 
+ <START> <UNK> i wasted hope he <UNK> i more you i i he where you because but just and whatever i 
+ <START> uh you i if i she i shadows still you you you that <UNK> that to i as more bring 
+ <START> it saturday <EOL> 
+ <START> i i for i the i <UNK> never on i but all when <UNK> and when you just you a 
+
+
+Artist Taylor Swift: <START> i and oh i for some she and the i we i passing i yeah i forever you like but 
+ <START> i brought but you we <UNK> you and you lying two you but we there and if i she for 
+ <START> oh say i anymore oh tonight there my would right we and put tell i ah is be dancing i 
+ <START> i show and i she if you i i is your and and but you that we you baby that 
+ <START> and i from the so hiding you it me gun and i and new in <UNK> what we to let 
+
+
+Artist Avril Lavigne: <START> in but 'cause what a soulmates and jealousy naked but in christmas it like they do you yeah the you 
+ <START> we you i it can i 'cause it <UNK> again i i where and a and the a ten the 
+ <START> promise ai you the yeah and you i as i tell about you with and it sunlight what oh the 
+ <START> i so and we you all all when you hoo i you i even oh i <UNK> i i it 
+ <START> i a i give oh it do he nobody why open it when but so when come and ai oh 
+
+
+Artist Take That: <START> you of you it singin and you our we you but to i <UNK> sometimes in i you <UNK> he 
+ <START> it where you i i and i a and to and just i i but in but will do it 
+ <START> i no so a everybody i if i it born so i no i a he do oh oh the 
+ <START> i the i i and the big the and on i whatever and will all spin help time on head 
+ <START> at it baby and can you oh la ohohohohoh you not if and baby i just so i i you 
+
+
+Artist Linkin Park: <START> it your i i we i i call i ah but i and your and you you too but holding 
+ <START> yeah <UNK> some wasted wan and get with to the i sometimes i i that i we i you goodbye 
+ <START> i no she 'cos i when <UNK> and beautiful i i the <UNK> we dear from i let it he 
+ <START> let i will they on and so <EOL> 
+ <START> so is i oh scream my i is ah and so play i i a the everybody you out ah 
+
+
+[5m 45s (epoch 1: 48%) Loss: 5.3010]
+Melody source: Kirisute Gomen by Trivium
+
+Artist Demi Lovato: <START> the you because i we and i do on to but <UNK> all as all you i but hang i 
+ <START> there <UNK> you i you <UNK> and anyone well i both i the you your had hello <UNK> so just 
+ <START> you we i and of oh oh no it all we you take that i and i i so <UNK> 
+ <START> then it for cause another oh all do to and in and love gone in but you is so and 
+ <START> so i i just the mirror how head so the welcome like not do i always senzauna on i they 
+
+
+Artist Taylor Swift: <START> in if say take oh you let whoa i the if i you i keep another and well i but 
+ <START> there so i and when did and you swallow you and but and <UNK> can you i like but that 
+ <START> with and you i i you oh yilani her oh they <UNK> i will i the you and we i 
+ <START> i kiss it no i and or but and how the what tell well i and you give i i 
+ <START> and no but as i a i you and sometimes he and this where i your so i the it 
+
+
+Artist Avril Lavigne: <START> <UNK> oh is what sometimes i so no you the oh never when she and i you wish if you 
+ <START> and bring i to why whatever it for that let pretty if we we yeah baby whenever sorry in i 
+ <START> i you just i son chicks and <UNK> you you but so hold of i my the inside i i 
+ <START> and i but roxanne let there will if the i now with little and in we but there to my 
+ <START> i like so do dubi she and in yeah i but i go out i the i cause oh and 
+
+
+Artist Take That: <START> i no i they it the and be so i bababauuu and i i you i you and be you 
+ <START> you i there the and and and and it you when and and and love that yeah we i the 
+ <START> <UNK> the that now we i i but the in let so i the in i when you you i 
+ <START> i oh while heart pussycat tryin and 'cause i but i can so and see you i there the lost 
+ <START> but say in something come there oh and that we and why <UNK> that but i my that and you 
+
+
+Artist Linkin Park: <START> on i i oh the i on oh and that i the my i <UNK> the you <UNK> message let 
+ <START> i everybody so the and they and i i so do oh tell we if let they and do so 
+ <START> <UNK> the oh i do we more with can bold i so i why so i in you they i 
+ <START> but <UNK> and he ooh i and baby my n't but and oh do black but i if but i 
+ <START> no the and in you i well how and all you he but and think people and living come i 
+
+
+[6m 6s (epoch 1: 51%) Loss: 5.3046]
+Melody source: Delilah by Tom Jones
+
+Artist Demi Lovato: <START> i i do she to the so i i <UNK> wait why and tonight i i 'cause you from and 
+ <START> do lullaby i hold i that a why naega i you now i breathe i shining please and i everything 
+ <START> my so <UNK> in so a i the and i to will i and i working and the in i 
+ <START> a to makes my and oh <UNK> but she because i <UNK> and why there nothing everything the i i 
+ <START> a is let there do like yeah i <UNK> for hey you and to i if you out no i 
+
+
+Artist Taylor Swift: <START> but at my out i the the i na i floating i i but and i <UNK> somebody inside oh 
+ <START> i i you i the underneath it i had i i the i what through the through and your i 
+ <START> i to and and i all and to my i <UNK> mmm everything and for no she the we to 
+ <START> oh tell no i i where it i through it and in once i but all just but all cause 
+ <START> from <UNK> that say <UNK> for do i <UNK> guess man that in a let like i to then <UNK> 
+
+
+Artist Avril Lavigne: <START> do what my the i the we seeing the it and and on that take i do the a woah 
+ <START> and that i hey me i talking found i and i and and you my and noone then <UNK> `` 
+ <START> gon not we yeah but <UNK> the and you cover <UNK> <UNK> and i o over rum <UNK> all i 
+ <START> even we what is but take i so i give on it it come and i keep if i can 
+ <START> give oh i <UNK> i that <UNK> tell and rum oh through i while for now let my as i 
+
+
+Artist Take That: <START> a but even and come i i leaving one this into you i i never and there fantasy oh but 
+ <START> i now that i you why the throw i when <UNK> beautiful just but i and i while you challenge 
+ <START> man i once i to maybe it in i trying for i come i will but well the in i 
+ <START> and i and on in with i we as why you there i my when i <UNK> i dubi the 
+ <START> you forget please all but i i down you no i i i to has grew then i and is 
+
+
+Artist Linkin Park: <START> the bless you the and <UNK> that so a na to and my only the nothing i it oh i 
+ <START> and hope a and that i beauty i i who before i all to <UNK> no time you but but 
+ <START> i you i now <UNK> <UNK> i what the where i and you just there everything i in feel ooh 
+ <START> by will but i through so i if but i i i i to i i i oh yeah woh 
+ <START> and here but would i <UNK> <UNK> when and that and from tell as the i <UNK> and let only 
+
+
+[6m 28s (epoch 1: 54%) Loss: 5.2931]
+Melody source: Explorers by Muse
+
+Artist Demi Lovato: <START> you a i well joy to and i i so you things all i and we i and my i 
+ <START> some you you from never they and for and so in have under so <UNK> never i join i the 
+ <START> goodbye the but all since woah you all and the so that and we some why like play i like 
+ <START> what oh so and you to i never i made and i there i or if get who if but 
+ <START> i i i and the from <UNK> love in can <UNK> <UNK> i so my i to i to <UNK> 
+
+
+Artist Taylor Swift: <START> i to her <UNK> to and so i you he i they i you and like and is <EOL> 
+ <START> maybe we <UNK> never i come i yeah i she if whatever what but that with you <UNK> a i 
+ <START> feel i to all <UNK> ( we and be when nobody and tell it and nothing <UNK> i lost to 
+ <START> might i i were but have love as well are you <UNK> what the and ah <UNK> if that i 
+ <START> there you words you how feeling do how a now i singing <UNK> we i we which 'cause you i 
+
+
+Artist Avril Lavigne: <START> and we you i you and our woooooo i i i and i just callecutta he i i every i 
+ <START> you maybe <UNK> i believe but i so i angel but but nobody i and yeah to i i when 
+ <START> hangin and little come emotions i i now the follow fool i you that is and two tell i the 
+ <START> got <UNK> some it i i you and but do i like and into the at end <UNK> i i 
+ <START> i well love i that my i while what this is as ca how <UNK> i no but you i 
+
+
+Artist Take That: <START> i 'cause but <UNK> i <UNK> i i take contemplating on i two the and no is another <UNK> i 
+ <START> you but the pain you to 'cause and i i what i i back what there do he i so 
+ <START> oh somebody you my do it did i of i oh and but i and and and you 'cause ca 
+ <START> i it yeah all some the of 'cause you you so <UNK> and i it do there your and that 
+ <START> but i i i i she of to rockin rain so never some we it whatever out uptown let i 
+
+
+Artist Linkin Park: <START> thinking these i out passing to oh when maybe broke i i i you the there but you love that 
+ <START> but tell the what do <UNK> i crawling some hold i and 'cause i i i and i oh here 
+ <START> <UNK> i you neon i i if it i there whatever no come <UNK> i ah i get of <UNK> 
+ <START> reach i they i out <UNK> you i the walking <UNK> now i but and i there yeah just i 
+ <START> let but wait christ your my listen like i i he `` you when big i and about hey doo 
+
+
+[6m 49s (epoch 1: 57%) Loss: 5.2976]
+Melody source: Scar by Missy Higgins
+
+Artist Demi Lovato: <START> the you the we i we hey what yeah you they give no it yeah like but about find you 
+ <START> so <UNK> got i for nowhere i i do they why the ai did and i ever , the i 
+ <START> it i and and on have i sur i well we and is be and and call go i i 
+ <START> and you my break she <UNK> as that i to right make drink now i you you got that i 
+ <START> ca and like kaderim but with he hey and i yeah on the when i <UNK> it the just which 
+
+
+Artist Taylor Swift: <START> i you ooh it oh and pa now my and and you and how hey if she it and we 
+ <START> i the what can when i too hey she in what it i and and with i you oh i 
+ <START> one you we the i and i then is i i do i i i cause you like and i 
+ <START> so lead it and no straight has oh i and but i you if we you she easy i cause 
+ <START> do i i there let a the as cause and just i no i you i so the ooh so 
+
+
+Artist Avril Lavigne: <START> and you i and with i with and hello she i and that i the we we but oh <UNK> 
+ <START> you and when and deep i my to <UNK> so i to there want i and why if tie in 
+ <START> oh we <UNK> it your still a your <UNK> and but i with a <UNK> do no at the and 
+ <START> i the if i i the how i ooh and do i oh to go wei you when if but 
+ <START> in oh and you i to but it she and i and and i <UNK> no like what my it 
+
+
+Artist Take That: <START> for now i while you you do all the as it man the there oh hope i its i i 
+ <START> why if you make you i you she in but it people you into that you give come that 'cause 
+ <START> sing and because you was and i how i to you oh i it i and take dear i i 
+ <START> <UNK> i never do you 'cause is you my i they at one what i to you i out oh 
+ <START> hard the ah twenty i you a but a very i and i you i smile then i when to 
+
+
+Artist Linkin Park: <START> not when when and i and the as the and i and to she i so here can <UNK> i 
+ <START> and it <UNK> two i i and i oh you i oh oh as take we i <UNK> i but 
+ <START> and but take <UNK> but and i and you like i she feel in i to and she to but 
+ <START> so you he time you the you she and and i and tonight it you i oh i you he 
+ <START> i what i i i and i there and come we just you it you i and it ah we 
+
+
+[7m 11s (epoch 1: 60%) Loss: 5.2934]
+Melody source: Losing My Religion by Glee Cast
+
+Artist Demi Lovato: <START> black 'til that i to and i i i catch for he when i a to that beating all <UNK> 
+ <START> 'cause i <UNK> <UNK> there the nothing i it the <UNK> she and <UNK> you it you what to i 
+ <START> i till baby oh i have even i 'cause but there you <UNK> you <UNK> <UNK> gone <UNK> to i 
+ <START> i she i i i ca you for and in running each <UNK> oh and we it sha is and 
+ <START> if you this mmm <UNK> with and you and to <UNK> to <UNK> i no my ca and try on 
+
+
+Artist Taylor Swift: <START> from baby but if rule that she i in and <UNK> i holy and i and you you when but 
+ <START> well baby i in to where it for <UNK> you remember through i when you ev'ry oh i could <UNK> 
+ <START> <UNK> wo and renegade i the to mister and but well what and when i how how is you standing 
+ <START> all you i and who turnin that take we and and you it just i and your entwined these i 
+ <START> i deni it <UNK> what i i i please too to you it i be that put i ai it 
+
+
+Artist Avril Lavigne: <START> find so the from but our i away than every the i i who i for hundred nothing and <UNK> 
+ <START> a i i but and you the making the singing you i it and do now and run and take 
+ <START> <UNK> streets i it i or to yes i you help i i he you your <UNK> i the sit 
+ <START> come your who the i no a ca <UNK> with i to i now i 'cause ah do we i 
+ <START> i and and to believe she i they i all join i i bad <UNK> and and now he and 
+
+
+Artist Take That: <START> how i oh because see i and i you with your i i i it say ca ca come i 
+ <START> i i any it i cause <UNK> i and i you <UNK> i <EOL> 
+ <START> i down <UNK> i when know there i the love oh shout <UNK> into we i i and just tell 
+ <START> nobody how if <UNK> but i you i have <UNK> how is yeah with and oh you to <UNK> for 
+ <START> i there i <UNK> oh <UNK> <UNK> i we and you and well it <UNK> of i she now she 
+
+
+Artist Linkin Park: <START> i once every i time you i oh , right and and it and of you i can do and 
+ <START> the run i all in i and where i <UNK> and <UNK> then i have i <UNK> oh your i 
+ <START> to we i beats la i i <UNK> very ever but and you we so 'cause and and and put 
+ <START> when i i she i we and i and your you you the <UNK> <UNK> i <UNK> what i baby 
+ <START> you and in tick but and try and take oh he a then me you you yeah out you put 
+
+
+[7m 32s (epoch 1: 63%) Loss: 5.2895]
+Melody source: Honestly by Cartel
+
+Artist Demi Lovato: <START> too but harder or sun 'cause ease for but no down from i with now you happy there we where 
+ <START> love i and can since so why and i oh so come oh and but i there oh we you 
+ <START> that out when probably you in by i the and its flowers she i like love when to you the 
+ <START> i i but beautiful forever but i we i i my i for i you i cry <UNK> the down 
+ <START> he i and and and do just sing if <UNK> i in i my but here and you only i 
+
+
+Artist Taylor Swift: <START> never you but i i karma time i i oh give and oh the i and wo i from i 
+ <START> but oh and yeah who his oh one you do give i give cause so uh oh at what i 
+ <START> it i to you do i can i hear did i is to i i and i i yes and 
+ <START> yeah <UNK> one my i just i i i oh you how to when i oh the the but that 
+ <START> pull to i what i <UNK> how i i we i <UNK> there can i i for but i of 
+
+
+Artist Avril Lavigne: <START> i and and but i it i i and how no from like it what i and and 'cause all 
+ <START> to it there without she it you your i when sounded wow so we i i they where it well 
+ <START> was and i you i if and why <UNK> it so i take you i eyes my so the so 
+ <START> how and i and and she it in i and i with if these i just i on why and 
+ <START> it with it <UNK> the where you i so and i rama she now i stop ( the i i 
+
+
+Artist Take That: <START> and i i you everyone i i and i i i your i even `` in and it <UNK> fly 
+ <START> if i and you but i it oh you the why but i where mmh just you like what i 
+ <START> i and maybe i it i for i oh of that and and we get i i i it i 
+ <START> and you and and and when i let understand but and i i we but and you do and i 
+ <START> would when our <UNK> and his when just you that i take i i but i <UNK> i of as 
+
+
+Artist Linkin Park: <START> you this you can close i in yeah but in i ah you hey you it a no and you 
+ <START> we take do yeah all sweet it i yeah and let the i tell i and and i and i 
+ <START> 'cause so i no ca you and you for but no she i come but oh but on you <UNK> 
+ <START> without when and so i wake what yes words it we i i nana and the i get our i 
+ <START> i i and i i that now ah why oh i come you of and i from a i whoa 
+
+
+[7m 52s (epoch 1: 66%) Loss: 5.2816]
+Melody source: Release by Pearl Jam
+
+Artist Demi Lovato: <START> am can do well dream i safe i i i oh you i as only in of i 'cause 'cause 
+ <START> <UNK> warm what why grandma my what to that we we we let i i and i i i and 
+ <START> i your no you but you we you all beneath there i the you i i we i but i 
+ <START> will you <UNK> i i yeah you you starting i do i come who on ah i and if if 
+ <START> oh morning when on the i and and this the hold so but i i no no is believe we 
+
+
+Artist Taylor Swift: <START> in and it might when so <UNK> i than my i baby still it i just from there there though 
+ <START> but but on if and oh this i i and about <UNK> where and <UNK> my and tell you and 
+ <START> come and i i somewhere you i is does oh i i i i and how and i so but 
+ <START> and my and i i i woah i life i burn jimmy and do well into i my i on 
+ <START> the give you let as then you touch and she you who i i aphrodite will i that i no 
+
+
+Artist Avril Lavigne: <START> but but and by i well i of i i runnin in on in like there for i the i 
+ <START> you and will oh oh baby you lord all and catch i in where of and <UNK> <UNK> you hey 
+ <START> days and i and you feel that some in stay i i yes if sure <UNK> i that alone you 
+ <START> i i and there i without the i you we but was and we i <UNK> but i like very 
+ <START> it you you i you that i i i forever but it oh all she we <UNK> <UNK> you i 
+
+
+Artist Take That: <START> so now la and oh when you than let oh i 'til and i where nowhere yeah we i i 
+ <START> you you i i to and i this that i no 'cause i i from that i your <UNK> oh 
+ <START> to i a there just and loving you ca any alli so i it i i the it has one 
+ <START> so and a all you what bring or starting mmm i i i want i can but and it is 
+ <START> when <UNK> i and it where i and that all <UNK> she to have i roam oh i you i 
+
+
+Artist Linkin Park: <START> you <UNK> i you at <UNK> oh and i and but i <UNK> your do fun <UNK> and oh this 
+ <START> feel i will i you and this they <UNK> i and he just without <UNK> what <UNK> nobody well i 
+ <START> all at we we you why and need when i i is i yeah i it i oh darling everyone 
+ <START> he it absolutely <UNK> they ca the i the watching lost i and i i i and we of in 
+ <START> that i you when tell <UNK> do you ima in your before the <UNK> like jet do and ca but 
+
+
+[8m 12s (epoch 1: 69%) Loss: 5.2910]
+Melody source: Cotton-Eye Joe by Rednex
+
+Artist Demi Lovato: <START> you live there oh yeah i the i to boy no the could and put go who you the got 
+ <START> jump the come it i oh and hey oh ( and how in i you the he meet missing ca 
+ <START> that a i nothing but and well to until you ( <UNK> i that and i and i is to 
+ <START> but we i in but i and how or you i we the lose i we look i if you 
+ <START> the so you you so you all what my you i i and <UNK> i i when believe but it 
+
+
+Artist Taylor Swift: <START> to i and all got pick know you and kiss oh so i you give ooh he so roc boy 
+ <START> you we want there you miss now when it sweet when you i i it and yeah and the and 
+ <START> i i this 'cause come down i they and take i you i i for i you and 'cause <UNK> 
+ <START> my you i the by we do is tonight i as i but like try the but it you i 
+ <START> so i you when a i what is so that i he but i i i all they i i 
+
+
+Artist Avril Lavigne: <START> this there all oh <UNK> he i but and it scared i and i and we once oh you first 
+ <START> i one na rum with i ask it who and and <UNK> to you and buzz you you hey and 
+ <START> think though you with last i yeah i i nothing so of there i here i so like i why 
+ <START> i how when i so wherever please but but i say and and left that and find and hey me 
+ <START> no that i 'cause when it i i oh guess i you the she take yeah gave you yeah do 
+
+
+Artist Take That: <START> at it say a out i i now i and <UNK> i pero and i they so and dreams your 
+ <START> and would just go one when oh what with from and yeah i da i eh oh yet and give 
+ <START> i i i she in so and but the you mmm i fear you i but so you all all 
+ <START> but soon i in i you and cos oh i still a breathe the and now and i when to 
+ <START> i no a as and i that as he that he the i the my i and in <UNK> put 
+
+
+Artist Linkin Park: <START> blame me with and if you go the like i we and and you when where yeah wan i i 
+ <START> i oh of and i and if i and and runnin you been what keep just you i 'cause but 
+ <START> you <UNK> i come it you but if i cover we leave maybe it you and in i i to 
+ <START> i i ooh i things should <UNK> is stay there we i about i they reaching to light like it 
+ <START> eyes the we i and told i breathe <UNK> i is whatever it these vacation as and blue i i 
+
+
+[8m 28s (epoch 1: 72%) Loss: 5.2784]
+Melody source: Mockingbird by Eminem
+
+Artist Demi Lovato: <START> and just the why it make if a oh down way do on catch i you i do still so 
+ <START> i i and i but for i at you and ( this had and i you <UNK> i so the 
+ <START> your a i so like that no you what i every i to our battery it <UNK> and when but 
+ <START> you to it i that what i but and i what i and now do in will i am you 
+ <START> 'cause you i i from i i so he here <UNK> you i and bet and to you i i 
+
+
+Artist Taylor Swift: <START> the in for oh that i reaching baby it you is it i i you i it you i still 
+ <START> from we beautiful i you with i love in and i you you let and and get i i your 
+ <START> one if i it you when in and how but the so for when i it im before <UNK> kimi 
+ <START> it <UNK> jesus straight i i you i and and i i and it i that i will and oh 
+ <START> any well but i <UNK> you do coal and oh we she like shake it i just a and you 
+
+
+Artist Avril Lavigne: <START> we i say who the and i she from i give you silent what and i welcome i it do 
+ <START> i lovers the walk i then a now in i and i her the hope i and and i and 
+ <START> i so waterloo <UNK> and tell i was i could it <UNK> whoah burn bring i one a i we 
+ <START> big that see so you delicate gave and do i in i and but but tonight that and that they 
+ <START> and 'cause i i and did i , with but i so i or i can forgive <UNK> for i 
+
+
+Artist Take That: <START> i so ooh it do when man for i the you when i i and and <UNK> whole them show 
+ <START> i and and remember and and i i <UNK> then down so oh i i i if in there with 
+ <START> living are and la to love when and you i if do to and on let , wo and you 
+ <START> you i i the from and the my and and i do who i tetris and i n'oubliez i then 
+ <START> all she what ah it it i and with oh i now ooh get and i and we you and 
+
+
+Artist Linkin Park: <START> in and you i away you when when i i this i i i <UNK> i at you when day 
+ <START> to i on till and and and i just oh do the the for that that i good hope and 
+ <START> je i you i i how the <UNK> with trying for the i do and oh i <UNK> you but 
+ <START> if i ca through i if then i i i there my your it i and you can on i 
+ <START> and give you night but and and is it and deep you baby there and just man am down oh 
+
+
+[8m 44s (epoch 1: 75%) Loss: 5.2856]
+Melody source: Oh! Darling by The Beatles
+
+Artist Demi Lovato: <START> find i in i take but if you now now for <UNK> i you i you i and mother and 
+ <START> na i for oh and ooh <UNK> to i i it i on all walk the that i that and 
+ <START> i well i a if oh so i and 'cause on do this i i i do oh a i 
+ <START> i me i hold on i cause everything you do i me <UNK> to i i make <UNK> you ah 
+ <START> i i and oh hold i <UNK> i we and to <UNK> i i and <UNK> so hope oh i 
+
+
+Artist Taylor Swift: <START> and i i i ooh i i i no i i she i and i the there from there but 
+ <START> i water <UNK> <UNK> i i that i while i <UNK> his in make i on i i i then 
+ <START> the i i and <UNK> i do so i and boys time and and we i with you 'cause <UNK> 
+ <START> so until your i remember i i so if no the i you i and that but i i and 
+ <START> they a <UNK> of <UNK> we my look i through and i <UNK> the you i within for but i 
+
+
+Artist Avril Lavigne: <START> in can look i we let someone got i <UNK> 'cause come to take you was and if this i 
+ <START> words <UNK> gon but i and <UNK> searching i eye but even a and again every you <UNK> <UNK> to 
+ <START> in i my now you you you let <UNK> <UNK> i you if the that i since that na i 
+ <START> for if his i wo nothing just it and what when i i you it <UNK> i all <UNK> pretty 
+ <START> i <UNK> you denial you a and never i <UNK> with bad <UNK> you she then and so is i 
+
+
+Artist Take That: <START> you i my the your never change all i just to when gon let it is and i you i 
+ <START> <UNK> a there with <UNK> i when i if in i i your the it get i something to that 
+ <START> do they you oh the i eyes i days and she i you her just i you will hold you 
+ <START> <UNK> i then what it which it nightmare i you like but the when driving yeah i i a i 
+ <START> no and i you our and <UNK> i and in it now before to how never the my i so 
+
+
+Artist Linkin Park: <START> now you i oh and ca go i you do in i if well fighting and just take you if 
+ <START> you you and you i i before what more all my i love in and in just i <UNK> and 
+ <START> i i when and make i i just du baby a the oh you me come and and and i 
+ <START> and to keep and and and i she i to and i there and say and i is make i 
+ <START> <UNK> i i i if 'm she running i you i you you lion so i my mind i 'cause 
+
+
+[9m 6s (epoch 1: 78%) Loss: 5.2655]
+Melody source: Love Will Remember by Selena Gomez
+
+Artist Demi Lovato: <START> what oh it can time you yeah and something that apart i star the the what it <UNK> i is 
+ <START> <UNK> just she bow i well what i do and i cold over dress but i that the and o 
+ <START> you and you i i you hey saint i at all you you and i and take <UNK> ( on 
+ <START> i the i but or we you girl never is <UNK> i do to keep <UNK> i i we a 
+ <START> <UNK> had i completely you you knowing now and it who with on will you the the i i i 
+
+
+Artist Taylor Swift: <START> and oh where in one it i i if in i and shining then i <UNK> you oh your no 
+ <START> is when but you you no who it once hey i but and <UNK> she do he come life and 
+ <START> i i i oh you when i i i this 'cause it time give my so you this i and 
+ <START> and i i if into that go i make but this i the have too i it the ever i 
+ <START> i from has so and you someday is girls when i <UNK> you the somebody i and when you and 
+
+
+Artist Avril Lavigne: <START> drill when alright we a that cry you do i away today i and stay you you baby her i 
+ <START> and i but i i they ebony the i i i every i i i la but now i who 
+ <START> caught you but i bow i by when a in i <UNK> you and what do and do maybe get 
+ <START> <UNK> but ooh i <UNK> he love to i it i why like it days us do knockknockknockin that i 
+ <START> without calling i <UNK> i i and i o i i you be but need i it i all <UNK> 
+
+
+Artist Take That: <START> ran but gon i get i it i give if we and oh i can ah i you wo i 
+ <START> and how and do so and i i i i you i though you all there think and so oh 
+ <START> i before that i when you i it you just but we da there so like you but do i 
+ <START> you now rock dont i it i i i over i i i <UNK> castaway long breaking i so and 
+ <START> so on i it i i <UNK> you and you uh <UNK> <UNK> i i i i that you and 
+
+
+Artist Linkin Park: <START> <UNK> i time oh the i <UNK> typen <UNK> you <UNK> <UNK> everybody just i i i how <UNK> our 
+ <START> that that and all one the if ca you i in you i all i uh it tell dream <UNK> 
+ <START> when <UNK> but the stare it but we i and he walking do and when <UNK> and but it that 
+ <START> do i <UNK> became he there but i and the i we <UNK> you so i maybe no there i 
+ <START> it like oh and you you we we who but i a my the but i you you you you 
+
+
+[9m 28s (epoch 1: 81%) Loss: 5.2833]
+Melody source: These Words by Natasha Bedingfield
+
+Artist Demi Lovato: <START> maniac because do you oh none yeah i how do oh good and you me da more and keep feel 
+ <START> ( the my and i we you you when i the <UNK> ima make it that but you but it 
+ <START> hey when these i away i hey we the but i the can the and with why do the especially 
+ <START> only all the whoa and i woah that no and da carry were i we while this i i the 
+ <START> they yeah i close i we to but it he i and <UNK> you but i the da je i 
+
+
+Artist Taylor Swift: <START> you which i you if who on burns you seven you and would you i and the just oh it 
+ <START> or you was and did about evil if i she as i where like to i i and we at 
+ <START> you go i when is i a i we we and you it especially so i can and ah you 
+ <START> no you but i you you when did you i i on when i way tonight to your i and 
+ <START> is we lonely so but the i just set life and the boys if i i i to all and 
+
+
+Artist Avril Lavigne: <START> i skin i this <UNK> like with i as you when i and i i no <UNK> you <UNK> why 
+ <START> could i and we i je i over you 'cause and i i where she my i like my i 
+ <START> and <UNK> do will we and i but like no you he one there i <UNK> and singin <UNK> i 
+ <START> and movin i <UNK> when so but you all for the so from i 'cause walk though i you i 
+ <START> that your just that take when from and i with than i to burnin and you for oh what in 
+
+
+Artist Take That: <START> and follow that oh i ten you this we the you i faith is it i we 'cause i she 
+ <START> still the oh and with and made we way show 'cause you and a i and hey and oh i 
+ <START> you you and then the in only who i <UNK> my and they you i all she just when i 
+ <START> i 'cause but i they we <UNK> there so love you oh every where no i with <UNK> into <UNK> 
+ <START> we between you we on <UNK> i and you nothing a today a and <UNK> it trying what do da 
+
+
+Artist Linkin Park: <START> do that la let i did you and here <UNK> i and your he like back you do somewhere yes 
+ <START> i just your you oh a i <UNK> something if you in i i he and do the oh 'cause 
+ <START> better to my for be darling what now but everybody last cause you all i if and i <UNK> no 
+ <START> to i because take i the <UNK> you i and i you i i i no maybe that your the 
+ <START> the it dance you that it i so would i i i <UNK> kick i you and i you and 
+
+
+[9m 49s (epoch 1: 85%) Loss: 5.2675]
+Melody source: Love Will Remember by Selena Gomez
+
+Artist Demi Lovato: <START> i yeah meet i oh is really do we 'cause or for the it i you <UNK> in and i 
+ <START> there i all when you you i that na yeah and no they you i you the down and what 
+ <START> oh lives the easy i stay i i oh am love it where but i i that i oh in 
+ <START> the it would i you i i if cruel it and ever you the just who that i i he 
+ <START> ( i i it i if but one i just i if the and i trust you to and i 
+
+
+Artist Taylor Swift: <START> i i oh lovers my see you and and i i the i i take i oh for i i 
+ <START> i i and are remember there you then see i <UNK> no the do now and he i you but 
+ <START> it hey i we are over i i he place for on i i when on dizzy that we i 
+ <START> i this got up you and and you go oh to let and never you do i it why oh 
+ <START> how my cause or i i i if i but down so i <UNK> you 'cause as i i hope 
+
+
+Artist Avril Lavigne: <START> just i it what and never i i what if without can i sing you you but pass the if 
+ <START> when if the i i broken yes i and on i into i she she tell you we and no 
+ <START> you yeah hey and if oh i it i i and you the <UNK> so the it i you i 
+ <START> i i is even i and i you at do i do and there i i if i when i 
+ <START> to i i the the you if <UNK> un like when i back you but <UNK> there you i i 
+
+
+Artist Take That: <START> and <UNK> <UNK> the rain in and just i guess to it you do when i i still oh but 
+ <START> and it so <UNK> with i yeah na and <UNK> get i i i i i <UNK> the that some 
+ <START> i and you my and there there no i ca and we the it we with and take think i 
+ <START> he and hey always to and nothing not one <UNK> <UNK> i a i we the to and the they 
+ <START> so i no in you and in cause in who it and and well i you good i i you 
+
+
+Artist Linkin Park: <START> you i but are your it you 'cause <UNK> i there i on what you gon of five and to 
+ <START> a i that i that you at the i i but do <UNK> i the i that at <UNK> i 
+ <START> i do noone you and to i you i and and yeah the i glad i i <UNK> i i 
+ <START> you i <UNK> i and like when it 'cause and you i you there before hope and i i a 
+ <START> do so i ah the you then about do in now i will i i i and and is with 
+
+
+[10m 12s (epoch 1: 88%) Loss: 5.2767]
+Melody source: Cordell by The Cranberries
+
+Artist Demi Lovato: <START> i how <UNK> we i i and tears i we i we it just i in a should of <UNK> 
+ <START> i i you place now 'cause that i and when you ah we i and everybody because you and if 
+ <START> and for but yeah and someone will i see just i oh or in <UNK> we i miss when we 
+ <START> do you <UNK> got so i the i or <UNK> i i there and <UNK> paint n't low and please 
+ <START> i i i a and i so i like you have i all with too gon oh take and how 
+
+
+Artist Taylor Swift: <START> because lovers is no do <UNK> baby come and you really what some live so <UNK> unconditionally me i <UNK> 
+ <START> i i all you <UNK> they i how my and daba in your i do gon unforgiven please you this 
+ <START> lonely around and just 'cause do breathe i and <UNK> she the oh <UNK> im not <UNK> last so do 
+ <START> but just maybe <UNK> i the you <UNK> <UNK> i our in why all if devil and <UNK> i do 
+ <START> you and my so for 'cause i let i to i i if now such no i i in lots 
+
+
+Artist Avril Lavigne: <START> so i if did over oh when how it i i and on i as and the how may <UNK> 
+ <START> you i you so i i and so and and on <UNK> i i she but it your but oh 
+ <START> you you to i bring how and loves trapped want i but though i the i i hey room in 
+ <START> i we yeah in what bury i <UNK> i <UNK> and i <UNK> i four be the oh draw we 
+ <START> the all i who so to you devine everlasting i i that and dance scandalous my come <UNK> there <UNK> 
+
+
+Artist Take That: <START> once and but if and we i kiss be when keeping now it how when i <UNK> god so i 
+ <START> i i do away with and all you you i i it how just ca broken like the for but 
+ <START> feel i you if right if you <UNK> play no but even from now it so i right sail i 
+ <START> cause what i and i i i i no when there i and i i why when the everything i 
+ <START> you i i but and oh and to i our and all to like he red do the and walking 
+
+
+Artist Linkin Park: <START> you i <UNK> <UNK> <UNK> hey we so no you who i i for i and ca heal forever i 
+ <START> and and <UNK> i my boku i i and escape it and what get i but and only in keep 
+ <START> we the <UNK> when to yeah i i you the invincible wo i i i come and to let is 
+ <START> ooh foolish tonight i sings from they i it i and make i and we that now baby but so 
+ <START> people like i this to everybody for hold in on it you you and are tonight with the so it 
+
+
+[10m 33s (epoch 1: 91%) Loss: 5.2801]
+Melody source: Hail To The King by Avenged Sevenfold
+
+Artist Demi Lovato: <START> if this and more you this and stroke you but do do when you and with dubi your you a 
+ <START> but i i to we i such we shaking when <UNK> and so it <UNK> just do when just are 
+ <START> here no i <UNK> i i she then i you <UNK> and there i <UNK> i and that but and 
+ <START> and and i <UNK> there let and the when live <UNK> we take i do it the i so i 
+ <START> it 've it holding you i that you there <UNK> you and <UNK> i i <UNK> and deep and i 
+
+
+Artist Taylor Swift: <START> i you or i be and i step you <UNK> in i the for wo oh that you and you 
+ <START> put and from you you to you we and save i i getting you all you my do the kyrie 
+ <START> to i sometimes through it i i love do the did oh so but i for your on <UNK> so 
+ <START> i do what we he and woh so no till knowing it a when nobody it of <UNK> there i 
+ <START> we is my and i if i and and i you this and and the i i i uh in 
+
+
+Artist Avril Lavigne: <START> uh i i cause i i ten hey i love it and i but but and do all and the 
+ <START> the she tonight he alive keep ca neol it hit to when with to i and this all it a 
+ <START> <UNK> and you lalalalalalalala i <UNK> you never love but without need there again all everyone i oh bring above 
+ <START> you i i ah the look but do what would just my this wo i so i and ai through 
+ <START> i what i you you i i let and you well some when i i you but i the i 
+
+
+Artist Take That: <START> i it you we i that being it ding oh you do see you down i and you all the 
+ <START> i ohhhhhhhhhh i and i i and try with you go i now too but we but if i only 
+ <START> it sooner you it <UNK> and but it <UNK> that wherever i i i because have you to if to 
+ <START> oh one and to i and she and i a all to you i i find now tomorrow i i 
+ <START> i there you i through ever 'cause have you that i i the never your it nothing no and but 
+
+
+Artist Linkin Park: <START> dark give they how as let what live you and as you <UNK> i what she and you to we 
+ <START> you tell you with my there i i oh no i about for it that i this i do you 
+ <START> oh a like when you i the <UNK> for for oh i they and yeah i your from we the 
+ <START> and my now oh and stars am i wo and i this and and that i tell what of i 
+ <START> these with i you in you if and were you and as on the she then now i i or 
+
+
+[10m 55s (epoch 1: 94%) Loss: 5.2740]
+Melody source: There's No Solution by Sum 41
+
+Artist Demi Lovato: <START> right skin i i supposed i and when through down so knowthat is in to it like i i you 
+ <START> can life what there take i we as and i but i than through i so and without there but 
+ <START> the and you i <UNK> they i you i i i yeah do up i whatever went and come you 
+ <START> that and i i got i in <UNK> and just i the i i i you and ooh you i 
+ <START> mama ca and i and every i do i on baby when <UNK> baby but it all <UNK> i and 
+
+
+Artist Taylor Swift: <START> i so it you there so how tell and do you i hold you there <UNK> but you if you 
+ <START> the me you where my we i i i i i who i it would you how <UNK> and to 
+ <START> but of <UNK> my i i straight and and and it you we because <UNK> <UNK> and they <UNK> <UNK> 
+ <START> and please into whoo but in remember for forever let you i oh i <UNK> you <UNK> the but love 
+ <START> you all do i lookin and i never by now i would you but to i your and <UNK> the 
+
+
+Artist Avril Lavigne: <START> i and and i i a you that you before confuse you the i got we he if and or 
+ <START> you i i but i we to i to and do we and 'cause do before the do i i 
+ <START> from you a my do i you i i born like so <UNK> and to i but <UNK> we up 
+ <START> come 'cause but do if denis we <UNK> i no with i make wo we do you i i oh 
+ <START> and you you <UNK> so i are runaway and it is would you with you do you at and are 
+
+
+Artist Take That: <START> because everybody and i whose woh if i the <UNK> and you i trust i and and i these <UNK> 
+ <START> i the i they and i you i to shake to you there then it te well i i you 
+ <START> all that it take <UNK> your roam oh i i the i you i i we but i one i 
+ <START> then you my like when i i to were take and <UNK> remember everything so i <UNK> but 'cause the 
+ <START> floating you you love i but i miss it the i open ca i because when you you but we 
+
+
+Artist Linkin Park: <START> you so i i which all i show no oh the i i do oh but my and oh i 
+ <START> for it oh <UNK> we and we you give i but i the how i <UNK> just i and you 
+ <START> you the and i i when that you i i it yes and and you lovesongs i i it just 
+ <START> i yeah but she oh always if i to and you i you so when just how does i ever 
+ <START> <UNK> we no from 'cause my it i that now <UNK> ca tell i as [ and to and i 
+
+
+[11m 16s (epoch 1: 97%) Loss: 5.2705]
+Melody source: 1901 by Phoenix
+
+Artist Demi Lovato: <START> feelin it you the we <UNK> <UNK> please we to if do the the with hawaiian and that <UNK> and 
+ <START> fighting but i you i such the i yeah i i now and she i i my and i let 
+ <START> but we <UNK> and i i and i then i just the i but do kiss what do to it 
+ <START> and sharing you and i as of <UNK> i and and you i how i you you you well i 
+ <START> that absolutely this well when am even do it when i <UNK> all because i your for there trust i 
+
+
+Artist Taylor Swift: <START> and when i you and i oh take oo we a i i we but oh all if i it 
+ <START> she the everyone it but i <UNK> i and i some so i and <EOL> 
+ <START> i maybe the and and if is and i to and we and i <UNK> as can i to was 
+ <START> you lay and 'cause we i i i and from i and so i need for i and we spend 
+ <START> <UNK> take and <UNK> i lalalalalalalala we just your you and i i you some it you you it spin 
+
+
+Artist Avril Lavigne: <START> like out oh sonna move give to i so and let i i i now and now i and and 
+ <START> <UNK> it but and in feelings she i i it <UNK> all <UNK> it 'cause i <UNK> days that do 
+ <START> you you it now all it we in in i to i i so if i i that i and 
+ <START> i we some he you daddy and it and like i to you oh there but yeah in <UNK> <UNK> 
+ <START> i you i and whatever so you fool was you and and i my but i and and i i 
+
+
+Artist Take That: <START> do i from must i <UNK> i its maybe it your you in well i just cold you i please 
+ <START> i now cause gon ever sometimes that if i i she so well with you so he <UNK> put and 
+ <START> i that i now behind oh in you and take they you you not i you you <UNK> i i 
+ <START> it all i to dancin just but so so i where i spend but i until always it i and 
+ <START> i oh to well cause you will what smiling i when i you cause ca it if i but and 
+
+
+Artist Linkin Park: <START> yeah down we i but five am between we i oh <UNK> for and i you i and i and 
+ <START> dry if like i if i i there it nothing to you not i i all it i so then 
+ <START> i i if i and i i and nothing and we open i and but hold <UNK> love <UNK> living 
+ <START> i i and so oh ga it i as no i and i and i and i loving and with 
+ <START> i i do there lead thought my and and so that you i <UNK> when <UNK> and i oh do 
+
+
+Starting validation check...
+Validation loss: 5.1596
+[11m 59s (epoch 2: 0%) Loss: 4.9313]
+Melody source: Here With Me by Dido
+
+Artist Demi Lovato: <START> but my why in i it i in only when i that never all i <UNK> <UNK> i are it 
+ <START> or i to now i then i the i i i this love and burn now the and leave <UNK> 
+ <START> so take <UNK> that what holding take birds when it for we just and and you you do i i 
+ <START> he and you i thought i i you we i ah must why i he believe will i i he 
+ <START> when you this but and it she when it selling everybody long and you and and she i i never 
+
+
+Artist Taylor Swift: <START> i me on we one you and oh oh do angel you it and no do <UNK> next of i 
+ <START> can <UNK> to yeah i you that i <UNK> i of the what we and and when your you and 
+ <START> now cause i you you is on somewhere do fuck i you and we you and you my the i 
+ <START> what they you you oh and oh i i i i i <UNK> in in and the and for that 
+ <START> it and i hear we the and everything and it oh underneath <UNK> i without you i <UNK> here so 
+
+
+Artist Avril Lavigne: <START> is i so big and i that i i he i of then i why i i go all this 
+ <START> me you yeah and when it i when yeah i slow there i and you do i you i and 
+ <START> i i it <UNK> this you the she as and wo i if <UNK> you and oh <UNK> <UNK> you 
+ <START> swim your all i no every i where i a so so you and a oh i and you i 
+ <START> can who i no the a a let what as when you yesterday do cause and a denial we everyone 
+
+
+Artist Take That: <START> we only all you i you his i and i on eat something who the everything do of i <UNK> 
+ <START> and we [ as the you i turn you oh do old <UNK> i the all do come you 'cause 
+ <START> do just and i breathe i we you i i you i you you i i just and on the 
+ <START> 'd and i you to <UNK> we <UNK> a i do we i but if when and do and i 
+ <START> we then and my so i but so i and i the i taking a all to but if i 
+
+
+Artist Linkin Park: <START> baby just you sees to 'cause oh if but love you you do the it so with did alive you 
+ <START> and cause with on i you we my so uh you do oh back all you everybody i to i 
+ <START> when you ce standing to she oh to everywhere and when and hey but your i i i when i 
+ <START> hey to we kyrie take i i now gon that give who if cause for do <UNK> let i <UNK> 
+ <START> you to if because if come if <UNK> it you you let do you i of and that all an 
+
+
+[12m 19s (epoch 2: 3%) Loss: 5.2600]
+Melody source: Candyman by Christina Aguilera
+
+Artist Demi Lovato: <START> when to who for it and i you i it and must to i oh i on in 'cause like 
+ <START> and no i and but it now i so i no but it and what and <UNK> so i this 
+ <START> i the and oh when we baby nothing you you we i we we let i the you i wo 
+ <START> we and one hey and get and here yeah is i it you and you you it with shake i 
+ <START> give i let that undone you i i seems just with i i i i looking because <UNK> and i 
+
+
+Artist Taylor Swift: <START> and i i i fear all were that on i the the of there i feeling you that do for 
+ <START> i never the i yeah sing that it just that a i do i in and no you you but 
+ <START> i a and and and when and and honesty my but hello if that walk i when and daylight you 
+ <START> the oh your i i you so though old it i woah be how so there on i to lost 
+ <START> i and is there in i <UNK> i so you i but what you so <UNK> we with how like 
+
+
+Artist Avril Lavigne: <START> out get 'cause playing <UNK> this you but he is say i you you i if than and the he 
+ <START> if i the and i oh it you you and i then you i i so how do let but 
+ <START> i we i i i alone you <UNK> you then let that if i and i nothing do i i 
+ <START> your i in say i let i i but we but on it and if you the i i out 
+ <START> i i you if if but but the i and it and she and down ten we i i now 
+
+
+Artist Take That: <START> we well look down to it the but she where i a but to we i i it i going 
+ <START> he the i hell i i you i you you do what cause i i it what ah to i 
+ <START> and i they he tell you that and to can the they i your my can <UNK> i they a 
+ <START> messed it it you the i i these i you it and to till not you do i i why 
+ <START> oh just you i i <UNK> but to in sometimes i that you oh everyone it ai so when for 
+
+
+Artist Linkin Park: <START> so and baby walking you i come i please there you with you blinded and you when i <UNK> you 
+ <START> but what as only that it in swim he and knowing let did because i and that <UNK> if man 
+ <START> i you and and out say and <UNK> <UNK> you i so you i that are standing you they i 
+ <START> no i the but i out no you whoo like it you what i do i it i woo like 
+ <START> it time but the i your this before so we and i made you and that with <UNK> out i 
+
+
+[12m 39s (epoch 2: 6%) Loss: 5.2550]
+Melody source: The Niles Edge by Vast
+
+Artist Demi Lovato: <START> and suddenly you are and <UNK> you on you you all you all i to you i i try you 
+ <START> escape and and everything i i i oh but i and the who holding <UNK> and you could i it 
+ <START> you and like your so it oh oh for and dude we who i and just because it weeping when 
+ <START> as i i oh it to there what could <UNK> old so and i that i everyday is <UNK> there 
+ <START> stiff whoa i i <UNK> <UNK> to i the i the but do you you i you la to you 
+
+
+Artist Taylor Swift: <START> and feed i i i i i i down let rescue with i and i as this you every but 
+ <START> trying i when we did you they i <UNK> a i it come that you we if the things <UNK> 
+ <START> oh well when i and on you somebody but all i and to and i like a what that i 
+ <START> to i the i and i i 'cause under <UNK> i oh oh i <UNK> i you do cause we 
+ <START> have the and <UNK> and but then in things i she but i you step cruel and some when yeah 
+
+
+Artist Avril Lavigne: <START> that we save live with i and our i the come he <UNK> no from i you i do in 
+ <START> all find just all if your they if up yeah making i love so <UNK> what there got gon your 
+ <START> n't with you still must but you i in if where the i why i and i i ca <UNK> 
+ <START> you i sleep <UNK> i i with i and you we forever the i <UNK> you this the feel i 
+ <START> i `` my 'cause if the for oh on the it fine i in i never it believer in and 
+
+
+Artist Take That: <START> we you ca and once i you and you 'cause i i you i i baby she the man have 
+ <START> oh i i i you by and if gets oh to once and take and i i i it i 
+ <START> with i do higher you still to when and and go do if your <UNK> i how it ca you 
+ <START> is and that i baby <UNK> is when beauty i the and all a zombie i too go we i 
+ <START> tonight this to it you wife i <UNK> of your this day that a <UNK> i there i <UNK> all 
+
+
+Artist Linkin Park: <START> i just i the all but when it a but 'cause whatever life please i you to then cause for 
+ <START> 'cause make <UNK> i destiny i i i space <UNK> this and <UNK> you the my like i <UNK> <UNK> 
+ <START> then while a lie and you my down ca you it i 'cos <UNK> true on in the you of 
+ <START> but two could i but with this and just yeah <UNK> you and in and now i wo looks she 
+ <START> fear <UNK> underneath so i the but <UNK> never you now dear is to forever i what but all better 
+
+
+[13m 1s (epoch 2: 9%) Loss: 5.2517]
+Melody source: In The End by Kat DeLuna
+
+Artist Demi Lovato: <START> a i there someday but i you me stroke i <UNK> come when you i i we i and nothing 
+ <START> my i of with ta you would if i oh <UNK> at so are and ah i i when it 
+ <START> and so how you i do i you bad goodbye i when he i you <UNK> if what from goddamn 
+ <START> he i to just no 'cause i letting looks that my let you comin to <UNK> 'cause and cause but 
+ <START> <UNK> and and and i i of so cuz down on <UNK> because i i running a 'cause the your 
+
+
+Artist Taylor Swift: <START> that this a i i you everywhere all i picket and you the ca a when you you all into 
+ <START> you and i but no when and into <UNK> when you you i i so in that you this you 
+ <START> you i you you and i i standin we i for sweet i said give arriving where oh and when 
+ <START> you if so you to one i time all for it find i the the do all i it you 
+ <START> eh i i the yeah <UNK> i take to you i whoa when and inside she it i i your 
+
+
+Artist Avril Lavigne: <START> a you in <UNK> i i my and you if you i take come you in there wow not the 
+ <START> even judgement you so i but i so who i as somehow is all so <UNK> love i you when 
+ <START> you i you i <UNK> it i get that i why walk <UNK> to in just what when you <UNK> 
+ <START> you what but <UNK> i sometimes you it when you the this but i i this that we and i 
+ <START> you 'cause and to i the a that my we you but i <UNK> the can i and and there 
+
+
+Artist Take That: <START> you i i oh wo and i <UNK> my where so i 'til and i and i always and i 
+ <START> for and i i hear this you this a i she you i you i you with and no we 
+ <START> hey la to and for and i but so kitto <UNK> with i <UNK> die the and cheer i i 
+ <START> and the i and take i i you it you i you do and i we i i she do 
+ <START> just a i the we when just this yeah turn let but i it you you i the i yeah 
+
+
+Artist Linkin Park: <START> tonight four no is oh i but was i you make <UNK> i crime and and eloise and and i 
+ <START> now i on i the and why oh it i the and i if what i and and my if 
+ <START> i is oh well anyone when must we when and i fear but you <UNK> i i and you you 
+ <START> my <UNK> tonight because <UNK> some do i so we we <UNK> a i i i and ah <UNK> where 
+ <START> you you next i what for i and oh put i you the so all you you i just but 
+
+
+[13m 23s (epoch 2: 12%) Loss: 5.2667]
+Melody source: What U See (Is What U Get) by Britney Spears
+
+Artist Demi Lovato: <START> put it <UNK> i you it i mister that between <UNK> oh i i this no i i if no 
+ <START> you cause but in on when i and oh dont there how she i and i you all i you 
+ <START> of i we and you all someday <UNK> you but you she you i and and i the in we 
+ <START> it there and <UNK> we ohhh you i could i you oh baby hey we say you <UNK> some i 
+ <START> love but do but summer yeah and the cause that it i <UNK> just who i it gon just i 
+
+
+Artist Taylor Swift: <START> oh right i gon over <UNK> my and <UNK> this i i love the and it i oh changing i 
+ <START> to oh that is to i i my and i i and moving i it i oh what i and 
+ <START> i i to all but nothing we you i can that i if i i when then cause a the 
+ <START> it i i i he when but i stupid the we love out this if and to oh when i 
+ <START> and i oh i and then and i then i i with you for dont you coming i fly <UNK> 
+
+
+Artist Avril Lavigne: <START> oh do in even hey like you 'cause the through do you <UNK> is i cos <UNK> i <UNK> i 
+ <START> i with but and n't nothin i and here pretend and oh you i <UNK> but i life i no 
+ <START> i i in the i i and my but it you once i oh like to but a i at 
+ <START> like and turns i these they i i got <UNK> but when then i do do get you if think 
+ <START> space you all i oh <UNK> to it a i you we <UNK> you will we so they on a 
+
+
+Artist Take That: <START> to <UNK> i you i i we no the gon what when i <UNK> with <UNK> i just and i 
+ <START> no right i do than love from take we will but wah and you i i now and no when 
+ <START> it got if and in when told of i and it there do you what the i you you hey 
+ <START> no and <UNK> she this we all with and you got and or <UNK> and you i you i these 
+ <START> how the and and shaking the i the but now the i do i i i i and i and 
+
+
+Artist Linkin Park: <START> i i by love so <UNK> not and when and i everyone the and the the i we like who 
+ <START> i hurry the i the oh do i you for see no if for and i yeah you how you 
+ <START> this make you why want we and i i in i i i we from i i every eh but 
+ <START> i i <UNK> and and wild mama 'cause the be the now just why deep thought i just listen i 
+ <START> oh yeah i my i in i and and you whatever and can got and who to we to to 
+
+
+[13m 44s (epoch 2: 15%) Loss: 5.2533]
+Melody source: The Guns Of Brixton by The Clash
+
+Artist Demi Lovato: <START> but and a <UNK> lilac it then you be i it and if yeah i i i you i catch 
+ <START> i just to how i i i and i it uh and that i the i this and this and 
+ <START> i alive like and 'cause when and the how yeah yeah and he <UNK> you <UNK> that but you some 
+ <START> i for do i are so believe you when just change to everyone in <UNK> i i i do but 
+ <START> i he you not and i when get i but my i it oh you so i i a if 
+
+
+Artist Taylor Swift: <START> i i there and that i i you must wake we i i but you sleep and one movin dance 
+ <START> and when i reach she a so if to i lets has i not i all i you and a 
+ <START> all i you ooh i i first what i you this you i you i you to ca wo i 
+ <START> baby in and i ooh so i so deep <UNK> she my and i praise and and to i i 
+ <START> and do and i it i it that thought <UNK> it girl and <UNK> what i and i and the 
+
+
+Artist Avril Lavigne: <START> i all be must oh your why i <UNK> i and so and when it 'cause when and my i 
+ <START> and no oh when i seems i still and so something you so it i she and bear love i 
+ <START> and only oh i i my the i and i in i all or all she oh oh he they 
+ <START> on been like you when you that and but in battery you when and you but the i the and 
+ <START> your 'cause my and with too i now but <UNK> i and i we and then i you <UNK> i 
+
+
+Artist Take That: <START> feathers and and i bring where 'cause and i 'cause were ca i distant i do i i the na 
+ <START> in i if <UNK> i you and and me just it for and i i i oh oh and kimi 
+ <START> and i you to we see i and i i i guess 'cause life poppa there and i and a 
+ <START> but take and you win i ( to what `` it run do because you oh fall i i i 
+ <START> oh oh i we that and <UNK> you i we this 'cause so something in in and in 'cause me 
+
+
+Artist Linkin Park: <START> open like and now am trapped and i i when and hold hey i hold and ( you we where 
+ <START> and just when sharing i i you but the na how ( i you just my in i i i 
+ <START> from i you you and i we you we it i every you but and time i i and i 
+ <START> to i but i you you so my i and can live oh ( a all to to let it 
+ <START> the you we you i i my what you when 'cause figured when that let you and i for i 
+
+
+[14m 5s (epoch 2: 18%) Loss: 5.2591]
+Melody source: Taking Chances by Glee Cast
+
+Artist Demi Lovato: <START> <UNK> i up but to i for i and and and make so and was sometimes she i i i 
+ <START> and cover i i the i and dream you where my and when you do be all i i and 
+ <START> or this oh when and we now and this and i i you why you together i the no that 
+ <START> i i <UNK> to what i got i that to i i and you setare life i i you have 
+ <START> you no if and nobody i i my they 'cos no there be this the i she i i that 
+
+
+Artist Taylor Swift: <START> every she from i in anyone i la show how you it it i oh i it i when in 
+ <START> they i 'cause and what and and i <UNK> it here you and sometimes and the i ooh you you 
+ <START> is this i this no this this say we but i i you if it together do everybody and i 
+ <START> to i and my i surrender i <UNK> you one whenever when of i if or your <UNK> of i 
+ <START> and i i i it but almost so it you <UNK> and i go take the i <UNK> i we 
+
+
+Artist Avril Lavigne: <START> je and i my now to we but and what but i i i you that we and i to 
+ <START> well give i he you you and just <UNK> ah she a you and i <UNK> `` let i you 
+ <START> flashing where when i this i and i oh i they i before and i i to i you and 
+ <START> i do i and you let <UNK> or i i oh i i i without and for i to you 
+ <START> you i what you only i and and running i then and and <UNK> and and and just 'cause and 
+
+
+Artist Take That: <START> but do tallulah so you i then i as do i tell to and i 'cause where oh he beneath 
+ <START> and is this do girl do break but i or you i i oh loving i <UNK> but i even 
+ <START> still let you it theres now i i in if if nana lisa i by a no we te i 
+ <START> they i i the no i silver and so i with i there i you i do i you and 
+ <START> been i i i with i i nights the that i i well the cause my so you you this 
+
+
+Artist Linkin Park: <START> when i when when i baby the is but and and the oh i i nobody give i can my 
+ <START> i i and in but and we i if we i woo hasta on and when i is it <UNK> 
+ <START> and at and it the i and we i it i 'cause tell i i laughing the and whatever said 
+ <START> i and ah you we yesterday <UNK> you <UNK> so behind need the you that you i and as <UNK> 
+ <START> and i i nana this the and when and i the and i now you and me i and waking 
+
+
+[14m 25s (epoch 2: 21%) Loss: 5.2533]
+Melody source: You Learn by Alanis Morissette
+
+Artist Demi Lovato: <START> i shot i their i so she she to if i <UNK> on and 'cause <UNK> in where now i 
+ <START> will tonight woah so you you 'til underneath they and i <UNK> and now and and on i say <UNK> 
+ <START> when i up now to do and jump you i when i and <UNK> what do say i but i 
+ <START> blood i <UNK> i is i i it hey the and silver <UNK> and i to you you why higher 
+ <START> and you i and i why but it too let for i i and you and i that if to 
+
+
+Artist Taylor Swift: <START> oh and when i no but but woman but the there 'cause angel but i <UNK> never the in if 
+ <START> i i and you panama ever still this and the well do i and there too love that i in 
+ <START> and i but to the a cause to and no i all the all <UNK> i she welcome to away 
+ <START> and in it <UNK> i i and and <UNK> and day through why a killer i there oh i oh 
+ <START> i take she i <UNK> we i you so i and she like like in i for now and to 
+
+
+Artist Avril Lavigne: <START> in it when <UNK> you and and do so to why working i to and <UNK> i you for when 
+ <START> i there i maybe were when you a i i sit through oh come so i i i not to 
+ <START> moments i it your i no but we i the i <UNK> she <UNK> you is the you to the 
+ <START> bringing <UNK> no you ruma is i i i and get you oh tell sailing you but i when on 
+ <START> i i i i of these to <UNK> and i <UNK> and we you in do i i you i 
+
+
+Artist Take That: <START> do the el but we bye <UNK> i and <UNK> cause oh you <UNK> so goodbye <UNK> and i you 
+ <START> <UNK> come father and that i while and making nobody you but to see we another and and rea you 
+ <START> what i and are we me the you and we and they of she and i now i keep i 
+ <START> <UNK> i like it and the on not she do while but and <UNK> ca this i anymore and i 
+ <START> through 'cause red i stop here by you i i would like to forever to all with that she to 
+
+
+Artist Linkin Park: <START> and and to well i the the oh my tonight <UNK> you my na you i the i and it 
+ <START> dream oh oh if the i being in 'cause and spinning <UNK> i you riding ah loud if and your 
+ <START> on the then i and you baby let i i but and as a and and i i i you 
+ <START> i i i if love la anyone and and i i it you but endlessly but oh when i i 
+ <START> i oh that i strange i daylight when and stitch just all your i ( no love and no see 
+
+
+[14m 47s (epoch 2: 24%) Loss: 5.2564]
+Melody source: Star by Reamonn
+
+Artist Demi Lovato: <START> and and i you i you i always well and i how i me me my we and nobody i 
+ <START> they i i you the the i my ooh in i is but i with you let and his the 
+ <START> it and i i i ooh and here so and when i hey i she i got with you it 
+ <START> he i you ca i i and as i but oh who i could <UNK> and wo oh but <UNK> 
+ <START> so i i i first i if i i do you you the and i i la i i and 
+
+
+Artist Taylor Swift: <START> they but the i you you or you when i into for we the and the let i i until 
+ <START> <UNK> that i so i this tetris you they and let i when or and and i and would this 
+ <START> cold in in you you with i just i listen it do and there it i he when the now 
+ <START> just you <UNK> keep you i you that but this still i in i can instead i in my and 
+ <START> even i shake if i i <UNK> every hey <UNK> the the i is forever the it i what then 
+
+
+Artist Avril Lavigne: <START> and oh i fill it i i i i but and you <UNK> and the there hetakes do and i 
+ <START> i to these and what so now i i then to we running the little to just she i i 
+ <START> all i i did well i the i where i the no yeah and i and and to ah i 
+ <START> and <UNK> you <UNK> and can i and i i we i i and and tonight all na and black 
+ <START> no and it to could and is i oh but oh and but it when weak for love give <UNK> 
+
+
+Artist Take That: <START> that yeah what from i never ba you no in stiff we i and i i i <UNK> so i 
+ <START> i you do oh you when in i <UNK> so i i a and if na must one if i 
+ <START> i that i i i oh that boy i to this i take when i but i i hold i 
+ <START> i i oh and i and it here it la with the i it i and it but i and 
+ <START> in that are then like and nobody somehow in and where come i it <UNK> in no i you nothing 
+
+
+Artist Linkin Park: <START> and and i be you and and i oh bring it my <UNK> i a a and i so you 
+ <START> to i like of we my well killin oh i tomorrow to there tell but oh <UNK> i what i 
+ <START> i when i you i you you it and the and and i its you <UNK> i and i it 
+ <START> i i i they you i i i <UNK> you yes i do and i what you and ahoy it 
+ <START> i we you your in i when there how too everybody i to with you i and why <UNK> beneath 
+
+
+[15m 9s (epoch 2: 27%) Loss: 5.2527]
+Melody source: Church On Sunday by Green Day
+
+Artist Demi Lovato: <START> but i i who but city in and did hearing oh my forget i come on there daylight i you 
+ <START> and in one a oh shut when oh this find for something if all chasing to the do the we 
+ <START> both i oh no we tell i and i the can walk for fuck you i away 'cause i and 
+ <START> <UNK> i in i i <UNK> i i they everybody a for i the wondering oh i you the with 
+ <START> you as this still my now can you get you it oh i i you i i but <UNK> if 
+
+
+Artist Taylor Swift: <START> been oh years in if all well i <UNK> in by take do <UNK> but this cause <UNK> about <UNK> 
+ <START> all i like to i so in have i that for and she tell so the it i i oh 
+ <START> wild the can you for as whatever <UNK> 'cause <UNK> now do now a you the oh oh why the 
+ <START> high no cause <UNK> oh in when <UNK> or set about <UNK> on i you i we but wo alone 
+ <START> a i but i 'til i that <UNK> we we you to just right all have the my i from 
+
+
+Artist Avril Lavigne: <START> i we i do i my i on but and and bow if <UNK> the it still your watch 're 
+ <START> got making and you like i ( and you you i and when ( love let i 'til uhm i 
+ <START> and i all a and uh the broken and hope down but and let i you yeah the a to 
+ <START> i the a so that yeah it and the look a i oh are but to and the no united 
+ <START> a i i and <UNK> been oh and oh free i dj and forgive do and the i meet i 
+
+
+Artist Take That: <START> listen a do and it go take i i i do since if in out i a you it but 
+ <START> and are will and as that to you and not take say we get yeah i i i i ca 
+ <START> i i taken i it changing i well i tonight this were the you 've i love <UNK> has a 
+ <START> <UNK> go take sometimes <UNK> we my sit that i i <UNK> <UNK> and do i oh life i the 
+ <START> i i <UNK> i i i it the battle boku what you have i then i and <UNK> she their 
+
+
+Artist Linkin Park: <START> you i all salt you i i let the the do feel this with all waterloo you for to i 
+ <START> we i i you can hello pay you you and and i with i or and i <UNK> in are 
+ <START> i until oh 'cause i and where even doctor i yes and waist you i i i and in i 
+ <START> but i we i 'cause all in be a something if i my when it my you <UNK> whoa the 
+ <START> and i i but the what so all we we but i i do i you now and you at 
+
+
+[15m 30s (epoch 2: 30%) Loss: 5.2511]
+Melody source: Another Race by Eiffel 65
+
+Artist Demi Lovato: <START> and she and i will is we and that i is and tell <UNK> i never and when was you 
+ <START> ( where and ikea oh i even i they shape so <UNK> that there i i when baby it and 
+ <START> if you and and it you yes ca i she i i do i you but his my they i 
+ <START> that that we <UNK> a today the and you the and the well a i hey so to i he 
+ <START> <UNK> clearing there and and and back the and and will and i i when you i what let <UNK> 
+
+
+Artist Taylor Swift: <START> i to but i <UNK> i i was when i 'cause i is on how i i take ooh i 
+ <START> they hey that that <UNK> and you i relight i i i oh went with in take more the it 
+ <START> i you as i to hey cause for played then you i and i i see change boy said were 
+ <START> oh we but by you in i lady yeah <UNK> or forever <UNK> to forever smile a he like i 
+ <START> and say in and want i so i she well the baby and it and that and i and i 
+
+
+Artist Avril Lavigne: <START> <UNK> that just i there but to the all every so under maybe i do to and your let but 
+ <START> we i and and when there and <UNK> like and wanted get and i i i one for for turn 
+ <START> red sometimes my i i so it out the yesterday oh became you i help and and you come as 
+ <START> you what i for i <UNK> my i <UNK> and <UNK> all i all with <UNK> oh life the you 
+ <START> the high nothing right the to i and so to the on if dreams that <UNK> still and to another 
+
+
+Artist Take That: <START> i that <UNK> <UNK> oh so come you the all when sometimes if and i you and that i i 
+ <START> <UNK> and in i i that we and to that <UNK> ta so i and and all and i you 
+ <START> but i they it some we the bright i i and you i it you 18 it they they no 
+ <START> stood i <UNK> in when when <UNK> i the it oh i i i will to i thinking do i 
+ <START> as there made and let without it and listen what we i beneath and you the i i iron do 
+
+
+Artist Linkin Park: <START> great we we i the i i i or put i let if seven i how <UNK> the not and 
+ <START> it i it to remember what you and the she to to i as i go will i i i 
+ <START> hey no you it we i everyone and i how than you need and to just and you it and 
+ <START> i you and she find and <UNK> i who cause i everybody i i i to <UNK> the the she 
+ <START> she and drink sometimes cuz oh do you there and out you and there before <UNK> if no take i 
+
+
+[15m 52s (epoch 2: 33%) Loss: 5.2460]
+Melody source: Max Don't Have Sex With Your Ex by E-Rotic
+
+Artist Demi Lovato: <START> she i but i of a you i this a what there i tell i i she take <UNK> walked 
+ <START> the with yeah you and and when i learn when well that going you it i let i you what 
+ <START> where there sing <UNK> all all when cause why every some this you be the the and and is and 
+ <START> could one made c'est and so lost on all he the and oh do i you singing i i oh 
+ <START> and i <UNK> the lay i and where <UNK> <UNK> i i no you i and that <UNK> but and 
+
+
+Artist Taylor Swift: <START> but and i no do but i i <UNK> i and into i take im tonight but put we what 
+ <START> but though <UNK> and and for i hey it ( i but and the if and i nothing i i 
+ <START> i the you oh i but you i i i before i oh i we father when let <UNK> so 
+ <START> have i i you find or i from and you i and why i and i i oh hey there 
+ <START> i oh for and i jimmy and what to i just oh i i soon they make my i i 
+
+
+Artist Avril Lavigne: <START> i we oh one if and the you gon i so feel and he like the so i you for 
+ <START> tonight and left i oh never i and it under i <UNK> a and i there while our that where 
+ <START> 'cause i you and in i ah i oh the all in but ca do and you i to ooh 
+ <START> 'aint you my see i the got you you made i no feel i no my singing i and she 
+ <START> 'cause and oh and you this there knock i home you cause and you those i ye oh in you 
+
+
+Artist Take That: <START> from into <UNK> 'cause and i i ca i but i you at just <UNK> she there so it and 
+ <START> the from there or i just of do of i from but got are i in with what the and 
+ <START> and last but i was and <UNK> i for so my i ca i and you i to baby what 
+ <START> i <UNK> and and i but you it for real and this you up and you we your like amazing 
+ <START> big like looks but you just i <UNK> there no i <UNK> if like <UNK> will i but was na 
+
+
+Artist Linkin Park: <START> let they and to dream all cause and you then yeah and i i i i but you i i 
+ <START> we blame oh and i the think i on i can i the and i from at baby to it 
+ <START> it and a ah cause what sleep i you oh and i that i i when if i so roxanne 
+ <START> i i i i 'cause to sleep and it came someone and yeah and if i it give i someone 
+ <START> no always it on <UNK> oh and we i hard all he place then all and you by you she 
+
+
+[16m 12s (epoch 2: 36%) Loss: 5.2596]
+Melody source: We Are Golden by Mika
+
+Artist Demi Lovato: <START> i now and that and minutes and we i when and 'cause is i i it the and how the 
+ <START> she i i `` and do and i we but and i and i and <UNK> you <UNK> it the 
+ <START> the you mhh place you my i i then but and i you the she i time she to i 
+ <START> i all the do the and to a you do and it ai with that and take my a on 
+ <START> i you there you make <UNK> was got i and the oh if not you be <UNK> i because i 
+
+
+Artist Taylor Swift: <START> i that and the you baby do you <UNK> i you you you you knowing you i <UNK> he take 
+ <START> and i all i and poison the the as i hey ca tonight and and oh everything do rosanna had 
+ <START> all i a that and i you i all and it a as and ooh you i you alone i 
+ <START> to you you i i love why oh just and i 'cause la you i to i not see i 
+ <START> that writing show we and like around that and and and if at i they so you it and <UNK> 
+
+
+Artist Avril Lavigne: <START> you this baby i i in la you right and you you i that up feel i i you do 
+ <START> i i and the all its bet stay i if take i like i your it till in through time 
+ <START> and take so ca i watch for i even and these and you the it i you i <UNK> can 
+ <START> you oh just and what i i got i when my and if i hold to and i oh oh 
+ <START> but i i you and i but you from i i i you all <UNK> i when what the do 
+
+
+Artist Take That: <START> we are from and the i if but i in she you and got these no it to for and 
+ <START> do some to i just the <UNK> the it and twenty how wan i <UNK> and juliet once when i 
+ <START> was but together and and they <UNK> like cause out to you i and i yeah she maybe it though 
+ <START> rum that in oh i there as i dream we i but in my i from it we for the 
+ <START> and i and i 'cause that a the and can now <UNK> but all so than i had yeah at 
+
+
+Artist Linkin Park: <START> all what hey can where i does baby so to you for i it for little easy as and you 
+ <START> and just who riding i and to when it the you it dreaming to well <UNK> cos he so <UNK> 
+ <START> no i it and i i and i open i and ahaha your you and it you my who my 
+ <START> on you now i i i still but 'cause you i but so <UNK> do we and and but ca 
+ <START> they and i i you for i wo ooh i i my you have kimi what a and the is 
+
+
+[16m 32s (epoch 2: 39%) Loss: 5.2426]
+Melody source: A Million Parachutes by Sixpence None The Richer
+
+Artist Demi Lovato: <START> i and and i a she i i the i they do i he and i you seems i take 
+ <START> into you and and before oh i <UNK> i i there but to one i i i i but in 
+ <START> time oh still please but we a and i tell to just i the a it when i oh i 
+ <START> i da and and and you in 'cause when the la live when i the you and and and all 
+ <START> i you that do you and it all and like you in i <UNK> you i and you you i 
+
+
+Artist Taylor Swift: <START> and if i i my i the and <UNK> will are i and so i you and and and all 
+ <START> no i that we damage the 'til breathless to i i i i see i and you the silver will 
+ <START> i when no then <UNK> there here everybody devil and no i you pa united oh you for when i 
+ <START> where give we oh and and hoping do a i and 'cause you and i used and i all and 
+ <START> i the 'till are and please meet was yeah <UNK> i so they the to i but the <UNK> it 
+
+
+Artist Avril Lavigne: <START> oh would i oh and and where oh <UNK> and go and i oh but i you you well i 
+ <START> oh in i but it i only <UNK> you you i and we that stack oh <UNK> so just he 
+ <START> she so you i keep i where we that i and do yeah sometimes the and i make sono that 
+ <START> the i start i do when i i you and oh i all i and and <UNK> somethin and i 
+ <START> <UNK> oh i to you i but is had the and and <UNK> and go oh you yeah i it 
+
+
+Artist Take That: <START> the to oh but i the would hoo i and i i it i i i when and ooh she 
+ <START> when and there like if against cause i drama what i love no in <UNK> and of i it nobody 
+ <START> we love and all i and i i you we there but and just you so i i think the 
+ <START> and <UNK> with i the space we i and spread you i you come i shade the i so you 
+ <START> i she it although the now are here make <UNK> in i the discord at i every to in all 
+
+
+Artist Linkin Park: <START> could but in we and i domino and and soon yeah i ooh in <UNK> and so it simple i 
+ <START> i say i made the still if it can what i the carry i we it i i la get 
+ <START> blood show if i but at if we everything and no i do you in we and and i <UNK> 
+ <START> got i but if i i all baby i i and and i and i and i only i you 
+ <START> what i we so i say i and i i the i and in keep is like i now i 
+
+
+[16m 48s (epoch 2: 42%) Loss: 5.2383]
+Melody source: The Green Fields Of France by Dropkick Murphys
+
+Artist Demi Lovato: <START> <UNK> i you you this that in that and we i i your i i and i i there there 
+ <START> i i and im until i i i and who i whenever when take your <UNK> <UNK> without a i 
+ <START> but i no i and if just have i this this and you you carry oh i to and we 
+ <START> not <UNK> you i if now be if is through i life does i she i i and and will 
+ <START> know in but do where that breathe he i all get love and and <UNK> i black this close from 
+
+
+Artist Taylor Swift: <START> i and i always i my so you i time from when i do if my i i my i 
+ <START> the tonight to will i i and you believe do come some killing our i to stick but i the 
+ <START> let now we like you had stop which let dumb got oh see why that we is she <UNK> and 
+ <START> there oh and i near so we and i and i and the you hey you she all you he 
+ <START> how we i i it i so believe we this the and of too there but that i to i 
+
+
+Artist Avril Lavigne: <START> he i oh that i my <UNK> the be and it so do and and i and so and what 
+ <START> the and i they because she the i and can when the to strong was this she i but oh 
+ <START> with i i i there the the we where ooh say listen with i you you i i make the 
+ <START> i and i i i i you the before of now like are you i the i i it such 
+ <START> love oh i i and oh and i i and i and you he i into no said you and 
+
+
+Artist Take That: <START> i in they the do in you so like with sing so there 'cause oh the all and ah i 
+ <START> you like i so you that what you and that until and i we that but you and i and 
+ <START> my are done that down i the the and i i i to is you we is i <UNK> what 
+ <START> so i ooh she <UNK> i do wow so makes so i i how <UNK> oh we i you and 
+ <START> have i they the poison let i the i the that <UNK> with come we spinning and and what you 
+
+
+Artist Linkin Park: <START> we i and and i and i every in go and we <UNK> i did staying they it and the 
+ <START> and with on behind and i he we i <UNK> my and you i at a the oh and who 
+ <START> well when what start you the lonely <UNK> we that you if ahaha live and i there how and but 
+ <START> and i you do say and to if i in you you step i i i oh gon i so 
+ <START> one by she stars but and is on <UNK> mama you and and when you to and the the there 
+
+
+[17m 10s (epoch 2: 45%) Loss: 5.2598]
+Melody source: L-O-V-E (Japanese Version) by Nat King Cole
+
+Artist Demi Lovato: <START> a you and and with hey i oh yeah roam some and fly is ya a ha and oh let 
+ <START> too do you i with to you you you i i oh my what just move and oh dance love 
+ <START> let and you to i always i and could now to that but and we i hawaiian please such i 
+ <START> and where what if i it have the it 'cause like listen close i the the she i whoa you 
+ <START> the to and and it i and i in you do oh i life to time make if for we 
+
+
+Artist Taylor Swift: <START> or what my so and oh that you i ah be all girl i i a so i are hold 
+ <START> we no take i did i we say you like you and i no i i if what for we 
+ <START> i i you and do i and she and you and through to the so welcome and it when i 
+ <START> away to come life and now and you and you it maybe that now so you and love and the 
+ <START> on it and <UNK> our dumb why so i now it and and i when the and i it your 
+
+
+Artist Avril Lavigne: <START> there you i and and it ooh see i your stroke off yeah mmm yeah know oh some off i 
+ <START> we it at all went that and ca i all so jennifer ( you i the but with oh my 
+ <START> and i and the something standing and he in you and so come i water you hey do i you 
+ <START> for and and i i i in do we the black sayin crossed and so i you but roam so 
+ <START> it when <UNK> to well take and i and <UNK> tell <UNK> how woooooooo i you maybe we i i 
+
+
+Artist Take That: <START> yeah mm you we hey you we and it been time you and and ooh oops would i and and 
+ <START> this but in and and i i i you you he anata they but i and and who when and 
+ <START> you <UNK> of so oo back cause and i i it that and i and get the she i i 
+ <START> to we no to i my and and and i down if and you i we hey hurry did i 
+ <START> her with i and settle on all all i oh i and do back <UNK> i we i and <UNK> 
+
+
+Artist Linkin Park: <START> on uh i some yeah home or oh hey and closer girl drag oh all right get you a is 
+ <START> i bring and we i and and ghooostbusteeers so <UNK> and so it wo but so what like love some 
+ <START> the from and on the i when look she but i the i just you the you i i is 
+ <START> till and no what but and there and you yeah that and oh go in i and in hey as 
+ <START> the and and and hit and yeah whose always then i nobody too and words oh forever three i but 
+
+
+[17m 26s (epoch 2: 48%) Loss: 5.2348]
+Melody source: Dance Away by Roxy Music
+
+Artist Demi Lovato: <START> it i this when i i of did and it other <UNK> and and and of i you it is 
+ <START> and and and through so i what i i i through then that just you and so do i i 
+ <START> oooh never whoa <UNK> <UNK> <UNK> this so what while i but baby they on you never i 'cause the 
+ <START> just on when when to i does me one i a and what the and dee so that so i 
+ <START> and a and i and mamamamarry i i it i nae anyone i <UNK> i it i and i i 
+
+
+Artist Taylor Swift: <START> i on you let you i i the hold <UNK> nothing you i but and i and add she and 
+ <START> the so your a you you and every oooooh and on i i and please i why he like the 
+ <START> <UNK> yeah take ever <UNK> <UNK> i in poppa and intention i that and i and i all the you 
+ <START> and i to i it you i i you i we it get <UNK> do they hold just you lose 
+ <START> put you that i call this <UNK> tonight need and i it i through <UNK> there cause and <UNK> i 
+
+
+Artist Avril Lavigne: <START> you we i it how so and i let she i you i and hey the i ah all i 
+ <START> <UNK> you all and and and got li is i fear when who <UNK> i it i wan i and 
+ <START> must i well i you and when to there i here i and what right a i to but <UNK> 
+ <START> he i she that it i la there i what <UNK> you you the and every if grocer are i 
+ <START> and now prove i yeah it and i and you <UNK> on i but you <UNK> i <UNK> it this 
+
+
+Artist Take That: <START> you you there do a your for and making i i and i <UNK> staring i i some and and 
+ <START> there lovely i yes i and sometimes in to ohey i and oh i come i i and if i 
+ <START> as another <UNK> and then we should so it this and you to i <UNK> ev'rywhere i oh you now 
+ <START> what yeah i yeah the i the i but now i got does i tonight and ca sad the i 
+ <START> i you oh now i at my i some if i i out oh i like you when is i 
+
+
+Artist Linkin Park: <START> people and oh that there `` you forever his she cause you i i i i i for you is 
+ <START> i lay but i oh <UNK> and i you you i to and do he i and i what a 
+ <START> but i <UNK> take i or sometimes <UNK> just that i in running i i to i to missing do 
+ <START> there before there that you has with or i well but in it i i i yeah hold that i 
+ <START> it the oh and but remind that the no i just i but and and and o ah i like 
+
+
+[17m 46s (epoch 2: 51%) Loss: 5.2385]
+Melody source: Don't Dream It's Over by Crowded House
+
+Artist Demi Lovato: <START> and see i sometimes take on and take i tonight so i of <UNK> have and and of just 'cause 
+ <START> the i you i i if i grocer all how i i when i for the like she do you 
+ <START> you you we from you this i you it i come ah or the do you whoa but all my 
+ <START> that i it i i now when when by there you she i anyone love i you you they you 
+ <START> you find with i and but is i the and time you that but 'cause to and and got and 
+
+
+Artist Taylor Swift: <START> i do you by everything sha all it is and so and and all ca <UNK> this the and `` 
+ <START> i to that it that but knowing see and that how everything what and i amigo will a a oh 
+ <START> just you the i i oh is if the and i and to we seal in what and if and 
+ <START> oh on do gon the <UNK> some and this only and you your the you only you a our <UNK> 
+ <START> loved if but im to but he and but i and but i what and when no yeah i i 
+
+
+Artist Avril Lavigne: <START> you but like and you my when oh and what you i in doctor it let to in do and 
+ <START> at you with and nothing i <UNK> i i i you and singing oh i gon we before i the 
+ <START> oh fuck you good will she oh breathe of help you you to we please waste my <UNK> and all 
+ <START> than we and it and but you i i with do i i no than into <UNK> i and in 
+ <START> be in i and for i as i i and and for if if that with when gone if i 
+
+
+Artist Take That: <START> i <UNK> about i i and in and when ah i i we beauty all i i right we yeah 
+ <START> i take and and and but a her i <UNK> and i keep i i love do but from rain 
+ <START> a come and but that i a <UNK> sometimes we wan the and the oh i to she i the 
+ <START> do i and that you i the it hold a one without <UNK> all every what i i and i 
+ <START> i you now i there i ever this and or i i well and it and ahha my and saying 
+
+
+Artist Linkin Park: <START> are now <UNK> i na i tried you fever that she have the all i i <UNK> alone there i 
+ <START> and in its why you everything and the and i glycerine i and i all and there you when a 
+ <START> from run you can i comes for so you oh i i did to we it for and you tonight 
+ <START> and well you they she and it and with caught and <UNK> but i when <UNK> it wo just your 
+ <START> the do i sees the i baby in i love i you i if the i <UNK> i i if 
+
+
+[18m 8s (epoch 2: 54%) Loss: 5.2318]
+Melody source: Gabriel by Lamb
+
+Artist Demi Lovato: <START> a i but i i the and i i i all i so i let missing and you <UNK> i 
+ <START> we oh in nothing i forget that i i my come on i i you you all i it and 
+ <START> go i i all like <UNK> like i i but is i where but <UNK> when if i i all 
+ <START> but and <UNK> there calling and the one and the yeah do i away i i oh cause the and 
+ <START> and a impossible wait all i i but <UNK> i fear <UNK> i <UNK> i on i i <UNK> when 
+
+
+Artist Taylor Swift: <START> and i got it return my you i you i but you i and never around play for if i 
+ <START> and of tell woohoo oh making so i i you i to i i i just let so just and 
+ <START> show one the i i i i the and let <UNK> <UNK> side in when hey when i i we 
+ <START> think why <UNK> watch i i baby i me that <UNK> i she all girls has hey la and it 
+ <START> like i you the me that somebody wo i and oh when i and will how and trying <UNK> i 
+
+
+Artist Avril Lavigne: <START> the i a old hey where oh you of i oh to we i i the ca i for <UNK> 
+ <START> i help you glad and smile anyone oh do when girl i so i that and ah no the cause 
+ <START> that i <UNK> it the <UNK> you there now all and you just love and the <UNK> deliver to help 
+ <START> i i you one always i but drivin is and moving and just i i and this i will i 
+ <START> but and i come but and and <UNK> as <UNK> how i oh god i <UNK> and wasted hold do 
+
+
+Artist Take That: <START> you <UNK> i and from in <UNK> take so taking we and some and if when i take may i 
+ <START> i i another but ahoh you who that when yeah you all each the and and i when you you 
+ <START> and with na and <UNK> <UNK> <UNK> empty and and by and from stay i i you you i when 
+ <START> i you i when you i she it now if so about <UNK> i we oh you is all day 
+ <START> the and <UNK> faster i do do i yeah no do you yesterday <UNK> the in the just but and 
+
+
+Artist Linkin Park: <START> you i nothing something i causei touches and and baby you to the just anything do to you does you 
+ <START> and and it i there in we oh keep oh do i i she broken and from how feel and 
+ <START> we and so i will and i just twenty <UNK> is everything it they yeah do the to you run 
+ <START> i to be what and the i and what she make and someone everything i and the and it and 
+ <START> it let yet roam i but i dancin my and i and sing i i me and or any but 
+
+
+[18m 29s (epoch 2: 57%) Loss: 5.2470]
+Melody source: Work Of Art by Demi Lovato
+
+Artist Demi Lovato: <START> the oh you now i heart to a it i they or do <UNK> here want yeah happy i to 
+ <START> we what i everybody you when i at since and and <UNK> she i <UNK> <UNK> i that here he 
+ <START> <UNK> and now ca do when i there for i when from you and i place i hoping well do 
+ <START> i i they hold <UNK> it i that <UNK> ca it your i i why i <UNK> in my oh 
+ <START> and <UNK> i that when and what i they stand do i even when or the still no on and 
+
+
+Artist Taylor Swift: <START> but in she <UNK> and i like and <UNK> i i if i but i please go i when the 
+ <START> <UNK> i when and every how let ever memories and running watch blessed you i oh jimmy i how she 
+ <START> i there lie i because and and i i <UNK> i tainted ' never the we it as i just 
+ <START> we you the and <UNK> no oh the and <UNK> <UNK> and need long i i with i i i 
+ <START> and find there if <UNK> when but say will that i than moving you and find no from i and 
+
+
+Artist Avril Lavigne: <START> if oh <UNK> i i i and but i well you i just i <UNK> and and i no oh 
+ <START> some and i i and be reply is yesterday stand i i well i and i i my i well 
+ <START> you no that i i the you i we i i when i are a i say i a things 
+ <START> broken dreams and has more we these well there so oh the i i well an you that and her 
+ <START> that they but and you your all you the if <UNK> this you that we i i my i do 
+
+
+Artist Take That: <START> to i i i i do but you i if with all what and if <UNK> here and they and 
+ <START> that the if your take wo i here from you i yeah i i i your down the rocky but 
+ <START> do you i still you well somebody be for so with and let so and we you you and good 
+ <START> breaking the i are <UNK> you what when nunca <UNK> i and there we ca you the a is and 
+ <START> and <UNK> <UNK> gon in hey say it he cause and tell and very ah la i i i want 
+
+
+Artist Linkin Park: <START> all i cause oh i i i no your like <UNK> and whenever you when i <UNK> i you who 
+ <START> i i i we the she i she we i you i living and whoa everything i now but i 
+ <START> yeah i you and the i in every you from no quack wishing you and oh i i i no 
+ <START> i i i and and but you i but yeah she oh everybody why and i me you the i 
+ <START> <UNK> to ring you and the and we i i i does if well i you we she i it 
+
+
+[18m 51s (epoch 2: 60%) Loss: 5.2424]
+Melody source: Learn To Fly by Foo Fighters
+
+Artist Demi Lovato: <START> time it i i leave once hold <UNK> it oh and by we but you young you and tomorrow there 
+ <START> to and it i just it words it she and this the when now 'cause and i there that play 
+ <START> and when my that to is you she kiss and <UNK> i you i we in time well you if 
+ <START> woooooo so you so you you i see your you ma then but how this iron <UNK> do to and 
+ <START> that i stay you what the a she la and i but and another every oh come i mmm i 
+
+
+Artist Taylor Swift: <START> <UNK> and make it <UNK> but it no there the remember they and you oh with we when so so 
+ <START> ah do i we i gone and now <UNK> when the and i ca and i i well i we 
+ <START> but do a maybe me you my <UNK> baby i have there walk it keep it you do i i 
+ <START> i who your so you love you you do <UNK> i and i there <UNK> there but not in i 
+ <START> the <UNK> in begin that is my fly the when roll maybe to <UNK> and you from i now stitch 
+
+
+Artist Avril Lavigne: <START> take yeah to i our in everything and and but will with you i i the so i when what 
+ <START> a show all we eight in now but and where the i strong all i let there you we you 
+ <START> come but it it i until a <UNK> touch then you if with how seek someone you how keeps that 
+ <START> take the <UNK> i this i i i the your this i you ' i good place and i and 
+ <START> and and and let when i to cause the lose i in of i <UNK> mind all there i or 
+
+
+Artist Take That: <START> a and take i and take from why cause your i all and is oh you you or you and 
+ <START> you oh <UNK> <UNK> no 'cause it cheer i you waiting i now it you we see you you i 
+ <START> till i the on would but if and is i and wake i ca oh it'sa need and then there 
+ <START> i but for about love ah ooh does could ca we but i yesterday there it <UNK> and cause and 
+ <START> every all my i am give come i <UNK> this the you of you i on i you that to 
+
+
+Artist Linkin Park: <START> but think i and feelings i `` to you you well fly and your you <UNK> <UNK> and you time 
+ <START> but i do la i and lover before to you how there you thought i and and but i get 
+ <START> and when and i you this comin one oh you for put to i we <UNK> how i it you 
+ <START> i when and it and i it all it we and there you before you where she but and you 
+ <START> you both your when i ahha damn it <UNK> 'cause cause it and in does and wo i my if 
+
+
+[19m 13s (epoch 2: 63%) Loss: 5.2408]
+Melody source: A Million Parachutes by Sixpence None The Richer
+
+Artist Demi Lovato: <START> i they do <UNK> <UNK> we i you i can i and i i birds i step never the you 
+ <START> i and i somebody summer the never and <UNK> breaking they but then oh to so there i your where 
+ <START> the oh to oh oh 'cause ooh i i <UNK> i i do and baby and your i you yeah 
+ <START> hey holding <UNK> i i i i i <UNK> the i but i and no i sometimes i and the 
+ <START> the <UNK> soo pour the and come and i you while here i but ah crashing i i and missed 
+
+
+Artist Taylor Swift: <START> maybe no we there do i it with maybe you then me but i at is and <UNK> and you 
+ <START> and she just and i when you when closer i it 'cause right ima it it do i i whole 
+ <START> when and i it the you and i you oh then i <UNK> in the yeah i when this you 
+ <START> <UNK> i , just <UNK> i so i and and how could and everybody and i 'cause we remember i 
+ <START> her yeah it oh 'cause you and we <UNK> lay take of but all to so and a the and 
+
+
+Artist Avril Lavigne: <START> i i we ha and oh my for i as you you if i the go and <UNK> it christmas 
+ <START> but with and oh for for <UNK> the xanadu i on we what you back i i place but and 
+ <START> and i in i i it i put i when and you 'cause you from and so oh what i 
+ <START> i they you i the you i i i <UNK> i it you i reach when the no that oh 
+ <START> the <UNK> i ca and in the why in never and we every just i <UNK> i aand cikaran well 
+
+
+Artist Take That: <START> i you you the as it the i i we i <UNK> but i you the she i but and 
+ <START> who just i in i and they and i and are it my so take i bleeding i i <UNK> 
+ <START> they i but now i he i and when tell oh i on to have believe i just <UNK> and 
+ <START> we the eyes i i i and lifesaver oh i must and will both i whoa it do hell do 
+ <START> oh my tonight we <UNK> i and the i i oh there but when i to will words <UNK> the 
+
+
+Artist Linkin Park: <START> 'cause and to i i feels oh we and all <UNK> take i beneath you i i but you and 
+ <START> we oh and there from and with so i baby you but devine i i words hearts do i <UNK> 
+ <START> so what do wake any <UNK> and and where i i you well and and i for all i is 
+ <START> i do <UNK> all <UNK> to <UNK> <UNK> you rock you when with when and but even with you just 
+ <START> but <UNK> and you then head the so i and and 'cause somehow i will no <UNK> of come you 
+
+
+[19m 33s (epoch 2: 66%) Loss: 5.2416]
+Melody source: What Makes You Beautiful by One Direction
+
+Artist Demi Lovato: <START> she i when everybody you no but tell i i just under and and the where i without still so 
+ <START> so the fuckin in i there but in it and and i makes to my when turn i we but 
+ <START> the <UNK> i it will i than knock <UNK> just can this you cause and i world you i let 
+ <START> was mama we <UNK> the not and what do when and you 'cause you what new here lost oooh you 
+ <START> when and i i and and they to the i the but and i i all whoa that he ai 
+
+
+Artist Taylor Swift: <START> you i in wish and and you the <UNK> how i she no i pretty the this and but come 
+ <START> do i <UNK> and you i we i and these i and i stop over when i and and think 
+ <START> i and i but i do <UNK> and climbing it and and my love the i in i our so 
+ <START> i so and i back i tellin <UNK> and and and it i and you i you rip <UNK> i 
+ <START> and and i this and of and this i <UNK> your that and i play oh i and the i 
+
+
+Artist Avril Lavigne: <START> all and i and and do with i and ah i i running she i but and a what you 
+ <START> his i <UNK> i and are out my get i we at when what i i the and i that 
+ <START> me and better this <UNK> do everyone to think so gon you we but you machine and blood you he 
+ <START> yeah that you do but the a we and no what and 'cos do when she precious you how we 
+ <START> i what there right when but <UNK> break and make <UNK> she baby what i and come let and i 
+
+
+Artist Take That: <START> and i`ll you i you and stop and karma i and my do that say <UNK> all i you you 
+ <START> the i it <UNK> your to but and and you all california yet give come i but heart look and 
+ <START> this <UNK> and and and things with take i have i <UNK> i do would and in i torn i 
+ <START> you and but give you <UNK> but i snow and one do <UNK> i before i you my i i 
+ <START> either and we oh <UNK> and just and flashing <UNK> and you but and she done will and when and 
+
+
+Artist Linkin Park: <START> how the so when it you like i my well while <UNK> i do and do get you and with 
+ <START> you all i with and no and but your she do and but what i baby and to yeah come 
+ <START> i i the they it baby the all i but she and i my why you to under well tell 
+ <START> to darling <UNK> that and do and it do and a you you i and what and then it i 
+ <START> but but but i to when i is <UNK> ease 'cause you i penance and i the <UNK> you in 
+
+
+[19m 54s (epoch 2: 69%) Loss: 5.2259]
+Melody source: Manic Monday by The Bangles
+
+Artist Demi Lovato: <START> ai i i what i that yeah promises hurt everything i when i <UNK> or we and thought i there 
+ <START> i you and from i stick i you i hope is will got you to that du we and into 
+ <START> i so baby we no it and you is i falling you i as my your is well but yeah 
+ <START> when you you <UNK> i now every and ca i and <UNK> i <UNK> you they <UNK> i you but 
+ <START> you but oh i it something oh and in your you <UNK> she i and she you <UNK> do the 
+
+
+Artist Taylor Swift: <START> anywhere yeah i if the <UNK> you but i drive grass this i the when it goodbye and and the 
+ <START> oh if it every what i where i you she oh it i i you what that all quack ca 
+ <START> i the it you my i you and 'til baby you we i keep but who little all i it 
+ <START> but and as it rum i i tell in like i never that a that the why she you and 
+ <START> i and i i but it when i all get i she and the i but in oh i i 
+
+
+Artist Avril Lavigne: <START> like can i i and could and i that knock damn i oh just ooh i there the uh this 
+ <START> you but it <UNK> take you underneath you i but i cause by he aha but i the crawling we 
+ <START> you it i this we it <UNK> i always just please a cause i i making catch try you i 
+ <START> she take what and just you we i and i now i have i and in till without lost i 
+ <START> hey the come but <UNK> i and and freeway you and <UNK> you and some the never wherever you i 
+
+
+Artist Take That: <START> so i when she i it but and is the to nante i dirty and oh and my i the 
+ <START> just you so and of you your but i and i so i oh i i we what all i 
+ <START> come go i i where you and put into you i nobody 'cause in and but all i oh in 
+ <START> like but my 'cause with i with and so i i i is there <UNK> i he you where i 
+ <START> we when i you you if colors oh the i ( and but i i the like drop you you 
+
+
+Artist Linkin Park: <START> and and <UNK> the i and no <UNK> you i yet to so wo whoa we everybody i i you 
+ <START> i you i but i i to i recall i and she you but when the just i they and 
+ <START> how without and you you you to so i i and my and see keep all you i along we 
+ <START> of <UNK> i it to you bury <UNK> the now my and i one only i i i you i 
+ <START> we <UNK> bury a of maybe and that you oh you you yeah <UNK> and the i but we i 
+
+
+[20m 11s (epoch 2: 72%) Loss: 5.2146]
+Melody source: Heart Attack by Demi Lovato
+
+Artist Demi Lovato: <START> i i <UNK> tonight do but standing both we if but i oh do that i you i are but 
+ <START> woo wan you cause just it so and under but <UNK> boy you there and turn where no hey i 
+ <START> woh cause that say i you but <UNK> under i and i know so i send i but the oh 
+ <START> do you you it i i <UNK> the thank to and like you i viva i catch your you release 
+ <START> the and for any no and but what could <UNK> i take 'cause and i i no i i she 
+
+
+Artist Taylor Swift: <START> but but and love you i you and not we she just well it i i and she the i 
+ <START> to it i i dark in i i to i i ooh what i hope i i wake a i 
+ <START> and i you when change a some i i now i and i remember ah this i and and i 
+ <START> i oh say i i i i to on shine it we you i but it and <UNK> but tomorrow 
+ <START> <UNK> through i we lalalalalalala and a and the my to i with i i from it the me we 
+
+
+Artist Avril Lavigne: <START> and <UNK> <UNK> and and help they this i gon i gon <UNK> <UNK> this and do oh me je 
+ <START> if i you it and and when back and and to it no instead from will i all like who 
+ <START> and i it i and i so i so what but and to so in you just the that can 
+ <START> <UNK> and they anata for and down it did my and some if i the <UNK> i we i i 
+ <START> were <UNK> i how do you you i it feels but when with how i but and it you my 
+
+
+Artist Take That: <START> you da it i i the its it the it i just i no i and but out i and 
+ <START> and you i i i and do and i but but and but a when there i i i i 
+ <START> you and i it oho this welcome it i i your you i else i you we always i you 
+ <START> then and but 'cause i and and oh and i you i knockknockknockin i <UNK> that <UNK> lonely i have 
+ <START> are and not <UNK> something inside that take do it i do you i i these it and only who 
+
+
+Artist Linkin Park: <START> my i i i you we do there and and <UNK> i take dirty i there and <UNK> in <UNK> 
+ <START> now got and you well well for but but the the i <UNK> a i the for i so the 
+ <START> all i i i now do next welcome north i could to you i we a you with cause the 
+ <START> my i we comes you a <UNK> but it why and whenever it i down from can to in <UNK> 
+ <START> i i and bloody <UNK> <UNK> where this but was say and i all <UNK> and now was you and 
 
 

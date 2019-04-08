@@ -60,8 +60,6 @@ class SemanticLyricsRNN(nn.Module):
 
         self.use_melody = use_melody
         self.melody_len = melody_len
-        if self.use_melody:
-            self.sem_input_size += self.melody_len
             
         if word_embeddings:
             self.word_embed_size = word_embeddings.shape[1]
@@ -71,6 +69,8 @@ class SemanticLyricsRNN(nn.Module):
             self.word_encoder = nn.Embedding(self.input_size, self.word_embed_size,padding_idx=self.pad_id)
 
         self.lyr_input_size = self.word_embed_size + self.hidden_size_S
+        if self.use_melody:
+            self.lyr_input_size += self.melody_len
         
         self.semantic_lstm = nn.LSTM(self.sem_input_size, hidden_size_S, n_layers_S, batch_first=True, dropout=0.5)
         self.lyrics_lstm = nn.LSTM(self.lyr_input_size, hidden_size_L, n_layers_L, batch_first=True, dropout=0.5)
@@ -120,17 +120,17 @@ class SemanticLyricsRNN(nn.Module):
         if self.use_noise:
             sem_reps = Variable(torch.FloatTensor(self.batchsize, num_lines, self.hidden_size_S).normal_()).to(device)
         else:
-            sem_reps = self.semantic_generator(artist_input, melody_input, num_lines)
+            sem_reps = self.semantic_generator(artist_input, num_lines)
 
         sem_reps = sem_reps.contiguous().view(-1, self.hidden_size_S)       # (batchsize * numlines) x hiddensize S
         sem_reps = torch.unsqueeze(sem_reps,dim=1)
         sem_reps = sem_reps.expand(-1, input.size()[1], self.hidden_size_S) # (batchsize * numlines) x numwords x hiddensize S
 
-        output = self.lyrics_generator(input, input_lens, sem_reps)
+        output = self.lyrics_generator(input, input_lens, sem_reps, melody_input)
         
         return output
 
-    def semantic_generator(self, artists, melody_input, num_lines):
+    def semantic_generator(self, artists, num_lines):
         # may want to use zeros instead of random noise?
         sem_input = self.get_iteration_noise(num_lines) # batchsize x numlines x noise
 
@@ -144,17 +144,19 @@ class SemanticLyricsRNN(nn.Module):
             # concatenate artist embedding to random noise
             sem_input = torch.cat([sem_input, artist_embed],dim=2)  # batchsize x numlines x (noise + artist embed size)
 
-        if self.use_melody:
-            sem_input = torch.cat([sem_input, melody_input],dim=2)
-
         sem_reps, _ = self.semantic_lstm(sem_input, self.hidden_S)  # batchsize x numlines x hiddensize S
 
         return sem_reps
 
-    def lyrics_generator(self, input, input_lens, sem_reps):
+    def lyrics_generator(self, input, input_lens, sem_reps, melody):
         # get word embeddings and concatenate context vectors
         embed = self.word_encoder(input)               # (batchsize * numlines) x numwords x word embed size
         lyr_inp = torch.cat([embed, sem_reps], dim=2)  # (batchsize * numlines) x numwords x (word embed size + hiddensize S)
+
+        if self.use_melody:
+            melody = melody.view(-1,1,self.melody_len)
+            melody = melody.repeat(1, lyr_inp.shape[1], 1)
+            lyr_inp = torch.cat([lyr_inp, melody], dim=2)  # (batchsize * numlines) x numwords x (word embed size + hiddensize S + melody size)
 
         # sort by numwords in reverse order
         input_len_order = np.argsort(input_lens)[::-1]
@@ -207,7 +209,7 @@ class SemanticLyricsRNN(nn.Module):
                 melody = melody.repeat(self.batchsize, 1, 1)
             
             # get semantic rep for each line and reshape
-            sem_reps = self.semantic_generator(artist, melody, predict_line_len)
+            sem_reps = self.semantic_generator(artist, predict_line_len)
             sem_reps = sem_reps.contiguous().view(-1, self.hidden_size_S)       # (batchsize * numlines) x hiddensize S
             sem_reps = torch.unsqueeze(sem_reps,dim=1)                          # (batchsize * numlines) x 1 x hiddensize S
 
@@ -220,7 +222,7 @@ class SemanticLyricsRNN(nn.Module):
 
             for i in range(predict_seq_len):
                 # just get first batch (num lines x vocab dist)
-                output = self.lyrics_generator(inp, input_lens, sem_reps)[0]
+                output = self.lyrics_generator(inp, input_lens, sem_reps, melody)[0]
 
                 # for each line
                 for j in range(predict_line_len):
