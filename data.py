@@ -62,6 +62,11 @@ class LyricsDataset(Dataset):
             self.max_line_len = max_line_len
 
         self.use_artist = use_artist
+        if self.use_artist:
+            self.artists = sorted(set([x['artist'] for x in self.lyrics]))
+            self.num_artists = len(self.artists)
+        else:
+            self.num_artists = 0
         self.use_melody = use_melody
             
         # chunk lyrics
@@ -79,18 +84,6 @@ class LyricsDataset(Dataset):
                     song['melody'] = melody[i:i+self.chunk_size]
                     chunked_lyrics += [song.copy()]
             self.lyrics = chunked_lyrics
-
-        if self.use_artist:
-            artist_counts = defaultdict(int)
-            for x in self.lyrics:
-                artist_counts[x['artist']] += 1
-            self.artists = sorted(list(artist_counts.items()), \
-                                  key=lambda x:x[1], \
-                                  reverse=True)
-            self.artists = [a[0] for a in self.artists]
-            self.num_artists = len(self.artists)
-        else:
-            self.num_artists = 0
                     
     def create_vocab(self,file_name):
         num_songs = len(self.lyrics)
