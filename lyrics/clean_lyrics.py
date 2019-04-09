@@ -67,16 +67,19 @@ def split_sets(infile, outfile):
     d2 = pickle.load(open('%s_val.pkl'%outfile,'rb'))
     d3 = pickle.load(open('%s_test.pkl'%outfile,'rb'))
     print(len(d1),len(d2),len(d3))
-split_sets("input_files/top_5.pkl","input_files/new_top5")
+# split_sets("input_files/top_5.pkl","input_files/new_top5")
 
 
-def one_artist():
-    data = pickle.load(open('lyrics_top_artists.pkl','rb'))
-    dolly = []
+def select_artists(artists, inp_pkl, out_pkl):
+    data = pickle.load(open(inp_pkl,'rb'), encoding='latin1')
+    subset = []
     for d in data:
-        if d['artist'] in ['dolly-parton', 'elton-john', 'b-b-king', 'chris-brown', 'eminem']:
-            dolly += [d]
-    pickle.dump(dolly,open('top_5.pkl','wb'))
+        if d['artist'] in artists:
+            subset += [d]
+    pickle.dump(subset,open(out_pkl,'wb'))
 
 # one_artist()
 # split_sets('top_5.pkl','top-5')
+artists = [re.sub(' ','-', a) for a in open('artist_list.txt').read().splitlines()]
+select_artists(artists, 'large_files/lyrics.pkl', 'input_files/filtered_kaggle.pkl')
+split_sets('input_files/filtered_kaggle.pkl', 'input_files/filtered_kaggle')

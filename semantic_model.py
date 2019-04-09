@@ -106,11 +106,13 @@ class SemanticLyricsRNN(nn.Module):
                 input,melody_input,artist_input = input
             else:
                 input,artist_input = input
+                melody_input = None
         else:
             if self.use_melody:
                 input,melody_input = input
             else:
                 artist_input = None
+                melody_input = None
         num_lines = int(input.size()[0] / self.batchsize)
 
         self.hidden_S = self.init_hidden_S()

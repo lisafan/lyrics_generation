@@ -83,6 +83,7 @@ def time_since(since):
 def main():
     # Get hyperparameters from commandline
     params = get_hyperparameters()
+    print(params.checkpoint_files)
     checkpoint_dir = os.path.dirname(params.checkpoint_files)
     if not os.path.exists(checkpoint_dir):
         os.mkdir(checkpoint_dir)
@@ -97,11 +98,6 @@ def main():
     log_str(' '.join(sys.argv)+'\n')
     for k,v in vars(params).items():
         log_str(k+": "+str(v))
-
-    # Load previous hyperparameters if checkpoint was given
-    if params.load_model != None:
-        checkpoint = torch.load(params.load_model)
-        params = checkpoint['hyperparameters']
 
     # --------------
     # Get data (train & val)
@@ -152,13 +148,25 @@ def main():
 
     optimizer = torch.optim.Adam(model.parameters(), lr=params.learning_rate)
 
-    
-    # Load checkpoint
+    # Load previous hyperparameters if checkpoint was given
+    # Optimizer is not loaded, since models may have different structures
     if params.load_model != None:
-        model.load_state_dict(checkpoint['model_state_dict'])
-        optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+        to_load = open(params.load_model).read().splitlines()
+        to_load = [line for line in to_load if not line.startswith('#')]
+        loaded_dict = {}
+        for line in to_load:
+            param, path = line.split()
+            checkpoint = torch.load(path)
 
+            for k in model.state_dict().keys():
+                if k.startswith(param):
+                    loaded_dict[k] = checkpoint['model_state_dict'][k]
+                    log_str("Loaded from %s:\n  %s"%(path,k))
 
+        state = model.state_dict()
+        state.update(loaded_dict)
+        model.load_state_dict(loaded_dict)
+        
     # --------------
     # Helper functions
     def generate(prime_str=[Data.START], artist=None, melody=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
