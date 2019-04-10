@@ -79,7 +79,39 @@ def select_artists(artists, inp_pkl, out_pkl):
     pickle.dump(subset,open(out_pkl,'wb'))
 
 # one_artist()
-# split_sets('top_5.pkl','top-5')
-artists = [re.sub(' ','-', a) for a in open('artist_list.txt').read().splitlines()]
-select_artists(artists, 'large_files/lyrics.pkl', 'input_files/filtered_kaggle.pkl')
-split_sets('input_files/filtered_kaggle.pkl', 'input_files/filtered_kaggle')
+# # split_sets('top_5.pkl','top-5')
+# artists = [re.sub(' ','-', a) for a in open('artist_list.txt').read().splitlines()]
+# select_artists(artists, 'large_files/lyrics.pkl', 'input_files/filtered_kaggle.pkl')
+# split_sets('input_files/filtered_kaggle.pkl', 'input_files/filtered_kaggle')
+
+def create_vocab(lyrics,file_name):
+    num_songs = len(lyrics)
+    print('creating vocabulary for %d songs'%num_songs)
+    
+    vocab = []
+    for i,e in enumerate(lyrics):
+        if i%(num_songs/10)==0:
+            print('finished %d/%d songs (%.2f%%)'%(i,num_songs,float(i)/num_songs))
+        vocab += [w.lower() for w in e['lyrics'].split()]
+    vocab = Counter(vocab)
+    
+    # save up to 100,000 words
+    with open(file_name,'w') as f:
+        for i,(a,n) in enumerate(vocab.most_common()):
+            if i==100000:
+                break
+            if n < 5:
+                break
+            f.write('%s\t%s\n'%(a,n))
+
+dali = pickle.load(open('input_files/filtered_dali_train.pkl','rb'))
+kaggle = pickle.load(open('input_files/filtered_kaggle_train.pkl','rb'))
+artist_title = set()
+lyrics = []
+for x in dali+kaggle:
+    at = re.sub(' ','-',x['artist'])+'-'+re.sub(' ','-',x['song'])
+    if at not in artist_title:
+        artist_title.add(at)
+        lyrics += [x]
+
+create_vocab(lyrics,'input_files/filtered.vocab')
