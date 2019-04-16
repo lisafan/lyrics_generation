@@ -65,7 +65,7 @@ def generate(model, Data, params, prime_str=None, artist=None, melody=None, pad_
 
 
 def evaluate_ppl(model, val_dataloader, params):
-    val_loss = 0
+    val_loss = 0.
     with torch.no_grad():
         for i, batch in enumerate(val_dataloader):
             inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,inp_melody,data = batch
@@ -85,8 +85,9 @@ def evaluate_ppl(model, val_dataloader, params):
             if i % 100 == 0:
                 print('%.2f%% done'%(i/len(val_dataloader)*100))
         val_loss /= len(val_dataloader)
+        ppl = np.exp(val_loss)
         # print('ppl: {:5.2f},'.format(np.exp(val_loss)))
-        return val_loss
+        return ppl
 
 
 def main():
@@ -130,11 +131,17 @@ def main():
     model.to(device)
     model.eval()
 
-    for i in range(5):
-        print(generate(model, Data, params, pad_fn=pad_fn))
-
     ppl = evaluate_ppl(model, dataloader, params)
+    print(ppl)
     with open(args.outfile, 'w') as f:
-        f.write('Evaluations for %s:\n\n'%args.checkpoint)
-        f.write('Perplexity = %.3f'%ppl)
+        f.write('Evaluations for %s\n'%args.checkpoint)
+        f.write('using %s:\n\n'%args.testfile)
+        f.write('Perplexity = %.3f\n\n'%ppl)
+
+        f.write('50 generated samples:\n\n')
+        for i in range(50):
+            f.write('(%d)\n'%(i+1))
+            ex = generate(model, Data, params, pad_fn=pad_fn)
+            ex = re.sub(' <EOL> ','\n', ex)
+            f.write(ex+'\n\n')
 main()

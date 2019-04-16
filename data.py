@@ -80,8 +80,9 @@ class LyricsDataset(Dataset):
                     melody = song['melody']
                 for i in range(len(lines) - self.chunk_size+1):
                     chunk = '\n'.join(lines[i:i+self.chunk_size])
+                    if self.use_melody:
+                        song['melody'] = melody[i:i+self.chunk_size]
                     song['lyrics'] = chunk
-                    song['melody'] = melody[i:i+self.chunk_size]
                     chunked_lyrics += [song.copy()]
             self.lyrics = chunked_lyrics
                     
@@ -111,7 +112,7 @@ class LyricsDataset(Dataset):
 
     def __getitem__(self, idx):
         samp = self.lyrics[idx]
-        sample = {'inp_words':[],'out_words':[],'inp_ids':[],'out_ids':[],'artist':[],'artist_id':[], 'melody':[], 'song':[]}
+        sample = {'inp_words':[],'out_words':[],'inp_ids':[],'out_ids':[],'artist':[],'artist_id':[], 'song':[]}
         
         #if self.use_semantics:
         if hasattr(self, 'max_line_len'):

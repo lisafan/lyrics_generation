@@ -1,3 +1,4 @@
-Evaluations for checkpoints/melody_only/melody_only-e00003.pt:
+Evaluations for checkpoints/melody_only/melody_only-e00003.pt
+using lyrics/input_files/filtered_dali_val.pkl:
 
-Perplexity = 5.441
+Perplexity = 230.677
