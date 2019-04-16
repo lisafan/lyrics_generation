@@ -1,0 +1,3 @@
+Evaluations for checkpoints/melody_only/melody_only-e00003.pt:
+
+Perplexity = 5.441

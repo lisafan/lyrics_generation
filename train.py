@@ -89,9 +89,6 @@ def main():
         os.mkdir(checkpoint_dir)
     log_file = open(params.checkpoint_files+"_output_log.txt",'w')
 
-    if params.use_melody and (params.use_semantics != params.use_artist):
-        raise(Exception('invalid model choice'))
-
     def log_str(s):
         print(s)
         log_file.write(s+'\n')
@@ -113,7 +110,7 @@ def main():
     # exit()
     log_str("\n%d batches per epoch\n"%(len(Data)/params.batch_size))
 
-    if params.use_semantics or params.use_melody:
+    if params.use_semantics:
         pad_fn = line_padding_fn
     else:
         pad_fn = padding_fn
@@ -176,12 +173,12 @@ def main():
         if type(artist)==str:
             artist = Data.artists.index(artist)
 
-        if params.use_semantics or params.use_melody:
+        if params.use_semantics:
             if type(prime_str[0])==list:
                 inp = [[Data.word2id(w) for w in prime_line] for prime_line in prime_str]
             else:
                 inp = [[Data.word2id(w) for w in prime_str]]*predict_line_len
-            predicted = model.evaluate_seq(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
+            predicted = model.evaluate(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
 
             predicted_words = []
             for line in predicted:
