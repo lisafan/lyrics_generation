@@ -276,7 +276,7 @@ def main():
                 else:
                     sample_melody = None
                 if params.use_artist:
-                    for a in Data.artists[0:5]:
+                    for a in Data.artists:
                         log_str('Artist %s: %s\n'%(a, generate(artist=a, melody=sample_melody)))
                 else:
                     log_str(generate(melody=sample_melody)+'\n')
