@@ -89,9 +89,6 @@ def main():
         os.mkdir(checkpoint_dir)
     log_file = open(params.checkpoint_files+"_output_log.txt",'w')
 
-    if params.use_melody and (params.use_semantics != params.use_artist):
-        raise(Exception('invalid model choice'))
-
     def log_str(s):
         print(s)
         log_file.write(s+'\n')
@@ -109,11 +106,11 @@ def main():
                          max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
                          use_semantics=params.use_semantics, use_artist=params.use_artist,
                          use_melody=params.use_melody)
-    # print(Data[np.random.randint(len(Data))], len(Data))
-    # exit()
+    print(Data[np.random.randint(len(Data))], len(Data))
+    exit()
     log_str("\n%d batches per epoch\n"%(len(Data)/params.batch_size))
 
-    if params.use_semantics or params.use_melody:
+    if params.use_semantics:
         pad_fn = line_padding_fn
     else:
         pad_fn = padding_fn
@@ -176,12 +173,12 @@ def main():
         if type(artist)==str:
             artist = Data.artists.index(artist)
 
-        if params.use_semantics or params.use_melody:
+        if params.use_semantics:
             if type(prime_str[0])==list:
                 inp = [[Data.word2id(w) for w in prime_line] for prime_line in prime_str]
             else:
                 inp = [[Data.word2id(w) for w in prime_str]]*predict_line_len
-            predicted = model.evaluate_seq(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
+            predicted = model.evaluate(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
 
             predicted_words = []
             for line in predicted:
@@ -279,7 +276,7 @@ def main():
                 else:
                     sample_melody = None
                 if params.use_artist:
-                    for a in Data.artists:
+                    for a in Data.artists[0:5]:
                         log_str('Artist %s: %s\n'%(a, generate(artist=a, melody=sample_melody)))
                 else:
                     log_str(generate(melody=sample_melody)+'\n')

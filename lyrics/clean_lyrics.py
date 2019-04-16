@@ -104,12 +104,27 @@ def create_vocab(lyrics,file_name):
                 break
             f.write('%s\t%s\n'%(a,n))
 
+split_sets('input_files/filtered_kaggle.pkl', 'input_files/filtered_kaggle')
+kaggle = pickle.load(open('input_files/filtered_kaggle_train.pkl','rb'))
+create_vocab(kaggle, 'input_files/filtered_kaggle_train.vocab')
+
 # dali = pickle.load(open('input_files/filtered_dali_train.pkl','rb'))
 # kaggle = pickle.load(open('input_files/filtered_kaggle.pkl','rb'))
+# print(len(kaggle))
+# kaggle = pickle.load(open('input_files/kaggle_testing.pkl','rb'))
+# print(kaggle)
+# outfile = open('input_files/filtered_kaggle2.pkl','wb')
+# songs = []
+# for k in kaggle:
+#     k['lyrics'] = clean_lyrics(k['lyrics'])
+#     songs += [k.copy()]
+# pickle.dump(songs,outfile)
+
+# print(kaggle[5]['artist'])
 # select_artists(['frank-sinatra'],'input_files/filtered_kaggle.pkl','input_files/sinatra.pkl')
-sinatra = pickle.load(open('input_files/sinatra.pkl','rb'))
-print(len(sinatra))
-split_sets('input_files/sinatra.pkl','input_files/sinatra')
+# sinatra = pickle.load(open('input_files/sinatra.pkl','rb'))
+# print(len(sinatra))
+# split_sets('input_files/sinatra.pkl','input_files/sinatra')
 # artist_title = set()
 # lyrics = []
 # for x in dali+kaggle:
@@ -119,3 +134,5 @@ split_sets('input_files/sinatra.pkl','input_files/sinatra')
         # lyrics += [x]
 
 # create_vocab(lyrics,'input_files/filtered.vocab')
+
+

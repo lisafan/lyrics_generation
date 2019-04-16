@@ -133,15 +133,20 @@ def main():
 
     ppl = evaluate_ppl(model, dataloader, params)
     print(ppl)
+
+    samples = []
+    for i in range(50):
+        ex = generate(model, Data, params, pad_fn=pad_fn)
+        ex = re.sub(' <EOL> ','\n', ex)
+        samples += [ex]
+
     with open(args.outfile, 'w') as f:
         f.write('Evaluations for %s\n'%args.checkpoint)
         f.write('using %s:\n\n'%args.testfile)
         f.write('Perplexity = %.3f\n\n'%ppl)
 
         f.write('50 generated samples:\n\n')
-        for i in range(50):
+        for i, s in enumerate(samples):
             f.write('(%d)\n'%(i+1))
-            ex = generate(model, Data, params, pad_fn=pad_fn)
-            ex = re.sub(' <EOL> ','\n', ex)
-            f.write(ex+'\n\n')
+            f.write(s+'\n\n')
 main()
