@@ -104,14 +104,18 @@ def create_vocab(lyrics,file_name):
                 break
             f.write('%s\t%s\n'%(a,n))
 
-dali = pickle.load(open('input_files/filtered_dali_train.pkl','rb'))
-kaggle = pickle.load(open('input_files/filtered_kaggle_train.pkl','rb'))
-artist_title = set()
-lyrics = []
-for x in dali+kaggle:
-    at = re.sub(' ','-',x['artist'])+'-'+re.sub(' ','-',x['song'])
-    if at not in artist_title:
-        artist_title.add(at)
-        lyrics += [x]
+# dali = pickle.load(open('input_files/filtered_dali_train.pkl','rb'))
+# kaggle = pickle.load(open('input_files/filtered_kaggle.pkl','rb'))
+# select_artists(['frank-sinatra'],'input_files/filtered_kaggle.pkl','input_files/sinatra.pkl')
+sinatra = pickle.load(open('input_files/sinatra.pkl','rb'))
+print(len(sinatra))
+split_sets('input_files/sinatra.pkl','input_files/sinatra')
+# artist_title = set()
+# lyrics = []
+# for x in dali+kaggle:
+#     at = re.sub(' ','-',x['artist'])+'-'+re.sub(' ','-',x['song'])
+#     if at not in artist_title:
+#         artist_title.add(at)
+        # lyrics += [x]
 
-create_vocab(lyrics,'input_files/filtered.vocab')
+# create_vocab(lyrics,'input_files/filtered.vocab')
