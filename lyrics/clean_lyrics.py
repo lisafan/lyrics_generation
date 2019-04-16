@@ -106,7 +106,8 @@ def create_vocab(lyrics,file_name):
 
 split_sets('input_files/filtered_kaggle.pkl', 'input_files/filtered_kaggle')
 kaggle = pickle.load(open('input_files/filtered_kaggle_train.pkl','rb'))
-create_vocab(kaggle, 'input_files/filtered_kaggle_train.vocab')
+kaggle += pickle.load(open('input_files/filtered_dali_train.pkl','rb'))
+create_vocab(kaggle, 'input_files/filtered2.vocab')
 
 # dali = pickle.load(open('input_files/filtered_dali_train.pkl','rb'))
 # kaggle = pickle.load(open('input_files/filtered_kaggle.pkl','rb'))

@@ -106,8 +106,8 @@ def main():
                          max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
                          use_semantics=params.use_semantics, use_artist=params.use_artist,
                          use_melody=params.use_melody)
-    print(Data[np.random.randint(len(Data))], len(Data))
-    exit()
+    # print(Data[np.random.randint(len(Data))], len(Data))
+    # exit()
     log_str("\n%d batches per epoch\n"%(len(Data)/params.batch_size))
 
     if params.use_semantics:

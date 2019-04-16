@@ -55,7 +55,7 @@ def generate(model, Data, params, prime_str=None, artist=None, melody=None, pad_
     else:
         inp = [Data.word2id(w) for w in prime_str]
         predict_len = predict_line_len*predict_seq_len
-        predicted = model.evaluate(inp, artist, melody, predict_len, temperature)
+        predicted = model.evaluate_seq(inp, artist, melody, predict_len, temperature)
 
         predicted_words = [Data.id2word(w) for w in predicted]
         if Data.END in predicted_words:
@@ -64,7 +64,7 @@ def generate(model, Data, params, prime_str=None, artist=None, melody=None, pad_
     return ' '.join(predicted_words)
 
 
-def evaluate_ppl(model, val_dataloader, params):
+def perplexity(model, val_dataloader, params):
     val_loss = 0.
     with torch.no_grad():
         for i, batch in enumerate(val_dataloader):
@@ -131,7 +131,7 @@ def main():
     model.to(device)
     model.eval()
 
-    ppl = evaluate_ppl(model, dataloader, params)
+    ppl = perplexity(model, dataloader, params)
     print(ppl)
 
     samples = []
