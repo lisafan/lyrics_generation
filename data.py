@@ -57,7 +57,8 @@ class LyricsDataset(Dataset):
         self.max_mel_len = max_mel_len
         
         self.use_semantics = use_semantics
-        if self.use_semantics:
+        self.use_melody = use_melody
+        if self.use_semantics or self.use_melody:
             assert(chunk_size==0 or max_line_len <= chunk_size)
             self.max_line_len = max_line_len
 
@@ -67,7 +68,6 @@ class LyricsDataset(Dataset):
             self.num_artists = len(self.artists)
         else:
             self.num_artists = 0
-        self.use_melody = use_melody
             
         # chunk lyrics
         print("chunking lyrics")
@@ -113,7 +113,8 @@ class LyricsDataset(Dataset):
         samp = self.lyrics[idx]
         sample = {'inp_words':[],'out_words':[],'inp_ids':[],'out_ids':[],'artist':[],'artist_id':[], 'melody':[], 'song':[]}
         
-        if self.use_semantics:
+        #if self.use_semantics:
+        if hasattr(self, 'max_line_len'):
             tokenized_lyrics = [[self.START]+line.split()+[self.EOL]  for line in samp['lyrics'].split('\n')]
             tokenized_lines = tokenized_lyrics[:self.max_line_len]
 
@@ -141,14 +142,16 @@ class LyricsDataset(Dataset):
                 for note in note_line:
                     duration = int(math.ceil(note[1]/0.2))
                     melody_line.extend([note[0]]*duration)
-                if self.use_semantics:
-                    melody_line.extend([0] * self.max_mel_len)
-                    melody.append(melody_line[:self.max_mel_len])
-                else:
-                    melody.extend(melody_line)
-            if not self.use_semantics:
-                melody.extend([0] * (self.max_mel_len))
-                melody = melody[:self.max_mel_len]
+                #if self.use_semantics:
+                #    melody_line.extend([0] * self.max_mel_len)
+                #    melody.append(melody_line[:self.max_mel_len])
+                #else:
+                #    melody.extend(melody_line)
+                melody_line.extend([0] * self.max_mel_len)
+                melody.append(melody_line[:self.max_mel_len])
+            #if not self.use_semantics:
+            #    melody.extend([0] * (self.max_mel_len))
+            #    melody = melody[:self.max_mel_len]
             sample['melody'] = melody
 
         sample['song'] = samp['song']
@@ -205,7 +208,7 @@ def padding_fn(data):
     return inp_seqs,inp_lens,out_seqs,out_lens,inp_artists,inp_melody,data
 
 
-def semantic_padding_fn(data):
+def line_padding_fn(data):
     # gets samples (dicts) from Data
 
     def merge(seqs):

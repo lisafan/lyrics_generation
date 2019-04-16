@@ -70,7 +70,6 @@ class LyricsRNN(nn.Module):
         self.lstm = nn.LSTM(self.lstm_input_size, hidden_size, n_layers, batch_first=True, dropout=0.5)
         self.dropout = nn.Dropout(p=0.5)
         self.linear = nn.Linear(hidden_size, output_size)
-        print(output_size)
         
         self.hidden = self.init_hidden()
     
@@ -117,10 +116,26 @@ class LyricsRNN(nn.Module):
             melody_input = melody_input.repeat(1, embed.shape[1], 1)
             embed = torch.cat([embed, melody_input],dim=2)
             
+            # sort by numwords in reverse order
+            input_len_order = np.argsort(input_lens)[::-1]
+            emb = torch.zeros_like(embed)
+            sorted_input_lens = []
+            for i in range(len(input_lens)):
+                emb[i] = embed[input_len_order[i]]
+                sorted_input_lens += [input_lens[input_len_order[i]]]
 
-        emb_pad = rnn.pack_padded_sequence(embed, input_lens, batch_first=True)
-        out_pad, self.hidden = self.lstm(emb_pad, self.hidden)
-        output, _ = rnn.pad_packed_sequence(out_pad, batch_first=True)
+            emb_pad = rnn.pack_padded_sequence(emb, sorted_input_lens, batch_first=True)
+            out_pad, self.hidden = self.lstm(emb_pad, self.hidden)
+            out, _ = rnn.pad_packed_sequence(out_pad, batch_first=True)
+
+            # put back in [batch x line] order
+            output = torch.zeros_like(out)
+            for i in range(len(input_lens)):
+                output[input_len_order[i]] = out[i]
+        else:
+            emb_pad = rnn.pack_padded_sequence(embed, input_lens, batch_first=True)
+            out_pad, self.hidden = self.lstm(emb_pad, self.hidden)
+            output, _ = rnn.pad_packed_sequence(out_pad, batch_first=True)
         
         # second RNN goes here
 
@@ -145,6 +160,47 @@ class LyricsRNN(nn.Module):
         
         loss = -torch.sum(Y_hat) / non_pad_tokens
         return loss
+
+    def evaluate_seq(self, prime_str, artist=None, melody=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
+        self.eval()
+        with torch.no_grad():
+            self.hidden = self.init_hidden()
+
+            # repeat input across batches
+            if self.use_artist:
+                artist = torch.from_numpy(np.array([artist]*self.batchsize))
+            if self.use_melody:
+                melody = melody.repeat(self.batchsize, 1, 1)
+
+            # repeat lines across batch
+            inp = torch.LongTensor([l[0] for l in prime_str]*self.batchsize)
+            inp = torch.unsqueeze(inp,dim=1).to(device)
+
+            input_lens = [1] * (self.batchsize*predict_line_len)
+            predicted = [[l[0]] for l in prime_str]
+
+            for i in range(predict_seq_len):
+                # just get first batch (num lines x vocab dist)
+                output = self.lyrics_generator([inp, melody], input_lens)[0]
+
+                # for each line
+                for j in range(predict_line_len):
+                    # if there's more of prime string, use it
+                    if i < len(prime_str[j])-1:
+                        top_i = prime_str[j][i+1]
+                    else:
+                        # Sample from the network as a multinomial distribution
+                        output_dist = output[j].data.view(-1).div(temperature).exp()
+                        top_i = torch.multinomial(output_dist, 1)[0]
+
+                    # Add predicted character to string and use as next input
+                    predicted[j] += [top_i]
+
+                inp = torch.LongTensor([l[-1] for l in predicted]*self.batchsize)
+                inp = torch.unsqueeze(inp,dim=1).to(device)
+
+            self.train()
+            return predicted
     
     # def evaluate(self, prime_str=[START], artist=None, predict_len=100, temperature=0.8):
     def evaluate(self, prime_str, artist=None, melody=None, predict_len=100, temperature=0.8):

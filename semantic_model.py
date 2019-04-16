@@ -198,7 +198,7 @@ class SemanticLyricsRNN(nn.Module):
         loss = -torch.sum(Y_hat) / non_pad_tokens
         return loss
     
-    def evaluate(self, prime_str, artist=None, melody=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
+    def evaluate_seq(self, prime_str, artist=None, melody=None, predict_line_len=5, predict_seq_len=20, temperature=0.8):
         self.eval()
         with torch.no_grad():
             self.hidden_S = self.init_hidden_S()
