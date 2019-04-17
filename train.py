@@ -64,7 +64,7 @@ def get_hyperparameters():
     parser.add_argument("--word_embedding_size", default=128, type=int)
     parser.add_argument("--artist_embedding_size", default=32, type=int)
     parser.add_argument("--embed_artist", default="False", type=str2bool) # whether to embed artist (T) or use one-hot vector (F)
-    patser.add_argument("--artist_embedding_checkpoint", default=None) #checkpoint of model from which to import artist embeddings
+    parser.add_argument("--artist_embedding_checkpoint", default=None) #checkpoint of model from which to import artist embeddings
 
     parser.add_argument("--learning_rate", default=0.005, type=float)
     parser.add_argument("--n_epochs", default=1000, type=int)
@@ -286,7 +286,7 @@ def main():
                 else:
                     sample_melody = None
                 if params.use_artist:
-                    for a in Data.artists[0:5]:
+                    for a in Data.artists:
                         log_str('Artist %s: %s\n'%(a, generate(artist=a, melody=sample_melody)))
                 else:
                     log_str(generate(melody=sample_melody)+'\n')
