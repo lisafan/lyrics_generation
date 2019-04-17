@@ -11,11 +11,12 @@ from scipy import linalg
 import torch
 from torch.utils.data import Dataset, DataLoader
 from model import LyricsRNN
+from semantic_model import SemanticLyricsRNN
 from data import LyricsDataset, padding_fn, line_padding_fn
 
 matplotlib.use('Agg')
-#torch.cuda.set_device(1)
-#print(torch.cuda.get_device_name(1))
+torch.cuda.set_device(1)
+print(torch.cuda.get_device_name(1))
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 
@@ -52,14 +53,18 @@ def generate(model, Data, params, prime_str=None, artist=None, melody=None, pad_
             inp = [[Data.word2id(w) for w in prime_str]]*predict_line_len
         predicted = model.evaluate_seq(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
 
-        target_lines = '\n'.join([' '.join(line) for line in sample[0]['inp_words']])
-        predicted_words = ['Melody source: %s by %s\n'%(sample[0]['song'], sample[0]['artist']) +\
-                           'target lyrics:\n' + target_lines + '\ngenerated lyrics:\n']
+        if params.use_melody:
+            target_lines = ' '.join([' '.join(line) for line in sample[0]['inp_words']])
+            predicted_words = ['Melody source: %s by %s\n'%(sample[0]['song'], sample[0]['artist']) +\
+                               'target lyrics: ' + target_lines + '\n\ngenerated lyrics: ']
+        else:
+            predicted_words = []
+                                 
         for line in predicted:
             pw = [Data.id2word(w) for w in line]
             if Data.EOL in pw:
                 pw = pw[:pw.index(Data.EOL)+1]
-            predicted_words += pw + ['\n']
+            predicted_words += pw #+ ['\n']
 
     else:
         inp = [Data.word2id(w) for w in prime_str]
@@ -128,37 +133,6 @@ def artist_perplexity(model, val_dataloader, params, num_artists):
         val_loss /= len(val_dataloader)
         ppl = np.exp(val_loss)
         return ppl
-
-def load_artist_vectors(filename):
-    checkpoint = torch.load(filename, map_location=device)
-    epoch = checkpoint['epoch']
-    all_losses = checkpoint['losses']
-    params = checkpoint['hyperparameters']
-    Data = LyricsDataset(params.input_file, vocab_file=params.vocab_file, vocab_size=params.vocab_size,
-                     chunk_size=params.chunk_size, max_len=params.max_seq_len,
-                     use_artist=params.use_artist)
-    ValData = LyricsDataset(re.sub('train', 'val', params.input_file), vocab_file=params.vocab_file,
-                        chunk_size=params.chunk_size, use_artist=params.use_artist)
-    val_dataloader = DataLoader(ValData, batch_size=params.batch_size, num_workers=1, collate_fn=padding_fn, drop_last=True)
-    model = LyricsRNN(ValData.vocab_len, ValData.vocab_len, ValData.PAD_ID, batch_size=params.batch_size, n_layers=params.n_layers,
-                  hidden_size=params.hidden_size, word_embedding_size=params.word_embedding_size,
-                  use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists,
-                  artist_embedding_size=params.artist_embedding_size
-                  )
-    optimizer = torch.optim.Adam(model.parameters(), lr=params.learning_rate)
-    model.load_state_dict(checkpoint['model_state_dict'])
-    model.to(device)
-    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-    for var_name in model.state_dict():
-        print(var_name)
-    print(model.artist_encoder.weight)
-    artist_labels = Data.artists
-    arr = model.artist_encoder.weight.detach().numpy()
-    embed_artists = {}
-    for index, artist in enumerate(Data.artists):
-        embed_artists[artist] = arr[index,:]
-    print(embed_artists)
-    return artist_labels, arr, embed_artists
 
 def plot_embeddings(artist_labels, arr, filename, mode):
     if mode=='tsne':
@@ -244,13 +218,16 @@ def main():
     model.load_state_dict(checkpoint['model_state_dict'])
     model.to(device)
     model.eval()
-    
+
+    print('calculating perplexity')    
     ppl = perplexity(model, dataloader, params)
 
     if params.use_artist:
+        print('calculating artist perplexity')    
         artist_ppl = artist_perplexity(model, dataloader, params, Data.num_artists)
 
     if 'artist_encoder.weight' in model.state_dict().keys():
+        print('computing artist similarities')
         artist_embeddings =  model.artist_encoder.weight.detach()
         emb_dict = {}
         for artist,emb in zip(Data.artists,artist_embeddings):
@@ -261,17 +238,21 @@ def main():
             sim = similarity(artist, emb_dict)
             sims[artist] = sorted(sim, key=lambda x: x[1], reverse=True)
 
+    print('generating samples')
     samples = []
     for i in range(50):
-        if params.use_artist:
+        if params.use_artist and not params.use_melody:
             idx = random.randint(0,Data.num_artists-1)
             ex = generate(model, Data, params, artist=idx, pad_fn=pad_fn)
-            ex = Data.artists[idx]+':\n' + re.sub(' <EOL> ','\n', ex)
+            ex = Data.artists[idx]+':\n' + ex
+            # ex = Data.artists[idx]+':\n' + re.sub('<EOL> ','<EOL>\n', ex)
         else:
             ex = generate(model, Data, params, pad_fn=pad_fn)
-            ex = re.sub(' <EOL> ','\n', ex)
+        ex = re.sub(' <START>','\n  <START>', ex)
+        ex = re.sub('<EOL> ','<EOL>\n', ex)
         samples += [ex]
 
+    print('writing to file')
     with open(args.outfile, 'w') as f:
         f.write('Evaluations for %s\n'%args.checkpoint)
         f.write('using %s:\n\n'%args.testfile)
