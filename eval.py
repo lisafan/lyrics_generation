@@ -2,11 +2,18 @@ import sys,os,re
 import random
 import argparse
 import numpy as np
+import matplotlib as matplotlib
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+from sklearn.manifold import TSNE
+from sklearn.decomposition import PCA
+from scipy import linalg
 import torch
 from torch.utils.data import Dataset, DataLoader
 from model import LyricsRNN
 from data import LyricsDataset, padding_fn, line_padding_fn
 
+matplotlib.use('Agg')
 torch.cuda.set_device(1)
 print(torch.cuda.get_device_name(1))
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -120,6 +127,80 @@ def artist_perplexity(model, val_dataloader, params, num_artists):
         ppl = np.exp(val_loss)
         return ppl
 
+def load_artist_vectors(filename):
+    checkpoint = torch.load(filename, map_location=device)
+    epoch = checkpoint['epoch']
+    all_losses = checkpoint['losses']
+    params = checkpoint['hyperparameters']
+    Data = LyricsDataset(params.input_file, vocab_file=params.vocab_file, vocab_size=params.vocab_size,
+                     chunk_size=params.chunk_size, max_len=params.max_seq_len,
+                     use_artist=params.use_artist)
+    ValData = LyricsDataset(re.sub('train', 'val', params.input_file), vocab_file=params.vocab_file,
+                        chunk_size=params.chunk_size, use_artist=params.use_artist)
+    val_dataloader = DataLoader(ValData, batch_size=params.batch_size, num_workers=1, collate_fn=padding_fn, drop_last=True)
+    model = LyricsRNN(ValData.vocab_len, ValData.vocab_len, ValData.PAD_ID, batch_size=params.batch_size, n_layers=params.n_layers,
+                  hidden_size=params.hidden_size, word_embedding_size=params.word_embedding_size,
+                  use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists,
+                  artist_embedding_size=params.artist_embedding_size
+                  )
+    optimizer = torch.optim.Adam(model.parameters(), lr=params.learning_rate)
+    model.load_state_dict(checkpoint['model_state_dict'])
+    model.to(device)
+    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+    for var_name in model.state_dict():
+        print(var_name)
+    print(model.artist_encoder.weight)
+    artist_labels = Data.artists
+    arr = model.artist_encoder.weight.detach().numpy()
+    embed_artists = {}
+    for index, artist in enumerate(Data.artists):
+        embed_artists[artist] = arr[index,:]
+    print(embed_artists)
+    return artist_labels, arr, embed_artists
+
+def plot_embeddings(artist_labels, arr, filename, mode):
+    if mode=='tsne':
+        tsne = TSNE(n_components=2, random_state=0)
+        np.set_printoptions(suppress=True)
+        Y = tsne.fit_transform(arr)
+        lim = 10
+
+    elif mode=='pca':
+        pca = PCA(n_components=2)
+        Y = pca.fit_transform(arr)
+        lim=1
+
+    x_coords = Y[:, 0]
+    y_coords = Y[:, 1]
+    # display scatter plot
+    plt.clf()
+    plt.scatter(x_coords, y_coords)
+    for label, x, y in zip(artist_labels, x_coords, y_coords):
+        plt.annotate(label, xy=(x, y), xytext=(2, 2), textcoords='offset points', fontsize=6)
+    plt.xlim(x_coords.min()-lim, x_coords.max()+lim)
+    plt.ylim(y_coords.min()-lim, y_coords.max()+lim)
+    plt.savefig('%s_%s.png'%(filename,mode))
+    # plt.figure()
+    # plt.show()
+
+
+def cos(vec1,vec2):
+    return vec1.dot(vec2)/(linalg.norm(vec1)*linalg.norm(vec2))
+
+# cosine similarity of input artist against all others
+def similarity(a, embed_artists):
+    sim = []
+    for b in embed_artists.keys():
+        if b==a:
+            continue
+        res = cos(embed_artists[a], embed_artists[b])
+        sim += [[b, res]]
+    # for a, b in pairs:
+    #     res = cos(embed_artists[a], embed_artists[b])
+    #     sim[(a,b)] = res
+        # print(res,a,'and',b)
+    return(sim)
+
 
 def main():
     args = get_hyperparameters()
@@ -133,7 +214,6 @@ def main():
     Data = LyricsDataset(args.testfile, vocab_file=params.vocab_file, chunk_size=params.chunk_size, 
         max_line_len=params.max_line_len, max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len, 
         use_semantics=params.use_semantics, use_artist=params.use_artist, use_melody=params.use_melody, artists='lyrics/artist_list.txt')
-    print(Data.num_artists)
 
     if params.use_semantics or params.use_melody:
         pad_fn = line_padding_fn
@@ -162,13 +242,22 @@ def main():
     model.load_state_dict(checkpoint['model_state_dict'])
     model.to(device)
     model.eval()
-
+    
     ppl = perplexity(model, dataloader, params)
-    print(ppl)
 
     if params.use_artist:
         artist_ppl = artist_perplexity(model, dataloader, params, Data.num_artists)
-    print(artist_ppl)
+
+    if 'artist_encoder.weight' in model.state_dict().keys():
+        artist_embeddings =  model.artist_encoder.weight.detach()
+        emb_dict = {}
+        for artist,emb in zip(Data.artists,artist_embeddings):
+            emb_dict[artist] = emb
+
+        sims = {}
+        for artist in ['britney spears', 'bruce springsteen', 'the gathering', 'elton john']:
+            sim = similarity(artist, emb_dict)
+            sims[artist] = sorted(sim, key=lambda x: x[1], reverse=True)
 
     samples = []
     for i in range(50):
@@ -187,6 +276,20 @@ def main():
         f.write('Perplexity = %.3f\n'%ppl)
         if params.use_artist:
             f.write('Wrong Artist Perplexity = %.3f\n'%artist_ppl)
+
+        if 'artist_encoder.weight' in model.state_dict().keys():
+            f.write('\nSelect cosine similarities:\n')
+            for k in sims.keys():
+                f.write('%s\n'%k)
+
+                f.write('  Top 3 most common:\n')
+                for j in sims[k][:3]:
+                    f.write('%20s : %.4f\n'%(j[0],j[1]))
+
+                f.write('\n  Top 3 least common:\n')
+                for j in sims[k][-3:]:
+                    f.write('%20s : %.4f\n'%(j[0],j[1]))
+                f.write('\n\n')
 
         f.write('\n50 generated samples:\n\n')
         for i, s in enumerate(samples):
