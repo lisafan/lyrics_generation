@@ -30,7 +30,8 @@ class LyricsRNN(nn.Module):
                  n_layers=1, hidden_size=256, melody_len=40,
                  word_embedding_size=128, word_embeddings=None, 
                  use_artist=True, embed_artist=False, num_artists=10,
-                 artist_embedding_size=32, use_melody=True):
+                 artist_embedding_size=32, artist_embed_weights=None,
+                 use_melody=True):
         
         super(LyricsRNN, self).__init__()
         self.hidden_size = hidden_size
@@ -53,8 +54,12 @@ class LyricsRNN(nn.Module):
             self.num_artists = num_artists
             # either embed artist data or use a one-hot vector
             if embed_artist:
-                self.artist_embed_size = artist_embedding_size
-                self.artist_encoder = nn.Embedding(self.num_artists, self.artist_embed_size)
+                if artist_embed_weights is not None:
+                    self.artist_embed_size = artist_embed_weights.shape[1]
+                    self.artist_encoder = nn.Embedding.from_pretrained(artist_embed_weights)
+                else:
+                    self.artist_embed_size = artist_embedding_size
+                    self.artist_encoder = nn.Embedding(self.num_artists, self.artist_embed_size)
             else:
                 self.artist_embed_size = self.num_artists
                 self.artist_encoder = self.artist_onehot
