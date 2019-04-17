@@ -75,7 +75,7 @@ class SemanticLyricsRNN(nn.Module):
         self.lyr_input_size = self.word_embed_size + self.hidden_size_S
         if self.use_melody:
             self.lyr_input_size += self.melody_len
-        
+
         self.semantic_lstm = nn.LSTM(self.sem_input_size, hidden_size_S, n_layers_S, batch_first=True, dropout=0.5)
         self.lyrics_lstm = nn.LSTM(self.lyr_input_size, hidden_size_L, n_layers_L, batch_first=True, dropout=0.5)
         self.dropout = nn.Dropout(p=0.5)
