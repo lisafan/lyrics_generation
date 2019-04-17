@@ -14,8 +14,8 @@ from model import LyricsRNN
 from data import LyricsDataset, padding_fn, line_padding_fn
 
 matplotlib.use('Agg')
-torch.cuda.set_device(1)
-print(torch.cuda.get_device_name(1))
+#torch.cuda.set_device(1)
+#print(torch.cuda.get_device_name(1))
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 
@@ -41,18 +41,20 @@ def generate(model, Data, params, prime_str=None, artist=None, melody=None, pad_
         if melody==None:
             _,_,_,_,_,sample_melody,sample = pad_fn([Data[random.randint(0,len(Data))]])
             melody = sample_melody.to(device)
-            print('Melody source: %s by %s\n'%(sample[0]['song'], sample[0]['artist']))
+            #print('Melody source: %s by %s\n'%(sample[0]['song'], sample[0]['artist']))
     else:
         sample_melody = None
 
-    if params.use_semantics:
+    if params.use_semantics or params.use_melody:
         if type(prime_str[0])==list:
             inp = [[Data.word2id(w) for w in prime_line] for prime_line in prime_str]
         else:
             inp = [[Data.word2id(w) for w in prime_str]]*predict_line_len
-        predicted = model.evaluate(inp, artist, melody, predict_line_len, predict_seq_len, temperature).detach()
+        predicted = model.evaluate_seq(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
 
-        predicted_words = []
+        target_lines = '\n'.join([' '.join(line) for line in sample[0]['inp_words']])
+        predicted_words = ['Melody source: %s by %s\n'%(sample[0]['song'], sample[0]['artist']) +\
+                           'target lyrics:\n' + target_lines + '\ngenerated lyrics:\n']
         for line in predicted:
             pw = [Data.id2word(w) for w in line]
             if Data.EOL in pw:
@@ -213,7 +215,7 @@ def main():
 
     Data = LyricsDataset(args.testfile, vocab_file=params.vocab_file, chunk_size=params.chunk_size, 
         max_line_len=params.max_line_len, max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len, 
-        use_semantics=params.use_semantics, use_artist=params.use_artist, use_melody=params.use_melody, artists='lyrics/artist_list.txt')
+        use_semantics=params.use_semantics, use_artist=params.use_artist, use_melody=params.use_melody)
 
     if params.use_semantics or params.use_melody:
         pad_fn = line_padding_fn

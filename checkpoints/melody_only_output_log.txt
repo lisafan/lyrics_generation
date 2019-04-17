@@ -1,0 +1,551 @@
+train.py --input_file=lyrics/input_files/filtered_dali_train.pkl --vocab_file=lyrics/input_files/filtered.vocab --checkpoint_files=checkpoints/melody_only --chunk_size=5 --max_seq_len=50 --max_mel_len=40 --max_line_len=5 --n_layers_L=2 --hidden_size_L=64 --print_every=300 --n_epochs=10 --use_artist=False --use_semantics=False --use_melody=True --mel_t_step=0.1
+
+input_file: lyrics/input_files/filtered_dali_train.pkl
+vocab_file: lyrics/input_files/filtered.vocab
+checkpoint_files: checkpoints/melody_only
+load_model: None
+vocab_size: 10000
+chunk_size: 5
+max_seq_len: 50
+max_mel_len: 40
+mel_t_step: 0.1
+max_line_len: 5
+use_artist: False
+use_semantics: False
+use_melody: True
+use_noise: False
+batch_size: 16
+n_layers_S: 1
+hidden_size_S: 256
+n_layers_L: 2
+hidden_size_L: 64
+word_embedding_size: 128
+artist_embedding_size: 32
+embed_artist: False
+learning_rate: 0.005
+n_epochs: 10
+print_every: 300
+plot_every: 1000
+
+1358 batches per epoch
+
+[0m 0s (epoch 1: 0%) Loss: 0.0307]
+Melody source: Blue Savannah by []
+
+<START> earning dedication floss ya steals changed invasion betting buzzed brew shock cheat gaining float eterna saviour memorize lit antes chump 
+ <START> met needle letting rap nada mirada fingers fails craze inspired touching beating ignoring present defenses wiped ceiling eden define ooh-oooh 
+ <START> purgatorying fun spill grape hex roars moonlight hymn someplace unh tinderbox sensory judging exotic indifferent smilin tree wider wrapped beach 
+ <START> rims lag starched choirs tinderbox throughout touching punishment pipe bad commotion cleaning viens reveal murrow barrier cindy burlesque latest stabbed 
+ <START> mediocrity nadie sweatin encased oncoming ritmo game population constellation pedestal champions display willingly against cleanse paper nothings mamma edge grew 
+
+
+[0m 8s (epoch 1: 22%) Loss: 5.7063]
+Melody source: The River by []
+
+<START> you you you the ta for look <EOL> 
+ <START> that i 's <EOL> 
+ <START> and on if a should <EOL> 
+ <START> and you bright <EOL> 
+ <START> 'm my my the all . <EOL> 
+
+
+[0m 17s (epoch 1: 44%) Loss: 5.3548]
+Melody source: Too Much Heaven by []
+
+<START> i want be on <EOL> 
+ <START> for 'm to 'm way not <EOL> 
+ <START> and people be <EOL> 
+ <START> and world their to <EOL> 
+ <START> if i i <EOL> 
+
+
+[0m 25s (epoch 1: 66%) Loss: 5.3040]
+Melody source: Careless Whisper by []
+
+<START> like placed you until <EOL> 
+ <START> you can a a dying to <EOL> 
+ <START> and 'd 'll <UNK> struck all <EOL> 
+ <START> oh you fighting <EOL> 
+ <START> crossed a <EOL> 
+
+
+[0m 34s (epoch 1: 88%) Loss: 5.2868]
+Melody source: Out From Under by []
+
+<START> and and you n't tune <EOL> 
+ <START> it <EOL> 
+ <START> i n't a like n't <EOL> 
+ <START> i you down see <EOL> 
+ <START> we <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.5907
+[0m 40s (epoch 2: 0%) Loss: 2.7793]
+Melody source: Sound Of The Underground by []
+
+<START> i you i <EOL> 
+ <START> that fear hope n't you <EOL> 
+ <START> you someone 're up <EOL> 
+ <START> you n't too a a at <EOL> 
+ <START> who do hand believe <EOL> 
+
+
+[0m 49s (epoch 2: 22%) Loss: 5.2297]
+Melody source: The Miracle Of Love by []
+
+<START> i 's fell but <EOL> 
+ <START> these 'm what the so <EOL> 
+ <START> did i i me to this <EOL> 
+ <START> <UNK> can <EOL> 
+ <START> and 's could at <EOL> 
+
+
+[0m 57s (epoch 2: 44%) Loss: 5.2268]
+Melody source: L.A. Woman by []
+
+<START> people 've deep , you <EOL> 
+ <START> i the the ca by <EOL> 
+ <START> when will to in i <EOL> 
+ <START> i was i <EOL> 
+ <START> everybody i it outside waiting the <EOL> 
+
+
+[1m 5s (epoch 2: 66%) Loss: 5.2062]
+Melody source: Exodus by []
+
+<START> now of 's you <EOL> 
+ <START> i the 're <EOL> 
+ <START> i 've as <EOL> 
+ <START> only 's a they , <EOL> 
+ <START> it long is door <EOL> 
+
+
+[1m 14s (epoch 2: 88%) Loss: 5.1866]
+Melody source: Pale Traces by []
+
+<START> you comes of <UNK> my <EOL> 
+ <START> i fade 's <EOL> 
+ <START> i the wo now <EOL> 
+ <START> in should the in <EOL> 
+ <START> so i all , on <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.6556
+[1m 20s (epoch 3: 0%) Loss: 2.7319]
+Melody source: Fly by []
+
+<START> while <EOL> 
+ <START> oh i in you with maybe <EOL> 
+ <START> to 's told it <EOL> 
+ <START> i it <EOL> 
+ <START> and 'm <EOL> 
+
+
+[1m 29s (epoch 3: 22%) Loss: 5.1535]
+Melody source: Hold On Tight by []
+
+<START> and are me <EOL> 
+ <START> do 's left <EOL> 
+ <START> and i the <EOL> 
+ <START> there <EOL> 
+ <START> to the i , <EOL> 
+
+
+[1m 37s (epoch 3: 44%) Loss: 5.1546]
+Melody source: Exodus by []
+
+<START> all your 's <EOL> 
+ <START> if to the you <EOL> 
+ <START> i you are know to chapel <EOL> 
+ <START> that me all you of the <EOL> 
+ <START> your a meant <EOL> 
+
+
+[1m 46s (epoch 3: 66%) Loss: 5.1482]
+Melody source: Exodus by []
+
+<START> your 'll me every i <EOL> 
+ <START> yeah , 's <EOL> 
+ <START> thanks you have <EOL> 
+ <START> a do want beginning comes 's the <EOL> 
+ <START> i the i a <EOL> 
+
+
+[1m 54s (epoch 3: 88%) Loss: 5.1487]
+Melody source: Prayer by []
+
+<START> i <EOL> 
+ <START> and if out can <EOL> 
+ <START> no me <UNK> want all ? <EOL> 
+ <START> just i going <EOL> 
+ <START> i 'm told 's <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.6760
+[2m 1s (epoch 4: 0%) Loss: 2.7106]
+Melody source: The Miracle Of Love by []
+
+<START> <UNK> my wan but <EOL> 
+ <START> feel i ' the <EOL> 
+ <START> you the that will . <EOL> 
+ <START> and man look <EOL> 
+ <START> where i other n't <EOL> 
+
+
+[2m 9s (epoch 4: 22%) Loss: 5.1115]
+Melody source: ...But Home Is Nowhere by []
+
+<START> i 'm 'm <EOL> 
+ <START> <UNK> with you breaking <EOL> 
+ <START> we love , na to listen <EOL> 
+ <START> of 's you <EOL> 
+ <START> now i want know <EOL> 
+
+
+[2m 18s (epoch 4: 44%) Loss: 5.1209]
+Melody source: Blaze Of Glory by []
+
+<START> i yeah has you ' i <EOL> 
+ <START> get every i <EOL> 
+ <START> when there it the <EOL> 
+ <START> there can a care <EOL> 
+ <START> when it <EOL> 
+
+
+[2m 27s (epoch 4: 66%) Loss: 5.1112]
+Melody source: Until You're Mine by []
+
+<START> oh 's , <EOL> 
+ <START> i <UNK> be hear sin <EOL> 
+ <START> a a lovers my news ' <EOL> 
+ <START> <UNK> n't <EOL> 
+ <START> you you with 've control high <EOL> 
+
+
+[2m 35s (epoch 4: 88%) Loss: 5.1066]
+Melody source: Can You Feel The Love Tonight II by []
+
+<START> yeah why attached 'm <EOL> 
+ <START> all <EOL> 
+ <START> you can you <EOL> 
+ <START> in <EOL> 
+ <START> do keeps <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.7453
+[2m 42s (epoch 5: 0%) Loss: 2.6851]
+Melody source: Out From Under by []
+
+<START> oh 's never let me <EOL> 
+ <START> i <EOL> 
+ <START> how me was play wake ? <EOL> 
+ <START> <UNK> <EOL> 
+ <START> tell <EOL> 
+
+
+[2m 50s (epoch 5: 22%) Loss: 5.0907]
+Melody source: Can't Stop This Thing We Started by []
+
+<START> you <EOL> 
+ <START> and live time you <EOL> 
+ <START> i the n't life with <EOL> 
+ <START> it 'm <EOL> 
+ <START> we you not one <EOL> 
+
+
+[2m 59s (epoch 5: 44%) Loss: 5.0854]
+Melody source: The Night by []
+
+<START> there dancin it now <EOL> 
+ <START> a know the , <EOL> 
+ <START> together you <EOL> 
+ <START> i i <EOL> 
+ <START> that i to like <EOL> 
+
+
+[3m 7s (epoch 5: 66%) Loss: 5.0713]
+Melody source: Fly by []
+
+<START> i that stars <EOL> 
+ <START> territory 's <UNK> you <EOL> 
+ <START> but 'll for closer love <EOL> 
+ <START> oh you nothing to <EOL> 
+ <START> the <EOL> 
+
+
+[3m 16s (epoch 5: 88%) Loss: 5.0685]
+Melody source: Pieces Of A Dream by []
+
+<START> to 'll 're even a <EOL> 
+ <START> i 's reaching happy know <EOL> 
+ <START> bow it good <EOL> 
+ <START> you you <UNK> their a made love i 'd walk my <EOL> 
+ <START> you you be it to <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.7887
+[3m 22s (epoch 6: 0%) Loss: 2.6660]
+Melody source: Head Over Feet by []
+
+<START> what must feet <EOL> 
+ <START> to 'll n't sunrise <EOL> 
+ <START> if give drifting cry <EOL> 
+ <START> i n't <EOL> 
+ <START> and i <EOL> 
+
+
+[3m 31s (epoch 6: 22%) Loss: 5.0504]
+Melody source: ...But Home Is Nowhere by []
+
+<START> you a of what love silly <EOL> 
+ <START> i am wo world <EOL> 
+ <START> and eyes <EOL> 
+ <START> could i 'm how to do me <EOL> 
+ <START> my they <UNK> not you <EOL> 
+
+
+[3m 40s (epoch 6: 44%) Loss: 5.0498]
+Melody source: L.A. Woman by []
+
+<START> i n't again 's <EOL> 
+ <START> i a is know do <EOL> 
+ <START> the 'm 're , <EOL> 
+ <START> i <EOL> 
+ <START> to <UNK> <EOL> 
+
+
+[3m 48s (epoch 6: 66%) Loss: 5.0400]
+Melody source: The Day Before You Came by []
+
+<START> oh , <EOL> 
+ <START> and why just ready beauty <EOL> 
+ <START> but marie n't your you <UNK> <EOL> 
+ <START> all lost <EOL> 
+ <START> go is like of we <EOL> 
+
+
+[3m 57s (epoch 6: 88%) Loss: 5.0309]
+Melody source: Never Going Back Again by []
+
+<START> <UNK> the that to that <EOL> 
+ <START> come had you life my to the gave <EOL> 
+ <START> to 've always for friend in <EOL> 
+ <START> <UNK> the hear shines <EOL> 
+ <START> three hate it <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.8483
+[4m 3s (epoch 7: 0%) Loss: 2.6547]
+Melody source: Special by []
+
+<START> and like n't her <EOL> 
+ <START> <UNK> of <EOL> 
+ <START> let i i i so <EOL> 
+ <START> i should note <EOL> 
+ <START> all a a i <EOL> 
+
+
+[4m 11s (epoch 7: 22%) Loss: 5.0190]
+Melody source: L.A. Woman by []
+
+<START> <UNK> love , my never <EOL> 
+ <START> in about n't skin <EOL> 
+ <START> tell know get <EOL> 
+ <START> i it n't n't <EOL> 
+ <START> hold i touch ' <EOL> 
+
+
+[4m 20s (epoch 7: 44%) Loss: 5.0084]
+Melody source: ...But Home Is Nowhere by []
+
+<START> you i i the it <EOL> 
+ <START> but to want <EOL> 
+ <START> never na 're again this <EOL> 
+ <START> if down the even like lie <EOL> 
+ <START> we 'm to <EOL> 
+
+
+[4m 28s (epoch 7: 66%) Loss: 4.9945]
+Melody source: Friends In Low Places by []
+
+<START> worker i <EOL> 
+ <START> be do to <EOL> 
+ <START> you 'm 've for <EOL> 
+ <START> i am the voice you 's <EOL> 
+ <START> and my the what out <EOL> 
+
+
+[4m 37s (epoch 7: 88%) Loss: 4.9901]
+Melody source: Runaway by []
+
+<START> and <EOL> 
+ <START> i 'm n't up time me <EOL> 
+ <START> i i world bird you 's <EOL> 
+ <START> i eyes hometown with <EOL> 
+ <START> tomorrow i it , <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.8331
+[4m 43s (epoch 8: 0%) Loss: 2.6166]
+Melody source: Blaze Of Glory by []
+
+<START> past me 're you time <EOL> 
+ <START> where running her that can <EOL> 
+ <START> discovered 'm place could <EOL> 
+ <START> i it could <EOL> 
+ <START> he i you be we you it <EOL> 
+
+
+[4m 52s (epoch 8: 22%) Loss: 4.9594]
+Melody source: You by []
+
+<START> in in the find <EOL> 
+ <START> and up turned need <EOL> 
+ <START> i can is you hard good <EOL> 
+ <START> the greatest leave ' <EOL> 
+ <START> a wo turn a <EOL> 
+
+
+[5m 0s (epoch 8: 44%) Loss: 4.9456]
+Melody source: Pieces Of A Dream by []
+
+<START> crazy long born <EOL> 
+ <START> yeah for yeah <UNK> you know <EOL> 
+ <START> so i i you <EOL> 
+ <START> if 'd be busy me you <EOL> 
+ <START> because will not too saw <EOL> 
+
+
+[5m 9s (epoch 8: 66%) Loss: 4.9567]
+Melody source: ...But Home Is Nowhere by []
+
+<START> and long n't over <EOL> 
+ <START> because your now , the <UNK> the <EOL> 
+ <START> breathe i wan well to <EOL> 
+ <START> hurroo i and n't son <EOL> 
+ <START> i are a n't swimming <EOL> 
+
+
+[5m 19s (epoch 8: 88%) Loss: 4.9441]
+Melody source: Stricken by []
+
+<START> oh ! <EOL> 
+ <START> girl pay someone <EOL> 
+ <START> feel i it really <EOL> 
+ <START> burning and it i <EOL> 
+ <START> gone be person it show <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.8489
+[5m 26s (epoch 9: 0%) Loss: 2.5983]
+Melody source: Monkey Wrench by []
+
+<START> believe <EOL> 
+ <START> <UNK> mind <EOL> 
+ <START> you 'm i , to know , <EOL> 
+ <START> her we have <UNK> <EOL> 
+ <START> you just ooh <EOL> 
+
+
+[5m 35s (epoch 9: 22%) Loss: 4.9093]
+Melody source: Prayer by []
+
+<START> and you n't say <EOL> 
+ <START> it 'm 'd <EOL> 
+ <START> do , the love everything <EOL> 
+ <START> what love to right <EOL> 
+ <START> this you i do candle <EOL> 
+
+
+[5m 44s (epoch 9: 44%) Loss: 4.9073]
+Melody source: Fly by []
+
+<START> is 'm lovers is it <EOL> 
+ <START> and 's do your <EOL> 
+ <START> a we need put <EOL> 
+ <START> you spider a 're 're done <EOL> 
+ <START> i i it i see <EOL> 
+
+
+[5m 52s (epoch 9: 66%) Loss: 4.8779]
+Melody source: The River by []
+
+<START> that 'd away it <EOL> 
+ <START> without <UNK> oh <EOL> 
+ <START> when <EOL> 
+ <START> you 'm go on <EOL> 
+ <START> so it the 's control and i song <EOL> 
+
+
+[6m 1s (epoch 9: 88%) Loss: 4.8853]
+Melody source: Pieces Of A Dream by []
+
+<START> is it all my heart me to lie <EOL> 
+ <START> and 'm gone your i of <EOL> 
+ <START> <UNK> me the 'm you <EOL> 
+ <START> i 'm 're so shorty pretty speak <EOL> 
+ <START> you breathe a kaleidoscope wan sky you <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.9041
+[6m 8s (epoch 10: 0%) Loss: 2.5630]
+Melody source: Jerusalem by []
+
+<START> but now try to you <EOL> 
+ <START> and , like us so me <EOL> 
+ <START> you can to here at <EOL> 
+ <START> and like absolve of your <EOL> 
+ <START> but and of the let of <EOL> 
+
+
+[6m 16s (epoch 10: 22%) Loss: 4.8544]
+Melody source: Ziggy Stardust by []
+
+<START> let i go it to <EOL> 
+ <START> if i so fight death you <EOL> 
+ <START> this 'm one was you hardest be <EOL> 
+ <START> there dream oh <EOL> 
+ <START> nothing the forth on <EOL> 
+
+
+[6m 25s (epoch 10: 44%) Loss: 4.8413]
+Melody source: Out From Under by []
+
+<START> hey <EOL> 
+ <START> standing i feel <EOL> 
+ <START> on or be <EOL> 
+ <START> that love <EOL> 
+ <START> let you ignore <EOL> 
+
+
+[6m 34s (epoch 10: 66%) Loss: 4.8407]
+Melody source: Ziggy Stardust by []
+
+<START> und the lights from for in <EOL> 
+ <START> when feeling my bright <EOL> 
+ <START> return though what gathered the i way <EOL> 
+ <START> it survive n't know to 'll <EOL> 
+ <START> i need of shall , <EOL> 
+
+
+[6m 42s (epoch 10: 88%) Loss: 4.8352]
+Melody source: Head Over Feet by []
+
+<START> so you 'm to <EOL> 
+ <START> what i name inside <EOL> 
+ <START> so on you 'm way it very <EOL> 
+ <START> so do <EOL> 
+ <START> we 'll did just around <EOL> 
+
+
+Starting validation check...
+Validation loss: 5.9249
