@@ -185,7 +185,7 @@ def main():
 
         state = model.state_dict()
         state.update(loaded_dict)
-        model.load_state_dict(loaded_dict)
+        model.load_state_dict(state)
         
     # --------------
     # Helper functions
@@ -255,9 +255,9 @@ def main():
     start_epoch = 1
 
     # Load checkpoint
-    if params.load_model != None:
-        start_epoch = checkpoint['epoch']
-        all_losses = checkpoint['loss']
+    #if params.load_model != None:
+    #    start_epoch = checkpoint['epoch']
+    #    all_losses = checkpoint['loss']
 
     for epoch in range(start_epoch, params.n_epochs + 1):
         for i, batch in enumerate(dataloader):
