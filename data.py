@@ -26,7 +26,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 PAD_ID = 0
 
 class LyricsDataset(Dataset):
-    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_line_len=5, max_seq_len=50, max_mel_len=40, use_semantics=True, use_artist=True, use_melody=True, artists=None):
+    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_line_len=5, max_seq_len=50, max_mel_len=40, use_semantics=True, use_artist=True, use_melody=True, melody_tstep=0.1):
         """
         Args:
             csv_file (string): Path to the csv file with lyrics.
@@ -55,6 +55,7 @@ class LyricsDataset(Dataset):
         self.vocab_len = len(self.vocab)
         self.max_seq_len = max_seq_len
         self.max_mel_len = max_mel_len
+        self.t_step = melody_tstep
         
         self.use_semantics = use_semantics
         self.use_melody = use_melody
@@ -64,10 +65,7 @@ class LyricsDataset(Dataset):
 
         self.use_artist = use_artist
         if self.use_artist:
-            if artists:
-                self.artists = sorted(open(artists).read().splitlines())
-            else:
-                self.artists = sorted(set([x['artist'] for x in self.lyrics]))
+            self.artists = sorted(set([x['artist'] for x in self.lyrics]))
             self.num_artists = len(self.artists)
         else:
             self.num_artists = 0
@@ -144,18 +142,14 @@ class LyricsDataset(Dataset):
             for note_line in note_lines:
                 melody_line = []
                 for note in note_line:
-                    duration = int(math.ceil(note[1]/0.2))
-                    melody_line.extend([note[0]]*duration)
-                #if self.use_semantics:
-                #    melody_line.extend([0] * self.max_mel_len)
-                #    melody.append(melody_line[:self.max_mel_len])
-                #else:
-                #    melody.extend(melody_line)
+                    rest_duration = note[1]
+                    if rest_duration != 0:
+                        rest_duration = max(1, round(rest_duration/self.t_step))
+                        melody_line.extend([0]*rest_duration)
+                    note_duration = max(1, round(note[2]/self.t_step))
+                    melody_line.extend([note[0]]*note_duration)
                 melody_line.extend([0] * self.max_mel_len)
                 melody.append(melody_line[:self.max_mel_len])
-            #if not self.use_semantics:
-            #    melody.extend([0] * (self.max_mel_len))
-            #    melody = melody[:self.max_mel_len]
             sample['melody'] = melody
 
         sample['song'] = samp['song']
