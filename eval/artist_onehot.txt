@@ -1,0 +1,407 @@
+Evaluations for checkpoints/artist_onehot/artist_onehot-e00009.pt
+using lyrics/input_files/filtered_dali_val.pkl:
+
+Perplexity = 60.068
+Wrong Artist Perplexity = 61.922
+
+50 generated samples:
+
+(1)
+bruce springsteen:
+<START> i wan na take a <UNK>
+i 'm the man i stopped the special way
+it was sure my last door
+i 'm and you got home in monday
+[ chorus ] <END>
+
+(2)
+disturbed:
+<START> i know i will 've done around
+oh , that is all
+you 're really wrong
+i 've been the perfect one
+ah we 're a wild girls <END>
+
+(3)
+frank sinatra:
+<START> i know you 're with the world
+what you know to be with the fall
+we talk you do n't give me the day
+i 've been a friend and never plant you
+i 'm a slave and you ever make a face <END>
+
+(4)
+bon jovi:
+<START> do n't i do n't want to do the <UNK> my heart
+to be ready
+we 're not a strange kind of love
+since lonely world are scared
+and it 's for the time that <UNK> <UNK> <END>
+
+(5)
+the doors:
+<START> horace , the time is absolutely as .
+but that they was my faces
+<UNK> to fight <UNK> give you all
+you 're the great more
+but i 'm <UNK> a <UNK> <END>
+
+(6)
+evanescence:
+<START> one time , we 're playin ' for
+you want my side
+please go to me
+i 'm gon na hear you i 'm my love
+i 'm looking so much <END>
+
+(7)
+eurythmics:
+<START> well it 's a summer song
+a world 'll <UNK> in the <UNK>
+ca n't you see the moon in a way
+'cause you ca n't run on the other , big time
+oh i 've been a <UNK> on the storm <END>
+
+(8)
+depeche mode:
+<START> we can take me
+i wan na make you trust you
+i 'm the light , i 'm not missing
+pay you
+i 'm the same for you <END>
+
+(9)
+bad religion:
+<START> you been all the reason it could see
+i 'm on the rule
+on the wind
+and your other dress
+<UNK> in the light <END>
+
+(10)
+britney spears:
+<START> rolling back on the street
+and you 're at the sky
+it 's no stopping , good that i hide
+when you 're the little thing , on the line
+i 'm just it a love <END>
+
+(11)
+avenged sevenfold:
+<START> a tune , i 'll die
+down on the world
+and who move there
+ca n't it you understand
+i 'm sick of the light <END>
+
+(12)
+aerosmith:
+<START> and you 're quick way to die , i 'll rather be free
+let me see my mind
+in your own
+i think can it be the thing
+i ca n't get it <END>
+
+(13)
+elvis presley:
+<START> your lovers 'cause i would n't do
+you 're so good in the life ?
+i know i know that the pain was broken
+woah , baby in the pain
+and 's not a girl <END>
+
+(14)
+bryan adams:
+<START> let 's go but go it
+oh i wo n't be dancing
+what you 're working
+i wo n't stop your thing
+all i want me , baby <END>
+
+(15)
+demi lovato:
+<START> i 'll not be running in you
+i got a millionaire boy
+i see the <UNK> in my car
+the stars is all turns
+that is not another way <END>
+
+(16)
+coldplay:
+<START> ( you 've been on my mind )
+just the world and the chemicals
+i 'm not believing it that you 've ever
+all of the <UNK> you 're going that gon na see the same
+we could n't think you want it <END>
+
+(17)
+disturbed:
+<START> never understand
+and i 've got to do you got to never do
+now i bleed for my life
+naked and you 're on my side
+i do n't believe what leads to you <END>
+
+(18)
+blind guardian:
+<START> more than the darkness
+one night cries
+well ,
+you are the one ago
+and so do n't know you but i are here of mine <END>
+
+(19)
+fifth harmony:
+<START> you 'll never let you say
+i ca n't get a lonely thing
+i miss it on it
+i ca n't get it
+i 'll be looking to you <END>
+
+(20)
+frank sinatra:
+<START> you got her life and they might be dead
+i 'll spend it to love you
+i 'm crazy just me
+i ` re right
+it 's not a <UNK> that 's not the start <END>
+
+(21)
+george michael:
+<START> is the sacrifice
+i wan na have you
+so if you know i 'm raising her things
+i 'm gon na do that i want you
+yeah baby , you 're gon na let it be <END>
+
+(22)
+alanis morissette:
+<START> i 'd never know what 's a woman .
+you 've got a <UNK> , i am losing a heart
+a world , pretty , you ca n't burn like
+i really am back to you <END>
+
+(23)
+fifth harmony:
+<START> let it see
+when you search to like what i 'm scared
+i 're an alien
+low <UNK> , that i should live
+if i 'd sleep without you <END>
+
+(24)
+girls aloud:
+<START> i am funny like it 's much , i 'd never let it feel
+and i do n't want to say that you can marry my soul
+a time in you , i 'm my ones and i set my face
+we 're never all you 're a short one
+ooh , you 're gon na get to go <END>
+
+(25)
+bryan adams:
+<START> you got ta know out
+like that is times
+i 'm coming out before
+i 've felt in my concentration
+hit the lights <END>
+
+(26)
+electric light orchestra:
+<START> i 'm not quite good for you
+my heart is got the wonders , you come on
+i 'm not told for you
+to you simply know , yeah
+now you know nothing number <END>
+
+(27)
+disturbed:
+<START> love him the way
+comes the wheel of summer
+you keep the stars in the world
+change
+the nights <END>
+
+(28)
+alphaville:
+<START> we 're still burning and a gone
+do n't you do you say
+you 'll love you
+well i 'm on love
+that you do n't cry <END>
+
+(29)
+avenged sevenfold:
+<START> i 'm marching on the shore
+you 've got a <UNK>
+oh , i 'm invisible for the game
+all that 's just a club
+big kiss the place of my had , ? <END>
+
+(30)
+fleetwood mac:
+<START> everything 's better for my own
+how you go me in you
+i 'm gon na be the one
+i was gon na go out for the middle
+just hold you on a cain <END>
+
+(31)
+david bowie:
+<START> i 'm <UNK> or you
+gets out me 's to say
+or show what who see it and a chance
+than the tomorrow comes across me
+who 's heaven ever sing <END>
+
+(32)
+anastacia:
+<START> waiting for me
+come at the sky
+i 've been so long to you
+i 'm never gon na mess
+the time is it are i 'm the <UNK> <END>
+
+(33)
+frank sinatra:
+<START> when the things i 've got to share
+i 've seen my heart let go in the sound
+i 'm happy it 'll the way
+i think we 'd do what you go
+and i need a so time ? <END>
+
+(34)
+erasure:
+<START> 'cause you 've got the other friend to my time
+down the doors of the fire
+i love i met the <UNK>
+all i look i ca n't try to forget
+when i crossed my change <END>
+
+(35)
+bruce springsteen:
+<START> that 's the gone , my sign
+the place is a <UNK>
+cause i burn the first night
+when i said yeah , a rhapsody
+i have walked with the big
+the moon of my heart <END>
+
+(36)
+dropkick murphys:
+<START> i 'm a <UNK> to never be there
+( we 've been taking me ( and and no way )
+of the baby , she ca n't join it
+i 'm on the other world
+are that and do n't the words you smile <END>
+
+(37)
+disturbed:
+<START> remember all the heart and just
+caring i 'll pay inside your answer
+the light of the otherland
+take my message to <UNK>
+i swear you lost the life you 're <UNK> and the road <END>
+
+(38)
+garth brooks:
+<START> it 's gon na be the one
+i can do about me
+i 'm sick , i 'm waiting to be like a world
+then i 'm not late
+i will be so , c'mon i 'm waiting forever <END>
+
+(39)
+fall out boy:
+<START> she 's a little man
+on the country heart ,
+just there is down
+for the good , the rain and the bass
+stand it in the woods <END>
+
+(40)
+bee gees:
+<START> the sun is <UNK> and the <UNK> book
+i 're no <UNK> for the weekend
+the girl of what the answers
+when i 'm just gone for my <UNK> to see your love
+sweet lie <END>
+
+(41)
+duran duran:
+<START> a <UNK> side of a price
+i want to be
+you 're all we need me
+but i 'm making life
+like one woman <END>
+
+(42)
+blind guardian:
+<START> how to take your heart away
+let me know it gone
+when i only felt the same and you 're there
+i 'm stolen the stars
+being how i go like i can be now <END>
+
+(43)
+bon jovi:
+<START> all i could tell me ?
+i 'm not honest
+there 's a while and this boy
+i 'll go away
+i go on , my bad boy <END>
+
+(44)
+evanescence:
+<START> i 'd never hurt you ,
+i can be more .
+you 're that hearts in the eyes ,
+[ chorus ]
+like you do n't do you exist <END>
+
+(45)
+bad religion:
+<START> <UNK> , bothered and castle
+<UNK> like <UNK>
+to her 's <UNK> , with that dark place baby
+and a mission are the stone , of far
+<UNK> <UNK> <UNK> <END>
+
+(46)
+christina aguilera:
+<START> get me something up , i can win you ,
+boys , my love 's gone from time
+i 'm n't my message is some time
+i 'm not a way , you look on
+you 're such that the love you 'll leave your time <END>
+
+(47)
+foo fighters:
+<START> a woman
+well , i 'm wearing my world
+there 's something to live
+i 'll do you know , so
+you 've seen me making your name <END>
+
+(48)
+bee gees:
+<START> and you 're my sex just a fool
+to love the times i become
+and then tonight i 've done
+you got to do and who 's so much to late
+but i feel far on with the pain <END>
+
+(49)
+fall out boy:
+<START> boys , want to find a chance to go my love
+and it 's easy
+fame and innocence
+you can have no one
+out of the way my mind <END>
+
+(50)
+afi:
+<START> will you do you find all the same thing
+it 's true you want me to hear you see
+you 're on the fireplace
+but i 'm all wrong <END>
+

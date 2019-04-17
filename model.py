@@ -240,7 +240,7 @@ class LyricsRNN(nn.Module):
 
             # Sample from the network as a multinomial distribution
             output_dist = output.data.view(-1).div(temperature).exp()
-            top_i = torch.multinomial(output_dist, 1)[0]
+            top_i = torch.multinomial(output_dist, 1)[0].detach()
 
             # Add predicted character to string and use as next input
             predicted += [top_i]

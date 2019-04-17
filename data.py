@@ -26,7 +26,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 PAD_ID = 0
 
 class LyricsDataset(Dataset):
-    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_line_len=5, max_seq_len=50, max_mel_len=40, use_semantics=True, use_artist=True, use_melody=True):
+    def __init__(self, pkl_file, vocab_file=None, vocab_size=10000, chunk_size=0, max_line_len=5, max_seq_len=50, max_mel_len=40, use_semantics=True, use_artist=True, use_melody=True, artists=None):
         """
         Args:
             csv_file (string): Path to the csv file with lyrics.
@@ -64,7 +64,10 @@ class LyricsDataset(Dataset):
 
         self.use_artist = use_artist
         if self.use_artist:
-            self.artists = sorted(set([x['artist'] for x in self.lyrics]))
+            if artists:
+                self.artists = sorted(open(artists).read().splitlines())
+            else:
+                self.artists = sorted(set([x['artist'] for x in self.lyrics]))
             self.num_artists = len(self.artists)
         else:
             self.num_artists = 0

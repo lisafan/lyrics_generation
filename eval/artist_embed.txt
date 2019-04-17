@@ -1,0 +1,416 @@
+Evaluations for checkpoints/artist_embed/artist_embed-e00010.pt
+using lyrics/input_files/filtered_dali_val.pkl:
+
+Perplexity = 60.510
+Wrong Artist Perplexity = 62.249
+
+50 generated samples:
+
+(1)
+afi:
+<START> my robot for the fun
+it 's a <UNK> of my heart , tell you
+do n't you ask to go in the storm
+you would get the fall
+it 's not this way
+i 'm back it 's so mind <END>
+
+(2)
+aerosmith:
+<START> she 's good and we 're the lights of a stranger , ai n't driving my love
+we 'll use her growing in the cradle and the night
+and i 've been young
+i 'm sending the little friend
+now we 'll see for the window <END>
+
+(3)
+the gathering:
+<START> i 'm sick of death , in the queer
+the day of few
+walkin ' a guilty way
+mighty me and you 're on your own mind
+and nothing 's not a bad train <END>
+
+(4)
+the corrs:
+<START> i do n't want to turn your heart up on the ground
+all i could do what i 've got it
+why i need it
+i have no <UNK> , i know who i could find
+for i will lose my head of you <END>
+
+(5)
+elvis presley:
+<START> i 'll do
+in our <UNK> for my green
+my coat
+there 's a new bit of the way
+put his hands back on the rhythm <END>
+
+(6)
+elvis presley:
+<START> you , we 're cried
+i do n't wan na live to the ones of heaven
+you know that you 're just waiting
+i do n't wan na live when i know , you got me
+never said i got to be on your life <END>
+
+(7)
+frank sinatra:
+<START> the way i 'm your lovers
+all that i 'm alone for a beautiful love
+i 'm the <UNK> in the blood
+when i can n't get on away to you
+come out 's the pain of the river <END>
+
+(8)
+fleetwood mac:
+<START> boy , yeah , oh , i got me up to you , .
+we 're the same , and a little <UNK> or
+the blame that is me to show
+but i 'm nothing in the bed
+would you hold it right <END>
+
+(9)
+garth brooks:
+<START> she 's everywhere and you did n't do
+c'mon hey , you need me
+hold on darlin '
+everybody is my song
+or my drink is sayin ' <END>
+
+(10)
+elvis presley:
+<START> and i can never go in the <UNK>
+you got my kind of <UNK>
+give me a face full
+at where i am , i 've been in a way
+without a chance to feel the same days <END>
+
+(11)
+abba:
+<START> i 'm not so far for you
+we were not your old love
+this is all i just get cast and i wo n't be
+'cause the day that i 've heard me the <UNK>
+i feel it on the breeze <END>
+
+(12)
+britney spears:
+<START> so i wish i 'm not a little selfish
+( and i 'll take it ! , i 'd tear it on )
+you 're so bad , baby , what i do
+ai n't got the way go , then yeah
+ah oh , i should break
+but i feel it , i 'm a liar , <END>
+
+(13)
+fifth harmony:
+<START> cause you do n't break it
+i should the love in our own
+you let me be your body
+i 'm moving to you
+tell me <END>
+
+(14)
+the gathering:
+<START> i am the <UNK>
+a <UNK>
+what i will turn
+all my battle
+yeah , i come to your life <END>
+
+(15)
+the corrs:
+<START> and burn me on the bay
+you know you would start me for me
+every way they say
+you 're all the <UNK>
+'cause god 's just a new christmas <END>
+
+(16)
+frank sinatra:
+<START> i took the new story
+but i thought we ever knew
+we can be the last thing
+you 're dreaming of your mind
+and i wo n't know like the truest heart <END>
+
+(17)
+garbage:
+<START> it 's for the sun
+he 's a little disease at , i know
+i do n't need to hear you to love
+( waste , what it was and five )
+in a little time , more to you . <END>
+
+(18)
+fall out boy:
+<START> but i leave you through through the crowd
+so daddy and i know
+it 's all you got ta be in me
+you run to you , it 's like my face
+i 'll see but you 're a repeat roll line , <END>
+
+(19)
+avril lavigne:
+<START> every wo n't get a better cause i need to get inside
+and i need , i never want to get it up
+you were me in the pain
+taking the window
+ai n't all you want to be , you 've got it <END>
+
+(20)
+bee gees:
+<START> we can not breathe
+is to you , quite no one alone
+just the same
+is no , it got her time
+my one things just all i can worry <END>
+
+(21)
+girls aloud:
+<START> i 'm the music that it can finally let you get here
+you come in the stream in the water
+now i 'm a happy lover , i 'm a feeling like every people
+it 's feeling stupid ?
+you can not take the <UNK> love if i 've only been to me , <END>
+
+(22)
+foo fighters:
+<START> that you had
+oh
+i 've seen you
+it 's so long
+suddenly i want something 's in my hands <END>
+
+(23)
+erasure:
+<START> when i 'll be afraid again , yeah
+you 've got you on the trigger
+i 've been never afraid
+i 'm all like the game , [ t really fine
+i 've got you more
+i 'm not so tired of you <END>
+
+(24)
+foo fighters:
+<START> voulez-vous
+you 're a slave
+and i 'm my only coward
+if you look it , really talk
+you used to hear you dance
+and if you throw it down <END>
+
+(25)
+bee gees:
+<START> get down back out that ca n't stand
+take her down into an hotel smile
+well what you got the love of a lot
+and and the way we are not some one that 's
+like you <END>
+
+(26)
+abba:
+<START> i like you
+it 's not the pain
+do n't it see
+why i 'm gon na run
+i do n't feel it <END>
+
+(27)
+disturbed:
+<START> there 's no good to be rising
+oh , take me under
+well , who 's screaming to make the gates of the sea
+watch me live in the street where we take the lights
+after a drive-in what you need that you have your heart <END>
+
+(28)
+david bowie:
+<START> we 're all the lonely place
+i know if you 're gon na need this reasons
+i 've been labeled my arms
+i do n't care
+i will follow the way you feel <END>
+
+(29)
+eurythmics:
+<START> say i will give the alien
+i will make the man
+lordy !
+what 's no true , it hurts her design
+i know we will learn to kill the way <END>
+
+(30)
+alphaville:
+<START> it could die
+i can be your whole , it 's my pretty pace
+and i 'm in your way
+it 's a plans , and i 'm your girl , take my strength
+like you like the sky <END>
+
+(31)
+the gathering:
+<START> when i 'll not see the sun
+but it hurts one man from me
+and make us all the band
+i know , everything used to say
+tells me for me <END>
+
+(32)
+bruce springsteen:
+<START> and 's what we 'd scratch
+i 'm getting pointless
+the time that your soul mean it
+you love me
+but i 've been in the dark , i ca n't go <END>
+
+(33)
+alanis morissette:
+<START> time gon na break this thing , i can n't understand you
+i hear myself and the music
+<UNK>
+and i was mine
+the moment of your life and it had to let you be <END>
+
+(34)
+bruce springsteen:
+<START> i 'm walking into the middle
+and the wind rolls on in her and the <UNK>
+the <UNK> <UNK> and their and and i was around
+what they 're longing
+i 'll spread around the way , you know i 'm getting the <UNK>
+( and i could n't be the back of
+well i got you with the story
+and i could be chasing this man <END>
+
+(35)
+electric light orchestra:
+<START> you were the time to know
+come on , i do n't see you
+you 're good ( would it love me ,
+hey , you 're my love )
+cause i got the truth to n't dance <END>
+
+(36)
+christina aguilera:
+<START> i could be your girlfriend
+i 'm gon na give you
+you 're gon na get on
+wo n't make your love like the party
+i 'm sure me for you <END>
+
+(37)
+christina aguilera:
+<START> feel the night
+you 're gon na make it
+and i 've been gon na see you
+i 'm been
+you 've been not there <END>
+
+(38)
+afi:
+<START> and i do n't make nobody , i 'm feeling ,
+i knew the way i 'm supposed to lose
+a wisdom on the eyes i would never be
+i 'm so low .
+what can you come <END>
+
+(39)
+bad religion:
+<START> total more lines run the blood ,
+me of one dark
+murder the demolition
+been it gon na keep on down
+i do n't feel up the bottle <END>
+
+(40)
+the doors:
+<START> how the moon 's having <UNK> all insane
+how does my way begin to be a big way
+( more ! , you 'll never try , you 're me , love me )
+i 'll need the river so when you 'll do you again
+i am it to read the rich wings <END>
+
+(41)
+electric light orchestra:
+<START> i said you are alone
+step into the air
+come on , honey so tell me
+it wo n't help you
+head on me , i tell you what you know
+but everything 's getting and that time for me <END>
+
+(42)
+alanis morissette:
+<START> just the sound of the power of bliss
+maybe i know what i 've seen , you can do it
+i could be it or to pain
+they 're gon na shoot it to me
+i 've seen the <UNK> of the <UNK> <END>
+
+(43)
+avril lavigne:
+<START> take you down and forget the sunrise around
+when you are a liar , whoa , yeah
+with me in the pain
+i 'm still alone
+and left the thing of my dreams <END>
+
+(44)
+bon jovi:
+<START> yo money waits , do n't you know
+i 'm all the rat out at the town now
+just you 'll get the wind
+ridin ' to her by the wind or still
+you 're a sign , i can be a hard girl , i 'm my sad <UNK> <END>
+
+(45)
+duran duran:
+<START> and i want you who can be
+i would hear my heart in my eyes
+and if you do n't wan na stop it
+and we 're there and n't you long
+i really do n't want the way to take the distance <END>
+
+(46)
+blind guardian:
+<START> the sun are over
+i 'm afraid for the good thing
+i said i can be with you
+and if i know i must mean you and sing my body
+i miss you to say <END>
+
+(47)
+garbage:
+<START> ca n't you see my heart i have to burn
+i want to cry
+wish you 're not alone
+my love is so good
+and do n't try to learn <END>
+
+(48)
+alanis morissette:
+<START> i do n't care without you and i 'll return
+i 've got a friend
+when you get on on a part of it
+i know who you walk on the girls
+it 's touch my eyes to say <END>
+
+(49)
+avril lavigne:
+<START> i just feel it all 'cause i do n't know
+that 's anything and you 're not in love
+but i know i know you 're still gon na go away
+now i do n't know what i 've been love
+i know that you 'd imagine again <END>
+
+(50)
+elton john:
+<START> you say i need you
+you dance
+no heart , we 'd be like the blind
+in the day in the water
+if you make you have her love come <END>
+

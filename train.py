@@ -52,6 +52,7 @@ def get_hyperparameters():
     parser.add_argument("--max_mel_len", default=40, type=int)      # max # of notes for melody sequences
     parser.add_argument("--max_line_len", default=5, type=int)      # max # of lines for input and output seq when using semantic RNN
     parser.add_argument("--use_artist", default="True", type=str2bool)   # use artist info in input
+    parser.add_argument("--artists")                                     # file with list of artists
     parser.add_argument("--use_semantics", default="True", type=str2bool)   # use semantic RNN
     parser.add_argument("--use_melody", default="True", type=str2bool)   # use melody info    
     parser.add_argument("--use_noise", default="False", type=str2bool)   # use noise instead of semantic representation (for baseline model)
