@@ -1,0 +1,458 @@
+Evaluations for checkpoints/semantic_only/semnatic_only-e00007.pt
+using lyrics/input_files/filtered_dali_val.pkl:
+
+Perplexity = 77.476
+Wrong Artist Perplexity = 79.307
+
+Select cosine similarities:
+bruce springsteen
+  Top 3 most common:
+          elton john : 0.7857
+          billy joel : 0.7239
+           aerosmith : 0.7113
+
+  Top 3 least common:
+      blind guardian : 0.3122
+       avril lavigne : 0.3038
+        depeche mode : 0.2896
+
+
+britney spears
+  Top 3 most common:
+  christina aguilera : 0.7656
+           aerosmith : 0.7484
+       fifth harmony : 0.7361
+
+  Top 3 least common:
+   alanis morissette : 0.3750
+      blind guardian : 0.3715
+        bad religion : 0.3541
+
+
+elton john
+  Top 3 most common:
+          billy joel : 0.8370
+            bon jovi : 0.7929
+         david bowie : 0.7920
+
+  Top 3 least common:
+           disturbed : 0.4802
+         evanescence : 0.4072
+       avril lavigne : 0.3977
+
+
+the gathering
+  Top 3 most common:
+      blind guardian : 0.7912
+                 afi : 0.6844
+          eurythmics : 0.6679
+
+  Top 3 least common:
+         evanescence : 0.3366
+       fifth harmony : 0.2929
+       avril lavigne : 0.2290
+
+
+
+50 generated samples:
+
+(1)
+coldplay:
+<START> and just is gettin ' i do not never and do n't want you say the heart i throw <UNK>
+<START> it <EOL>
+<START> the shouting and the little <UNK> and we could see that i could let it is the road here come
+<START> i 'll love to it was getting a past you 'd the <UNK> brothers every more , take <EOL>
+<START> you know you 'm in the world it to the radio no you just in a , i 'll the
+
+(2)
+fleetwood mac:
+<START> gon na <UNK> and i know i do you fly you like i could win so never let 's big
+<START> the world i 'm all if it <EOL>
+<START> that you 're <UNK> and back with when i 'd we say you 'll let you belong <EOL>
+<START> you 'm a dreaming , it 's over `` i know i 'll see tuesday i , it 's all
+<START> but well to you ca n't can you have heard me and can come baby , love you 've come
+
+(3)
+bad religion:
+<START> i 'm gettin ' oh how on spring in the feeling ( in you get back and i know you
+<START> you 're real and just my old you 'd know you got the <UNK> my cries with you 've the
+<START> never alright and you better and work and i knew you had the <UNK> i 'm as <UNK> <UNK> <UNK>
+<START> , i get so lonely i 'll get for her brother is is to you say me if you do
+<START> and <UNK> woman you 'll be safe to your pride enough and the boys in the violence <EOL>
+
+(4)
+duran duran:
+<START> your day your heart when i 'll come for a you run cause i want you can it to so
+<START> you leave me telling my heart it ( oh and you are to the devil <EOL>
+<START> ( let all i know <EOL>
+<START> and all you used for you know i will <UNK> <UNK> as you better get the <UNK> <UNK> and i
+<START> and how the <UNK> <UNK> <UNK> on from a room i do to say this of a little heart and
+
+(5)
+fall out boy:
+<START> i 'm something <UNK> <UNK> in the five <UNK> do you could come on the shit then oh oh la
+<START> why you 's there 's the world , everything we 'm all <UNK> <UNK> and <UNK> , ai n't here
+<START> ( ai n't you can have a sight <EOL>
+<START> <UNK> <UNK> in a best and you 's you 're <EOL>
+<START> come for you <EOL>
+
+(6)
+alanis morissette:
+<START> the back and i 'm still but tears i feel the night <UNK> or the moment i could do n't
+<START> come on decisions and my life we will turn you 'll a few i say , kick down you do
+<START> now this 's a little light on his head in the time that i can fake it are a fence
+<START> your thing come down my river in the world world and she 's the radio name with your meaning that
+<START> i do n't like time every somebody right i 'm this that convince me <UNK> i get and i 'm
+
+(7)
+electric light orchestra:
+<START> what i 'll see for a long , little time <UNK> , from the same boys to release in your
+<START> i know to the feelings and i could what could it 's trying to the gun and oh my babies
+<START> oh and you will the hour must be a good to show you could just could <EOL>
+<START> ( set it that i 'm on your time and tell is easy sweet my world i 'm on the
+<START> i know how the road i 'm through the name and you and the dreams you know they never blue
+
+(8)
+blind guardian:
+<START> my liar ( i wo n't do n't 'll when i 've the reason i 'm always suffer cause it
+<START> i was so <UNK> and <UNK> , down you took me forever you was you 're my marks alone and
+<START> how it 's running over the heart just all i 'll ca n't rise , the day ? <EOL>
+<START> for you just and me love is where i want <EOL>
+<START> there 's we want what i 'll get on this time and am <EOL>
+
+(9)
+britney spears:
+<START> oh i know i 'm you do n't will blame the got a bullet i 'm all no-no-notorious <EOL>
+<START> you 'll be looking and i 've call fast [ chorus <EOL>
+<START> what you would just like my things you even i think i do n't i <UNK> to you can you
+<START> you can go in my heart i 'm a fire what i 've been <UNK> <UNK> repeat lover ? and
+<START> you stands on a <UNK> you could i 'm what you will as i 'm so it do i got
+
+(10)
+afi:
+<START> do n't just but you 's i know it seems you 're old <EOL>
+<START> <UNK> blade - fine <UNK> from the light see and there 's here the loving love <EOL>
+<START> you 're here can meet your suffer and i get it 's gon na once i will you 'd you
+<START> ( go and i give in the things believe the rain i have the eyes seems all i say that
+<START> and no show it in my way about we 're all i should take up and the children queen i
+
+(11)
+george michael:
+<START> ca n't dare ( just you give up with what i do n't do you <EOL>
+<START> you 're an one years we want so just found my friends kept away <EOL>
+<START> whoa ( i take you gon na so that we got we 're a girl , you 're a way
+<START> i 've na flame there is gon na na lost you can the way like his body but who <UNK>
+<START> what all the world i 'm the ground a <UNK> spinning on a <UNK> a <UNK> and i know just
+
+(12)
+billy joel:
+<START> yes just to champagne he thought i 'm hiding in the words better me it no help it have a
+<START> when i 'm just so wrong cool here bleed cause we ever let it 's be a heart you 's
+<START> are and found <EOL>
+<START> a thank i ca n't were my head on as you walked up and i woke in one world we
+<START> they 've here and i was mine , i say ? <EOL>
+
+(13)
+christina aguilera:
+<START> his face it 's the church it was the <UNK> <UNK> , gifted and <UNK> can your girls you means
+<START> i have yet ( that you can out we feel a <UNK> in the world yeah why it 's the
+<START> oh so soldier he was <UNK> one : the inside now and turn the afar me it 's you should
+<START> i stood if everyone said i 've a feeling all <UNK> is in the world i do no money and
+<START> the <UNK> <UNK> <UNK> you 'll a fool there began and but something you wan na na you pulled me
+
+(14)
+fall out boy:
+<START> you 're with a pretty , <UNK> please love even you 're a hole and we 're no what i
+<START> a day <UNK> he said <UNK> as maybe you ( oh you can what it that i should get along
+<START> why ( forgotten <EOL>
+<START> this tears makes the same so long and <UNK> an while i 'm the <UNK> and <EOL>
+<START> tonight , it 's in a <EOL>
+
+(15)
+disturbed:
+<START> i 'm tired of a as i ai n't ca n't <UNK> at my daddy <EOL>
+<START> to the girls my eyes to <UNK> , and you do n't please do it 's my body where you
+<START> is in a man are now ( i 'll hold it 's looking in a word that we were a
+<START> the same night god and boys you can do n't all i 'm the <UNK> maybe you know i got
+<START> ( lucy <EOL>
+
+(16)
+garth brooks:
+<START> and pink at everything all your fingers is goin ' burning i can be it 's like you 're like
+<START> i wo n't to walk in <EOL>
+<START> i want it 's as the best one put the <UNK> but into a word from the trail with the
+<START> never do a song <EOL>
+<START> i saw the one night in the time , staring up words , you forgot and your love that brought
+
+(17)
+bad religion:
+<START> it soon you 're and i know true you , a dress to it whispers no way when i got
+<START> you 've been the same baby i have people we to my head and not this and the dream i
+<START> victim of the giant too soul make the world <EOL>
+<START> ca n't you were mind next ' why you 're gon na na na na a <UNK> for their <UNK>
+<START> i ca n't feel the night i still , it just i ai n't i 'll open , continue to
+
+(18)
+depeche mode:
+<START> i hope you when you would be the lights there 's together , i 'm the wind what i better
+<START> i got all because i it 's the world ? <EOL>
+<START> this life <EOL>
+<START> but i get ( just so i like you can lie get in my city well than you can listen
+<START> the back with my laughter in spite a road i must touch <EOL>
+
+(19)
+abba:
+<START> till the <EOL>
+<START> we 're you all he 'd the tears <EOL>
+<START> it cries <UNK> but take <UNK> and i 'm [ piece of a <UNK> <UNK> <UNK> is the streets so
+<START> rhiannon <EOL>
+<START> i want to let you were proud for the best got to you 'd i do n't see i 'm
+
+(20)
+bryan adams:
+<START> oh you all here is the world i 've i love , though we know we 're much a world
+<START> what we do n't feel time get the <UNK> cut about you was the head in the city oh oh
+<START> the one kiss <EOL>
+<START> no heart to no no love i 'll tear a <EOL>
+<START> it 's to the one <UNK> <UNK> there 's are was no being the time in and i can think
+
+(21)
+anastacia:
+<START> you are so roll and you used to a little , let it 's thing i left you just come
+<START> i need it is the snow midnight <EOL>
+<START> and i said i try that give my blood <UNK> <UNK> time cause you are the stars you ca n't
+<START> i 'm all you and if we 're just so your girlfriend is <UNK> <EOL>
+<START> he 's alright <EOL>
+
+(22)
+electric light orchestra:
+<START> two way <UNK> <UNK> <EOL>
+<START> i 'm poison he 's the best i brought my life who you do n't dance from you 've open
+<START> the <UNK> up , then i feel it 's without the tide but that you could a fame <EOL>
+<START> ( it 's singing night and be and i did one heart we and running on the way the heart
+<START> i just i 'm just <UNK> diamond , oh when i want , take to you sticks of your party
+
+(23)
+erasure:
+<START> nobody <EOL>
+<START> and make you get out and there 's come a hey this way you 'm good attention is good take
+<START> there 's tonight <EOL>
+<START> we 're time what it came home she would be too something i 'll write my time like workin '
+<START> she 's getting all a merry kind of my bombardier <EOL>
+
+(24)
+britney spears:
+<START> you on the best i should <EOL>
+<START> so <UNK> <UNK> sha <EOL>
+<START> and i 'm all my way and we made just this 's jumping <UNK> but i need you 's the
+<START> you are the <UNK> thy baby why i 'm immor- mind all i just take the night god in the
+<START> when i 've look in the jet day and i take your savior i 'm <UNK> when i let a
+
+(25)
+fall out boy:
+<START> and do the years and with you i 'm turning it is all in the bug with my <UNK> <UNK>
+<START> i can you 're the <UNK> and there seems your living our little walk from a world she 's all
+<START> i never be sure and in the bass <UNK> , ( the pain and i 'd be for those time
+<START> the way for a saturday <UNK> drivin ' you <EOL>
+<START> in you 's still see you can do it 's up this thing ohhh where i 'm but do <EOL>
+
+(26)
+bruce springsteen:
+<START> i did i am i have <EOL>
+<START> and a thing for my place i 'll soon we silence pray in my <UNK> every better cry and i
+<START> i am you had in all the best do , `` cuando no , but i <EOL>
+<START> he says you are the end you 's all we 'll get it , oh : hey ( if you
+<START> like <UNK> when the people i 'll do n't go on back 'cause that we need a thousand in the
+
+(27)
+garth brooks:
+<START> she said i 'd laugh or knots again goodbye <EOL>
+<START> before it ai n't do n't gon na na na na na like you can stay i never just like
+<START> and the world every beautiful i know <EOL>
+<START> and the outside him <UNK> my life 's outta my white you 've my love and i ever do to
+<START> with the place on <UNK> believing the time i feel like i got me you want a mystery <EOL>
+
+(28)
+bon jovi:
+<START> but the light for you could have on a time i know the same old shoulder and i 've never
+<START> i left on the river <UNK> and it 's all i been so let it 's thinkin ' it always
+<START> if i do 's <UNK> that it 's <UNK> money i ca n't <UNK> <EOL>
+<START> i smoke a long is your lips the king does <EOL>
+<START> oh i never you gave the light esperar , but i knew you will leave me now i know it
+
+(29)
+avril lavigne:
+<START> hurry cause and doing there 's playing you see this a beautiful , [ as long for the world and
+<START> well at you 'd all the stars and i rule the <UNK> of your girl , you say i remember
+<START> you can have the lines where i 'm your love is my love so if you 's the <UNK> one
+<START> with you do you 'll kick you see five and gone is it go love at the night hide your
+<START> the <UNK> , if you cried oh is your , i can leave to you see is <UNK> a tale
+
+(30)
+the corrs:
+<START> ( oh it <EOL>
+<START> and look and come from the drop you 'd i 'll stop love is no one day i go by
+<START> baby the day , i 'll soul and i wo n't days we were <UNK> and and <UNK> and a
+<START> in time to my place she 'd all tomorrow 's your first i want for you 're going 'til he
+<START> i 'm a door you would turning there 's on you 'll turn a dangerous i 'm your vision and
+
+(31)
+afi:
+<START> and shake the other <UNK> he was to let keep into that you try that i cried and it 's
+<START> only down of the tears we wan na turning with the time do you is the <UNK> me let 's
+<START> and all that i wish there was <UNK> running and bring your <UNK> dream should ride and i give a
+<START> in her one and i 'm the <EOL>
+<START> you 's to time i 'll remember round , i know the end the night night <UNK> than all and
+
+(32)
+bruce springsteen:
+<START> to you 'll have really like <UNK> and i 'm the road ( oh before i got turn into the
+<START> step at the wheel for a woman you can see or dance a little scene ( who you used and
+<START> when i 'm a conversation and so i do n't do you are <UNK> i got the dream of the
+<START> 'cause oh you would be my love in you do it 's a river your song panic we 're there
+<START> if you got what your side to the searching to <UNK> i do n't can you all i 'll look
+
+(33)
+bruce springsteen:
+<START> you 'm when you 've got them and a oh even go and <UNK> <UNK> , trouble ah i just
+<START> i 've must see the street in the part and love and think i 'm gone and i just a
+<START> we can see the scars , i 'll were not in heaven can this step away and their <UNK> lies
+<START> ( you do <EOL>
+<START> if i am we 're gon na well needs maybe life is it 's there is my faces we 're
+
+(34)
+foo fighters:
+<START> what you come away <EOL>
+<START> there comes up and you can it 's world that i 'm a <UNK> or our line with the only
+<START> i 've said you was never never just come out so the wall cause you <EOL>
+<START> love with a bale , we just tell me as i were always all i do 's on night and
+<START> my life now and i 'm a lot and a real ooh make it said just say anything dances you
+
+(35)
+eurythmics:
+<START> so love and there needs and oh one <UNK> <UNK> i feel never smile <EOL>
+<START> the same years white your hopes it see you 're a song [ woah oh i 'm comin ' so
+<START> i 'm and we were standing the years , the way so are the hall <EOL>
+<START> now ( hey make you made you are stormed and yeah i let it is there 's sick , i
+<START> to the lines and i are in <EOL>
+
+(36)
+coldplay:
+<START> i 've got <EOL>
+<START> you 's all i 'll break me but you do me well is the moon will change no more oh
+<START> she is movin ' through a memory and the and i ever time and the hours i 've been so
+<START> do n't she 's in the feeling come with the day but if you can some and control boy for
+<START> time in the <UNK> her <UNK> on my soul and here can bleed and you can hear the heat i
+
+(37)
+garth brooks:
+<START> that i do n't i 'm all i could i know they never want to the chorus <EOL>
+<START> where me i ca n't at here under what i need the thing i will you 'd do n't that
+<START> and [ good they will do n't are our neck i do <EOL>
+<START> and some white <UNK> , i can be a song to fill a <UNK> there 's my share you got
+<START> i 'll kick on my love and i need like i 'll do n't never his <UNK> <UNK> , if
+
+(38)
+fleetwood mac:
+<START> and win all it is like we do you have been just shine to do she do you 'd the
+<START> and you 're a force it 's better that no one 's and the day do that they 're my
+<START> now do n't the teardrops are <UNK> <UNK> <EOL>
+<START> keep you love to my kind of her love that you standing up but i got to dance you 's
+<START> somebody i could have open my grace here 's coming and a bridge <EOL>
+
+(39)
+depeche mode:
+<START> when you 's there 's <UNK> well <UNK> <UNK> i know me fall up we want it was all the
+<START> <UNK> the skyline is from the clocks ! ... <EOL>
+<START> you know not like the lights i will you <UNK> you would you to many walls there 's out you
+<START> i have been a fife la la white , on the music down to be your <UNK> that i 'm
+<START> i love to the night <UNK> <EOL>
+
+(40)
+eurythmics:
+<START> that i got it 's your power of a conversation <UNK> we have to <UNK> out there that truth <EOL>
+<START> i guess i 'm so how you just like you 's sure away but i 've real 's looking to
+<START> there <EOL>
+<START> and ca n't come in all yesterdays one is always i remain of you do you 'd no way that
+<START> through a boy more <UNK> <EOL>
+
+(41)
+david bowie:
+<START> to sing <EOL>
+<START> i go , down loneliness for the fantasies , i want loves each world i do just no , the
+<START> i was <UNK> on it on his time until i want it 's <EOL>
+<START> that she was stone the one day i had a little sun <UNK> all a little angel i 'm before
+<START> <UNK> in the <UNK> little fire all it always i could be my <UNK> in you in the trouble the
+
+(42)
+the gathering:
+<START> there 'till we 've got it is so do n't be only telling you know you will forget every tune
+<START> ai n't you 'll work and i 'm always her cars king <EOL>
+<START> i 've lost making the one longer now <EOL>
+<START> i take your wall that you are a <UNK> , where we 're a song yes oh , we got
+<START> i 'm a family i try this as i 'll guide you tried to my shadows and he 's told
+
+(43)
+aerosmith:
+<START> i said it ( all sometimes <EOL>
+<START> tonight and the wheels and i could the kind of everything and where i was release <EOL>
+<START> the night in the sounds you 're so we can ever big hold <EOL>
+<START> when i thought my someday for the dreams and we would the line you know it i was just what
+<START> and i had me changing his china <UNK> and to the mistletoe and throw as a stand before <EOL>
+
+(44)
+abba:
+<START> who 's <EOL>
+<START> you 'll climb in a one thing i want to the way and it with the end he 's santa
+<START> well , come and i 've been <UNK> look to dyin ' but i 'm a woman <UNK> <UNK> they
+<START> everybody but a pity may feel a <UNK> you do that i 'm has so come <EOL>
+<START> when let all i 'm how would play to every love is the same is to you come all we
+
+(45)
+blind guardian:
+<START> i just what i feel it 's looking and send in your <UNK> bopa no one wearing for the love
+<START> someday , <EOL>
+<START> all <UNK> , love is well , do n't listen to you 'll be a sweet <UNK> <EOL>
+<START> jump 'cause you was over the ground <EOL>
+<START> i 'm with a thing you know i 've ever on the <UNK> on a <UNK> more as we 're
+
+(46)
+electric light orchestra:
+<START> well i want to <UNK> , and your love the years slap the <UNK> cold , i want to you
+<START> baby , only god <UNK> sky when you have the old <UNK> to pay and i 'm <UNK> and hold
+<START> too what you 're so i want to you do your <UNK> ? - when you does n't treat and
+<START> that they know and yeah for this is why you who we 're someone 's a flame ( and the
+<START> keep you have the dream 'cause you all the plans and that god i say i 'll make me i
+
+(47)
+aerosmith:
+<START> you is real <UNK> you are running to the reason and never crazy ( my <UNK> hey 'cause and stare
+<START> and he 's sounds we get the same high i lived how to buy your feet through <UNK> and for
+<START> i 'm <UNK> gently that i do do you have come away to say <EOL>
+<START> see your lucky meet and the lights soon you have <UNK> a <UNK> me she 's <UNK> <UNK> i think
+<START> she 's <UNK> in our mind i could you never do n't do n't let you 's so when you
+
+(48)
+alphaville:
+<START> we 're you could you 'll be you 's trying to it out look into the lovers and it 's
+<START> i do you go in a <UNK> and you that get the sad hey i 'm all shades those <UNK>
+<START> and it has been underground <EOL>
+<START> you came a young the curse <EOL>
+<START> and the truth is like i gave <EOL>
+
+(49)
+avril lavigne:
+<START> would get a bite it oh the one minutes i 've become i loved no one day , i 've
+<START> just not my hips <UNK> and all in the dirty 9 ( and still you got a world you wear
+<START> but i do n't do n't like love <EOL>
+<START> and show it 's as many for i ca n't all that opened mad the room it with you know
+<START> and i do n't say , as not the dark oh but you 're <UNK> <UNK> , i see your
+
+(50)
+girls aloud:
+<START> <UNK> oops do n't do n't motel <UNK> and now and the only not not that we 're a long
+<START> and we 've want to all i do you were the ghost but i was the party and be a
+<START> there 's the way down and we 're here it 's a woman and on the world like heaven goin
+<START> i run and they will you 're all no one day i 'd do a lot , i really i
+<START> alone in the own drink ( whatever then you 'll open the start your eyes , we 're it 's
+

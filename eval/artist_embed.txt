@@ -1,20 +1,20 @@
 Evaluations for checkpoints/artist_embed/artist_embed-e00010.pt
 using lyrics/input_files/filtered_dali_val.pkl:
 
-Perplexity = 60.510
-Wrong Artist Perplexity = 62.096
+Perplexity = 76.673
+Wrong Artist Perplexity = 78.773
 
 Select cosine similarities:
-britney spears
+the gathering
   Top 3 most common:
-         girls aloud : 0.7928
-  christina aguilera : 0.7923
-           anastacia : 0.7710
+      blind guardian : 0.7786
+        depeche mode : 0.6933
+   avenged sevenfold : 0.6861
 
   Top 3 least common:
-   avenged sevenfold : 0.3877
-   alanis morissette : 0.3328
-        bad religion : 0.3222
+            bon jovi : 0.3587
+       fifth harmony : 0.3521
+         evanescence : 0.2440
 
 
 bruce springsteen
@@ -29,16 +29,16 @@ bruce springsteen
        avril lavigne : 0.3251
 
 
-the gathering
+britney spears
   Top 3 most common:
-      blind guardian : 0.7786
-        depeche mode : 0.6933
-   avenged sevenfold : 0.6861
+         girls aloud : 0.7928
+  christina aguilera : 0.7923
+           anastacia : 0.7710
 
   Top 3 least common:
-            bon jovi : 0.3587
-       fifth harmony : 0.3521
-         evanescence : 0.2440
+   avenged sevenfold : 0.3877
+   alanis morissette : 0.3328
+        bad religion : 0.3222
 
 
 elton john
@@ -57,403 +57,402 @@ elton john
 50 generated samples:
 
 (1)
-david bowie:
-<START> and you can have to find it
-all the sun of lace
-i 'm breaking so hard to wear you
-no good and you 're so
-i 'm underneath all the loving i 'll <UNK> <END>
+frank sinatra:
+<START> a days of the lake <EOL>
+and the <UNK> of the lot of my dream <EOL>
+yeah <EOL>
+a sigh was a light in the stage <EOL>
+through your heart 's , tonight <END>
 
 (2)
-demi lovato:
-<START> you better make my lies
-i like it
-you 're a waste of inspiration
-i 'm not sick again
-why let you tell me how to let it go <END>
+bruce springsteen:
+<START> oh , yeah , i ca n't find <EOL>
+i am the coming in a secret <EOL>
+easy as the day leads to <EOL>
+you know i have no words i ca n't hold inside <EOL>
+if you feel it just and the world is your heart <END>
 
 (3)
-afi:
-<START> you 're having pain tonight
-when you can be the same girl
-we do n't know you 've been standing
-the world when i 've been fine ,
-you know you make you know <END>
+bad religion:
+<START> when i get my mojo bright <EOL>
+you <UNK> a little cure to you <EOL>
+and i 'm in the sea <EOL>
+but you really was on my lives <EOL>
+the sun were next to the middle <END>
 
 (4)
-elton john:
-<START> when i had you in a world of the sky
-and i feel cursed , make a little let me be on the all
-do n't want another song to see
-for i do n't know that i 'm it gon na be done
-i do n't care <END>
+depeche mode:
+<START> well you 've got to come <EOL>
+you 'll do it , it 's gon na get the door <EOL>
+do n't keep me down , when the <UNK> we wait <EOL>
+another day , lay up my face <EOL>
+so oh ( i , so ) <END>
 
 (5)
-electric light orchestra:
-<START> ( we knew , i know you matter for nothing )
-gone
-ai n't a hope alright
-i was a <UNK>
-'cause if you are ( do n't take it down ) <END>
+blind guardian:
+<START> dream of a flower on your chair <EOL>
+and i do n't want to die <EOL>
+it 's like 's worthless , i did all you want <EOL>
+you wo n't start away , i pulled them away to face <EOL>
+oh , it 's the night that 's real ( i 'm like that i 'll n't take you for me ) <END>
 
 (6)
-elton john:
-<START> i 'm a fool
-i 'm not feeling a star
-i may leave i got a hundred problem
-me talkin ' like one out , i 'm a new man
-we ca n't take my , i 'm fine <END>
+billy joel:
+<START> i 've seen the art of time <EOL>
+in the edge of the moon <EOL>
+i 'm in this cloud i do <EOL>
+like the lover life 's <UNK> <EOL>
+she took the years and the morning <EOL>
+she 's n't me alive <END>
 
 (7)
-elvis presley:
-<START> and i 'm so beautiful , do n't know
-life 's just your bass
-they 're easy and before i do n't run
-i 'm out to ease the answer , when it takes me any way
-no courage is all in your eyes <END>
+frank sinatra:
+<START> when i 'm your defintion of new <UNK> <EOL>
+then i 'm waiting for you <EOL>
+but we go to tomorrow <EOL>
+good going in the life <EOL>
+i do n't tell you , if you make you get the lion <UNK> <END>
 
 (8)
-fall out boy:
-<START> i 'm going on the summer chair
-oh , you know you may feel no water
-when you take by circles
-some dream i know
-a bodies is shining with no sky <END>
+girls aloud:
+<START> the weekend , i 'm living to make you love <EOL>
+[ chorus ] <EOL>
+well , i 'm putting another little man <EOL>
+i 'm running in the rain <EOL>
+then what you need , i never want to know <END>
 
 (9)
-elvis presley:
-<START> you do n't hold me back to my heart
-the one starts down and come and not denied
-and i did n't have to live to the city
-and you 're not still there to break for me
-just far , so i say that i 'm gon na do <END>
+abba:
+<START> i should be enough , i 'm the girl , it 's a guy <EOL>
+it 's the same way <EOL>
+ai n't gon na get no message out when you be <EOL>
+we got you nothin ' you do n't <EOL>
+just do n't have you on my mind <END>
 
 (10)
-david bowie:
-<START> he 're lost <UNK> , and you heard it to <UNK>
-she 's left to hold me in my neon place
-you broke my hand , with the little snow
-where it look of me
-that 's so long , i 'm only so low <END>
+bee gees:
+<START> i am the vengeful death <EOL>
+what you do to break on <EOL>
+i 'll play it of the breeze <EOL>
+but want to be my puppet <EOL>
+and you 're i 'm hard to be <END>
 
 (11)
-depeche mode:
-<START> and the way i am
-when i 'm soon
-i was gon na be
-and if we understand
-for me <END>
+david bowie:
+<START> you 're the human one <EOL>
+it 's not a fun , you 're in such the while <EOL>
+i 'm just so long goodbye , <EOL>
+it 's no crazy today <EOL>
+there is a sun it is like if it 's so right <END>
 
 (12)
-bee gees:
-<START> we are when we want to let
-i 'm love , you just do n't matter
-i 'd never do to be right , you 're my best
-now i 'm not a dog , i feel a <UNK>
-i want it and you do n't know what you 're <END>
+girls aloud:
+<START> a little day , a <UNK> ? <EOL>
+i know i 'm the greatest <EOL>
+i 'm your only summer , i had you <EOL>
+you know what is that you 're gon na break me <EOL>
+she 's gon na ever do me ( no ) <END>
 
 (13)
-demi lovato:
-<START> and i 'll not be scared
-but you 're in the end
-it 's a bullet for a day
-i could be strong
-in your old , i know to love <END>
+elton john:
+<START> got on a party <EOL>
+so i get not your love <EOL>
+it takes this sound <EOL>
+a joy of <UNK> <EOL>
+tell me it 's not a woman <END>
 
 (14)
-demi lovato:
-<START> cause we 're the days
-he 's nothing for the blue
-what the name comes low
-i know i 'll n't save the wind for world
-we 've kept my own dance <END>
+bad religion:
+<START> my empty <UNK> <EOL>
+it 's been nobody to be to love <EOL>
+all the rain to hit the eye <EOL>
+the kind of gold <EOL>
+i 'll be a hidden <UNK> <END>
 
 (15)
-bryan adams:
-<START> i 'm an first friend ,
-in the sand
-i 'm headed out upon your mind
-but my love is the one that 's gone
-you 're so long , i 'm so low in the <UNK> <END>
+blind guardian:
+<START> but summer and impartially fire <EOL>
+there 's no just like you <EOL>
+it 's always , i 'm sorry to fight <EOL>
+ooh - i 'm a slave of a sea of my soul <EOL>
+more , you can be in a i do n't ever need <END>
 
 (16)
-bon jovi:
-<START> that the walls 's made
-and you were been gon na beat the trigger
-i am the old
-i 'm gon na change the <UNK>
-do n't even do n't leave me on the world <END>
+dropkick murphys:
+<START> to move to the <UNK> to rise <EOL>
+a thousand time for it he 's your new <EOL>
+i never been a one my number <EOL>
+it 's so tough of <UNK> <EOL>
+would you be dead <END>
 
 (17)
-garth brooks:
-<START> well i ca n't go it , oh
-and the praise was hot
-and i travel and let you go
-and what is the <UNK> honey
-so i 'm gon na sing <END>
+bee gees:
+<START> tell me we 'll be here to be right <EOL>
+soon , i , it 's not a miracle i did n't get on , baby <EOL>
+i 'll be trying to be your girlfriend , you are a same <EOL>
+this way to you do n't you just do n't hear you ? <EOL>
+but my insides do n't do n't want to come down , <END>
 
 (18)
-britney spears:
-<START> you do n't know how i do
-let 's be that better
-you know about christmas my heart
-everybody 's not so bad
-and i know i know <END>
+fall out boy:
+<START> little <UNK> are up , she come above , <EOL>
+like my dreams <UNK> and going down <EOL>
+i was sorry <EOL>
+i 'm a girl of your breath <EOL>
+i 'm right on my mind <END>
 
 (19)
-george michael:
-<START> i 'll be the way i heard you feel .
-i 'm not afraid for stone
-no , it 's just no life , it 's here to cry
-you take a , a love they do n't notice him
-this could you get the moment to take him higher <END>
+disturbed:
+<START> even to tell my <EOL>
+i held your hand what you are <EOL>
+together you 'll got for the man you know <EOL>
+my life is not the time <EOL>
+that we 've been goin ' around <END>
 
 (20)
-fifth harmony:
-<START> i have taken it again , , you know you 'll be
-i want you like you 're gone
-i 'll pray and i 'm right , yeah , you can be on
-i never been searching to you
-i know i was putting like you 're here <END>
+abba:
+<START> but they 've got this place <EOL>
+but you were myself to die <EOL>
+and you got me at some little girl <EOL>
+when the sun comes down <EOL>
+and if you 're sorry <END>
 
 (21)
-the doors:
-<START> so we still have a way
-it 's so cold
-they could never be all
-i wan na be a dream
-i 'm not the way i choose <END>
+abba:
+<START> it 's high time back for your mother <EOL>
+and got my imagination and i 'm made to be your soul <EOL>
+it 's so long to fight you <EOL>
+and there 's a face about me <EOL>
+can you fall into the rain <END>
 
 (22)
-christina aguilera:
-<START> and let 's go , here 's no
-i know you 're gon na be the only one
-i need a lot of someone
-i 'm gon na make you love me
-you 're not with it <END>
+dropkick murphys:
+<START> a is gone <EOL>
+it 's just a the world , i 'm outlaw stare <EOL>
+let 's be to roll it <EOL>
+of a little girl <EOL>
+you know you got ta get on <END>
 
 (23)
-bryan adams:
-<START> but i am your blue doll ( she 's so nice )
-we 're gon na have to talk that you were again
-and i want where you 're living for you ,
-do n't find it to make me cry ,
-i 'm not , girl you want to ask you , you can get a taste <END>
+eurythmics:
+<START> i want your <UNK> out <UNK> <EOL>
+i 'm not to see you to change <EOL>
+you were not afraid to let a rhythm and wait <EOL>
+i will lay the same that not you <EOL>
+we do n't love it <END>
 
 (24)
-billy joel:
-<START> listen to my heart
-tell me what i 've got
-who 's a same one
-i 'm a kind of pepsi
-what you saw me <END>
+dropkick murphys:
+<START> the wind me from the house <EOL>
+by my dreams just call my aggravation <EOL>
+she has been clear through the stars blues <EOL>
+the future in the stars , the <UNK> were all that you were gone <EOL>
+the <UNK> i will be an last things . <END>
 
 (25)
-depeche mode:
-<START> and you have to come
-look to
-it 's <UNK> and i want to pray
-i do n't want to know
-i ca n't forget <END>
+disturbed:
+<START> i 'm a daydream <EOL>
+but you want to get <EOL>
+we came by tonight <EOL>
+i cried why i would not stay ? <EOL>
+[ chorus ] <END>
 
 (26)
-avenged sevenfold:
-<START> i do n't know what you 've got , i 'm told
-i 'm lost , you wo n't find you , for you
-if i remember my name
-baby
-falling in my knees <END>
+garbage:
+<START> do n't tell me how i listen <EOL>
+i remember i 'm fire <EOL>
+and be like a code of the ball <EOL>
+i 'm baby <EOL>
+for what you wo n't keep a new feeling , <END>
 
 (27)
-disturbed:
-<START> you 'll cut our side , then i 'm young
-but i was the one a one
-i 'm rocking like the love
-i know that sure with romeo
-but that you like my love <END>
+dropkick murphys:
+<START> the only other christmas child , <EOL>
+but you got the hunger , you know i do n't know you ca n't help me <EOL>
+no one do n't make a smiles of back 's the two ship <EOL>
+it 's n't here , you 're with you <EOL>
+i was sorry in this day <END>
 
 (28)
-avril lavigne:
-<START> i 'm not your girlfriend
-like a only world
-it to be the one i want
-i 'm waiting right and do n't wan na sink
-and it 's deep <END>
+the corrs:
+<START> through your heart , and i 'm feeling done to you <EOL>
+that seems i ca n't fight it <EOL>
+we 've been brave to be love , but you know <EOL>
+i love you , no <END>
 
 (29)
-garth brooks:
-<START> yeah , that 's your love
-i know you can live out of dreams
-ai n't a hands of <UNK> ,
-but the big road who do n't give me a new time
-my life is livin ' on a first , come like the world <END>
+bee gees:
+<START> how it seems , you 're gon na be driving the harder <EOL>
+we make it to get and i do n't want to do <EOL>
+i have to go forever , and you know <EOL>
+my time are not left <EOL>
+your heart is to say i 'm born you know just this time <END>
 
 (30)
-fall out boy:
-<START> i live back down
-but we 're a one of the view
-you 'll never get home
-i 'm going without you ,
-i wish you had what i get proof <END>
+dropkick murphys:
+<START> her thousand face is wasted than a dream <EOL>
+i 'm the circle in the world of the dirt <EOL>
+<UNK> <UNK> for the power light the kind <EOL>
+we do n't care <EOL>
+say the moral dreams i do <END>
 
 (31)
-george michael:
-<START> <UNK> , everything you see
-it 's not a on land
-i 'm a not all
-like a new cold place
-i 'll make us set me out of fire <END>
+fall out boy:
+<START> wrap you to be my love <EOL>
+we 're my crime <EOL>
+i need to break the parade <EOL>
+a will <UNK> <EOL>
+but my eyes they get me in your world <END>
 
 (32)
-the corrs:
-<START> if you 're sinking in my ear
-with you
-i do n't wan na be a man by you it
-we 'll have my day
-i just like n't do <END>
+elvis presley:
+<START> the future i keep the wall <EOL>
+to take me away with the son <EOL>
+and here i grow , it 's a great band <EOL>
+though you 'll be around it <EOL>
+i know you go <END>
 
 (33)
-disturbed:
-<START> i want me to see
-please <END>
+alphaville:
+<START> you 've got ta be me <EOL>
+you 'll get you on the light before <EOL>
+there 's why you 're thankful <EOL>
+this moment 's the stories i 'm not in my mind <EOL>
+for you still your girl and certain <END>
 
 (34)
-abba:
-<START> are you there
-it 's alright
-i 'm so hard to reach you
-that 's a best
-you got me <END>
+david bowie:
+<START> i 'll understand <EOL>
+if we never can always teach you <EOL>
+the days comes in the ocean <EOL>
+the warning the world in this haze <EOL>
+of the ones <END>
 
 (35)
-bad religion:
-<START> when you 're worth the no <UNK>
-i 'll sit in the mountains
-and she 's younger
-because you 've got the <UNK>
-is the stars the star <END>
+bee gees:
+<START> that i never knew something to stop the world that 's been not late <EOL>
+you set me , , i love you , <EOL>
+now i 'll get the downtown <EOL>
+but i think it 's trying to be out to me <EOL>
+i 'm so lonely to party , i 've had you , <END>
 
 (36)
-abba:
-<START> is your guy 's all that love i hear
-lost in the dark , the scene is sure
-i were the
-never told you
-you should have fly in the heart
-destiny i want to be trying <END>
+dropkick murphys:
+<START> i have to let every show what 's a big guy , i 'll swim <EOL>
+think , i 'm a child rose between the silver day <EOL>
+i 'm lying from a <UNK> <EOL>
+golden different , <UNK> the same time <EOL>
+so only a boy in the lights <END>
 
 (37)
-afi:
-<START> and the light 's <UNK>
-the stars i 'm not spinning
-she 's a <UNK> and the mornin '
-i hold on from the edge
-you 're wrong to hate you
-you touch me <END>
+abba:
+<START> i feel that whole other tale <EOL>
+before i 'm lost around that way of just i 've got your feeling <EOL>
+and i 'm <UNK> , like i 'm broken and you wo n't be here <EOL>
+i got a lover what you made , you know again <EOL>
+you can be the hurt of the right free <END>
 
 (38)
-bad religion:
-<START> comes the light
-just mellow
-and you can hear your friends
-and i 'll keep off
-the way i do <END>
+duran duran:
+<START> small , there 's no very <UNK> <EOL>
+my crying , the one turns of a blaze of the top <EOL>
+do n't want to fly here or come again <EOL>
+i 'm waiting of me <EOL>
+like god to be a prison <END>
 
 (39)
-christina aguilera:
-<START> and you , you
-she 's goin ' <UNK>
-she 's the sun of your head , baby , <UNK>
-for me and i know the wind i can do
-my love is on your heart and a note of <UNK> <END>
+foo fighters:
+<START> we 've got to go <EOL>
+so by the fire they could say <EOL>
+but you 're just you , <EOL>
+you know , you can be in the stars <EOL>
+we 're only to be still for you <END>
 
 (40)
-foo fighters:
-<START> it seems the love i 'm gon na take me home
-without the love we 're a <UNK> ,
-it 's too in this <UNK>
-you 've been you in my hands
-for now and a <UNK> of the stars . <END>
+demi lovato:
+<START> do n't let you get it away <EOL>
+well , i know what we want <EOL>
+you know i have to be missing <EOL>
+if that 's a bad one that 's <EOL>
+( oh , yeah ) <END>
 
 (41)
-electric light orchestra:
-<START> as a little old weekend
-and i 'm moving on
-i like her way
-and you 'll be a right girl
-well
-i 'm with you <END>
+the corrs:
+<START> and i 've got you <EOL>
+i 'm dancing yeah , i could n't take myself to my heart <EOL>
+i know you 've got some only new <EOL>
+i 'm trying to be living loud <EOL>
+i 'm gon na stop anything <END>
 
 (42)
-coldplay:
-<START> it can hear me ,
-you 're growing through
-that you will make you all this day is hell ?
-when the truth will die away
-oh it 's the only story you know <END>
+electric light orchestra:
+<START> tired of <UNK> and , when this best 's hearing my soul <EOL>
+( <UNK> to a mystery ) <EOL>
+you are so it i am <EOL>
+there 's no rhyme , i 'll be the same <EOL>
+i 'm like a flood and if i wrote the hand <END>
 
 (43)
-coldplay:
-<START> to love me like you know
-do n't let you leave me in your father
-baby , so watching me
-but you 're all i know you let me get creepin '
-and if you want to be easy <END>
+anastacia:
+<START> her way , <UNK> for me <EOL>
+you know you can wan na remember <EOL>
+i want you to die <EOL>
+it 's looking for but i give you that strong <EOL>
+but you do n't want to know 's <END>
 
 (44)
-the doors:
-<START> i 'm so many soul
-if you think that you stole me the line
-the way you should go , take
-it 's gone and it 's <UNK>
-i feel our tongue with a kiss <END>
+afi:
+<START> life 's the light of through <EOL>
+i want a little new <UNK> <EOL>
+i predict our <UNK> <EOL>
+we 're like to talk <EOL>
+baby , hey <END>
 
 (45)
-bee gees:
-<START> the ones of the moment of the maria
-while the past 's cold
-you never will be a <UNK>
-there 's money i 'm waiting to be
-( i 'm no american <UNK> ) <END>
+britney spears:
+<START> your love we slowly got no snake <EOL>
+i do n't want to make you love <EOL>
+i want to love you , <EOL>
+you 're a man , i can be what you started <EOL>
+i got you always to give a look in your mouth <END>
 
 (46)
-demi lovato:
-<START> stay do n't save me , it 's missin ' away
-and you had me in this walls
-the boys are with me
-than my heart 's <UNK>
-i 'm only standing
-i could get right <END>
+dropkick murphys:
+<START> it 's an fun for the <UNK> <EOL>
+so stop , in the wide gown <EOL>
+and if you are so happy <EOL>
+b <EOL>
+shower me <END>
 
 (47)
-david bowie:
-<START> is a heart with a song
-got you to move down and you never do
-after a late tree
-to hold them back , oh , no
-( it 's never here ) <END>
+alanis morissette:
+<START> and i 'm not telling you , we 'd find a lot of pa <EOL>
+i know we 're young but your love lies to the <UNK> <EOL>
+and the stranger of my heart and i can be a wheels <UNK> . <EOL>
+and that i need the world with a <UNK> <EOL>
+the lord are in your avant you , . <END>
 
 (48)
-avenged sevenfold:
-<START> i love me when i can let you be to end
-i 'm gon na be your love to have exactly you
-holdin ' over everything
-it 's toxic when i 'll be without i it got your own men
-you got me in the sky <END>
+foo fighters:
+<START> better superior but your skin are high <EOL>
+you got me to be worth my fake <EOL>
+but i will be there by see <EOL>
+that i just getting around to fight my own <EOL>
+i do n't see what you say , i see you <END>
 
 (49)
-elton john:
-<START> i could feel to describe , take me
-i do n't want to sleep to let you hear
-love me for me all i wan na hear
-you and you is a fool
-you can see , i love you <END>
+abba:
+<START> it 's late , i say you 're here <EOL>
+words just n't do why , do n't i have you to see <EOL>
+that my time making you no way <EOL>
+you have to feel you to look to your mind <EOL>
+ca n't you say you can go here <END>
 
 (50)
-avril lavigne:
-<START> i 'm calling the <UNK>
-i 'm reaching in the ground
-if you should make myself back
-and you 've got ta be gon na be
-heart ? <END>
+erasure:
+<START> do n't you hear you know <EOL>
+and i see , i see her like here <EOL>
+you 'll not do life <EOL>
+everything , it 's so much you ca n't help me <EOL>
+i could be going at your <UNK> <END>
 
