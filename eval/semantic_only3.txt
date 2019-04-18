@@ -1,0 +1,458 @@
+Evaluations for checkpoints/semantic_only/semnatic_only-e00009.pt
+using lyrics/input_files/filtered_dali_val.pkl:
+
+Perplexity = 77.870
+Wrong Artist Perplexity = 79.975
+
+Select cosine similarities:
+the gathering
+  Top 3 most common:
+      blind guardian : 0.7912
+                 afi : 0.6844
+          eurythmics : 0.6679
+
+  Top 3 least common:
+         evanescence : 0.3366
+       fifth harmony : 0.2929
+       avril lavigne : 0.2290
+
+
+elton john
+  Top 3 most common:
+          billy joel : 0.8370
+            bon jovi : 0.7929
+         david bowie : 0.7920
+
+  Top 3 least common:
+           disturbed : 0.4802
+         evanescence : 0.4072
+       avril lavigne : 0.3977
+
+
+britney spears
+  Top 3 most common:
+  christina aguilera : 0.7656
+           aerosmith : 0.7484
+       fifth harmony : 0.7361
+
+  Top 3 least common:
+   alanis morissette : 0.3750
+      blind guardian : 0.3715
+        bad religion : 0.3541
+
+
+bruce springsteen
+  Top 3 most common:
+          elton john : 0.7857
+          billy joel : 0.7239
+           aerosmith : 0.7113
+
+  Top 3 least common:
+      blind guardian : 0.3122
+       avril lavigne : 0.3038
+        depeche mode : 0.2896
+
+
+
+50 generated samples:
+
+(1)
+george michael:
+<START> and i ca n't do n't just <UNK> star try to hold for your love and i die , now
+  <START> what that feeling to a friend by behind the world n't got a shadow is the light and let me
+  <START> 'cause i like a new <UNK> <UNK> and they 're <UNK> ( all i 'm too i 'm not as
+  <START> oh you put out it must be holdin ' do you should be a prince of <EOL>
+  <START> i see you should someday can your voices my way but but i 'll lose the <UNK> yeah like who
+
+(2)
+frank sinatra:
+<START> ( i do you 're even ( i just when you know if you right and you 're <UNK> <EOL>
+  <START> and i 've red baby ( i hear why i 'm the truth let them but and your house in
+  <START> i can stand can go in what you way and no you had at a little touch us for a
+  <START> i want to hand boy last in the things we 've got your good glitter <EOL>
+  <START> do i 'm right baby you can you can get all again <EOL>
+
+(3)
+eurythmics:
+<START> and well how we do n't that i do you 'll give to destroy and burn and i ca n't
+  <START> and gon na <UNK> and let you can see you got to get to my heels ( like the way
+  <START> when the girl 's born and it on the wrong <EOL>
+  <START> was all i will hear me for it was just the ground , and could let 's done in the
+  <START> then grew to go , what i 've got always it <UNK> man and nothing i can live and the
+
+(4)
+electric light orchestra:
+<START> 'cause i did you can help you say i 'm the sky just a <UNK> <UNK> dream , do <EOL>
+  <START> what in your life it wants so this time <EOL>
+  <START> do the night for movin ' it 's <UNK> <UNK> <UNK> <UNK> when i would overcome you 're <UNK> and
+  <START> i can tell me that and it 'll almost the darkness do your door it feels it like you say
+  <START> <EOL>
+
+(5)
+eurythmics:
+<START> i woke to be love and it look a good man and i am so no or you got you
+  <START> do n't do you make her <UNK> they 're nothing are too to a <UNK> the things i 'm a
+  <START> i 'm riding the strong where i 've 's <UNK> but who ca n't see myself baby <UNK> in the
+  <START> and now have i said <EOL>
+  <START> to you know i ca n't change i was i ca n't do n't and so it 's in the
+
+(6)
+elvis presley:
+<START> <UNK> and i 'll pray you 're only in her book and like a <UNK> she 'd roam <EOL>
+  <START> and on all i was i can see love now and just just you got it ( we 'll do
+  <START> motorcycle <UNK> a little time , what you are there will be you are your <UNK> with something my hero
+  <START> if i 'll take the best if you disappear <EOL>
+  <START> we 're people got the word i , i 'll keep your life in the <EOL>
+
+(7)
+blind guardian:
+<START> i 've got my name or you want you could we want to you wan na na take the letters
+  <START> i 've your love is the king i need a dog beggin ' and i want to let it do
+  <START> it 's the sun you say not and ever you come and i need , now i been this way
+  <START> for the sign we belong and i was god 's my dream i was <UNK> this my father <EOL>
+  <START> lie , oh turn out my <UNK> the end of it 's like life i do n't know you 're
+
+(8)
+elton john:
+<START> you 've been to a working your <UNK> singin ' the wall i can we 're the way you 're
+  <START> i lied oh hey and we have taking the part of <EOL>
+  <START> there a little shoes love `` stop her got me i ai n't feels one city ( everything is so
+  <START> well i prayed , we know as the <UNK> and your <UNK> and you 're on the night feeling oh
+  <START> hear the ground <EOL>
+
+(9)
+alanis morissette:
+<START> from all it does n't do the girl and i need <UNK> do you call and i do you will
+  <START> the little , she 's watching you do n't to it are when a <UNK> in the <UNK> are your
+  <START> merry love in one more <UNK> <UNK> back to flying it is the blood oh and the world do n't
+  <START> she was a <UNK> to save you can mean inside your man i can say <EOL>
+  <START> but i do n't goin ' it keeps it 's i have a beautiful i hold you in my burning
+
+(10)
+george michael:
+<START> you should feel on the name , oh and now there seemed one other days they said the smile <EOL>
+  <START> tell you used to the things you wake in the world to <EOL>
+  <START> i had no more , and i can show a meal and while we are cold <UNK> you in the
+  <START> you can it 's sick and i 'd rock our i 'd say we 've for the home and tonight
+  <START> everyone was you come and you 're the same games i know i 've never let me in the keeping
+
+(11)
+the corrs:
+<START> the years there 's ca n't do n't do i 've stand to that do i ca n't got too
+  <START> well i 'll be the wall , somebody follows you could go and you can never been too let a
+  <START> i 've move and the wounds i know lay the moths to all with you and i 've tried to
+  <START> in the edge and all a humble we 'll <UNK> chorus <EOL>
+  <START> let the little light it for the way down a little faces and you wo n't ask her worlds on
+
+(12)
+eurythmics:
+<START> and no night just make it and what 's honey <EOL>
+  <START> the last hands we never let you got these angel will say you say i do n't i come on
+  <START> and i was alive <EOL>
+  <START> i would i 'm close and my mind when i are waiting for a light , i do it ,
+  <START> truth i 'm a merry and i 've got ta come that you do we 're now oh it 's
+
+(13)
+aerosmith:
+<START> and and i know from your way that the eyes ( oh i do n't do n't the <UNK> <UNK>
+  <START> just to <UNK> <UNK> in his lies <UNK> never do n't give off you come <EOL>
+  <START> i 've go all the of <UNK> i will have one time to a man to sign , do n't
+  <START> i 'll be a little time <EOL>
+  <START> na longer but the <UNK> , <UNK> you were under the fever dum been got it and their <UNK> that
+
+(14)
+the doors:
+<START> if they 're up and you 're not the morning living another come back and yeah passion and keep you
+  <START> and the girl <EOL>
+  <START> we want this time is <UNK> <UNK> with the <UNK> you do n't was a spinning on a just say
+  <START> i know but you try to you know you 'd see you all this way here and it should be
+  <START> repeat like the days i can feel afraid and stay round out right , 'cause i could you do you
+
+(15)
+the doors:
+<START> <UNK> , i do i do the woman for you 're so way in the love , a friend i
+  <START> that a <UNK> i would you 're on the million and i 'm drawing your friend and it 's girl
+  <START> just the air that and i feel the lover does n't want it were all hell take your life <EOL>
+  <START> i can you will come my tongue do n't do i 'm a man rush ai n't love we can
+  <START> and yes not the <UNK> the <EOL>
+
+(16)
+alanis morissette:
+<START> hold it 's no one as the rain to love and i 'm a monday it 's a out you
+  <START> and the way all and we got if you and time take a big , taste your friends we were
+  <START> ( take i was gon na but you 're you will get your heart if you goes but i see
+  <START> but i 'm <UNK> behind me and it , now , i 'm a <UNK> somehow and it 's underneath
+  <START> when i will feel no girl now make the pictures of my man i wan na so pure pearl <EOL>
+
+(17)
+elvis presley:
+<START> to nothing 'd all my lipstick would swallow children works take it belongs to a darling <EOL>
+  <START> there 's not what you know i ca n't do n't say and i 've got a hey and divine
+  <START> i have come from the last babe what they <EOL>
+  <START> and the got a chill ( sometimes i know what i do have done and you fell like the map
+  <START> the way i 'm way so i said to me your cuts swinging and the way so no one ride
+
+(18)
+bon jovi:
+<START> like you will be the little longer ah just did n't get me i do you can do that we
+  <START> you 'll ask the ground from the words is it would come back off to you do n't walk through
+  <START> what you and last will ( all in a <UNK> <UNK> he got it 's alone lie <EOL>
+  <START> no way for a man i do the spotlight in her just i 'm only at the night ( every
+  <START> and i know you 's right what i want you 're wearing the wrong straight for the girl and i
+
+(19)
+girls aloud:
+<START> you are my light ( you never give the <UNK> his love i do i ca n't will that had
+  <START> we leave you should mind would make it 's all you learn and can hold in a day <EOL>
+  <START> you do it will change the <UNK> tonight , i 'd come while i 'm your fun and i gon
+  <START> if i try to then why to never read such this man of all week and give me with a
+  <START> still are a seasons for the world open for this <UNK> <UNK> hot i do i must show me nothing
+
+(20)
+coldplay:
+<START> i drank with this way to a land and ca n't <UNK> <EOL>
+  <START> to you never must go to <UNK> to the bank , but we know there you 'll the beam <EOL>
+  <START> i 'd come like love but on the voices with i belonged <EOL>
+  <START> that 's the just i 'm from a satellite , she 's really ( a rain <EOL>
+  <START> one day we 're say but i do i 'll be lady and i 'm destruction is sex no girl
+
+(21)
+foo fighters:
+<START> i got you wo n't give it does n't can see the river when i 'll let it 's it
+  <START> it are the fuck ( i can it could have so let it may be there as suddenly a day
+  <START> there 's gon na , it 's dying <UNK> and i am i know that do n't do my girl
+  <START> good of us wo n't do n't got just dyin ' i are better got , you do n't try
+  <START> i 'd be sing you is bright , but he do n't ca n't said ] what was the love
+
+(22)
+the doors:
+<START> a <UNK> <UNK> and i 're my the way the way and i believe i do you were my <UNK>
+  <START> i 've got to see running and another <UNK> i do n't do i 'm special and i 'd ride
+  <START> it 's down for it to be a love to it 's the lord where the bass and i can
+  <START> when you cast the sky i have while i ca n't take <EOL>
+  <START> seen the soldier and i got me to find a lot of you and a man by love i 'm
+
+(23)
+anastacia:
+<START> i got to do n't do n't did n't will do you 's <EOL>
+  <START> take someone to believe <EOL>
+  <START> nobody was , maybe and i 'm so got ta tell it was the floor <EOL>
+  <START> i made this time you 're come for that fade <EOL>
+  <START> we 've just so to a girl me he 's all she 's really and it only got all the
+
+(24)
+bryan adams:
+<START> i 'm alone ally <EOL>
+  <START> i need it is good and hope you know <EOL>
+  <START> it 's to <UNK> change just come try to hell ) <EOL>
+  <START> but i do you was driving me in the fire i do n't come with them now huh and when
+  <START> like a fire , hurt me three <UNK> that what you can come to it <EOL>
+
+(25)
+avril lavigne:
+<START> i need guilty and i 'll bring on it is first but what you do n't let me i have
+  <START> i know i got my dear it 's tangled through our lives a heart and just love he was us
+  <START> every time do not this gave it knew you 've just the little and i 'm in the bad where
+  <START> i 'm another dream you come and that your heart so down this will you need me a true babe
+  <START> we 're on the sun of <UNK> a simple love she brings the middle of your bloody thinking that i
+
+(26)
+girls aloud:
+<START> but a gun like the sweetest life will a torture do n't got your windows it do n't do n't
+  <START> love you 've walk in the name and black and i 'm a man , follow you 'll sway so
+  <START> oh you 're a star lost looking for walk away , wo n't said they 're a <UNK> in the
+  <START> lips do n't you do when i 'm mama are a <UNK> the party and i love when you went
+  <START> what to you <EOL>
+
+(27)
+bryan adams:
+<START> you is caught their love when you 's just i 'll just the night who is all i should be
+  <START> i know ( the time we 'll fall in the way down the whole <EOL>
+  <START> a <UNK> at a lie hey forget ( somewhere high we 're the years keep a i ca n't was
+  <START> and i would come over what i do i know <EOL>
+  <START> and take this 's the story i 've got those must do i know i know keep you could be
+
+(28)
+eurythmics:
+<START> well but i ever you do n't see with the tracks 'cause i really have your friend ( see pride
+  <START> fallen revenge and do n't do <EOL>
+  <START> quien , i 'm desperate hey <EOL>
+  <START> but we 've told me i got one of you got time are a and <UNK> open the breaking the
+  <START> now oh a lot of the lights <UNK> and i guess you 're so <EOL>
+
+(29)
+blind guardian:
+<START> you got deep and the real a <UNK> you 're true in me like you are nowhere for the he
+  <START> need a moment i got to the man do n't could do n't have the world up and <UNK> you
+  <START> and i got what do you never , oh ( i have you 're a cure we are able to
+  <START> do it 's toys , must change and it 's and there comes how do n't so movie <UNK> <EOL>
+  <START> one ( i at my way here i want to your fears for the 're so <EOL>
+
+(30)
+abba:
+<START> a feeling always take my eyes a long it that were really bring your head just a little man and
+  <START> right for your life had so <UNK> and the <UNK> of this one more <EOL>
+  <START> oh for the end and i can keep out ring 'cause on the horizon , but i do n't say
+  <START> and if you knows and why and a good <UNK> and i am right just but i go and the
+  <START> well ( we 'd never fixed , once you 've danced and lost real i do they 're the breeze
+
+(31)
+frank sinatra:
+<START> tell it 's you never do you 'll cry and i 'm all alright it had a little chance you
+  <START> i 'm like save his knees at the roof do will mind i try to her turn away i look
+  <START> i do you 've got me <UNK> fight how a new por <UNK> and you and we know what you
+  <START> has here for my old little reason to the <UNK> <UNK> ' but when my eyes just a <UNK> thought
+  <START> make me said please do you knew it i find the night c this times ( oh ( they see
+
+(32)
+david bowie:
+<START> of the cracks of the ice cause you 're daily <UNK> and feel where you are the road come and
+  <START> my hands a love i need the <UNK> and the zone <EOL>
+  <START> he came in a failure to you lost i 'll stand to you miss you 're going in the little
+  <START> i take the words you 're so come on the people if i could make it 's and i can
+  <START> i must be the live it are from , do n't love i 'm you can be a sky you
+
+(33)
+depeche mode:
+<START> i belong to someone to you , we 'll get so if i all with your lives to comfort and
+  <START> you can do n't will be outrageous <EOL>
+  <START> oh about a way 'cause you got happened you got long and just can guide all a one dress and
+  <START> you need so i need okay i got down of <UNK> the way for living the <UNK> you 're so
+  <START> now or if you 'll play and so much tell your love off in the strong whoa until set away
+
+(34)
+eurythmics:
+<START> we <UNK> the signs , a <UNK> and give <EOL>
+  <START> this and i ca n't know and prays is out it do you 's had the taking a dream this
+  <START> i can our hand , i , to us it called it comes you could turn away , what is
+  <START> i can love all he 's baby bit ( the naked ( love you play and i were a city
+  <START> i got like a <UNK> ( hello ( but we need i 'm no road , i 'm a songs
+
+(35)
+britney spears:
+<START> ooh what it and i 'm all this night and wonder slowly and waiting every night oh it 's all
+  <START> we could the world and do n't made my life ai n't love to a one 's the sun can
+  <START> this door and i 'm there 's the name ( but you want to live and i kiss a low
+  <START> we want some all i got all i hate of the light you can all this <UNK> on such much
+  <START> <UNK> , you were here ( baby , you , i 'm gon na i do n't when i 'll
+
+(36)
+bryan adams:
+<START> in you 're not a bad and i is <UNK> baby i been like i 'll give it is down
+  <START> that 's driving in the way you know what i undo that i want to hear me just come by
+  <START> please i cry here but when that i got the line the stone people and i just been gon na
+  <START> ( and ca n't go , get give me but the <UNK> i could never want all it your hearts
+  <START> i have the voice you do i 'll on the world can be my they 're no than why was
+
+(37)
+dropkick murphys:
+<START> from your head the love i 'm you 're sick and if i remember <EOL>
+  <START> and i want that me i 'm i 'll remind i know you 're not the sea no more but
+  <START> a a day , i can kill my light everything and i could be the way ( you try we
+  <START> i 'll you try to that i know and if you really an rain is so in the little matter
+  <START> i 'm said ( never in the blue ( i have there 's time you 've been a long and
+
+(38)
+george michael:
+<START> i ca n't let me i am i <UNK> time i 'll you want to a <UNK> <UNK> and i
+  <START> to write and just ( well i 'm not make love , you 'll rise all the big days light
+  <START> so i 'm dying i 'm like misery to me you ought to to make it were a down i
+  <START> i can the time would you still <UNK> on the wine <EOL>
+  <START> i feel feel red <UNK> <UNK> lights are <UNK> hear yourself i do would earth take you do n't see
+
+(39)
+abba:
+<START> you never i do i got me before it ` t but you turn down too much the empty singing
+  <START> you 're history in my breath to me always a rain ( you <EOL>
+  <START> i 'll let me no like a <UNK> a reason to never close and oh to all the rule the
+  <START> i try come to the heart has so low bad <UNK> , regrets , i 'm inside you 're then
+  <START> i can see the word guessing the best tired of the time [ chorus <EOL>
+
+(40)
+alanis morissette:
+<START> it 's all ( come by what you <UNK> <UNK> oh ( all your wrong la <EOL>
+  <START> i 'll do we 're burning hey and hear the feeling in the morning and i 'm alone do once
+  <START> when i 'm there 's walking in my <UNK> you and i 'm a <UNK> now yeah make your face
+  <START> cry to tell you ca n't setting your little , happy i do i do i 'll break on a
+  <START> do n't will be headed and i know i do n't got you find his love and this morning and
+
+(41)
+afi:
+<START> these life you say did we 'll know i 'm in the future you thought the balls we need you
+  <START> well <EOL>
+  <START> i got a <UNK> 's gon na for a night just we got some time and drums <UNK> i do
+  <START> it or i just see you know just maybe you go and it funky ( this light down and i
+  <START> is here out me get a night from love feel we says come on the songs are throwing <EOL>
+
+(42)
+the corrs:
+<START> i know i got it 's a <UNK> gods ( i ca n't to the lonely i 'm hard to
+  <START> i tell me with heaven and with my friend i have to save the love you do do n't do
+  <START> and i have gon na my <UNK> <UNK> the whole friends at , do you got you 're all to
+  <START> i 'll make the sights and in the city and you will all all the barrel i 'll live you
+  <START> blood and the boy and love in 's the time i 'm down what there you 're all <UNK> and
+
+(43)
+bryan adams:
+<START> do n't got so <UNK> how we need i wo n't it is my love cause i 'm a new
+  <START> misunderstood 1 just will all this people i 'm feeling yeah i told it <EOL>
+  <START> boys and as she they 're a time what you need you do you 're alright , where is here
+  <START> tangled all it or let me i 'm all that the sad and i lay <EOL>
+  <START> if i 'll be and a little sound ( and who was round , and <UNK> and move when you
+
+(44)
+afi:
+<START> ( chain ( so other love you 've was you got it 's on <EOL>
+  <START> we 're been the end you <EOL>
+  <START> i know i 'm for the time you 've gone baby we 're with a girl and too join me
+  <START> just would be his city and home that it we no turning on a little something you <EOL>
+  <START> i 'm to you would i could go and there takes you do you <UNK> this day on the way
+
+(45)
+bryan adams:
+<START> my life 's the clock the way on you lie , i am but do what i 'm lucky no
+  <START> do you mean they give it 's got that i know the dirt que oh ( turning my name ma
+  <START> i 'll let me careless <UNK> he 'll love she want the same trash find her love but the door
+  <START> i fall ( is my lonely , underneath these i know i 'll try to the dream i do n't
+  <START> it 's heaven is the <UNK> at <UNK> and something little man with me to bear this night the door
+
+(46)
+coldplay:
+<START> we 're born to <UNK> <UNK> bang i need i would get of all to your same <UNK> , my
+  <START> i knew eyes until what the real <UNK> i had it is a single i do you got you 're
+  <START> this time i ca n't wan na got the right a beautiful <EOL>
+  <START> i am like we 're just we 've turned out it 's fragile so less yeah <EOL>
+  <START> it is <UNK> <EOL>
+
+(47)
+the gathering:
+<START> for a <UNK> now and <UNK> <UNK> wanted the end by the beat i will do n't believe to <UNK>
+  <START> so yet do you wo n't sent the one one of you were gon na na na na you ca
+  <START> i might do n't got you 've got the world walking by the right and you were a air (
+  <START> we want <UNK> pity there 's over myself who moved 'cause we 'll start to you can i 'll be
+  <START> i thought where you have by a long a party when you never mellow <EOL>
+
+(48)
+alphaville:
+<START> i ca n't away . <EOL>
+  <START> but you ca n't come with an top i just still <EOL>
+  <START> it 's like what i can you can do you can do n't cry <EOL>
+  <START> you got in you are the pain although you sold it 's a city to it can you 're a
+  <START> but how i wanted you ca n't it do <EOL>
+
+(49)
+the doors:
+<START> towards my <UNK> , to walk in the time i should hold with you else <EOL>
+  <START> it 's had to blessed me , she can put ( girls i 'm not the summer so fool (
+  <START> the water <EOL>
+  <START> he 's one you might let lips not got the dress our dreams just let the new , safe on
+  <START> the song we want to the dreams <EOL>
+
+(50)
+billy joel:
+<START> no one fat unknown <EOL>
+  <START> you got as the little story i was looking for you felt raw , and you do n't listen to
+  <START> he 's a baby you do n't do you are that i knew you can be her , all baby
+  <START> just and how if you can never free <EOL>
+  <START> belief and i could see i 'm in you do it 's either way and the things i would n't
+
