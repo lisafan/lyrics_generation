@@ -40,9 +40,11 @@ def generate(model, Data, params, prime_str=None, artist=None, melody=None, pad_
 
     if params.use_melody:
         if melody==None:
-            _,_,_,_,_,sample_melody,sample = pad_fn([Data[random.randint(0,len(Data))]])
+            _,_,_,_,artists,sample_melody,sample = pad_fn([Data[random.randint(0,len(Data))]])
             melody = sample_melody.to(device)
             #print('Melody source: %s by %s\n'%(sample[0]['song'], sample[0]['artist']))
+            if artist==None:
+                artist = artists
     else:
         sample_melody = None
 
@@ -51,6 +53,9 @@ def generate(model, Data, params, prime_str=None, artist=None, melody=None, pad_
             inp = [[Data.word2id(w) for w in prime_line] for prime_line in prime_str]
         else:
             inp = [[Data.word2id(w) for w in prime_str]]*predict_line_len
+
+        # print(artist)
+        # exit()
         predicted = model.evaluate_seq(inp, artist, melody, predict_line_len, predict_seq_len, temperature)
 
         if params.use_melody:
