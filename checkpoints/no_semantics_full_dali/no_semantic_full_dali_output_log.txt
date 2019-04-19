@@ -1,0 +1,3011 @@
+train.py --input_file=lyrics/input_files/dali_train.pkl --vocab_file=lyrics/input_files/dali_train.vocab --checkpoint_files=checkpoints/semantic_full_dali --chunk_size=5 --max_seq_len=50 --max_mel_len=20 --max_line_len=5 --n_layers_L=2 --hidden_size_L=64 --print_every=300 --n_epochs=10 --use_artist=False --embed_artist=False --use_semantics=True --use_melody=False --n_layers_S=2 --hidden_size_S=64 --use_noise=True
+
+input_file: lyrics/input_files/dali_train.pkl
+vocab_file: lyrics/input_files/dali_train.vocab
+checkpoint_files: checkpoints/semantic_full_dali
+load_model: None
+vocab_size: 10000
+chunk_size: 5
+max_seq_len: 50
+max_mel_len: 20
+mel_t_step: 0.1
+max_line_len: 5
+use_artist: False
+use_semantics: True
+use_melody: False
+use_noise: True
+batch_size: 16
+n_layers_S: 2
+hidden_size_S: 64
+n_layers_L: 2
+hidden_size_L: 64
+word_embedding_size: 128
+artist_embedding_size: 32
+embed_artist: False
+learning_rate: 0.005
+n_epochs: 10
+print_every: 300
+plot_every: 1000
+
+11094 batches per epoch
+
+[0m 0s (epoch 1: 0%) Loss: 0.0293]
+<START> thick sell papapaa smelled dann stumble crept heel counts tongues porch hole learns wreck uhhuh legend sing strut rocking roars 
+ <START> local johnny tapeworm <END> february melt dreamed shake smiling concrete hour final paradise busy playin tetris enemies selfdestruction crossfire dive 
+ <START> obsession froze forever haul ooohooooh along temporary grow ailing consolation actress neither god needs won winds poor she bell wi 
+ <START> assistance don`t meal messing weigh winged untouched pop hat mmmh redraincomingdown tame c'mon onto somethin patiently deni bregade belief one 
+ <START> large candy youare journey dep dum lose somethin knocked planets nail tries skyyy breast learning eien chosen breaths shipping angry 
+
+
+[0m 18s (epoch 1: 2%) Loss: 5.6334]
+<START> da cocktail cause a front out marylou girl doown dandy calm faster somehow desolation it but so <EOL> 
+ <START> i give he ) disguise touchin prophets joined wave right myself prime drowned liife bag any happening shout million ai 
+ <START> i ca we life grandma away colour sensible one daddy plays the days baby. iwanna sleepless kite ride eyes shewolf 
+ <START> i 'll the hip he mine treats when wan i want might does i <UNK> bo sold shows gallows brothers 
+ <START> 'm under did it things it i woh out bought throw all you after haahah hat drown understanding over i 
+
+
+[0m 33s (epoch 1: 5%) Loss: 5.0982]
+<START> and who hate past kneel begun lordy sweet high helped pretty frightened die scattered bill steal stranger hard she <EOL> 
+ <START> but the oh glow moscow horse ever let you say beside wait neglected release pa quick worry ought does do 
+ <START> else fiction belam alright majority brightest shops judges mornings freedom 're all 'cause i 'm a and and <UNK> can 
+ <START> pay here southern behave har into <UNK> teams boot hunting snowflakes tiffany send the four more withall <UNK> club made 
+ <START> who think if i i i let most heavens woh our upsidedown for you anywhere claiming alleys monday we let 
+
+
+[0m 47s (epoch 1: 8%) Loss: 4.9349]
+<START> and so <EOL> 
+ <START> fell ten heartbeat especially miles much am we you got so fool me began quite was time longer walk eventually 
+ <START> we 'll what was even waitin place thee says a show days house hourglass aroundand destruction whine moving do n't 
+ <START> <UNK> voix side oh cling perhaps dy bitching generation wedding after fishmaster undo and bless goodbye koe stress heroes stronger 
+ <START> do i think all of a right some mee bags because i can use you hope hu i can all 
+
+
+[1m 2s (epoch 1: 10%) Loss: 4.8443]
+<START> i will just one anyone goes id <UNK> me steel proper certain trying how it are , alone point forth 
+ <START> she will now that will say a little love oh forthesun to <UNK> come addicted sorrow seeking ' s do 
+ <START> <UNK> is does my over not even <UNK> family ce future slide <EOL> 
+ <START> i do me strength <UNK> told in the lady bind ca and the sick wei just you 'll 've out 
+ <START> i there makes loved she get uuh sworn a taxi coke just fever over the only let to keep oo 
+
+
+[1m 17s (epoch 1: 13%) Loss: 4.7769]
+<START> even <UNK> skies league piano what when keep <UNK> from someone pedal the pretend until the sky mean pulling crucified 
+ <START> so no you ai n't want a the own my kind fault illuminate we want of way ii geunyeor one 
+ <START> i all and i 've do slowly night time cry ma angel whale heartache figure your heart black rose <EOL> 
+ <START> through note killing do you oh those middle sais buried straw i that you can the follow at you found 
+ <START> <UNK> think i only always the girl those ho kotoba bom i do you know baby right too ghooostbusteeers fell 
+
+
+[1m 36s (epoch 1: 16%) Loss: 4.7308]
+<START> need ! way everybody need an warm you can do n't smile confidential clearing and all i feel blue trickery 
+ <START> and all the lights <UNK> mountains could na <EOL> 
+ <START> baby to all your home lions and time left be and i just just and together time the more <UNK> 
+ <START> in bow now you could good me time old <UNK> long shoe not the <UNK> sure big cold just the 
+ <START> to and go nowhere libido time night wise surprised christ obstacles of in the queen god sang the <UNK> the 
+
+
+[1m 55s (epoch 1: 18%) Loss: 4.6990]
+<START> i never in your grass flashes rest water chase this people <UNK> home <UNK> sounded gon <EOL> 
+ <START> in your dreams pictured hiding <EOL> 
+ <START> you feel by automatic bring , falling pale horse called and so first lake it <EOL> 
+ <START> and wisdom bow <UNK> <EOL> 
+ <START> and think you do receive back turn your day <UNK> runnin vessel i need the knew all holding the line 
+
+
+[2m 15s (epoch 1: 21%) Loss: 4.6468]
+<START> i think in the in your ter fire scream n islands in the all you got it goes somebody like 
+ <START> and c'mon curse <EOL> 
+ <START> i 'm i 'll have losing <EOL> 
+ <START> come at my shi words it goes is your <UNK> all me and but she noone belongs to the morning 
+ <START> i 'm one watch people dreams 's wait anyhow mary not work has i was you ask the eyes i 
+
+
+[2m 34s (epoch 1: 24%) Loss: 4.6405]
+<START> spending we will noticed pink house hope but yes go <EOL> 
+ <START> 'cause i really you do n't it in by the sadness stop the name going ' it 's my <UNK> 
+ <START> i had <UNK> building alive anymore rage roam words <EOL> 
+ <START> by friend <UNK> <EOL> 
+ <START> then and something time better <EOL> 
+
+
+[2m 50s (epoch 1: 27%) Loss: 4.6148]
+<START> you 've when and but the way bright hole my time in this world on <EOL> 
+ <START> i 'm save the <UNK> max clinging turned <EOL> 
+ <START> i 'd can dy <EOL> 
+ <START> fear , to <UNK> it 's the i will thought ( and i 'll it <EOL> 
+ <START> too your ride <EOL> 
+
+
+[3m 6s (epoch 1: 29%) Loss: 4.5824]
+<START> if what and you never tell <UNK> a gift and colours <EOL> 
+ <START> to to push up one one city <EOL> 
+ <START> 'cause love just blackout things i 'm the name enough <EOL> 
+ <START> good <UNK> ca n't like faith i loves the devil wo you want the heart o'hara deeply is i just 
+ <START> i 'm going but it <EOL> 
+
+
+[3m 21s (epoch 1: 32%) Loss: 4.5869]
+<START> i do n't hope is i never leave myself you 've i took this time to someone bones <EOL> 
+ <START> break and the lights bound <EOL> 
+ <START> i 'm <UNK> , my heartbeat over his rain changes <EOL> 
+ <START> held <EOL> 
+ <START> you five world you had my world rain talkin minds and can ask me as i just a time with 
+
+
+[3m 38s (epoch 1: 35%) Loss: 4.5698]
+<START> you 'll ever find to to way substitute <UNK> ars drums be bigger <UNK> through give you never it will 
+ <START> you feel cause i 'm it is <UNK> thing <EOL> 
+ <START> you try and like you see where you wo n't played the <UNK> find as you and for for you 
+ <START> let n't and midnight on a <UNK> <EOL> 
+ <START> through a party <EOL> 
+
+
+[3m 56s (epoch 1: 37%) Loss: 4.5492]
+<START> and wan much keepin bounce girl is <UNK> bar eh <EOL> 
+ <START> you know <EOL> 
+ <START> and oh <EOL> 
+ <START> 'cause i 've soak a <UNK> ahead <EOL> 
+ <START> i 'm car <EOL> 
+
+
+[4m 14s (epoch 1: 40%) Loss: 4.5212]
+<START> 'cos learn <EOL> 
+ <START> we lost ho <EOL> 
+ <START> cassius the life , <UNK> , i 'm to the dream light the lonely <EOL> 
+ <START> i 've singin na <UNK> disaster bregade <UNK> , oh <EOL> 
+ <START> the feeling where it 's on me got me is here <EOL> 
+
+
+[4m 31s (epoch 1: 43%) Loss: 4.5092]
+<START> make the old no ah <EOL> 
+ <START> when your rest pretty running all <UNK> <EOL> 
+ <START> the <UNK> <EOL> 
+ <START> and <UNK> the <UNK> <EOL> 
+ <START> and <UNK> outta my light <EOL> 
+
+
+[4m 49s (epoch 1: 45%) Loss: 4.5045]
+<START> not the smile before you would never was the health <EOL> 
+ <START> loves tonight <EOL> 
+ <START> all my <EOL> 
+ <START> let me 's a best , could my ground <EOL> 
+ <START> i do n't you do n't would say the sky no <EOL> 
+
+
+[5m 8s (epoch 1: 48%) Loss: 4.4955]
+<START> but i was hope i knew you have walk <EOL> 
+ <START> i ca n't hair <EOL> 
+ <START> who time do you do you , feel a big <UNK> <EOL> 
+ <START> that you 're words ever could <UNK> dle dream and forget you will tell <EOL> 
+ <START> life i <UNK> <EOL> 
+
+
+[5m 27s (epoch 1: 51%) Loss: 4.4893]
+<START> got demo <EOL> 
+ <START> when as she did i can <UNK> , the shoulder , you can the air <EOL> 
+ <START> <EOL> 
+ <START> i could learn <EOL> 
+ <START> i 'll reason with the sun i 'm in <EOL> 
+
+
+[5m 46s (epoch 1: 54%) Loss: 4.4682]
+<START> this , than a like you gon na , , keep all 's you feeling your life <EOL> 
+ <START> i do n't i 've your name to get mine <EOL> 
+ <START> all everything to soldier <UNK> <UNK> so back over <EOL> 
+ <START> ca n't baby <EOL> 
+ <START> i remember <EOL> 
+
+
+[6m 0s (epoch 1: 56%) Loss: 4.4712]
+<START> is waves you found <UNK> <EOL> 
+ <START> 'cause can <EOL> 
+ <START> i do n't <UNK> <EOL> 
+ <START> i will the hero so i can be apart , i will be what you know an good rhythm in 
+ <START> we are aware i 'll feel my love <EOL> 
+
+
+[6m 15s (epoch 1: 59%) Loss: 4.4588]
+<START> to 's listen <EOL> 
+ <START> we 're it 's you like a <UNK> <EOL> 
+ <START> in the fast my world you used but oh <EOL> 
+ <START> i ca n't see i blind asap <EOL> 
+ <START> you in you 're you go home <EOL> 
+
+
+[6m 30s (epoch 1: 62%) Loss: 4.4387]
+<START> and i ca n't the night last distance <EOL> 
+ <START> you ca n't i 'm but a blind for your cursed <EOL> 
+ <START> ah <EOL> 
+ <START> you 've your <EOL> 
+ <START> and i know i 've almost reaching on me me <EOL> 
+
+
+[6m 44s (epoch 1: 64%) Loss: 4.4437]
+<START> so <UNK> my face <EOL> 
+ <START> and oh but it 's feelin with the world <EOL> 
+ <START> that the little ze you 'll hear over guns alone <EOL> 
+ <START> if `` only take <EOL> 
+ <START> the life <EOL> 
+
+
+[6m 59s (epoch 1: 67%) Loss: 4.4381]
+<START> i 'm mistake over the ending <EOL> 
+ <START> i ca n't had the fuels their <UNK> <EOL> 
+ <START> and chicks mean did you bury these heart fly joe <UNK> <EOL> 
+ <START> i 'll <UNK> <EOL> 
+ <START> <UNK> a <UNK> <EOL> 
+
+
+[7m 14s (epoch 1: 70%) Loss: 4.4281]
+<START> oh <EOL> 
+ <START> i fought you 'll you want about and will die you took the <UNK> i 're <EOL> 
+ <START> and the pleasure close ! beam <EOL> 
+ <START> so last <UNK> <UNK> <EOL> 
+ <START> why <EOL> 
+
+
+[7m 28s (epoch 1: 73%) Loss: 4.4157]
+<START> i believe <EOL> 
+ <START> <EOL> 
+ <START> the <UNK> my white <EOL> 
+ <START> someone what i 'm that bears it 's without the crib a , ah <UNK> <EOL> 
+ <START> and yeah screen <UNK> <EOL> 
+
+
+[7m 47s (epoch 1: 75%) Loss: 4.4291]
+<START> let me the <UNK> <EOL> 
+ <START> no hurt her look down , but no <EOL> 
+ <START> i ever little <UNK> fun , `` <UNK> ... <EOL> 
+ <START> it 's on the bitch scene <EOL> 
+ <START> looking i 'm all your memories and and i can lost the round max i can me out and if 
+
+
+[8m 6s (epoch 1: 78%) Loss: 4.4305]
+<START> and hey <UNK> , do n't could work big <EOL> 
+ <START> i 'll have loving banana <EOL> 
+ <START> i 'm crashing <EOL> 
+ <START> you can you 've for a <UNK> <EOL> 
+ <START> when once survive <EOL> 
+
+
+[8m 24s (epoch 1: 81%) Loss: 4.4143]
+<START> you live to find drunk to you 'd return <EOL> 
+ <START> love <EOL> 
+ <START> you said just ready of daddy time i love <EOL> 
+ <START> in christmas <EOL> 
+ <START> it <EOL> 
+
+
+[8m 42s (epoch 1: 83%) Loss: 4.4209]
+<START> i do n't selfdestruction 's believe it was the <EOL> 
+ <START> i 'll be it is the rain <EOL> 
+ <START> and i 've can find the nightmare <EOL> 
+ <START> and i can eat a runaway <EOL> 
+ <START> you <EOL> 
+
+
+[8m 56s (epoch 1: 86%) Loss: 4.3993]
+<START> <UNK> tric <EOL> 
+ <START> and under <UNK> <EOL> 
+ <START> it 's anymore <EOL> 
+ <START> when i 'm <UNK> <EOL> 
+ <START> down and the night bell ca we <UNK> starts through <EOL> 
+
+
+[9m 11s (epoch 1: 89%) Loss: 4.4025]
+<START> come that sometimes <EOL> 
+ <START> can <UNK> ji you <UNK> comes on murray <EOL> 
+ <START> <UNK> to all cover me by <EOL> 
+ <START> you wanted you <UNK> <EOL> 
+ <START> will <UNK> for you 've the rules <EOL> 
+
+
+[9m 26s (epoch 1: 91%) Loss: 4.3861]
+<START> i 'm so for <UNK> <EOL> 
+ <START> see roam is i wo n't other <UNK> <EOL> 
+ <START> when i 'm a old way <EOL> 
+ <START> downtown <EOL> 
+ <START> cause i am <UNK> <EOL> 
+
+
+[9m 40s (epoch 1: 94%) Loss: 4.4025]
+<START> and oh oh have you raise things how you 're friends beneath the night i do n't you 'll see 
+ <START> i did a place she 's things of the end when you just kiss a hurry <EOL> 
+ <START> i know <UNK> , <EOL> 
+ <START> it is and just park lack in the <UNK> , i 'm <EOL> 
+ <START> we do n't the way <EOL> 
+
+
+[9m 58s (epoch 1: 97%) Loss: 4.3934]
+<START> 'cause i just can the reason to ? <EOL> 
+ <START> and it 's like i wrote no and hey <EOL> 
+ <START> wish the <EOL> 
+ <START> <UNK> <EOL> 
+ <START> and you was <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.2475
+[10m 39s (epoch 2: 0%) Loss: 4.2984]
+<START> if i will play <EOL> 
+ <START> so found or i just lie born can i miss the <EOL> 
+ <START> play <EOL> 
+ <START> i 'm absolute stories wo n't if sh ' this mess 's your way in dust <EOL> 
+ <START> and will wear my life makes me love <UNK> <EOL> 
+
+
+[10m 59s (epoch 2: 2%) Loss: 4.3710]
+<START> i ca n't ai n't a master i 'm <UNK> <EOL> 
+ <START> if <UNK> <UNK> blah <EOL> 
+ <START> when you 'm long time <EOL> 
+ <START> give you feel we always sigh <EOL> 
+ <START> you 'll in another <UNK> , i 'm as i 'm sergeant place <EOL> 
+
+
+[11m 18s (epoch 2: 5%) Loss: 4.3880]
+<START> waste the <UNK> <UNK> <EOL> 
+ <START> what lead me sleep is adored <EOL> 
+ <START> i come to the way the darkness i do from the world 's <UNK> <EOL> 
+ <START> before cause i adore a face on <UNK> <UNK> , it 's just i do n't <UNK> <EOL> 
+ <START> got only i 'll rain back <EOL> 
+
+
+[11m 34s (epoch 2: 8%) Loss: 4.3722]
+<START> we 'll take me cause i do you got you 'll you know some much oh you 've <UNK> sun 
+ <START> babe <UNK> <EOL> 
+ <START> i do n't say baby and still stop they just say <UNK> <EOL> 
+ <START> knowin <EOL> 
+ <START> it in the time <EOL> 
+
+
+[11m 54s (epoch 2: 10%) Loss: 4.3623]
+<START> the <UNK> <EOL> 
+ <START> with us slow , there do you 'll wake dam <EOL> 
+ <START> become your sea have you go 'til tried <EOL> 
+ <START> get alone <EOL> 
+ <START> it 's water on my pain you got <UNK> <EOL> 
+
+
+[12m 13s (epoch 2: 13%) Loss: 4.3671]
+<START> do n't <UNK> bu past you stand out , touch your life <EOL> 
+ <START> baby i will give me on my <EOL> 
+ <START> you 're reasons you 're too smile <EOL> 
+ <START> we was bars , i 'm been singin ' believe a stranger <EOL> 
+ <START> oh daylight we all this last before baby you <EOL> 
+
+
+[12m 28s (epoch 2: 16%) Loss: 4.3833]
+<START> i ca n't be cutta tryna always <EOL> 
+ <START> you could never ca n't do n't 're crawling in my soul arrive non never a <UNK> <EOL> 
+ <START> everybody 's you 're floating bright <EOL> 
+ <START> to take it <EOL> 
+ <START> but i know dreaming <EOL> 
+
+
+[12m 47s (epoch 2: 18%) Loss: 4.3511]
+<START> i ai n't like you 'd turn down with it 's hanging <EOL> 
+ <START> i finally beyond <UNK> in you were abandoned for the broken day <EOL> 
+ <START> anymore <EOL> 
+ <START> i love <EOL> 
+ <START> i 've <UNK> <UNK> <EOL> 
+
+
+[13m 5s (epoch 2: 21%) Loss: 4.3562]
+<START> i 'll tear the things anyone <EOL> 
+ <START> i never ca n't both so 4 <EOL> 
+ <START> i 'm not come outside in the hand on the <UNK> you can the <UNK> <EOL> 
+ <START> i 'm making you 're a time passion <EOL> 
+ <START> it 's our darling <EOL> 
+
+
+[13m 25s (epoch 2: 24%) Loss: 4.3662]
+<START> twisting <EOL> 
+ <START> i 'm <EOL> 
+ <START> i do n't know i 'm <UNK> we just and the much you <UNK> choir <EOL> 
+ <START> i know i <UNK> <EOL> 
+ <START> and let the one do n't , what there 's time <UNK> are the excuses <EOL> 
+
+
+[13m 44s (epoch 2: 27%) Loss: 4.3612]
+<START> seems i said , can <UNK> <EOL> 
+ <START> with me <EOL> 
+ <START> bless , hey life 's in the words get my own it 's every <UNK> <UNK> go <EOL> 
+ <START> one stars <EOL> 
+ <START> all <UNK> <EOL> 
+
+
+[14m 2s (epoch 2: 29%) Loss: 4.3519]
+<START> the way that you do n't n't hope you ca n't just the great <UNK> and to tell me <EOL> 
+ <START> love <EOL> 
+ <START> i 've what a <EOL> 
+ <START> i 'll seem , i will be any time that oh <UNK> <EOL> 
+ <START> take my side <EOL> 
+
+
+[14m 17s (epoch 2: 32%) Loss: 4.3510]
+<START> and all my pride nice people in the green <EOL> 
+ <START> do n't stomp , you say this is moment <EOL> 
+ <START> i 'll kill every <UNK> <EOL> 
+ <START> i have health <EOL> 
+ <START> oh <EOL> 
+
+
+[14m 36s (epoch 2: 35%) Loss: 4.3586]
+<START> <UNK> a <UNK> are a riches 's a clocks try you know the head , i hope and i 'm 
+ <START> that my dreams <EOL> 
+ <START> i 'll before i 'll ! <EOL> 
+ <START> quack across my world those day <EOL> 
+ <START> i still and so a world ta break <EOL> 
+
+
+[14m 56s (epoch 2: 37%) Loss: 4.3627]
+<START> hey yeah <EOL> 
+ <START> i think you was the you wan na na na , choice and and makes me your creepy hearts and 
+ <START> how can sing <EOL> 
+ <START> i 'd want something , i 'm time and the chance to my girls lord above is in my place 
+ <START> fast <EOL> 
+
+
+[15m 15s (epoch 2: 40%) Loss: 4.3656]
+<START> and the <UNK> <EOL> 
+ <START> how i say yes i ca n't <EOL> 
+ <START> it 's a countdown on your <UNK> <EOL> 
+ <START> the <UNK> dustum <EOL> 
+ <START> i 'm so so , <EOL> 
+
+
+[15m 34s (epoch 2: 43%) Loss: 4.3476]
+<START> too much i 'll be hard one american <EOL> 
+ <START> i can you let it 's like call in my <UNK> <EOL> 
+ <START> and you love <EOL> 
+ <START> you know a <UNK> <EOL> 
+ <START> but and break your hand to you love on your <EOL> 
+
+
+[15m 49s (epoch 2: 45%) Loss: 4.3626]
+<START> that the <UNK> <EOL> 
+ <START> so do n't <UNK> <EOL> 
+ <START> to break <EOL> 
+ <START> you sometimes <EOL> 
+ <START> and in down and <UNK> <UNK> <EOL> 
+
+
+[16m 7s (epoch 2: 48%) Loss: 4.3572]
+<START> i just in too <EOL> 
+ <START> i hope i see i want you do n't your way <EOL> 
+ <START> and the poor marching in the life go and never was time has the one turned together <EOL> 
+ <START> i 'm <UNK> degrees <EOL> 
+ <START> who 's the anthem see i do n't be his money <EOL> 
+
+
+[16m 26s (epoch 2: 51%) Loss: 4.3464]
+<START> <UNK> <EOL> 
+ <START> let chances ; <EOL> 
+ <START> and me 're <UNK> <UNK> <EOL> 
+ <START> and i come in the lies <EOL> 
+ <START> time <EOL> 
+
+
+[16m 44s (epoch 2: 54%) Loss: 4.3430]
+<START> but king to be in pain feels of me better on the water of my arms of a best <EOL> 
+ <START> all she can go <EOL> 
+ <START> in to not this last more <EOL> 
+ <START> the window night <EOL> 
+ <START> it 's maybe and be a show to believe the <UNK> <EOL> 
+
+
+[17m 4s (epoch 2: 56%) Loss: 4.3405]
+<START> they 'm got a one love <EOL> 
+ <START> i 'm blue but it , i wo n't you 've feel no when i 'm frozen <EOL> 
+ <START> the house <EOL> 
+ <START> walk up i 'm a little strangest mind you never do n't be to you must and i are no 
+ <START> the <EOL> 
+
+
+[17m 22s (epoch 2: 59%) Loss: 4.3321]
+<START> <UNK> <EOL> 
+ <START> i will love i 'm another do n't <UNK> ... <EOL> 
+ <START> it 's <UNK> to myself <EOL> 
+ <START> with you got my baby <EOL> 
+ <START> it is things <EOL> 
+
+
+[17m 41s (epoch 2: 62%) Loss: 4.3504]
+<START> even by <EOL> 
+ <START> i 'm not no <UNK> <EOL> 
+ <START> in town that do n't more <EOL> 
+ <START> stop you 'll the time and the big of <UNK> <EOL> 
+ <START> the one place the water 's the new , my faith to me <UNK> <EOL> 
+
+
+[18m 0s (epoch 2: 64%) Loss: 4.3407]
+<START> that you are my secrets awaits what have like <UNK> <UNK> <EOL> 
+ <START> gets the ca n't close in <EOL> 
+ <START> sound , oh and my own even i 'm time say we know and shadow he <EOL> 
+ <START> take a minute on <UNK> a world <EOL> 
+ <START> go <EOL> 
+
+
+[18m 19s (epoch 2: 67%) Loss: 4.3463]
+<START> the cool have you would be always <UNK> <EOL> 
+ <START> a lot , why in my friend <EOL> 
+ <START> through me waiting through the <UNK> <EOL> 
+ <START> all little burden like next hand di and a place <EOL> 
+ <START> oh tonight <EOL> 
+
+
+[18m 38s (epoch 2: 70%) Loss: 4.3400]
+<START> and in the same one was the girls you 've just a open <UNK> moment and learn <EOL> 
+ <START> and ignorance <EOL> 
+ <START> i 've to you can lose <EOL> 
+ <START> the story because i was <UNK> <EOL> 
+ <START> just when my lips hey , make you were out you just i would do you 're a new <EOL> 
+
+
+[18m 58s (epoch 2: 73%) Loss: 4.3307]
+<START> and do n't a little love <EOL> 
+ <START> oh , you <EOL> 
+ <START> in the clothes to you give you love another <UNK> <EOL> 
+ <START> with the time back on the love <EOL> 
+ <START> you 'll take it 's a love <EOL> 
+
+
+[19m 19s (epoch 2: 75%) Loss: 4.3475]
+<START> but can do you <UNK> <UNK> <EOL> 
+ <START> right away <EOL> 
+ <START> i come out of what ca n't the lord <EOL> 
+ <START> it 's in the mind the bottom when do n't are you 're my heart i do n't think some 
+ <START> when you do n't the little turn me <EOL> 
+
+
+[19m 35s (epoch 2: 78%) Loss: 4.3360]
+<START> to myself , get as was in my guiding losing on my <EOL> 
+ <START> or soul <EOL> 
+ <START> so just when <EOL> 
+ <START> oh i do n't strike that goes in my love <EOL> 
+ <START> i <EOL> 
+
+
+[19m 54s (epoch 2: 81%) Loss: 4.3305]
+<START> but <UNK> <EOL> 
+ <START> i knew <EOL> 
+ <START> oh ca n't gon na na get true , you could explain <EOL> 
+ <START> its <EOL> 
+ <START> i will <UNK> . <EOL> 
+
+
+[20m 13s (epoch 2: 83%) Loss: 4.3389]
+<START> you know <UNK> eyes <EOL> 
+ <START> to the words i can you 're <UNK> <EOL> 
+ <START> i 'm a ten times but i 're in half i 'm please better <EOL> 
+ <START> <UNK> <EOL> 
+ <START> so it was with you come on <EOL> 
+
+
+[20m 32s (epoch 2: 86%) Loss: 4.3225]
+<START> <UNK> <UNK> <EOL> 
+ <START> there 's just said <EOL> 
+ <START> <UNK> <UNK> <EOL> 
+ <START> why did you could rock every world as i 'm <EOL> 
+ <START> in church and your ear and she 's so <UNK> <EOL> 
+
+
+[20m 51s (epoch 2: 89%) Loss: 4.3321]
+<START> have that this bold <EOL> 
+ <START> all we wo n't <EOL> 
+ <START> it 's breathe <EOL> 
+ <START> i 'm to the afternoon <EOL> 
+ <START> i do you will come to an one more my stormy purpose 'cause it are like does you when <UNK> 
+
+
+[21m 10s (epoch 2: 91%) Loss: 4.3248]
+<START> it 's the season to the hide to here with you <EOL> 
+ <START> just do n't be , <EOL> 
+ <START> i ca n't the real way do n't no from your <EOL> 
+ <START> the mad i 'm way <EOL> 
+ <START> i know when the key <EOL> 
+
+
+[21m 30s (epoch 2: 94%) Loss: 4.3369]
+<START> time i must try set my <UNK> <EOL> 
+ <START> i 'm learning it 's a is forever <EOL> 
+ <START> you just i wan na na na na na na na na na na na na to <EOL> 
+ <START> and alive <EOL> 
+ <START> i 'd play on you 'll me <EOL> 
+
+
+[21m 49s (epoch 2: 97%) Loss: 4.3216]
+<START> i 'm you go hotel <EOL> 
+ <START> a rock up round so no <UNK> <EOL> 
+ <START> banana ' to <UNK> in the morning so sitting on the time <UNK> <EOL> 
+ <START> run on bed <EOL> 
+ <START> for me a <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.2155
+[22m 40s (epoch 3: 0%) Loss: 4.2496]
+<START> we said <EOL> 
+ <START> it 's go , <EOL> 
+ <START> for your money <EOL> 
+ <START> now you was and <UNK> , on <UNK> <EOL> 
+ <START> should i sleep <EOL> 
+
+
+[22m 59s (epoch 3: 2%) Loss: 4.2967]
+<START> and fearless <EOL> 
+ <START> oh no <UNK> what the dark too ... through one <UNK> <EOL> 
+ <START> i know that works in my hand . <EOL> 
+ <START> there 's hard when hold on <EOL> 
+ <START> but your <UNK> , i do n't turn , <UNK> i need the sound me here wo n't could give 
+
+
+[23m 18s (epoch 3: 5%) Loss: 4.3325]
+<START> no still from my flag me someone do you 're just what 's with soldiers go , oh to be 
+ <START> i 'm love feels the <UNK> <EOL> 
+ <START> do n't run <EOL> 
+ <START> , let it will sit away and kneel out their <EOL> 
+ <START> you would 've would the things 's her <EOL> 
+
+
+[23m 37s (epoch 3: 8%) Loss: 4.2925]
+<START> `` she signed of a fade right <EOL> 
+ <START> get like i was knowing <EOL> 
+ <START> take out of every end and far <EOL> 
+ <START> at only be reason so game no , do n't looking now <EOL> 
+ <START> hey <EOL> 
+
+
+[23m 57s (epoch 3: 10%) Loss: 4.3099]
+<START> ten ' with <EOL> 
+ <START> ca n't begin of control <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i miss <UNK> <EOL> 
+ <START> i 'm gon na na na na na banana ' te lie <EOL> 
+
+
+[24m 16s (epoch 3: 13%) Loss: 4.3371]
+<START> i 'm you 'll be in the future 've just forget <EOL> 
+ <START> will make me go now <EOL> 
+ <START> my head on a dreamer <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i do it was <UNK> <EOL> 
+
+
+[24m 32s (epoch 3: 16%) Loss: 4.3191]
+<START> what i know the <UNK> your <UNK> <EOL> 
+ <START> where when you 're <UNK> in the <UNK> <EOL> 
+ <START> oh my . <EOL> 
+ <START> the <EOL> 
+ <START> <UNK> <EOL> 
+
+
+[24m 52s (epoch 3: 18%) Loss: 4.3171]
+<START> c'mon oh i could do n't make my weakness i 'm a light the way and the <EOL> 
+ <START> if the <UNK> <EOL> 
+ <START> give a truth <EOL> 
+ <START> it 's so the face is someone love <EOL> 
+ <START> eh oh <EOL> 
+
+
+[25m 11s (epoch 3: 21%) Loss: 4.3300]
+<START> get me , all , we will be reason to see i 'm to a little desire <EOL> 
+ <START> yeah <EOL> 
+ <START> else <EOL> 
+ <START> but i want when you 're in the <UNK> <EOL> 
+ <START> it 's the sun is my rumors <UNK> <EOL> 
+
+
+[25m 31s (epoch 3: 24%) Loss: 4.3142]
+<START> i 'd everybody 's a picture the pace <EOL> 
+ <START> i just the <EOL> 
+ <START> i will all on <UNK> ka <UNK> <EOL> 
+ <START> of all everything i live sayin ' knowing <EOL> 
+ <START> i ca n't i can never see so just <UNK> <EOL> 
+
+
+[25m 51s (epoch 3: 27%) Loss: 4.3143]
+<START> the only i 'd what you 'll we 're easy , <UNK> <EOL> 
+ <START> and bodies you of you 're so of your way on <UNK> but to you 're star <EOL> 
+ <START> and the name <EOL> 
+ <START> and no say you said turns i know and and i ca n't n't lead me <EOL> 
+ <START> i 'm inside <EOL> 
+
+
+[26m 10s (epoch 3: 29%) Loss: 4.3258]
+<START> i was a world that will end from the night singing it 's in my mind <EOL> 
+ <START> i 'll keep everybody wo n't be a love <EOL> 
+ <START> a <EOL> 
+ <START> i 'm <UNK> and i 'm <UNK> but we 've love <EOL> 
+ <START> i 'll be <EOL> 
+
+
+[26m 29s (epoch 3: 32%) Loss: 4.2984]
+<START> it 's what his brothers <EOL> 
+ <START> you ca n't get the hole <EOL> 
+ <START> i 'll do n't have a <UNK> <EOL> 
+ <START> you <EOL> 
+ <START> i feel in the friend <EOL> 
+
+
+[26m 48s (epoch 3: 35%) Loss: 4.3117]
+<START> come in my sh i do it 's the time you 'll be <EOL> 
+ <START> as i 'll come on the voodoo night ! <EOL> 
+ <START> i just me <EOL> 
+ <START> i was let <UNK> <EOL> 
+ <START> if and feel <UNK> , i 'm <UNK> the way what you 'll please <EOL> 
+
+
+[27m 7s (epoch 3: 37%) Loss: 4.3092]
+<START> oli hill <EOL> 
+ <START> to you are what <UNK> floods the people <UNK> a <EOL> 
+ <START> some more <EOL> 
+ <START> i 'm : and wake up <UNK> <EOL> 
+ <START> i 'm made a in the best 'cause to take love and and you 're i 'm gone but i 
+
+
+[27m 26s (epoch 3: 40%) Loss: 4.3230]
+<START> you in the better <EOL> 
+ <START> and <UNK> not my <EOL> 
+ <START> all <EOL> 
+ <START> i 'm <UNK> , but the one and down <EOL> 
+ <START> and i 're on your air <UNK> the heart you just <EOL> 
+
+
+[27m 45s (epoch 3: 43%) Loss: 4.3077]
+<START> i 've oh for me never do n't wait and were the names <EOL> 
+ <START> and do you have to know the skies were 'bout the man man <UNK> <EOL> 
+ <START> i <UNK> fallin ' so <UNK> <EOL> 
+ <START> <UNK> , <EOL> 
+ <START> she 's ! <EOL> 
+
+
+[28m 5s (epoch 3: 45%) Loss: 4.3153]
+<START> i 'm the start to say i know you 're a <UNK> <EOL> 
+ <START> and 's in your dreams , maybe when there 's <UNK> in the hardest hours <EOL> 
+ <START> all my heart shake you know i 'm seeing and away <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i 'm <UNK> <EOL> 
+
+
+[28m 24s (epoch 3: 48%) Loss: 4.3284]
+<START> i say if n't fly in a <EOL> 
+ <START> so the a cow but sing and when when i love <EOL> 
+ <START> when singing follow the wiser . <EOL> 
+ <START> that and me i 'm there 's a same for dear <EOL> 
+ <START> everybody 's so seven my brothers <EOL> 
+
+
+[28m 42s (epoch 3: 51%) Loss: 4.2982]
+<START> and i got with your breath <EOL> 
+ <START> there is me are there 's <UNK> <EOL> 
+ <START> no , <EOL> 
+ <START> you stand with <UNK> ? <EOL> 
+ <START> i 'll come away in out with make me saw a man <EOL> 
+
+
+[29m 1s (epoch 3: 54%) Loss: 4.3189]
+<START> the world <EOL> 
+ <START> i just i 'm my eyes for a <UNK> <EOL> 
+ <START> then let me away <EOL> 
+ <START> everybody is stronger <EOL> 
+ <START> to the fears <EOL> 
+
+
+[29m 19s (epoch 3: 56%) Loss: 4.3148]
+<START> just <UNK> <EOL> 
+ <START> that you would die <EOL> 
+ <START> but you <UNK> <EOL> 
+ <START> ! <EOL> 
+ <START> your <UNK> <EOL> 
+
+
+[29m 40s (epoch 3: 59%) Loss: 4.3175]
+<START> but i 'd a way would baby shut out the back but take <UNK> <EOL> 
+ <START> but i need it 's love as in the room <EOL> 
+ <START> these <EOL> 
+ <START> i 'm in the home <EOL> 
+ <START> i 'm beautiful <UNK> <EOL> 
+
+
+[29m 58s (epoch 3: 62%) Loss: 4.3159]
+<START> you 've adore you 've i love alone <EOL> 
+ <START> 'cause i need over you blew <UNK> my friends <EOL> 
+ <START> this face <EOL> 
+ <START> but when like getting night <EOL> 
+ <START> just <EOL> 
+
+
+[30m 17s (epoch 3: 64%) Loss: 4.3105]
+<START> i feel <EOL> 
+ <START> you can will <EOL> 
+ <START> boy got to a to my dear <EOL> 
+ <START> ca n't get <UNK> <EOL> 
+ <START> and a role i ca n't plain , you 'll keep <UNK> <EOL> 
+
+
+[30m 36s (epoch 3: 67%) Loss: 4.3083]
+<START> i do n't say ame <EOL> 
+ <START> and is your time , i 'm above <EOL> 
+ <START> i wan na na na na na na na na na na na na na na na na na na 
+ <START> and now <EOL> 
+ <START> yeah <EOL> 
+
+
+[30m 55s (epoch 3: 70%) Loss: 4.3086]
+<START> and i go <EOL> 
+ <START> no <UNK> pretty <UNK> <EOL> 
+ <START> and what you 've i just and am you be <UNK> and oh hey <EOL> 
+ <START> oh i 'm <EOL> 
+ <START> i 'm what this light <UNK> <EOL> 
+
+
+[31m 11s (epoch 3: 73%) Loss: 4.3149]
+<START> all the diamonds <EOL> 
+ <START> <UNK> <EOL> 
+ <START> boy <EOL> 
+ <START> one world <EOL> 
+ <START> take the waters from a <UNK> <EOL> 
+
+
+[31m 29s (epoch 3: 75%) Loss: 4.3172]
+<START> you 're to live where to me money . <EOL> 
+ <START> if i 'm time <EOL> 
+ <START> you can see much told me your wife easy to be the <UNK> is more and make me feel the 
+ <START> find us <EOL> 
+ <START> the way for a noise <UNK> <EOL> 
+
+
+[31m 48s (epoch 3: 78%) Loss: 4.3053]
+<START> oh <EOL> 
+ <START> on my attention <EOL> 
+ <START> i know it 's all and hate what you come to the eagle , so music <EOL> 
+ <START> to me rock <UNK> . <EOL> 
+ <START> we ca n't be the sky down , so <UNK> <EOL> 
+
+
+[32m 6s (epoch 3: 81%) Loss: 4.3080]
+<START> and ever ho <EOL> 
+ <START> i can go my <UNK> <EOL> 
+ <START> you can my life can <UNK> <EOL> 
+ <START> lead the <UNK> <EOL> 
+ <START> come away <EOL> 
+
+
+[32m 25s (epoch 3: 83%) Loss: 4.3175]
+<START> my nowhere <EOL> 
+ <START> and nothing as it 's born in the day tell me way in the game <EOL> 
+ <START> we had me to show me poison <EOL> 
+ <START> it 's <UNK> <EOL> 
+ <START> it 's so leave love and do n't feel the shorty <EOL> 
+
+
+[32m 42s (epoch 3: 86%) Loss: 4.3207]
+<START> she never <EOL> 
+ <START> yeah <EOL> 
+ <START> i 'm and time night much the <UNK> <EOL> 
+ <START> but i am i 'm all the <EOL> 
+ <START> on the rich 's <EOL> 
+
+
+[33m 0s (epoch 3: 89%) Loss: 4.2953]
+<START> for my head in another darkness will i keep a got the worst on you 're gon na na wrap 
+ <START> i 'm <UNK> <EOL> 
+ <START> that you <EOL> 
+ <START> well love <EOL> 
+ <START> and and your pound <EOL> 
+
+
+[33m 21s (epoch 3: 91%) Loss: 4.3222]
+<START> to pick it does it 's always get me i could i <EOL> 
+ <START> take in the heart is the tears <EOL> 
+ <START> i 'm bringing his heart so with my last steps <EOL> 
+ <START> and you got waiting for that a guide my love <EOL> 
+ <START> no last . <EOL> 
+
+
+[33m 38s (epoch 3: 94%) Loss: 4.2907]
+<START> i 've a <UNK> <UNK> steps <EOL> 
+ <START> the way <UNK> heart nose and all in the sickness inside <EOL> 
+ <START> at in your king <UNK> mi <EOL> 
+ <START> it is <UNK> <EOL> 
+ <START> she 's in an in cloud <EOL> 
+
+
+[33m 57s (epoch 3: 97%) Loss: 4.3106]
+<START> <UNK> <EOL> 
+ <START> 'cause i am you 'll be three <EOL> 
+ <START> and the way too how to like you can come on <UNK> where we playing tonight <EOL> 
+ <START> you ai n't you 'll bring <EOL> 
+ <START> i 's that i guess and so fire <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.2090
+[34m 40s (epoch 4: 0%) Loss: 4.2197]
+<START> all the tiger <EOL> 
+ <START> i believe it did i do n't never let the man <EOL> 
+ <START> all their <UNK> . <EOL> 
+ <START> the question <EOL> 
+ <START> with <EOL> 
+
+
+[34m 59s (epoch 4: 2%) Loss: 4.2923]
+<START> i 'm really got to <UNK> my way and shout of you lie <EOL> 
+ <START> oh <UNK> , oh mist a pillow of <UNK> <EOL> 
+ <START> you call <EOL> 
+ <START> to <EOL> 
+ <START> open <EOL> 
+
+
+[35m 18s (epoch 4: 5%) Loss: 4.3042]
+<START> <UNK> <EOL> 
+ <START> you are you had i 're a heart and all all the same little old fun <EOL> 
+ <START> i got <EOL> 
+ <START> <UNK> <EOL> 
+ <START> you wait <EOL> 
+
+
+[35m 37s (epoch 4: 8%) Loss: 4.3036]
+<START> exactly i 'm to a the <UNK> mune , <EOL> 
+ <START> <UNK> avenue <EOL> 
+ <START> i can we will the bad <EOL> 
+ <START> i 'm better , you 'd not the one only , oh huh i 'm too light <EOL> 
+ <START> there <EOL> 
+
+
+[35m 56s (epoch 4: 10%) Loss: 4.2938]
+<START> and it 's the time <EOL> 
+ <START> i will take my heart <EOL> 
+ <START> i would do n't n't separate <EOL> 
+ <START> and the <EOL> 
+ <START> that <UNK> says and the tears do n't <EOL> 
+
+
+[36m 15s (epoch 4: 13%) Loss: 4.2912]
+<START> <UNK> <EOL> 
+ <START> more , on the <UNK> west <EOL> 
+ <START> what 's in this , you 'll <EOL> 
+ <START> breathe i 'm on your blood , he 's just look in the end that 's <EOL> 
+ <START> for you 'll run on in the left for me through these chance i know livin ' in the beautiful 
+
+
+[36m 30s (epoch 4: 16%) Loss: 4.2885]
+<START> it 's <UNK> <EOL> 
+ <START> twilight <EOL> 
+ <START> where i 'd hide loud <EOL> 
+ <START> the side to love <EOL> 
+ <START> it 's your years and and i do n't so but sayin ' the work i 'm li we wear 
+
+
+[36m 45s (epoch 4: 18%) Loss: 4.3050]
+<START> without a mister light and i 'm a about life <EOL> 
+ <START> i 'm the invisible <EOL> 
+ <START> taste <EOL> 
+ <START> all i like a fire <EOL> 
+ <START> love will believed i push it 's the girl that for the <EOL> 
+
+
+[37m 4s (epoch 4: 21%) Loss: 4.3051]
+<START> on a <UNK> <EOL> 
+ <START> i 'm gold <EOL> 
+ <START> you want me hear the fight <EOL> 
+ <START> you 'll believe <EOL> 
+ <START> i 'd breaking the <EOL> 
+
+
+[37m 19s (epoch 4: 24%) Loss: 4.2910]
+<START> without that 's my lives on my heart empty <EOL> 
+ <START> i know i 'm playing as baby we tell me <EOL> 
+ <START> and step just because taxi the living <EOL> 
+ <START> always out for everybody 's with the wild <EOL> 
+ <START> <UNK> was so stay <EOL> 
+
+
+[37m 33s (epoch 4: 27%) Loss: 4.2948]
+<START> get home <EOL> 
+ <START> love <EOL> 
+ <START> you left to the way cold <EOL> 
+ <START> you let me never 's closer <EOL> 
+ <START> all a far on my <UNK> <EOL> 
+
+
+[37m 48s (epoch 4: 29%) Loss: 4.2947]
+<START> now <EOL> 
+ <START> say eh <EOL> 
+ <START> now it 's <UNK> <EOL> 
+ <START> your skin in my heart <EOL> 
+ <START> i 'm left to you 're your <UNK> <EOL> 
+
+
+[38m 3s (epoch 4: 32%) Loss: 4.2836]
+<START> i want me <EOL> 
+ <START> <UNK> <UNK> <EOL> 
+ <START> oh oh <EOL> 
+ <START> my clothes quarter move <EOL> 
+ <START> <UNK> and <UNK> eyes without i just i am <UNK> <EOL> 
+
+
+[38m 21s (epoch 4: 35%) Loss: 4.2985]
+<START> my wife <EOL> 
+ <START> just the <UNK> <UNK> <EOL> 
+ <START> oh <UNK> <EOL> 
+ <START> i 'm my heart baa <EOL> 
+ <START> baby <EOL> 
+
+
+[38m 37s (epoch 4: 37%) Loss: 4.2875]
+<START> <UNK> <EOL> 
+ <START> you know the boy , i 'm me <EOL> 
+ <START> notorious <EOL> 
+ <START> take up and so we 're breaking up and you got a <UNK> of <UNK> <EOL> 
+ <START> i could so with it 's all and even you 'll not and this in the judge you look by 
+
+
+[38m 57s (epoch 4: 40%) Loss: 4.2951]
+<START> <UNK> <EOL> 
+ <START> you 'll break that he 's glory <EOL> 
+ <START> i wish you 'll make me for mine <EOL> 
+ <START> it is so <EOL> 
+ <START> and bring me mind and and <UNK> <EOL> 
+
+
+[39m 16s (epoch 4: 43%) Loss: 4.2942]
+<START> 'cause you <EOL> 
+ <START> and the <UNK> <EOL> 
+ <START> the <EOL> 
+ <START> would know so right for you go <EOL> 
+ <START> i 'm ever let it 's on my heart so no one <EOL> 
+
+
+[39m 34s (epoch 4: 45%) Loss: 4.2974]
+<START> and escape you have i <UNK> <EOL> 
+ <START> she 's a <EOL> 
+ <START> for be twenty tiiime , whoa <EOL> 
+ <START> and hold me , your biggest words sweet <UNK> <EOL> 
+ <START> so here you know mind and i have just got my hand <EOL> 
+
+
+[39m 53s (epoch 4: 48%) Loss: 4.3026]
+<START> from a hell if you 've have the world <EOL> 
+ <START> the day is i wan na na na na na na na na na na na na na na na 
+ <START> even out <EOL> 
+ <START> i left of the <EOL> 
+ <START> let your day i ? <EOL> 
+
+
+[40m 12s (epoch 4: 51%) Loss: 4.2884]
+<START> like her heart <EOL> 
+ <START> i make your <UNK> <UNK> <UNK> <EOL> 
+ <START> to a <UNK> and you 'd learn , please <EOL> 
+ <START> but we 'll be you can always do n't <EOL> 
+ <START> you 're with the <UNK> <EOL> 
+
+
+[40m 28s (epoch 4: 54%) Loss: 4.2884]
+<START> i 'm the love , tell you should i 'm boy <EOL> 
+ <START> and make just again <EOL> 
+ <START> is my memories <EOL> 
+ <START> the way <EOL> 
+ <START> you do n't i want <EOL> 
+
+
+[40m 47s (epoch 4: 56%) Loss: 4.3085]
+<START> a nature might care <EOL> 
+ <START> if the side <EOL> 
+ <START> ca n't pretty i 'm like life than we 'd apologize to all along <EOL> 
+ <START> here you 'm what 's the <UNK> <EOL> 
+ <START> years <EOL> 
+
+
+[41m 2s (epoch 4: 59%) Loss: 4.3111]
+<START> and we 're the crime , now so it and one on the <UNK> ' i ca you knew <UNK> 
+ <START> now <EOL> 
+ <START> you got on us <EOL> 
+ <START> ceiling i fit for someone this reasons <EOL> 
+ <START> we want to let all in a watch all you <EOL> 
+
+
+[41m 20s (epoch 4: 62%) Loss: 4.2877]
+<START> and the lights your no <EOL> 
+ <START> i ca n't <UNK> , nobody does n't believe <EOL> 
+ <START> you just sinner <EOL> 
+ <START> it 's <UNK> the girl and i 'll have for his mind <EOL> 
+ <START> and i ca n't do n't give me get a <UNK> a lot <EOL> 
+
+
+[41m 39s (epoch 4: 64%) Loss: 4.2992]
+<START> all to a <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+ <START> you were i wait <EOL> 
+ <START> i want in a <EOL> 
+ <START> i 'm my way <EOL> 
+
+
+[41m 58s (epoch 4: 67%) Loss: 4.2898]
+<START> yeah <EOL> 
+ <START> oh the long that i wan na <EOL> 
+ <START> of you said a smile <EOL> 
+ <START> play your smile <EOL> 
+ <START> i do n't me and i ca you say take the world <EOL> 
+
+
+[42m 15s (epoch 4: 70%) Loss: 4.3008]
+<START> <UNK> <EOL> 
+ <START> may break the pain on the kind of one i could control <EOL> 
+ <START> where let my mind find <UNK> <EOL> 
+ <START> <UNK> a life a kind with my life of someone were on the wild <EOL> 
+ <START> ca n't minute but your <UNK> <EOL> 
+
+
+[42m 35s (epoch 4: 73%) Loss: 4.3036]
+<START> the way so find ta it goes into the world <EOL> 
+ <START> and you do n't know oh , you <EOL> 
+ <START> and <UNK> <EOL> 
+ <START> and i 'm in my <UNK> <EOL> 
+ <START> will walk and there is young i 've think you see wind , and you hide this team . <EOL> 
+
+
+[42m 54s (epoch 4: 75%) Loss: 4.3031]
+<START> ai you need that are <EOL> 
+ <START> to you 're my <UNK> <EOL> 
+ <START> they go and i 'm over a chance i 'm a man , i can have you are <EOL> 
+ <START> to the days <EOL> 
+ <START> precious radio are a <UNK> <EOL> 
+
+
+[43m 14s (epoch 4: 78%) Loss: 4.2860]
+<START> might do n't make your life is loaded world <EOL> 
+ <START> i 'll turn my li <UNK> <EOL> 
+ <START> so could the thing had i 'm through the place <EOL> 
+ <START> to <UNK> , i 'm not the table <EOL> 
+ <START> and the one <EOL> 
+
+
+[43m 34s (epoch 4: 81%) Loss: 4.3095]
+<START> no gon na na na na na na na na na na na na na na na na na na 
+ <START> <UNK> <EOL> 
+ <START> you never . <EOL> 
+ <START> <UNK> ' just anymore <EOL> 
+ <START> and lie <EOL> 
+
+
+[43m 51s (epoch 4: 83%) Loss: 4.3023]
+<START> you got me you in old life are like the ceiling . <EOL> 
+ <START> you said , a thing a <EOL> 
+ <START> me <EOL> 
+ <START> we are not to feel for my love <EOL> 
+ <START> so go , i 'm a round <EOL> 
+
+
+[44m 11s (epoch 4: 86%) Loss: 4.3121]
+<START> sleeping <UNK> <EOL> 
+ <START> i 'm blowing on the rest <EOL> 
+ <START> till your heart i 'm there from my one love , you get out living on hope i 'm all 
+ <START> we made 's love in life in light go in a <UNK> <EOL> 
+ <START> sin <EOL> 
+
+
+[44m 31s (epoch 4: 89%) Loss: 4.3072]
+<START> be around , more <EOL> 
+ <START> i give it 's the news <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i tried my game to disguise <EOL> 
+ <START> i 'm ok is will see your time by the one guitar but uh i do n't <UNK> <UNK> <EOL> 
+
+
+[44m 51s (epoch 4: 91%) Loss: 4.2947]
+<START> someday i 'm nervous by or and in the kisses to nothing is a purpose <EOL> 
+ <START> to fall from me world <EOL> 
+ <START> for certain coming up for me and no <UNK> my life <EOL> 
+ <START> talk <UNK> so you 're your heart in a second thing is the sad <UNK> <UNK> yeah <EOL> 
+ <START> i 'm up <EOL> 
+
+
+[45m 10s (epoch 4: 94%) Loss: 4.2997]
+<START> think falling , that i <EOL> 
+ <START> and and explain <EOL> 
+ <START> in a night <EOL> 
+ <START> never discovered <EOL> 
+ <START> you 're so man did it 's the day , <UNK> that are to the people <EOL> 
+
+
+[45m 30s (epoch 4: 97%) Loss: 4.2871]
+<START> that the sun comes the answer the hottest <EOL> 
+ <START> and trying to the face <EOL> 
+ <START> all you 're <UNK> but i hate no boy <EOL> 
+ <START> if with the reason and and <UNK> take <EOL> 
+ <START> <UNK> , oh to have that lovin ' you say i 'm the is your clothes to love <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.2024
+[46m 20s (epoch 5: 0%) Loss: 4.1983]
+<START> i 'll take my <UNK> <EOL> 
+ <START> i was on the world daba <UNK> and have n't just there 's in your own <EOL> 
+ <START> and know it 's <UNK> yeahh <EOL> 
+ <START> i know you 've is all i 'm all i thought i just cope as it is loaded <EOL> 
+ <START> my eyes is alive <EOL> 
+
+
+[46m 39s (epoch 5: 2%) Loss: 4.2729]
+<START> shine <EOL> 
+ <START> life <EOL> 
+ <START> and oh dime ! <EOL> 
+ <START> we 're <UNK> , in the colour the shots <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+
+
+[46m 58s (epoch 5: 5%) Loss: 4.2887]
+<START> there 's stupid of love , whoa <EOL> 
+ <START> i ca you 've do n't <EOL> 
+ <START> so night i 'm a matter i 'm out we were my <UNK> <EOL> 
+ <START> i 'm to sit the nights <EOL> 
+ <START> i 'm in the first we always out man , you 're gon na na , you 've just where 
+
+
+[47m 18s (epoch 5: 8%) Loss: 4.2858]
+<START> leave her god know i 'm why ca you 're a time , that 's not love <EOL> 
+ <START> <UNK> is the days <EOL> 
+ <START> <UNK> <EOL> 
+ <START> do him when the road these <UNK> are you , <UNK> be a <UNK> <EOL> 
+ <START> my mind and la <EOL> 
+
+
+[47m 37s (epoch 5: 10%) Loss: 4.2859]
+<START> then before it 's <UNK> , , put off over a heart <EOL> 
+ <START> i 'll like on your body in the sun <EOL> 
+ <START> your summer <EOL> 
+ <START> we like what you got an out that 's time 's the news <EOL> 
+ <START> some <EOL> 
+
+
+[47m 56s (epoch 5: 13%) Loss: 4.2857]
+<START> i 've friend you would n't all the same song <EOL> 
+ <START> it floated my heart break strong <EOL> 
+ <START> and <UNK> <EOL> 
+ <START> hold heaven better <EOL> 
+ <START> <UNK> i let it 's there get my ears i alone <EOL> 
+
+
+[48m 15s (epoch 5: 16%) Loss: 4.2787]
+<START> lighting this <UNK> i still see sometimes <EOL> 
+ <START> if i <EOL> 
+ <START> i turn her ashtray sacrifice <EOL> 
+ <START> i 'm to my heart <EOL> 
+ <START> this house <EOL> 
+
+
+[48m 34s (epoch 5: 18%) Loss: 4.2940]
+<START> workin ' you 'll be in my name and like in their mind <EOL> 
+ <START> and i 'm the noise <EOL> 
+ <START> just so sick of you , it 's the best <EOL> 
+ <START> i can 've a golden intentions <EOL> 
+ <START> in <UNK> <EOL> 
+
+
+[48m 54s (epoch 5: 21%) Loss: 4.2711]
+<START> i learned <EOL> 
+ <START> that i <EOL> 
+ <START> we want to you never to see the madness <EOL> 
+ <START> mmm ! <EOL> 
+ <START> and <UNK> that the room <EOL> 
+
+
+[49m 13s (epoch 5: 24%) Loss: 4.3144]
+<START> as then you 're <UNK> and got holding me <EOL> 
+ <START> but and i do n't no place <UNK> to love <EOL> 
+ <START> must do her soul <EOL> 
+ <START> oh <EOL> 
+ <START> you or i 'm <UNK> <EOL> 
+
+
+[49m 31s (epoch 5: 27%) Loss: 4.3001]
+<START> and now ni i love behind <EOL> 
+ <START> and do not not there is so `` and making bow of <EOL> 
+ <START> do i wan na na nana ' me it 's waiting to me to <EOL> 
+ <START> i really is the same want for the time <EOL> 
+ <START> to you <UNK> <EOL> 
+
+
+[49m 49s (epoch 5: 29%) Loss: 4.2931]
+<START> i ca n't <UNK> <UNK> <EOL> 
+ <START> this screams <EOL> 
+ <START> your way you had in love needs na na na na na na na na na na na nah <EOL> 
+ <START> you 've the last you shed my name is nothing runs in the silence <EOL> 
+ <START> your beer <EOL> 
+
+
+[50m 8s (epoch 5: 32%) Loss: 4.2704]
+<START> <UNK> <EOL> 
+ <START> oh outside there is to be all the same <EOL> 
+ <START> we 'll <UNK> body <EOL> 
+ <START> of the boy in me just back <EOL> 
+ <START> i can dance 're now i 'm back <EOL> 
+
+
+[50m 26s (epoch 5: 35%) Loss: 4.2802]
+<START> would 've more <EOL> 
+ <START> as you find the grey <EOL> 
+ <START> it 's <UNK> <EOL> 
+ <START> do n't <UNK> <EOL> 
+ <START> and the <EOL> 
+
+
+[50m 45s (epoch 5: 37%) Loss: 4.3004]
+<START> all and matter for you 'll know you 'll come on the round <EOL> 
+ <START> the mother you knows a heart that i 'm with you 've the <UNK> <EOL> 
+ <START> i 'd he 's somewhere you think i am more <EOL> 
+ <START> in my voice <EOL> 
+ <START> and blow who ca n't fight what means before you do n't the <UNK> ... <EOL> 
+
+
+[51m 5s (epoch 5: 40%) Loss: 4.2808]
+<START> tell me , i 'm the fool <EOL> 
+ <START> you 're all a lot when and and like i was the nightmare <EOL> 
+ <START> the only had to my heart of all a sad whoa <EOL> 
+ <START> what do n't say me the heart <EOL> 
+ <START> when love where i 'll make to <UNK> <UNK> <EOL> 
+
+
+[51m 22s (epoch 5: 43%) Loss: 4.3070]
+<START> gon na na would what i 'm in the <UNK> <EOL> 
+ <START> but oh so the broken <EOL> 
+ <START> they 've all i know baby and no one one man <EOL> 
+ <START> so on his <EOL> 
+ <START> make 's all it is a <UNK> that get down <EOL> 
+
+
+[51m 38s (epoch 5: 45%) Loss: 4.2807]
+<START> of will say and make then i 'm die <EOL> 
+ <START> i know callin i saw me lose a light with you 're <UNK> <EOL> 
+ <START> and the another great answer it all night <EOL> 
+ <START> and burn baby at you 're safe mine <EOL> 
+ <START> i can stay <EOL> 
+
+
+[51m 58s (epoch 5: 48%) Loss: 4.2960]
+<START> the moonlight <EOL> 
+ <START> i 've the sweet <EOL> 
+ <START> come so and my life was the female at what should you make a man is on my kiss the 
+ <START> i 'm got ta me , but all with in my little time <EOL> 
+ <START> you wo n't like where is really begin <EOL> 
+
+
+[52m 19s (epoch 5: 51%) Loss: 4.2925]
+<START> you 're the good and alone <EOL> 
+ <START> in the lifetime i 've say it do just feel that en in the day , all the night <EOL> 
+ <START> i know i 'm <EOL> 
+ <START> and <UNK> do n't could ca not but i wo n't think the kind , feeling the north you think 
+ <START> i 'll die <EOL> 
+
+
+[52m 37s (epoch 5: 54%) Loss: 4.2928]
+<START> it 's eternal <EOL> 
+ <START> my way to the reason i am just want to stay is you know the other time <UNK> <EOL> 
+ <START> big the ground <EOL> 
+ <START> there 's some more make you can you 're a smile <EOL> 
+ <START> but in the field <EOL> 
+
+
+[52m 55s (epoch 5: 56%) Loss: 4.2852]
+<START> but you 're the <UNK> and get my world <EOL> 
+ <START> do n't and a love <EOL> 
+ <START> when i go in the world , how feels on your words <EOL> 
+ <START> i could sing <EOL> 
+ <START> will the roll love <EOL> 
+
+
+[53m 14s (epoch 5: 59%) Loss: 4.2896]
+<START> you 're my world for a <UNK> <EOL> 
+ <START> i just you can the generation <EOL> 
+ <START> and mine now i <EOL> 
+ <START> are broken , <EOL> 
+ <START> is say and say say i 'm the <EOL> 
+
+
+[53m 34s (epoch 5: 62%) Loss: 4.2887]
+<START> i 'm easy <EOL> 
+ <START> this thing i 're the lives and i 'm <UNK> believe to , <EOL> 
+ <START> behind . <EOL> 
+ <START> you 're on the hate <EOL> 
+ <START> you was that i 'll do n't it 's your eyes <EOL> 
+
+
+[53m 53s (epoch 5: 64%) Loss: 4.2753]
+<START> we felt i 'm gone <EOL> 
+ <START> the <UNK> <EOL> 
+ <START> i will <UNK> <EOL> 
+ <START> gon na na , to my dark life for the stars , i am who want and of me my 
+ <START> i can let 's other style <EOL> 
+
+
+[54m 12s (epoch 5: 67%) Loss: 4.2790]
+<START> i ca n't ca n't the space <EOL> 
+ <START> but but this could find i know i 'd see by the song later <EOL> 
+ <START> things my one <UNK> <EOL> 
+ <START> oh try to grow <EOL> 
+ <START> i wish it 's know when i <EOL> 
+
+
+[54m 27s (epoch 5: 70%) Loss: 4.2943]
+<START> out you 're for you 're twenty gods <EOL> 
+ <START> i 'm the <UNK> , got in the <UNK> ? <EOL> 
+ <START> i will find no i 'm the not all you say <UNK> ! . <EOL> 
+ <START> and better to me got a game <EOL> 
+ <START> and and wo n't been for me could really <EOL> 
+
+
+[54m 46s (epoch 5: 73%) Loss: 4.2874]
+<START> who <EOL> 
+ <START> so <UNK> <EOL> 
+ <START> i 'd her bad ! <EOL> 
+ <START> i 'm girl before i 've and find and why you will <UNK> <UNK> the <UNK> die <EOL> 
+ <START> you begin <UNK> <EOL> 
+
+
+[55m 4s (epoch 5: 75%) Loss: 4.2954]
+<START> the <UNK> start to your heart <EOL> 
+ <START> now is you lose the light <EOL> 
+ <START> you 're as and know i 'm in the wheels <EOL> 
+ <START> babygirl i 'm my hands <EOL> 
+ <START> about you are at them fall <EOL> 
+
+
+[55m 22s (epoch 5: 78%) Loss: 4.2948]
+<START> your life are freedom , well doubt <EOL> 
+ <START> and when a new like diamonds your soul <EOL> 
+ <START> <UNK> <UNK> of the same in the <UNK> <EOL> 
+ <START> that i 'm the car <EOL> 
+ <START> i 'm been <UNK> <UNK> <EOL> 
+
+
+[55m 37s (epoch 5: 81%) Loss: 4.3141]
+<START> and no one i 'll fuck you make this sue well , <EOL> 
+ <START> from what crying <EOL> 
+ <START> that and <UNK> <EOL> 
+ <START> till you 're <UNK> <EOL> 
+ <START> we 're gon na na na na na na na na na na banana , over of the sky 's 
+
+
+[55m 51s (epoch 5: 83%) Loss: 4.2972]
+<START> on all of hit and i can back set me with the magic , now . <EOL> 
+ <START> he would do n't fight your line i just like it 's the own the light in the world <EOL> 
+ <START> and you <EOL> 
+ <START> or when we do you do n't before the eyed of you will so i 'm another only <EOL> 
+ <START> you wan na up right stop and and once i wanted for what he 's on the tired of door 
+
+
+[56m 6s (epoch 5: 86%) Loss: 4.2911]
+<START> now on the time so i still <UNK> <EOL> 
+ <START> <UNK> and maybe <EOL> 
+ <START> are my love 's time in front of the <UNK> <EOL> 
+ <START> shimmering in the ca n't just <EOL> 
+ <START> my life was at me and whoa <EOL> 
+
+
+[56m 21s (epoch 5: 89%) Loss: 4.2903]
+<START> you just story but i 'll stay <EOL> 
+ <START> it 's <UNK> <EOL> 
+ <START> you 're around me makes you 're trying to <EOL> 
+ <START> it got you need that 's made us and find all the manners really <EOL> 
+ <START> i 'm going after would i 'm <UNK> , i 've to the window the silence are us and win 
+
+
+[56m 35s (epoch 5: 91%) Loss: 4.2983]
+<START> while in the light <EOL> 
+ <START> music with it ai to you 'll , when a man oh <EOL> 
+ <START> the heart against the truth <EOL> 
+ <START> if i not you 're my tears and now and your place and <UNK> cold call my back a world 
+ <START> in the morning shady <EOL> 
+
+
+[56m 50s (epoch 5: 94%) Loss: 4.2902]
+<START> i 'm <EOL> 
+ <START> i know i 'm the <EOL> 
+ <START> is the mi and it 's real places back through the <UNK> <EOL> 
+ <START> hello <EOL> 
+ <START> i will know would feel a on the miracle <EOL> 
+
+
+[57m 9s (epoch 5: 97%) Loss: 4.2843]
+<START> i do it is <UNK> <EOL> 
+ <START> and and too no no time , i 'm away <EOL> 
+ <START> i think i 'm better 's you use me 've love <EOL> 
+ <START> i 'm your mother <EOL> 
+ <START> i 'm laid it 's fight with the beat you 're <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.2014
+[57m 53s (epoch 6: 0%) Loss: 4.1946]
+<START> you do n't this heart yeah <EOL> 
+ <START> it <EOL> 
+ <START> cause my ex is told me go <EOL> 
+ <START> and all <EOL> 
+ <START> when you believe <EOL> 
+
+
+[58m 7s (epoch 6: 2%) Loss: 4.2848]
+<START> what the light <EOL> 
+ <START> take me be great wo n't hold a own your way as i see you 're i 'm gon na 
+ <START> it 's <UNK> ignite you ca n't you <EOL> 
+ <START> there <UNK> <EOL> 
+ <START> and i have still come <EOL> 
+
+
+[58m 27s (epoch 6: 5%) Loss: 4.2880]
+<START> you 'll know this is like the <UNK> pain and somewhere came to me the tracks ! <EOL> 
+ <START> it would come with the wild heart <UNK> is magic odds <EOL> 
+ <START> i 'm my game <EOL> 
+ <START> you will go <EOL> 
+ <START> what take my heart <EOL> 
+
+
+[58m 41s (epoch 6: 8%) Loss: 4.2882]
+<START> i feel all clear , all can lose the love <EOL> 
+ <START> <UNK> <EOL> 
+ <START> the sky <EOL> 
+ <START> i 'll be <UNK> <EOL> 
+ <START> is you ca it 's so ca n't soon <EOL> 
+
+
+[58m 56s (epoch 6: 10%) Loss: 4.2764]
+<START> we 're a kiss again <EOL> 
+ <START> the things of it 's the only <EOL> 
+ <START> a only <UNK> <EOL> 
+ <START> gon na na na na na ' but i pay your mind <EOL> 
+ <START> going by a <UNK> <EOL> 
+
+
+[59m 14s (epoch 6: 13%) Loss: 4.2747]
+<START> i feel down , one time <EOL> 
+ <START> the way out away <EOL> 
+ <START> if there 's the <UNK> <EOL> 
+ <START> ca n't all everyone 's out of love with my <EOL> 
+ <START> i am a moment <EOL> 
+
+
+[59m 32s (epoch 6: 16%) Loss: 4.2761]
+<START> but i need you 're all the creeps <EOL> 
+ <START> when i 'm a <UNK> <EOL> 
+ <START> and little way what break you 'll smile <EOL> 
+ <START> of talking when so on her hold <EOL> 
+ <START> on me do you 're in me that <EOL> 
+
+
+[59m 52s (epoch 6: 18%) Loss: 4.2716]
+<START> when you ca n't <UNK> do n't do n't wan na na na na na na na na na na 
+ <START> i 'll have against the same my tears is that is standing to tip me <EOL> 
+ <START> every peace do n't do n't be high <UNK> <UNK> the day , do n't be with the <EOL> 
+ <START> and <UNK> blue <EOL> 
+ <START> i can do n't <UNK> <EOL> 
+
+
+[60m 11s (epoch 6: 21%) Loss: 4.2839]
+<START> i know n't see a lover <EOL> 
+ <START> and the heart <UNK> <EOL> 
+ <START> and would lead the shadows , i ca n't know i 'd die <EOL> 
+ <START> do n't be my heart dop cold as ice for a thousand creepy dear <EOL> 
+ <START> it 's the <UNK> my <UNK> 's gone on my , you 're alli 'm making her hundred home now 
+
+
+[60m 30s (epoch 6: 24%) Loss: 4.2781]
+<START> and <UNK> <EOL> 
+ <START> was so the control <EOL> 
+ <START> as i ca you ca n't all and then i 'll like you say like i can love <EOL> 
+ <START> a darkest <EOL> 
+ <START> it 's the night <UNK> <UNK> <UNK> <EOL> 
+
+
+[60m 50s (epoch 6: 27%) Loss: 4.2792]
+<START> i can me <EOL> 
+ <START> a bitter , i do n't the long at your heart keep out , do n't i said i be 
+ <START> from anything ay in those life you 're rushing all on a love <EOL> 
+ <START> i knew we 'd be been right <EOL> 
+ <START> the voice on the more . <EOL> 
+
+
+[61m 9s (epoch 6: 29%) Loss: 4.2901]
+<START> oh <EOL> 
+ <START> wo n't <EOL> 
+ <START> and you helped me to leave it 's a way do you do it 's love . <EOL> 
+ <START> let it 's <UNK> you 're <EOL> 
+ <START> 1 holds your heart die <EOL> 
+
+
+[61m 29s (epoch 6: 32%) Loss: 4.2837]
+<START> now i will just last <EOL> 
+ <START> bend <EOL> 
+ <START> you are up to <UNK> money <EOL> 
+ <START> the words <EOL> 
+ <START> when <UNK> <EOL> 
+
+
+[61m 47s (epoch 6: 35%) Loss: 4.3102]
+<START> but you 're for the <UNK> , <EOL> 
+ <START> i 'm <EOL> 
+ <START> i 'm the song and the world , imagine greed <UNK> light <EOL> 
+ <START> just that just we die is lost get the end and be slide <EOL> 
+ <START> remember <EOL> 
+
+
+[62m 7s (epoch 6: 37%) Loss: 4.2827]
+<START> you 'd stop so meet <UNK> <EOL> 
+ <START> for you 're just the tv <EOL> 
+ <START> <UNK> <EOL> 
+ <START> draw my eyes can stay off <UNK> <EOL> 
+ <START> he have never betray , the <UNK> <EOL> 
+
+
+[62m 26s (epoch 6: 40%) Loss: 4.2808]
+<START> i 'm the <UNK> away <EOL> 
+ <START> but i need some one <EOL> 
+ <START> how i am and that i make out of the way in the one surprise to the <UNK> <EOL> 
+ <START> a <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+
+
+[62m 48s (epoch 6: 43%) Loss: 4.2800]
+<START> i want i 've gon na this fate <EOL> 
+ <START> so a man 's all my <EOL> 
+ <START> <UNK> my lovin ' the world <EOL> 
+ <START> { <UNK> and take me <EOL> 
+ <START> when there is on my heart , well <EOL> 
+
+
+[63m 7s (epoch 6: 45%) Loss: 4.2823]
+<START> nothing would have in the place to all you one and i put my weapon <EOL> 
+ <START> yeah they 're in the shame they said i will think that you 're so <UNK> , i 'm so 
+ <START> you a <UNK> <EOL> 
+ <START> i 'd bring on my <UNK> <EOL> 
+ <START> well and love <EOL> 
+
+
+[63m 26s (epoch 6: 48%) Loss: 4.2822]
+<START> sick and but i 'm my <UNK> 's part of <UNK> and and you know when you call you had 
+ <START> but and you had going <UNK> <EOL> 
+ <START> the kiss me 's my <UNK> <EOL> 
+ <START> oho <EOL> 
+ <START> there 's running up he <UNK> <EOL> 
+
+
+[63m 43s (epoch 6: 51%) Loss: 4.2695]
+<START> oh i will do n't see me done to be <UNK> 's not of my <UNK> . <EOL> 
+ <START> i would play it 's <UNK> <EOL> 
+ <START> <UNK> <UNK> <EOL> 
+ <START> if i 'll stop for the stand down doubt <EOL> 
+ <START> you 're so if i do i pray where but i 'm down <EOL> 
+
+
+[64m 2s (epoch 6: 54%) Loss: 4.2902]
+<START> <UNK> <EOL> 
+ <START> you 'll both and were a time you my heart <UNK> <UNK> tonight <EOL> 
+ <START> i 'm gon na ' and you <EOL> 
+ <START> whoa <EOL> 
+ <START> i do n't and so find n't <UNK> we 'll take my things i 've got you and never just 
+
+
+[64m 16s (epoch 6: 56%) Loss: 4.2822]
+<START> every first <EOL> 
+ <START> such what is and of show me down smile <EOL> 
+ <START> i can be we need to nothing town <EOL> 
+ <START> she <EOL> 
+ <START> we 're <UNK> <EOL> 
+
+
+[64m 34s (epoch 6: 59%) Loss: 4.2673]
+<START> the power <EOL> 
+ <START> i just be through the light me <UNK> ! <EOL> 
+ <START> the way let your lullaby <EOL> 
+ <START> to no you are right on you love <EOL> 
+ <START> and <UNK> . <EOL> 
+
+
+[64m 51s (epoch 6: 62%) Loss: 4.2794]
+<START> when you 're a mind of in the heart <EOL> 
+ <START> i was it 's like the top i 'm a <UNK> too a dream , love <EOL> 
+ <START> hot and slow <EOL> 
+ <START> a mess all well <UNK> <EOL> 
+ <START> do n't try i 'm worse <EOL> 
+
+
+[65m 9s (epoch 6: 64%) Loss: 4.2902]
+<START> i was tough to you 'll <EOL> 
+ <START> in the time 's shinin ' i do you do n't <UNK> he said it turns to <UNK> up <EOL> 
+ <START> and see you have a who to you 're in the <UNK> <EOL> 
+ <START> and <UNK> <EOL> 
+ <START> hear the floor <EOL> 
+
+
+[65m 28s (epoch 6: 67%) Loss: 4.2976]
+<START> so i 'm just us , i do n't the chance you 'd worry <EOL> 
+ <START> or <UNK> <EOL> 
+ <START> the room <EOL> 
+ <START> i 'll be it goes up inside <EOL> 
+ <START> that <UNK> <EOL> 
+
+
+[65m 47s (epoch 6: 70%) Loss: 4.2974]
+<START> come ... i 'm all <UNK> <UNK> i picture from a thing that we 're cool to lose that you 
+ <START> to all a <UNK> where you 're <UNK> , as devotion <EOL> 
+ <START> i 'm been there 's no thing gets there 's the <UNK> <EOL> 
+ <START> to you come by a words i 'm not only was a first <EOL> 
+ <START> you see you tell me on the bicycle <EOL> 
+
+
+[66m 7s (epoch 6: 73%) Loss: 4.2732]
+<START> you would do n't what i love <EOL> 
+ <START> would bother <EOL> 
+ <START> we 're those <UNK> to the the mess is you 're to you can work the words i 'm going 
+ <START> i 'll be the way <EOL> 
+ <START> a unpredictable <EOL> 
+
+
+[66m 27s (epoch 6: 75%) Loss: 4.2836]
+<START> look through the baby i 'll do your heart <EOL> 
+ <START> i 'm just free <EOL> 
+ <START> i 'd you 're asking what you 're time will <EOL> 
+ <START> do it 's worlds <EOL> 
+ <START> i 'm feeling right <EOL> 
+
+
+[66m 47s (epoch 6: 78%) Loss: 4.2653]
+<START> everyday to hold me these soul i do n't the world <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i 'm <UNK> there <EOL> 
+ <START> and i just such it 's go on my <UNK> move and again <EOL> 
+ <START> tell me now i 'm a final on the <UNK> <EOL> 
+
+
+[67m 6s (epoch 6: 81%) Loss: 4.2847]
+<START> do you 'll lost down <EOL> 
+ <START> <UNK> <EOL> 
+ <START> oh yeah <EOL> 
+ <START> i 'm <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+
+
+[67m 23s (epoch 6: 83%) Loss: 4.2950]
+<START> like you 're as i 'm <UNK> for a lady <EOL> 
+ <START> i 'll fly <EOL> 
+ <START> we 're you <EOL> 
+ <START> the <UNK> <EOL> 
+ <START> i did it 's the struggle when it 's need some time <EOL> 
+
+
+[67m 43s (epoch 6: 86%) Loss: 4.2955]
+<START> smile <EOL> 
+ <START> and a <UNK> <EOL> 
+ <START> my world of the days on your side are spending the sun <EOL> 
+ <START> like a life 's a sunshine <EOL> 
+ <START> you know i <EOL> 
+
+
+[68m 2s (epoch 6: 89%) Loss: 4.2803]
+<START> hold me know i 'm better feel than to hold my al <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+ <START> oh <EOL> 
+ <START> i 'm a way <EOL> 
+ <START> i ca you 're not all you 're a life life 's in the pride <EOL> 
+
+
+[68m 21s (epoch 6: 91%) Loss: 4.2872]
+<START> you got you do you know oh gon na na na na na na na na na na na na 
+ <START> you might be one little angel <EOL> 
+ <START> and break the ground <EOL> 
+ <START> the pain and it 's and and in the road <UNK> <EOL> 
+ <START> they 're death <EOL> 
+
+
+[68m 41s (epoch 6: 94%) Loss: 4.2630]
+<START> i 've else <EOL> 
+ <START> i want you 'll love <EOL> 
+ <START> i 'm the memory <EOL> 
+ <START> leave a save you open <EOL> 
+ <START> you 've the human kind we 're my game <EOL> 
+
+
+[69m 0s (epoch 6: 97%) Loss: 4.3061]
+<START> i wan na na na na <EOL> 
+ <START> to promise ' the <UNK> so happy and try to your self twist to have a world , move a 
+ <START> i 'm the best , say you watch you know in your head and where you fall up the life 
+ <START> why i ca n't was a <UNK> ni you do , sure 's a heart mere by <EOL> 
+ <START> i will learn 's this is down <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.1990
+[69m 51s (epoch 7: 0%) Loss: 4.2044]
+<START> move in the <UNK> <UNK> <EOL> 
+ <START> i wan na na na na na na na na i hold a man my way <EOL> 
+ <START> i 'm been out and <UNK> <EOL> 
+ <START> <UNK> my way fall <EOL> 
+ <START> i 'm oh we leave to first <EOL> 
+
+
+[70m 10s (epoch 7: 2%) Loss: 4.2736]
+<START> i could me in the band on a heart please do n't he was here ! <EOL> 
+ <START> i 'm <UNK> ' have you can do n't even fade up to your <EOL> 
+ <START> but they 're over on the sun <EOL> 
+ <START> i know i 've be where it was here are all or the other wrong it 's coming <EOL> 
+ <START> the big time and you 'll be love <EOL> 
+
+
+[70m 31s (epoch 7: 5%) Loss: 4.2720]
+<START> they want lost <EOL> 
+ <START> baby oh when nothing and i 'm i ca n't before makes me to me to all of the first 
+ <START> that nobody 's better see i 've still the <EOL> 
+ <START> how you are the dirty <UNK> <EOL> 
+ <START> and i 'm go and one good we know you are on tonight <EOL> 
+
+
+[70m 49s (epoch 7: 8%) Loss: 4.2838]
+<START> you 'd write from a joke <EOL> 
+ <START> the morning <EOL> 
+ <START> we 're the <UNK> ca me that around <EOL> 
+ <START> and silent night <EOL> 
+ <START> you 'll think goes on my right out of the wings <EOL> 
+
+
+[71m 9s (epoch 7: 10%) Loss: 4.2730]
+<START> i 'm my best broken <EOL> 
+ <START> that cause i 'm six situation <EOL> 
+ <START> <UNK> <UNK> <EOL> 
+ <START> so <UNK> <EOL> 
+ <START> i 'm the prize , to do n't leave you still to you want i do you took you said 
+
+
+[71m 27s (epoch 7: 13%) Loss: 4.2614]
+<START> i 'm no one cold wo n't die <UNK> <UNK> <EOL> 
+ <START> <UNK> we go down <EOL> 
+ <START> she is sorry i need <UNK> was older <EOL> 
+ <START> but i ca n't say close you left only i can give it 's you <EOL> 
+ <START> was dark <EOL> 
+
+
+[71m 45s (epoch 7: 16%) Loss: 4.2753]
+<START> the town else <EOL> 
+ <START> it 's be fell down <EOL> 
+ <START> i 'm felt in these girl <EOL> 
+ <START> i do n't got <EOL> 
+ <START> to sure i could stand <EOL> 
+
+
+[72m 5s (epoch 7: 18%) Loss: 4.2797]
+<START> and and to and i ever come back <EOL> 
+ <START> i 've something you 'll start , la la <EOL> 
+ <START> i 'm around the making you should travel too enemies and can do n't it 's the bend . <EOL> 
+ <START> i 'll do me <EOL> 
+ <START> it 's <UNK> <EOL> 
+
+
+[72m 24s (epoch 7: 21%) Loss: 4.2589]
+<START> dying . <EOL> 
+ <START> in the american come on the <UNK> <EOL> 
+ <START> that gets out of a home my sun 's the things i know we will break sack 's and is 
+ <START> and i find whip right as she 's not never still got you 're around the <EOL> 
+ <START> a <UNK> honest <EOL> 
+
+
+[72m 43s (epoch 7: 24%) Loss: 4.2825]
+<START> do n't and you say i 'm turnin ' away <EOL> 
+ <START> and you do n't <EOL> 
+ <START> <UNK> love <EOL> 
+ <START> was so i 'm put in my life world <EOL> 
+ <START> you can let you need it on all of a <UNK> , i 'm tryin ' a question <EOL> 
+
+
+[72m 58s (epoch 7: 27%) Loss: 4.2803]
+<START> <UNK> <EOL> 
+ <START> i 'm all and now and the world trap with the <EOL> 
+ <START> you 're got on the strong <EOL> 
+ <START> as i 'm you got to hold me was night <EOL> 
+ <START> i do n't think we <EOL> 
+
+
+[73m 13s (epoch 7: 29%) Loss: 4.2767]
+<START> my past a better lived of <UNK> burn <UNK> <EOL> 
+ <START> let it 's a <UNK> for the tears who <EOL> 
+ <START> like i 'm a <UNK> <EOL> 
+ <START> you say is for good shady <UNK> <EOL> 
+ <START> it 's jam <EOL> 
+
+
+[73m 30s (epoch 7: 32%) Loss: 4.2690]
+<START> i 'm a attention <EOL> 
+ <START> i 've march to <UNK> <EOL> 
+ <START> like <EOL> 
+ <START> i 'm fine <EOL> 
+ <START> you will be scared , i do n't <EOL> 
+
+
+[73m 50s (epoch 7: 35%) Loss: 4.2869]
+<START> she 's and my soul <EOL> 
+ <START> he 's <EOL> 
+ <START> i 'm taking us again that keeps a gates that is <UNK> <EOL> 
+ <START> i must believe on my war i 'll do you 're you was like so i 'm the sticks do 
+ <START> cause i thought i want to love and come and i know <EOL> 
+
+
+[74m 8s (epoch 7: 37%) Loss: 4.2836]
+<START> you got breathing to the hand <EOL> 
+ <START> 'cause if if me and in the <UNK> , you 're a brighter i can breathe you need to help 
+ <START> in the money <EOL> 
+ <START> when i just one way <EOL> 
+ <START> the days <EOL> 
+
+
+[74m 26s (epoch 7: 40%) Loss: 4.2831]
+<START> you were not follow you 'll do n't fall <EOL> 
+ <START> possession <EOL> 
+ <START> anybody come my way you just better , it 's it 's man <EOL> 
+ <START> all the drug to meet the answer by the time look along <EOL> 
+ <START> 'cause out of water <EOL> 
+
+
+[74m 46s (epoch 7: 43%) Loss: 4.2804]
+<START> i need you 've sooner yeah yeah <EOL> 
+ <START> yeah <EOL> 
+ <START> i see consequence 's the story calling <EOL> 
+ <START> i ca n't be afraid 's will be : and let me and she 's in the <UNK> <EOL> 
+ <START> in my <UNK> for a <UNK> <EOL> 
+
+
+[75m 6s (epoch 7: 45%) Loss: 4.2794]
+<START> when the <UNK> and <UNK> <EOL> 
+ <START> i 'm on the <UNK> <EOL> 
+ <START> too <UNK> <EOL> 
+ <START> and all is it feels pretty that way <EOL> 
+ <START> all what i 'm easy i call across the sky ment <EOL> 
+
+
+[75m 25s (epoch 7: 48%) Loss: 4.2734]
+<START> hey will be meant to you know why <EOL> 
+ <START> the poison and mine of all and gon na na time a music do n't be all the final this 
+ <START> where ido n't see i do you 've down <EOL> 
+ <START> you were there 's to nowhere <EOL> 
+ <START> i come , to me <EOL> 
+
+
+[75m 45s (epoch 7: 51%) Loss: 4.2788]
+<START> thinking you a <UNK> <EOL> 
+ <START> for your love are a <UNK> <EOL> 
+ <START> i only me we 'll say i get us once <UNK> <EOL> 
+ <START> we escape <EOL> 
+ <START> and judge the lie of the heart <EOL> 
+
+
+[76m 4s (epoch 7: 54%) Loss: 4.2803]
+<START> you said i could dare so dancing ? <EOL> 
+ <START> lose i ca n't want the <UNK> <EOL> 
+ <START> i need in the glorious <EOL> 
+ <START> you want you think i say i do you got a love <EOL> 
+ <START> you 'll a <UNK> <EOL> 
+
+
+[76m 19s (epoch 7: 56%) Loss: 4.2701]
+<START> the dance <EOL> 
+ <START> wishing <EOL> 
+ <START> so <UNK> <EOL> 
+ <START> call the sea i 'm crazy <EOL> 
+ <START> how i ca n't be out of <UNK> what could be a blue <EOL> 
+
+
+[76m 38s (epoch 7: 59%) Loss: 4.2984]
+<START> the way to your life 's next , do you ca n't get with a <UNK> <EOL> 
+ <START> in the sound forever <EOL> 
+ <START> i ca do n't know daddy do n't mine <EOL> 
+ <START> daddy , <UNK> no <UNK> <EOL> 
+ <START> you 're how the word i can just and with the war <UNK> <EOL> 
+
+
+[76m 57s (epoch 7: 62%) Loss: 4.2681]
+<START> 'cause i 'm always do n't need the <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+ <START> if i had to me <EOL> 
+ <START> your whole cats <EOL> 
+ <START> have just and <UNK> <EOL> 
+
+
+[77m 17s (epoch 7: 64%) Loss: 4.2849]
+<START> my one poison she 's way <EOL> 
+ <START> and and if i never need you do <EOL> 
+ <START> the way <EOL> 
+ <START> a fool <EOL> 
+ <START> chance you ruin the one girl and pieces of and do you make me to go in their same <UNK> 
+
+
+[77m 36s (epoch 7: 67%) Loss: 4.2820]
+<START> to your love <EOL> 
+ <START> so i 'm where if me the <UNK> <UNK> <EOL> 
+ <START> the <UNK> dreams for another world and have it can play it 's turning ' you 're on my <UNK> 
+ <START> and tell you are burned that arrives <EOL> 
+ <START> <UNK> <EOL> 
+
+
+[77m 56s (epoch 7: 70%) Loss: 4.2842]
+<START> you 'd all to <UNK> <EOL> 
+ <START> it 's i never can ever had learning to say i 'm on and hell <EOL> 
+ <START> your heart <EOL> 
+ <START> when a the time in a u will see home <EOL> 
+ <START> ( hearing i did to on all i have before the time this <UNK> 's together <EOL> 
+
+
+[78m 16s (epoch 7: 73%) Loss: 4.2855]
+<START> the sun <EOL> 
+ <START> at the <UNK> i do you can only it comes <EOL> 
+ <START> here i know that i 've feel you do n't be the whole and stare of the d <EOL> 
+ <START> the friend <UNK> my stars and i have it seems the love <EOL> 
+ <START> <UNK> <EOL> 
+
+
+[78m 36s (epoch 7: 75%) Loss: 4.2849]
+<START> but i keep wide , i was just go in the <UNK> <EOL> 
+ <START> my life have <UNK> the life <UNK> <UNK> <EOL> 
+ <START> <UNK> all the way then i 'm <UNK> a lights you can somebody always make a lot <EOL> 
+ <START> i 'm go on the sunshine <EOL> 
+ <START> i 'm before i 'm got again <EOL> 
+
+
+[78m 55s (epoch 7: 78%) Loss: 4.2835]
+<START> its a <UNK> of one thing that 's see the head and the back , take your heart <EOL> 
+ <START> i can find every day <EOL> 
+ <START> you were your lie <EOL> 
+ <START> where has you 're gon na na na na na na na na na na na na na na na 
+ <START> do n't have you 're waiting by your heart and 's the little <UNK> to baby i 'm real <EOL> 
+
+
+[79m 14s (epoch 7: 81%) Loss: 4.2785]
+<START> i wan na na na na na na na <UNK> navidad <EOL> 
+ <START> i can seem in a spirit on my life and in this <UNK> <EOL> 
+ <START> mistakes <EOL> 
+ <START> when the babes na na na na na na <EOL> 
+ <START> and you believe <EOL> 
+
+
+[79m 32s (epoch 7: 83%) Loss: 4.2868]
+<START> you wo each only you can all i 'm through a runaway <EOL> 
+ <START> it 'll <EOL> 
+ <START> <UNK> of chance were daughter <EOL> 
+ <START> losing only , and i wo n't <UNK> <EOL> 
+ <START> you push the day when do <UNK> of blue <UNK> live your nice <EOL> 
+
+
+[79m 50s (epoch 7: 86%) Loss: 4.2843]
+<START> where you 're in the <UNK> now you are one is your favorite bass the great <UNK> <EOL> 
+ <START> it 's <UNK> <EOL> 
+ <START> all 's be there 's my thing but i 'm rule this we ever could <EOL> 
+ <START> it 's bound <EOL> 
+ <START> somebody , i get my <UNK> the air it 's thinking i 'll be my old <UNK> <EOL> 
+
+
+[80m 7s (epoch 7: 89%) Loss: 4.2716]
+<START> to eat the same living out <EOL> 
+ <START> always be <EOL> 
+ <START> oh their heart that our heart so much <EOL> 
+ <START> if i 'd have a time that i will all tonight <EOL> 
+ <START> i <UNK> , you 've be i know love baby <EOL> 
+
+
+[80m 26s (epoch 7: 91%) Loss: 4.2872]
+<START> for the way <EOL> 
+ <START> i 'm the , you cry <EOL> 
+ <START> and <UNK> they 're about you 're to the sun to i do n't want <UNK> <EOL> 
+ <START> counting the way his heart be your <UNK> , but i <UNK> to your soul <EOL> 
+ <START> i 'm a sweet sounds and go on you <EOL> 
+
+
+[80m 45s (epoch 7: 94%) Loss: 4.2907]
+<START> feeling we 'd <UNK> ohoh <EOL> 
+ <START> but i see i ca n't more baby <EOL> 
+ <START> go up time love <EOL> 
+ <START> but all could help me <UNK> <UNK> , <UNK> <EOL> 
+ <START> what i just starting no 's <UNK> , <EOL> 
+
+
+[81m 4s (epoch 7: 97%) Loss: 4.2812]
+<START> i 'll let his way <EOL> 
+ <START> i 'll turn to the more <EOL> 
+ <START> but i would hold off and get the world <EOL> 
+ <START> do n't wonder <UNK> <EOL> 
+ <START> i 'm floating <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.2004
+[81m 55s (epoch 8: 0%) Loss: 4.1902]
+<START> i caught down , like was like to still i just a <UNK> wo n't what that have just love 
+ <START> break <EOL> 
+ <START> i ca you going like i ca n't wo n't see like this 's heaven that i was there is 
+ <START> i <EOL> 
+ <START> i guess i 've closin ' it take you know i can just want love <EOL> 
+
+
+[82m 13s (epoch 8: 2%) Loss: 4.2685]
+<START> you call tell it 's <UNK> to love . <EOL> 
+ <START> screaming that 's so yours have sure 'll be there 's the rest to it is all <EOL> 
+ <START> i feel your body <EOL> 
+ <START> i can do n't it 's <UNK> <EOL> 
+ <START> believe <EOL> 
+
+
+[82m 28s (epoch 8: 5%) Loss: 4.2740]
+<START> peacebone <EOL> 
+ <START> til that i 'm the whole is that and she 's go in the girl <EOL> 
+ <START> when i want to remind me in your love <EOL> 
+ <START> you 're the table and <UNK> <EOL> 
+ <START> if you can let it 's got your only for <UNK> and even i do n't spend a love <EOL> 
+
+
+[82m 42s (epoch 8: 8%) Loss: 4.2733]
+<START> do n't how i 'll ca n't all i do n't cut the world we want and again <EOL> 
+ <START> how if all <EOL> 
+ <START> i 'm never found you 're snow , but every <UNK> he 's alive <EOL> 
+ <START> sunshine <EOL> 
+ <START> i do n't if the words of <UNK> you 're so a than thought that is once 's into fact 
+
+
+[83m 0s (epoch 8: 10%) Loss: 4.2831]
+<START> a man yea <EOL> 
+ <START> i wan na na na na na in the <UNK> <EOL> 
+ <START> you know but what i see we walk down to still believes <EOL> 
+ <START> is so you <EOL> 
+ <START> you 're a bit my human the ones <EOL> 
+
+
+[83m 19s (epoch 8: 13%) Loss: 4.2661]
+<START> i could never <UNK> one could fall <EOL> 
+ <START> show me i could make the fire <EOL> 
+ <START> it took a cannonball <EOL> 
+ <START> i sing <EOL> 
+ <START> maybe hold me <EOL> 
+
+
+[83m 39s (epoch 8: 16%) Loss: 4.2791]
+<START> the tears <EOL> 
+ <START> the <UNK> . <EOL> 
+ <START> <UNK> <EOL> 
+ <START> you get up now <UNK> 'til it said <EOL> 
+ <START> this time which met a party <EOL> 
+
+
+[83m 58s (epoch 8: 18%) Loss: 4.2643]
+<START> <UNK> <UNK> , <UNK> <EOL> 
+ <START> i 'll find you 're <EOL> 
+ <START> and lost , in the sweet back <EOL> 
+ <START> this blue <EOL> 
+ <START> i <EOL> 
+
+
+[84m 17s (epoch 8: 21%) Loss: 4.2951]
+<START> to all designed to the rain <EOL> 
+ <START> i 'm noone way for you 'll never just know i can be for the things <EOL> 
+ <START> but part it 's <UNK> cars <EOL> 
+ <START> i do n't the man <EOL> 
+ <START> the best the sun <UNK> <EOL> 
+
+
+[84m 35s (epoch 8: 24%) Loss: 4.2745]
+<START> 'cause <UNK> <EOL> 
+ <START> you 're afraid you think you wish <UNK> . <EOL> 
+ <START> the cars <EOL> 
+ <START> i ca n't know and the thing we ought with the lights on his sun to go you will learn 
+ <START> your heart <UNK> <EOL> 
+
+
+[84m 55s (epoch 8: 27%) Loss: 4.2766]
+<START> i 'm <UNK> <UNK> and cassius <UNK> of you 're always been alone , it 's as feeling you 're 
+ <START> he 's the night a child , the way my boy <EOL> 
+ <START> she 's the rhythm <EOL> 
+ <START> i turn , i love to say and i really know i 'm to a <UNK> <EOL> 
+ <START> and it 's my heart , possession , do n't <UNK> <EOL> 
+
+
+[85m 14s (epoch 8: 29%) Loss: 4.2670]
+<START> you <EOL> 
+ <START> do n't admit if <UNK> <EOL> 
+ <START> but what for you can tell me and let me else , <UNK> out by you 're all to the 
+ <START> i 'll say melts the things in kind that is a good , i can you do n't me then 
+ <START> so i 'm you 're always you 're all to remind your lips of this <UNK> <EOL> 
+
+
+[85m 32s (epoch 8: 32%) Loss: 4.2711]
+<START> and in the rain <EOL> 
+ <START> only mambo looking when you 'll be let me from the nightmare <EOL> 
+ <START> waste <EOL> 
+ <START> i 'm real <EOL> 
+ <START> what i 'm a addiction <EOL> 
+
+
+[85m 49s (epoch 8: 35%) Loss: 4.2809]
+<START> it 's together <EOL> 
+ <START> the <UNK> <EOL> 
+ <START> we was here <UNK> <EOL> 
+ <START> never come with what if the day can <UNK> and <UNK> <EOL> 
+ <START> hold in the pain people <EOL> 
+
+
+[86m 4s (epoch 8: 37%) Loss: 4.2867]
+<START> i do you 've a time when can come to the <UNK> <UNK> <UNK> <EOL> 
+ <START> you <UNK> you are <UNK> my hands what the time <EOL> 
+ <START> through that never you know i want i need without me <EOL> 
+ <START> hey stare <EOL> 
+ <START> now they met you do you 've <EOL> 
+
+
+[86m 18s (epoch 8: 40%) Loss: 4.2724]
+<START> i 'm i can you <UNK> <EOL> 
+ <START> i 'm back all in slow <EOL> 
+ <START> and she 's warm on <UNK> <EOL> 
+ <START> my life is for nowhere to make you know to open <EOL> 
+ <START> on the rich little thing i 'm make me it was his queen i 've not i 'm the rain 
+
+
+[86m 33s (epoch 8: 43%) Loss: 4.2568]
+<START> even you <EOL> 
+ <START> i lost , ladies ? <EOL> 
+ <START> i do n't on my heart <EOL> 
+ <START> <UNK> knows i 'll use this passion <EOL> 
+ <START> you 're me <EOL> 
+
+
+[86m 47s (epoch 8: 45%) Loss: 4.2816]
+<START> a chance i do n't know wings <EOL> 
+ <START> with you 'll do n't say <EOL> 
+ <START> it 's fallin ze and and just come <EOL> 
+ <START> can go dance shining with my break up in your way now you go i am the small <EOL> 
+ <START> that for a new we saw and <UNK> <UNK> ! <EOL> 
+
+
+[87m 1s (epoch 8: 48%) Loss: 4.2926]
+<START> that a break with and i 'm born in the way the world <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i 'll ca n't <UNK> <UNK> <EOL> 
+ <START> me <UNK> i 'm in it 's the shot the world that to have <EOL> 
+ <START> i 'm gold <EOL> 
+
+
+[87m 21s (epoch 8: 51%) Loss: 4.2842]
+<START> and do n't , waiting then i 'll ask so i 'm <EOL> 
+ <START> is wrong <EOL> 
+ <START> it 's been <UNK> be getting <EOL> 
+ <START> and there 's the world where we 're in the <UNK> of the good one hard i 've some love 
+ <START> you gave yourself <EOL> 
+
+
+[87m 40s (epoch 8: 54%) Loss: 4.2757]
+<START> if you 're not please one black <EOL> 
+ <START> you 've do n't cry <EOL> 
+ <START> she burns <UNK> <EOL> 
+ <START> it 's in me 'cause i look in my heart day <EOL> 
+ <START> you wo n't disguise <EOL> 
+
+
+[88m 0s (epoch 8: 56%) Loss: 4.2699]
+<START> and that has you give it are come on my , we do n't a flat <EOL> 
+ <START> i 'm just you 'd i cry it have you tell me <EOL> 
+ <START> i 'll let it 's the night <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i 'm gon na na na na na na na na na na na na na na na na na 
+
+
+[88m 20s (epoch 8: 59%) Loss: 4.2705]
+<START> hello , i wan na na na na na na na na na na na na na na na na 
+ <START> let it was the chance <EOL> 
+ <START> you must thank that of <UNK> <EOL> 
+ <START> oh oh old day <EOL> 
+ <START> when you 'll was and heart de <EOL> 
+
+
+[88m 39s (epoch 8: 62%) Loss: 4.2748]
+<START> a step and 've no i 'm the morning <EOL> 
+ <START> the pain <EOL> 
+ <START> what my <UNK> <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i 'm deeper and by your heart <UNK> and i 've the one , i 'm over a other beating 
+
+
+[88m 59s (epoch 8: 64%) Loss: 4.2649]
+<START> and do n't my dear , what we 're a <UNK> <EOL> 
+ <START> cause my love <EOL> 
+ <START> ah she 's right down i can bring me still cry <EOL> 
+ <START> i should hear not just to guide me <EOL> 
+ <START> and look <EOL> 
+
+
+[89m 19s (epoch 8: 67%) Loss: 4.2757]
+<START> a sudden and i 'll see i know <UNK> <EOL> 
+ <START> i wan na na na na na na na na na na na na na na na na na na 
+ <START> faded <EOL> 
+ <START> that <EOL> 
+ <START> things <EOL> 
+
+
+[89m 38s (epoch 8: 70%) Loss: 4.2738]
+<START> you 'd those <EOL> 
+ <START> you going on my time , to you really going when i 'm it 's the brave <UNK> ' still 
+ <START> and to better thought it 's crazy <EOL> 
+ <START> you say keep a love <EOL> 
+ <START> their <EOL> 
+
+
+[89m 59s (epoch 8: 73%) Loss: 4.2849]
+<START> all the stormy tension can a long if he 's the <EOL> 
+ <START> when you thought i 'm a beat 's and you 're home already and all <UNK> <EOL> 
+ <START> i 'm you 're gon na na na na na na na , i know yeah <EOL> 
+ <START> is like i 've got all the <UNK> i do n't i 'm my life <EOL> 
+ <START> i 'm hanging in a thrill in my time that 's beautiful <EOL> 
+
+
+[90m 18s (epoch 8: 75%) Loss: 4.2669]
+<START> <UNK> <EOL> 
+ <START> you 're <UNK> boy <EOL> 
+ <START> is happy <EOL> 
+ <START> and like i am love <EOL> 
+ <START> but there 's in the rain <EOL> 
+
+
+[90m 38s (epoch 8: 78%) Loss: 4.2793]
+<START> i 'll make me only a day <EOL> 
+ <START> i 'll come me eyes <EOL> 
+ <START> oh baby that 's around a little trick the number the sound but let <UNK> i do we 're true 
+ <START> that 's on the break my head that are so baby <EOL> 
+ <START> hold the conversation <EOL> 
+
+
+[90m 58s (epoch 8: 81%) Loss: 4.2869]
+<START> why <EOL> 
+ <START> the <UNK> grow we should bring you <EOL> 
+ <START> <UNK> , why <EOL> 
+ <START> that can let in the crime <EOL> 
+ <START> when these life do me i just have settled down <EOL> 
+
+
+[91m 17s (epoch 8: 83%) Loss: 4.2907]
+<START> you want them in <UNK> <EOL> 
+ <START> you know the love and a man <EOL> 
+ <START> know you 'll <UNK> on fire now you 'll <UNK> a show something you <EOL> 
+ <START> to a <UNK> <UNK> <EOL> 
+ <START> and look <EOL> 
+
+
+[91m 37s (epoch 8: 86%) Loss: 4.2822]
+<START> turn on my dreams like you want a <UNK> with <EOL> 
+ <START> all i ca n't hurt you want , oh it 's the <UNK> from the same enemy get <UNK> <EOL> 
+ <START> i 'm jesus <EOL> 
+ <START> you can you 're very too <UNK> , that said run and the chains to whistle <EOL> 
+ <START> i 'm the <UNK> <EOL> 
+
+
+[91m 56s (epoch 8: 89%) Loss: 4.2654]
+<START> a <UNK> i want to the world <EOL> 
+ <START> oh we was so every <UNK> mama boy <EOL> 
+ <START> just make a <EOL> 
+ <START> and to live <EOL> 
+ <START> to fall <EOL> 
+
+
+[92m 16s (epoch 8: 91%) Loss: 4.2922]
+<START> i feel got a future and the same <UNK> <EOL> 
+ <START> for a thing , lie i 'm in this love <EOL> 
+ <START> you give her time hard to hold there 's my little man <EOL> 
+ <START> i 'm if a shrink <EOL> 
+ <START> come out and and blew a <UNK> von did me 's where and in the wrong <EOL> 
+
+
+[92m 36s (epoch 8: 94%) Loss: 4.2672]
+<START> yeah <EOL> 
+ <START> at the sun of the <UNK> 'd do you could let it 's <UNK> <UNK> be it 's the way 
+ <START> oh <EOL> 
+ <START> i 'm from the end <EOL> 
+ <START> i wan na na na na na na na na na na na na na na na in the world 
+
+
+[92m 54s (epoch 8: 97%) Loss: 4.2670]
+<START> to a invitation <EOL> 
+ <START> it 's the <UNK> and <UNK> and it 's the time so much a beautiful and they learn it 's 
+ <START> i start but that in this new <UNK> the <UNK> in here <EOL> 
+ <START> i could you <EOL> 
+ <START> we ca n't on the world <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.1924
+[93m 44s (epoch 9: 0%) Loss: 4.1876]
+<START> and you 've me all of this <UNK> loving i just want how do n't let you 'll look , 
+ <START> to your world wo n't the coast tin over her please run at this neon mountain <EOL> 
+ <START> what we 're thinking <EOL> 
+ <START> we 'll place oh to slow <EOL> 
+ <START> sometimes a king your time <EOL> 
+
+
+[94m 2s (epoch 9: 2%) Loss: 4.2854]
+<START> i do n't be in <UNK> it 's down it is so seven <UNK> <EOL> 
+ <START> something to you know you 're out runs along ... <EOL> 
+ <START> and to it 's true <EOL> 
+ <START> i 've in the <UNK> skin in the sun <EOL> 
+ <START> i 'm playing searching around you 'll find the moment like all too too the time we fit more , 
+
+
+[94m 21s (epoch 9: 5%) Loss: 4.2866]
+<START> in the winter 's my story <EOL> 
+ <START> come in your laugh , yeah and are the world <EOL> 
+ <START> you <EOL> 
+ <START> now i 'll hold you 'll want some <UNK> <EOL> 
+ <START> i will be wrong <EOL> 
+
+
+[94m 40s (epoch 9: 8%) Loss: 4.2892]
+<START> i want to do n't go in the girl <EOL> 
+ <START> so i had of way for my mother <EOL> 
+ <START> it 's on the first out of you come around into the basement <EOL> 
+ <START> there 's scared is got and <UNK> windows <EOL> 
+ <START> you 're <UNK> <EOL> 
+
+
+[94m 57s (epoch 9: 10%) Loss: 4.2689]
+<START> even my life 's left <UNK> and right <EOL> 
+ <START> i 'm so seen my voice <EOL> 
+ <START> when i wo n't look my every talk <EOL> 
+ <START> when i do n't love <EOL> 
+ <START> <UNK> <EOL> 
+
+
+[95m 16s (epoch 9: 13%) Loss: 4.2749]
+<START> and <UNK> could meet so a story in the <UNK> <EOL> 
+ <START> you 're all about my dreams <EOL> 
+ <START> <UNK> take the light <EOL> 
+ <START> oh when i do <EOL> 
+ <START> today <EOL> 
+
+
+[95m 36s (epoch 9: 16%) Loss: 4.2820]
+<START> i wan na na na na na na na na na na na na na na na na na na 
+ <START> i am summer <EOL> 
+ <START> my heart <EOL> 
+ <START> it is as that <EOL> 
+ <START> the way to pour <EOL> 
+
+
+[95m 56s (epoch 9: 18%) Loss: 4.2721]
+<START> do n't believe of rain <EOL> 
+ <START> you wo n't here upon the tears should pretend <EOL> 
+ <START> oh <EOL> 
+ <START> baby <EOL> 
+ <START> will love <EOL> 
+
+
+[96m 15s (epoch 9: 21%) Loss: 4.2835]
+<START> and out in the family <EOL> 
+ <START> i will open it 's your eyes <EOL> 
+ <START> it 's beside you 're somewhere in this <UNK> deep , come get to look through my face oh of 
+ <START> and the forest just in a <UNK> and stay and as you 're in let 's <EOL> 
+ <START> baby <EOL> 
+
+
+[96m 34s (epoch 9: 24%) Loss: 4.2563]
+<START> how <UNK> me than 's i 've safe story is far <EOL> 
+ <START> go <EOL> 
+ <START> <UNK> they know you know looking down <EOL> 
+ <START> get out of out and you ca n't <EOL> 
+ <START> one is murder <EOL> 
+
+
+[96m 52s (epoch 9: 27%) Loss: 4.2783]
+<START> birds skin i do you 'd put 'em ' <UNK> bottles , people go happy we 'll be dancin ' 
+ <START> you made down and the <UNK> <EOL> 
+ <START> i am our dying <EOL> 
+ <START> ghooostbusteeers <EOL> 
+ <START> do n't do you 're love <EOL> 
+
+
+[97m 11s (epoch 9: 29%) Loss: 4.2730]
+<START> oh what 's in the enemy before i 've in this <UNK> 's their time we 're out <EOL> 
+ <START> girls as i 'll walk <EOL> 
+ <START> i wonder i know my heartbeat and gon na 's the eyes for all the earth i 'm hey i 
+ <START> all 's so <UNK> happen <EOL> 
+ <START> and see run <UNK> and do n't say i 'm all the same high <EOL> 
+
+
+[97m 30s (epoch 9: 32%) Loss: 4.2633]
+<START> baby and the past me come to a kind of the sun <EOL> 
+ <START> i wan na the body , you make you are about you ca n't the teacher <EOL> 
+ <START> <UNK> in the kind on in my heart if my parents at someone <EOL> 
+ <START> oh <EOL> 
+ <START> at you 're watching <EOL> 
+
+
+[97m 48s (epoch 9: 35%) Loss: 4.2722]
+<START> i 'm to get the words <EOL> 
+ <START> and and and i would i was taking high <EOL> 
+ <START> i do you learn a song <EOL> 
+ <START> <UNK> <EOL> 
+ <START> and not shit <EOL> 
+
+
+[98m 8s (epoch 9: 37%) Loss: 4.2785]
+<START> i see i do n't <EOL> 
+ <START> i 'm you 've seek here old <UNK> , i wo i wan na you never ca the moment <EOL> 
+ <START> i 'm , need gon na na na na na na na na na na na na na na na 
+ <START> i make the world clouds with your <UNK> <EOL> 
+ <START> one watching <EOL> 
+
+
+[98m 27s (epoch 9: 40%) Loss: 4.2697]
+<START> there boy <UNK> <EOL> 
+ <START> do n't we 're in the heart <EOL> 
+ <START> mh can know the end <EOL> 
+ <START> underneath <EOL> 
+ <START> uh oh shake me lo end <EOL> 
+
+
+[98m 46s (epoch 9: 43%) Loss: 4.2801]
+<START> forever <EOL> 
+ <START> the thrill in my best you 're got down <EOL> 
+ <START> this end the time easy the end <EOL> 
+ <START> he 's <UNK> , <EOL> 
+ <START> the judges , and <UNK> 's more you see you say in my tragedy <EOL> 
+
+
+[99m 5s (epoch 9: 45%) Loss: 4.2632]
+<START> you 've <UNK> <EOL> 
+ <START> you see i can you <EOL> 
+ <START> if i got <EOL> 
+ <START> must do n't a picture you 're nothing i 'm waiting <UNK> i do n't more i <UNK> , she 
+ <START> that you 're the <UNK> <EOL> 
+
+
+[99m 25s (epoch 9: 48%) Loss: 4.2581]
+<START> i 'm for we 're <UNK> <UNK> it 's got me <EOL> 
+ <START> and and wish and i have and it 's <UNK> the world <EOL> 
+ <START> i 'll <UNK> is so this look for the <UNK> friend i have to all 'til i 'm just cruel 
+ <START> i realise i can you can do n't <UNK> young <UNK> in the one more <EOL> 
+ <START> you 're beyond my mama <UNK> <UNK> <EOL> 
+
+
+[99m 44s (epoch 9: 51%) Loss: 4.2825]
+<START> so love the time to america know in the same love <EOL> 
+ <START> that 's such my name <EOL> 
+ <START> do n't could go at my girl i think it 's a little thing right and julian i 'm all 
+ <START> i got in a love wo n't say the angels do n't let your hearts better ca n't ever <UNK> 
+ <START> in my favourite times come you 've love , it 's so if you 'll all <UNK> out of your 
+
+
+[100m 4s (epoch 9: 54%) Loss: 4.2708]
+<START> this we <EOL> 
+ <START> only to the first but in a cannonball <EOL> 
+ <START> it 's easy <EOL> 
+ <START> man <EOL> 
+ <START> baby <EOL> 
+
+
+[100m 24s (epoch 9: 56%) Loss: 4.2751]
+<START> i 'm my hands <EOL> 
+ <START> but you 're here which 's the queen <EOL> 
+ <START> no time 's <UNK> and <UNK> long <EOL> 
+ <START> you now more <EOL> 
+ <START> no you are once . <EOL> 
+
+
+[100m 44s (epoch 9: 59%) Loss: 4.2699]
+<START> come , still take the guy <EOL> 
+ <START> i still i 'm my time can find you 're with get a world so a victim <UNK> to my 
+ <START> no easy to the same sacrifice <EOL> 
+ <START> and like your face <EOL> 
+ <START> so glad 's to make you 're hell and i can like one side with <EOL> 
+
+
+[101m 4s (epoch 9: 62%) Loss: 4.2836]
+<START> i 'm too much then i 'm you 've to her <UNK> <EOL> 
+ <START> lets <UNK> <UNK> her bad <EOL> 
+ <START> i 'm , i can be no you need for it 's one damage <EOL> 
+ <START> you re head <EOL> 
+ <START> i love <EOL> 
+
+
+[101m 19s (epoch 9: 64%) Loss: 4.2697]
+<START> when upon the truth <EOL> 
+ <START> the door <EOL> 
+ <START> and the <UNK> and you was <EOL> 
+ <START> we are the rain <EOL> 
+ <START> do you 're a <UNK> , filled and love <EOL> 
+
+
+[101m 39s (epoch 9: 67%) Loss: 4.2750]
+<START> i wo n't i 'm love is <EOL> 
+ <START> the night <EOL> 
+ <START> and high <EOL> 
+ <START> <UNK> <EOL> 
+ <START> in a i 'll give a <UNK> or fat ' and and we got the choice and i could have 
+
+
+[101m 58s (epoch 9: 70%) Loss: 4.2764]
+<START> i 'm try <EOL> 
+ <START> i got it 's the ? of the kingdom <EOL> 
+ <START> i wo n't know when i 'm the new hour it 's all on me now but like you want 
+ <START> why <EOL> 
+ <START> on another <UNK> of got it 's my runnin ' me gone <EOL> 
+
+
+[102m 18s (epoch 9: 73%) Loss: 4.2613]
+<START> fight no they feel who 'll know and know i know by my eyes <EOL> 
+ <START> that goes sweet home to far by this sister do you play my <UNK> wo n't a <UNK> inside you 
+ <START> well i can know we are a days to me <UNK> , the scene <EOL> 
+ <START> is here of <EOL> 
+ <START> no do all <EOL> 
+
+
+[102m 38s (epoch 9: 75%) Loss: 4.2833]
+<START> and all time <EOL> 
+ <START> was a <UNK> <EOL> 
+ <START> it 's a love <EOL> 
+ <START> oh spent for on a time <EOL> 
+ <START> i wan na na na na do n't run from on the night <EOL> 
+
+
+[102m 55s (epoch 9: 78%) Loss: 4.2732]
+<START> where you caught a man <EOL> 
+ <START> they 've there <EOL> 
+ <START> but <UNK> <EOL> 
+ <START> and it 's with the d , i 'm like this blessed them <EOL> 
+ <START> the <UNK> <EOL> 
+
+
+[103m 15s (epoch 9: 81%) Loss: 4.2790]
+<START> for me than a one in it 's the lights i love <EOL> 
+ <START> i 'm wrong <EOL> 
+ <START> what do n't leave every fire hear you are with the fuck out of the only not it 's never 
+ <START> i 'm all on <UNK> <EOL> 
+ <START> and keep on the only we all i hope i say when you 're want to never <UNK> <EOL> 
+
+
+[103m 35s (epoch 9: 83%) Loss: 4.2719]
+<START> no now do n't i 'm a gun <EOL> 
+ <START> baby i 'm and the love <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i 'll all and i 'll be on words <EOL> 
+ <START> but i 'll it 's the more he 's been all and the one clouds and are is the other 
+
+
+[103m 55s (epoch 9: 86%) Loss: 4.2544]
+<START> is climb until you 'll know he 's say it 's <UNK> <EOL> 
+ <START> got me try <EOL> 
+ <START> you know and tell you keep on an <UNK> <EOL> 
+ <START> you 're to your bodies for you need <EOL> 
+ <START> do me tomorrow <EOL> 
+
+
+[104m 14s (epoch 9: 89%) Loss: 4.2810]
+<START> she 's a girl <UNK> i feel your old world when you can fire <EOL> 
+ <START> i 'm to the la <EOL> 
+ <START> to the <UNK> <EOL> 
+ <START> people know i do n't understand ? <EOL> 
+ <START> you 'll get out <EOL> 
+
+
+[104m 33s (epoch 9: 91%) Loss: 4.2840]
+<START> after my way like the things time <EOL> 
+ <START> not my life 's the world <EOL> 
+ <START> we 'll stop that are i 've show you 'll be movin ' living <UNK> on an <UNK> <EOL> 
+ <START> i 'm <UNK> days caress <EOL> 
+ <START> and do n't let 's the <EOL> 
+
+
+[104m 48s (epoch 9: 94%) Loss: 4.2769]
+<START> on the <UNK> <EOL> 
+ <START> and don'tyou be the day <EOL> 
+ <START> maybe could do n't you was that i 'm the man is always come on our last kind and it 
+ <START> i 'm be you ca n't to the end <EOL> 
+ <START> where please <EOL> 
+
+
+[105m 6s (epoch 9: 97%) Loss: 4.2759]
+<START> to the <UNK> <EOL> 
+ <START> do n't got ta have <EOL> 
+ <START> you do n't go for your eyes and the best ! <EOL> 
+ <START> i do n't say ev'rything <EOL> 
+ <START> down <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.1961
+[105m 44s (epoch 10: 0%) Loss: 4.1896]
+<START> when you <UNK> deeds space of my love <EOL> 
+ <START> when i love <EOL> 
+ <START> for i 've <UNK> and <UNK> <EOL> 
+ <START> i 'm <UNK> <EOL> 
+ <START> oh ' us <EOL> 
+
+
+[105m 59s (epoch 10: 2%) Loss: 4.2888]
+<START> but would need you 're waiting away <EOL> 
+ <START> talk you 'll die <EOL> 
+ <START> the time gon na na na na na <EOL> 
+ <START> i 'm never just make us like it 's the <UNK> , i ca n't won <EOL> 
+ <START> wo you ever be gon na na <EOL> 
+
+
+[106m 14s (epoch 10: 5%) Loss: 4.2640]
+<START> <UNK> <UNK> <EOL> 
+ <START> all for the world like i go alive is going out of you can you live a good , you 
+ <START> well it 's what has to a man <EOL> 
+ <START> i 'll see in a bad you 're so hit the promise you is you were broken <EOL> 
+ <START> and i 'm i 'm hard <UNK> <UNK> fight and how i 'm the ground <EOL> 
+
+
+[106m 28s (epoch 10: 8%) Loss: 4.2791]
+<START> the little solitary would take me and making the <UNK> <EOL> 
+ <START> neverending light <EOL> 
+ <START> the smile <EOL> 
+ <START> i thought and a <UNK> <EOL> 
+ <START> the door <EOL> 
+
+
+[106m 43s (epoch 10: 10%) Loss: 4.2891]
+<START> ca n't live <EOL> 
+ <START> or far nowhere <EOL> 
+ <START> i 'm the way the <UNK> and my book tonight <EOL> 
+ <START> we hurt <EOL> 
+ <START> from my own a down <EOL> 
+
+
+[106m 58s (epoch 10: 13%) Loss: 4.2704]
+<START> and you 've a thing <EOL> 
+ <START> is the single river <EOL> 
+ <START> you will disappear <EOL> 
+ <START> of <UNK> <EOL> 
+ <START> sometimes a genius and and get beyond a hard around <EOL> 
+
+
+[107m 13s (epoch 10: 16%) Loss: 4.2512]
+<START> <UNK> <EOL> 
+ <START> i love and know days just eh <EOL> 
+ <START> she goes <EOL> 
+ <START> <UNK> again <EOL> 
+ <START> i 'm a better feel a <UNK> <EOL> 
+
+
+[107m 27s (epoch 10: 18%) Loss: 4.2745]
+<START> let a little <UNK> no <UNK> the end to find me you 're <EOL> 
+ <START> this crying , but and like my heart can save it seems <EOL> 
+ <START> i 've hold a world <EOL> 
+ <START> i 'm there 's turn the year one life is <EOL> 
+ <START> <UNK> the one and face <EOL> 
+
+
+[107m 42s (epoch 10: 21%) Loss: 4.2475]
+<START> i do it 's gone <EOL> 
+ <START> and you 're you do n't i 'll find you do n't have here <EOL> 
+ <START> caress from morning <EOL> 
+ <START> it 's <UNK> <UNK> and in with me <EOL> 
+ <START> i 'm <UNK> , do n't you do n't when i 'm go and all his day , i return 
+
+
+[107m 57s (epoch 10: 24%) Loss: 4.2716]
+<START> the work out and i do n't the time i will remember <EOL> 
+ <START> to to the night i 'm the way i got it 's for the help <EOL> 
+ <START> just as then you are than forgiveness <EOL> 
+ <START> in and a only you 're the magic i 'm i want to wait in your <EOL> 
+ <START> let me it 's what this game <EOL> 
+
+
+[108m 11s (epoch 10: 27%) Loss: 4.2741]
+<START> ca me do n't feel a second time and so many thing <EOL> 
+ <START> <UNK> <EOL> 
+ <START> and let you seemed the blue <EOL> 
+ <START> my pain baby <EOL> 
+ <START> i can look in me only i 'll <UNK> <EOL> 
+
+
+[108m 30s (epoch 10: 29%) Loss: 4.2689]
+<START> five i 'm all time the time <EOL> 
+ <START> i 'll stay <EOL> 
+ <START> in the same heart in the light down and everybody and i believe <EOL> 
+ <START> the way the time when your mind and like real <UNK> <UNK> <EOL> 
+ <START> the people <EOL> 
+
+
+[108m 49s (epoch 10: 32%) Loss: 4.2815]
+<START> <EOL> 
+ <START> you go <EOL> 
+ <START> i wan na na na na na na na na na <EOL> 
+ <START> to the world <EOL> 
+ <START> just go for me never to my hands <EOL> 
+
+
+[109m 7s (epoch 10: 35%) Loss: 4.2676]
+<START> we got you 'll love <EOL> 
+ <START> and wan na na na na na na na na na na follow the night oh you can be getting 
+ <START> i need my body <EOL> 
+ <START> i wo n't just to mine <EOL> 
+ <START> <UNK> , you want not gon na na na na na na 's a <EOL> 
+
+
+[109m 25s (epoch 10: 37%) Loss: 4.2831]
+<START> whoa <EOL> 
+ <START> you 've never be just <UNK> i 'm elle yeah <EOL> 
+ <START> in our baby <EOL> 
+ <START> i 'm like you were for you 're quite supposed to through <UNK> <EOL> 
+ <START> the mystery <EOL> 
+
+
+[109m 44s (epoch 10: 40%) Loss: 4.2836]
+<START> the way you want to a mind come away <EOL> 
+ <START> down or we 're like to an trees <EOL> 
+ <START> i 'm half of all into the <UNK> by the chance <EOL> 
+ <START> i never been in fire <EOL> 
+ <START> but i do n't do you 're electric kiss me on the friend oh when i forget a place , 
+
+
+[110m 4s (epoch 10: 43%) Loss: 4.2773]
+<START> for you all the word no like no i will have n't know i 'm do n't take me i 
+ <START> call my rule your clothes <EOL> 
+ <START> wait <UNK> <UNK> <EOL> 
+ <START> ooh at the <EOL> 
+ <START> it 's everything you throw my baby you 'd know i drove in my time when it 'll forget and 
+
+
+[110m 21s (epoch 10: 45%) Loss: 4.2853]
+<START> mmm i do n't <UNK> <EOL> 
+ <START> i ca you do n't be like you will take the <UNK> <EOL> 
+ <START> nothin <EOL> 
+ <START> i thought we sing is your eyes <EOL> 
+ <START> you are <UNK> , <UNK> <EOL> 
+
+
+[110m 41s (epoch 10: 48%) Loss: 4.2731]
+<START> i know it 's the <UNK> the chain , i go somewhere <EOL> 
+ <START> i 'm that is the wrong <EOL> 
+ <START> i never to me is a love the house <EOL> 
+ <START> and a in the last daughter 's make me on heavenly <EOL> 
+ <START> you 're in the god 's not <UNK> oh i got <EOL> 
+
+
+[110m 59s (epoch 10: 51%) Loss: 4.2852]
+<START> <UNK> <EOL> 
+ <START> i 'm that was you 're chasing loving this line in the help me , i 've do you 've 
+ <START> and can see in the show you know you 'll say yeah taxi before you <EOL> 
+ <START> as you know to <UNK> <EOL> 
+ <START> you <EOL> 
+
+
+[111m 17s (epoch 10: 54%) Loss: 4.2785]
+<START> who 's all it 's <UNK> you 're the time i go <EOL> 
+ <START> and gon na na na na nana beside the day , all the family <EOL> 
+ <START> this that were a <UNK> lonely , i 'm take your heart <EOL> 
+ <START> losing those excuses <EOL> 
+ <START> my <UNK> it were to give me frightening , but i understand you 'll save me your man and come 
+
+
+[111m 33s (epoch 10: 56%) Loss: 4.2672]
+<START> i lied i 've come at the phone let the game <EOL> 
+ <START> want to the dreams <EOL> 
+ <START> two take it 's still and a <UNK> to the super <UNK> pain 's alright . <EOL> 
+ <START> the dime <EOL> 
+ <START> about you have i wo i do n't wake away <EOL> 
+
+
+[111m 52s (epoch 10: 59%) Loss: 4.2606]
+<START> he 's be my good i 'm this 's too like you 're here has are the <UNK> <EOL> 
+ <START> but i feel nothing of i 'll live and the thief we 're <UNK> that was you was out to 
+ <START> when comes by the sun come on my darlin ' all clear <EOL> 
+ <START> when you got a pain it 's just <UNK> badup country <EOL> 
+ <START> say a smile <EOL> 
+
+
+[112m 6s (epoch 10: 62%) Loss: 4.2617]
+<START> i have to this <UNK> you 're this from the air i 'm and the world make a i 'm 
+ <START> <UNK> <EOL> 
+ <START> i 'll be a angel in the show me of <EOL> 
+ <START> to the time of much is <UNK> just you want there 's the miracle <EOL> 
+ <START> when you 've the <UNK> <EOL> 
+
+
+[112m 26s (epoch 10: 64%) Loss: 4.2619]
+<START> through my time she got it 's nothin ' on the road <EOL> 
+ <START> to fall from <UNK> <EOL> 
+ <START> i 'm taking down and suddenly <EOL> 
+ <START> you are like <UNK> cane <EOL> 
+ <START> i wish and everywhere <EOL> 
+
+
+[112m 45s (epoch 10: 67%) Loss: 4.2697]
+<START> i 'll imagine so get your heart ! <EOL> 
+ <START> i 'll <UNK> and thought you 's a only <EOL> 
+ <START> your baby <EOL> 
+ <START> i 'm <UNK> though i 'm so <UNK> <EOL> 
+ <START> blow <EOL> 
+
+
+[113m 5s (epoch 10: 70%) Loss: 4.2594]
+<START> a <UNK> <EOL> 
+ <START> why <EOL> 
+ <START> i thought i can you got in the show your <UNK> is the words of empty i never be <UNK> 
+ <START> it is one <UNK> they do n't it 's the day never a love <UNK> <EOL> 
+ <START> when i do n't you 're the bass a back would kill <EOL> 
+
+
+[113m 22s (epoch 10: 73%) Loss: 4.2729]
+<START> of so do n't like a little time do n't tell her dreams i closed a <EOL> 
+ <START> i 're a need the <UNK> <EOL> 
+ <START> all the power <EOL> 
+ <START> 'cause it 's walk on your eyes hung but cause all <UNK> 'll be in this step down <EOL> 
+ <START> have ever about <UNK> , i wan na na na na na <EOL> 
+
+
+[113m 42s (epoch 10: 75%) Loss: 4.2662]
+<START> got up for <EOL> 
+ <START> the song <EOL> 
+ <START> you 're a shadow <EOL> 
+ <START> do n't let them in me but i 'm up like you do n't it 's <UNK> , and say 
+ <START> i <UNK> i 'm the party <EOL> 
+
+
+[113m 56s (epoch 10: 78%) Loss: 4.2631]
+<START> i guess that <UNK> . <EOL> 
+ <START> i met you 're so girl in every same heartaches <EOL> 
+ <START> wake on back now they 're a rich <UNK> and trust the <UNK> <EOL> 
+ <START> i 'll be what you were been on the chances <EOL> 
+ <START> cause i 'm so <UNK> <UNK> <EOL> 
+
+
+[114m 11s (epoch 10: 81%) Loss: 4.2715]
+<START> i 'll come <EOL> 
+ <START> they know that so <UNK> <EOL> 
+ <START> this time strong on <UNK> and and <UNK> to the thousand heart , i think we can out to <UNK> 
+ <START> drop myself can do n't enjoy a second <UNK> , it 's <UNK> and and the boomerang <EOL> 
+ <START> 'cause i know i am you 'll listen to know i 'm <UNK> forever <EOL> 
+
+
+[114m 26s (epoch 10: 83%) Loss: 4.2657]
+<START> i do n't <UNK> <EOL> 
+ <START> all and the tank and <UNK> <UNK> and i say the love <EOL> 
+ <START> to you made to survive <EOL> 
+ <START> <UNK> <EOL> 
+ <START> i <EOL> 
+
+
+[114m 40s (epoch 10: 86%) Loss: 4.2795]
+<START> <UNK> , you are all on the back ( come like you 'll still god 's the <UNK> i feel 
+ <START> i 'm for i 'm <UNK> 's sure , i do n't wan na na na na na na na 
+ <START> let it 's girls <EOL> 
+ <START> what if dark but i got a better <EOL> 
+ <START> had where <UNK> love <EOL> 
+
+
+[114m 55s (epoch 10: 89%) Loss: 4.2828]
+<START> and stand <EOL> 
+ <START> with something i 'm the making this means <UNK> <EOL> 
+ <START> i have working get to my rose a liar <EOL> 
+ <START> life <EOL> 
+ <START> i like you always make it has wan na <EOL> 
+
+
+[115m 14s (epoch 10: 91%) Loss: 4.2685]
+<START> i 'm coming away , and blue cause oh , do n't you were walk by the <UNK> <EOL> 
+ <START> and good and <UNK> <EOL> 
+ <START> i <UNK> <EOL> 
+ <START> the eagle in <UNK> and at your <UNK> with a <UNK> <EOL> 
+ <START> <UNK> , enter that has my girl <EOL> 
+
+
+[115m 29s (epoch 10: 94%) Loss: 4.2836]
+<START> you are my light <EOL> 
+ <START> <UNK> or if i 'm i 'm alone <EOL> 
+ <START> one and so <EOL> 
+ <START> oh like a <UNK> <UNK> , <EOL> 
+ <START> i never you got ta be a second way all the times no lawn <EOL> 
+
+
+[115m 48s (epoch 10: 97%) Loss: 4.2590]
+<START> the soul <EOL> 
+ <START> oh blast into the , they go for the rain too they are a day <UNK> a <UNK> is do 
+ <START> and you might do n't a <UNK> <EOL> 
+ <START> and i 'm you 'll take him do we got n't , just burning and say like the way da 
+ <START> never could be <UNK> planes of the road i 've kept by the <UNK> and <UNK> <EOL> 
+
+
+Starting validation check...
+Validation loss: 4.1944
