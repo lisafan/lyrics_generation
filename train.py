@@ -90,7 +90,7 @@ def main():
         os.mkdir(checkpoint_dir)
     log_file = open(params.checkpoint_files+"_output_log.txt",'w')
 
-    if params.use_melody and (params.use_semantics != params.use_artist):
+    if params.use_melody and not params.use_semantics and not params.use_artist:
         raise(Exception('invalid model choice'))
 
     def log_str(s):
