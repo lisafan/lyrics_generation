@@ -23,7 +23,8 @@ def csv2pkl():
     pickle.dump(data,outfile)
 
 # csv2pkl()
-data = pickle.load(open("input_files/dolly-parton.pkl", 'rb'))
+data = pickle.load(open("input_files/dali_train.pkl", 'rb'))
+data += pickle.load(open("input_files/dali_val.pkl", 'rb'))
 
 num_chunks = 0.
 num_lines = 0.

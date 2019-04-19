@@ -1,0 +1,358 @@
+Evaluations for checkpoints/lyrics-only/Change Vocab/1-e00010.pt
+using lyrics/input_files/filtered_dali_val.pkl:
+
+Perplexity = 72.290
+
+50 generated samples:
+
+(1)
+<START> ( get on , come on ) <EOL>
+dance , dance , grow , make it my love ? <EOL>
+that 's a joke upon the beautiful <EOL>
+no one 's not on the mirror <EOL>
+shut up of the sky that who 's a fighter <END>
+
+(2)
+<START> he 's swallowed into the wind <EOL>
+sometimes the price that you get it and disguise <EOL>
+think you got ta be that fool , <EOL>
+like you 're a few <EOL>
+i give the letter <END>
+
+(3)
+<START> you 're too late <EOL>
+when they 're the only one <EOL>
+that i 'll be it in the street <EOL>
+and i could have , i am leaving <EOL>
+i 'm gon na follow you <END>
+
+(4)
+<START> she 's no one <EOL>
+oh just for you <EOL>
+you 're high on the test <EOL>
+where a word are the reason <EOL>
+and i do n't care n't i will have me <END>
+
+(5)
+<START> he 's gon na wait that you 'll never say what i was <EOL>
+i 'm gon na never will you give me <EOL>
+it 's so lame , ( just the happy girl ) <EOL>
+when i could when i see you , i ca n't take to go , <EOL>
+saying make me alive <END>
+
+(6)
+<START> see to no one than me <EOL>
+with all i would waiting your way <EOL>
+i 'm thinkin ' to love <EOL>
+2000 one little to go <EOL>
+'cause i could be through <END>
+
+(7)
+<START> in a <UNK> from the bell <EOL>
+little song that we ca n't make to die <EOL>
+i 'm gon na give a boy in my car <EOL>
+hey hey , i believe what they 've been <EOL>
+and we 'd know that i ca n't let to care <END>
+
+(8)
+<START> how i let me go ? <EOL>
+you 've got a little time in my hand if you 're on the zone <EOL>
+and i 'll go i believe , we 're alone to get the problems <EOL>
+and you 're not comin ' on loose , baby <EOL>
+we 're gon na change it <END>
+
+(9)
+<START> i 've been with you , they watch you down <EOL>
+all my <UNK> is dead to a few <EOL>
+tear you on the stars and world again <EOL>
+it 's all any girl , you were all you 'll live <EOL>
+you gave me what you say , do n't you know <END>
+
+(10)
+<START> when around us just and i wo n't call the time <EOL>
+show me your sense to yesterday <EOL>
+i have got the <UNK> <EOL>
+and remember the <UNK> of the light <EOL>
+oh , i can wait , it 's no doubt <END>
+
+(11)
+<START> and love 's like us you never came <EOL>
+there can be the one <EOL>
+for a message in my eyes <EOL>
+and i want your passion <EOL>
+you 're happy in the room <END>
+
+(12)
+<START> ( i do n't wan na go out ) <EOL>
+i 'm just a fairy habit <EOL>
+i do n't need no more <EOL>
+hey , hey <EOL>
+hey , hey <END>
+
+(13)
+<START> tell me i was sayin ' i do n't give me a chance , you 're gon na go so home <EOL>
+i can make you say i 'm gone so i 'm not for the beginning <EOL>
+and i know i 'll never come , i 'll never be a queen <EOL>
+i do n't know what a fucking lot and take him to the world <EOL>
+the things you mean to me <END>
+
+(14)
+<START> no one is my love <EOL>
+( it 's just a crime ) <EOL>
+get me , come on <EOL>
+turn me on , get it , save me <EOL>
+ring , do n't think how much i say <END>
+
+(15)
+<START> yeah <EOL>
+<UNK> do n't make me like it <EOL>
+i 'm not about you <EOL>
+i 'm running for it , <EOL>
+we might be a mistery to me <END>
+
+(16)
+<START> let me go before a cloud is green <EOL>
+and so they 're gon na go the guts <EOL>
+and i ca n't get away <EOL>
+i 'm countin ' around the place <EOL>
+but i do n't love that hook <END>
+
+(17)
+<START> they 'll go off in <UNK> <EOL>
+i 'm looking to your hole <EOL>
+i 'll see it for me <EOL>
+( i 've got your finger on a bottle ) <EOL>
+leave it in you <END>
+
+(18)
+<START> the picture , i 'd see to leave a spark of truth <EOL>
+come on on the ancient line <EOL>
+cause i know i am that the woman 's like me <EOL>
+can make it crazy , that 's this anymore <EOL>
+'cause i 'm not ready , you do n't know <END>
+
+(19)
+<START> but baby , two , it you must see <EOL>
+i 'm a feeling , we want me <EOL>
+you 're never a man ? <EOL>
+there 's your way upon the way <EOL>
+in exploitation is in the room <END>
+
+(20)
+<START> i see my lovin ' together <EOL>
+you ca n't believe <EOL>
+i can do the thing i am <EOL>
+i say i ca n't afford to be what we ca n't <END>
+
+(21)
+<START> and it 's growing wrong , to midnight and , you knew <EOL>
+and wan na see you and i 'll be here <EOL>
+i want you enough to let my body move <EOL>
+and you 're about that more <EOL>
+no daddy is no more for me <END>
+
+(22)
+<START> i want you to know you 're the dream <EOL>
+i 'm the little guy <EOL>
+but it will be alright <EOL>
+and you all believe me <EOL>
+and i can see the floor <END>
+
+(23)
+<START> but no-one could go at the wire <EOL>
+yeah , baby , the world ai n't nothing can make the hour <EOL>
+just was a charm <EOL>
+i 'm in a bottle of over <EOL>
+there 's no wild good tonite <END>
+
+(24)
+<START> love 's worth a girl <EOL>
+now you 're ready to stay <EOL>
+it 's alright , the clouds and me <EOL>
+you ca n't tell me my never stay <EOL>
+i 'm a slave for a regret <END>
+
+(25)
+<START> and it 's such a dying one <EOL>
+oh you 're gon na be a little girl <EOL>
+if you 're given <EOL>
+a little selfish and a whole new good when i want to be a stranger <EOL>
+sing it deep inside <END>
+
+(26)
+<START> 'cause i know you 've known <EOL>
+i 'm with the world <EOL>
+hit me harder for me <EOL>
+all a love in a dirty lord <EOL>
+what it 's all that that you got <END>
+
+(27)
+<START> and forever by the pain <EOL>
+and i will be gon na say <EOL>
+and i ca n't stand you now <EOL>
+if i want you for a love <EOL>
+what does it wanted <END>
+
+(28)
+<START> and now you 'd believe no <EOL>
+well i did n't mean to go on <EOL>
+you 're gone , he helped to reach the sky <EOL>
+if i know it 's not true , how i 'm not like ? <EOL>
+i 'm on your way to help me and you are sinking <END>
+
+(29)
+<START> that you 've seen me , you 're gone <EOL>
+i 'm so willing to make it a gun <EOL>
+i ca n't be all i 'm gon na running one <EOL>
+i 'm a <UNK> <EOL>
+i 'm a slow star <END>
+
+(30)
+<START> in the river of the love <EOL>
+a beautiful place for the world <EOL>
+get on the crowd <EOL>
+he 's missing i had me <EOL>
+there 's a answer to reach life <END>
+
+(31)
+<START> you 're an army 's <UNK> you <EOL>
+i 'm ready to make it up <EOL>
+will you get your <UNK> , that she 's been a better kiss <EOL>
+when you want to find you <EOL>
+no , you know we 're a long way <END>
+
+(32)
+<START> they 'll follow us <EOL>
+and the things you died <EOL>
+yeah , oh , they ca n't help me <EOL>
+such the dawn and i can have to forget <EOL>
+i 'll be waiting to get on the light <END>
+
+(33)
+<START> and the words `` they 're bad cars <EOL>
+i often and i took a whole sky <EOL>
+i 'll make you leave me to you , now i was alone <EOL>
+look , i 'm waiting to the , the truth 's a boy <EOL>
+i am a doll <END>
+
+(34)
+<START> stay away , alive ? <EOL>
+and the storm is the fields <EOL>
+or c'mon i was <UNK> until the <UNK> <EOL>
+i 'm only good i 'm never just <EOL>
+the radio is long <END>
+
+(35)
+<START> you 're the <UNK> <EOL>
+i can try to get the <UNK> <EOL>
+with my angels got ta give to <EOL>
+you know i 'll love you <EOL>
+i 'm still alone <END>
+
+(36)
+<START> i hear you 're one time <EOL>
+and i really have got a cool woman <EOL>
+you 're the recipe <EOL>
+i 'm just about it <EOL>
+i wan na go your own way <END>
+
+(37)
+<START> it 's still the way i remember <EOL>
+i 'm just the source , next girl <EOL>
+you 're all you go <EOL>
+you ai n't gon na do what i wo n't stay <EOL>
+and i ca n't bring my way , oh yeah <END>
+
+(38)
+<START> i go on <EOL>
+i want to be a bad king <EOL>
+i 're the slave to you <EOL>
+a little bit i love <EOL>
+for the world where she 's dreaming <END>
+
+(39)
+<START> and i can hear you go <EOL>
+this is the time of the night <EOL>
+you 're eighty in your shoes is in so <UNK> <EOL>
+hold it and go in your ass <EOL>
+and we was a new girl <END>
+
+(40)
+<START> i know you 're a friend i want to hide your world <EOL>
+do you wan na be lonely , i 'm gon na live it with a lot of man <EOL>
+when you can be so many <UNK> in your head <EOL>
+i 'll take a better one , if i 'm ready to have <EOL>
+i 'm telling it , <EOL>
+i 'm born to love you <END>
+
+(41)
+<START> no child , for your heart <EOL>
+in a other thing <EOL>
+an never left tonight <EOL>
+and and everything should be free <EOL>
+i 've stepped away for the dirt <END>
+
+(42)
+<START> in a end on the usa <EOL>
+now i just ca n't let you go , and i wonder <EOL>
+so i ca n't get you . <EOL>
+i will cry <EOL>
+you know the way <END>
+
+(43)
+<START> as good go looked for <UNK> <EOL>
+so that 's all i got no sensation <EOL>
+and do n't know that you 're gon na fall <EOL>
+( i 'm ace ) , <EOL>
+every song i never been <END>
+
+(44)
+<START> do n't not work the door <EOL>
+[ chorus ] <EOL>
+do n't make it like me <EOL>
+i know i 'm gon na do it <EOL>
+we do n't know that being gon na stop <END>
+
+(45)
+<START> of the <UNK> and a little corner above <EOL>
+she 's there , and the more or <EOL>
+<UNK> in the wall <EOL>
+she were a even long day <EOL>
+but i feel turned my own will <END>
+
+(46)
+<START> in the house of rock , the moon of the broken world <EOL>
+but i should do n't all we have to be <EOL>
+and come on my heart , you ai n't been so strong <EOL>
+there 's no thing i 'm in my life <EOL>
+tell me the little little tears and i 'm caught out of this i made to be it , <END>
+
+(47)
+<START> i love you <EOL>
+every morning it 's born <EOL>
+i 'm the free <EOL>
+( it 's too late ) <EOL>
+i was the <UNK> <EOL>
+i 'm not all this will know <END>
+
+(48)
+<START> if it 's a terrible chance loud <EOL>
+i feel like he sent me <EOL>
+now i get to see you <EOL>
+i 'll just lose you baby <EOL>
+you 're the one , you 're only the same <END>
+
+(49)
+<START> was a taste of all my soul is <UNK> <EOL>
+i am little girl suspended to the stairway <EOL>
+i loved you , this is a guy and i see you alright <EOL>
+when you 're cold , where you do , <EOL>
+one pain , when you 're alright <END>
+
+(50)
+<START> i 'll feel you in the ground , <EOL>
+i 've been afraid to be to see <EOL>
+i think i 'd do it , i will be <EOL>
+'cause i 'm going to be right , heart in the morning <EOL>
+is you what you can make it when you can be a one <END>
+

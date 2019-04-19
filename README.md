@@ -12,7 +12,7 @@ python train.py --input_file=<PATH/INPUT.pkl> <other arguments>
 The program expects a python pickle file, which can be generated using `lyrics/clean_lyrics.py`.
 
 ### Code files
-**clean_lyrics.py:** This program takes in a CSV file that requires items to have fields for song title, artist, and lyrics. 
+**lyrics/clean_lyrics.py:** This program takes in a CSV file that requires items to have fields for song title, artist, and lyrics. 
 The program also filters songs that have fewer than 5 lyric lines and songs with certain keywords in the title
 (ex. songs that end in "version", like "hold-you-acoustic-version", are filtered out).
 

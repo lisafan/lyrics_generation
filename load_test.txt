@@ -1,8 +1,0 @@
-# list of tab separated pairs of parameter + save model path
-# use '#' to comment out lines
-# dimensions from loaded files must match dimesions of new model
-artist_encoder	temp/temp-e00001.pt
-word_encoder	temp/temp-e00001.pt
-semantic_lstm	temp/temp-e00001.pt
-# lyrics_lstm	temp/temp-e00001.pt
-# linear		temp/temp-e00001.pt
