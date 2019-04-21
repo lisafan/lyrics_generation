@@ -14,7 +14,7 @@ import argparse
 import numpy as np
 import torch
 import tensorboardX
-import matplotlib.pyplot as plt
+import matplotlib as plt
 from collections import Counter
 from torch import nn
 from torch.nn.utils import rnn
@@ -49,8 +49,7 @@ def get_hyperparameters():
     parser.add_argument("--vocab_size", default=10000, type=int)    
     parser.add_argument("--chunk_size", default=0, type=int)        # # of lines to use in one input (0 uses the entire song)
     parser.add_argument("--max_seq_len", default=50, type=int)      # max # of words for input and output seq
-    parser.add_argument("--max_mel_len", default=40, type=int)      # max # of time_steps for melody sequences
-    parser.add_argument("--mel_t_step", default=0.1, type=float)    # size of melody sequence time_step
+    parser.add_argument("--max_mel_len", default=40, type=int)      # max # of notes for melody sequences
     parser.add_argument("--max_line_len", default=5, type=int)      # max # of lines for input and output seq when using semantic RNN
     parser.add_argument("--use_artist", default="True", type=str2bool)   # use artist info in input
     parser.add_argument("--use_semantics", default="True", type=str2bool)   # use semantic RNN
@@ -65,6 +64,7 @@ def get_hyperparameters():
     parser.add_argument("--word_embedding_size", default=128, type=int)
     parser.add_argument("--artist_embedding_size", default=32, type=int)
     parser.add_argument("--embed_artist", default="False", type=str2bool) # whether to embed artist (T) or use one-hot vector (F)
+    parser.add_argument("--artist_embedding_checkpoint", default=None) #checkpoint of model from which to import artist embeddings
 
     parser.add_argument("--learning_rate", default=0.005, type=float)
     parser.add_argument("--n_epochs", default=1000, type=int)
@@ -90,8 +90,8 @@ def main():
         os.mkdir(checkpoint_dir)
     log_file = open(params.checkpoint_files+"_output_log.txt",'w')
 
-    if params.use_melody and not params.use_semantics and not params.use_artist:
-        raise(Exception('invalid model choice'))
+    if params.artist_embedding_checkpoint is not None and not params.embed_artist:
+        raise(Exception("artist embedding checkpoint provided when not using artist embeddings"))
 
     def log_str(s):
         print(s)
@@ -109,28 +109,12 @@ def main():
                          chunk_size=params.chunk_size, max_line_len=params.max_line_len,
                          max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
                          use_semantics=params.use_semantics, use_artist=params.use_artist,
-                         use_melody=params.use_melody, melody_tstep=params.mel_t_step)
-    # print(Data[np.random.randint(len(Data))], len(Data))
-    # exit()
-##    from collections import defaultdict
-##    t_counts = defaultdict(int)
-##    for d in Data:
-##        melody = d['melody']
-##        for line in melody:
-##            t_counts[len(line)] += 1
-##    max_length = max(t_counts.keys())
-##    x_vals = list(range(1,max_length))
-##    y_vals = [t_counts[t_step_length] for t_step_length in x_vals]
-##    plt.plot(x_vals, y_vals)
-##    plt.show()
-##    total_line_count = sum(t_counts.values())
-##    cutoff = 40
-##    truncated_line_count = sum(y_vals[:cutoff])
-##    print(str(truncated_line_count/total_line_count)+' percent lines are of length less than or equal to ' + str(cutoff))
-##    assert(False)
+                         use_melody=params.use_melody)
+    #print(Data[np.random.randint(len(Data))], len(Data))
+    #exit()
     log_str("\n%d batches per epoch\n"%(len(Data)/params.batch_size))
 
-    if params.use_semantics or params.use_melody:
+    if params.use_semantics:
         pad_fn = line_padding_fn
     else:
         pad_fn = padding_fn
@@ -144,26 +128,32 @@ def main():
                             chunk_size=params.chunk_size,max_line_len=params.max_line_len,
                             max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
                             use_semantics=params.use_semantics, use_artist=params.use_artist,
-                            use_melody=params.use_melody, melody_tstep=params.mel_t_step)
+                            use_melody=params.use_melody)
     val_dataloader = DataLoader(ValData,  batch_size=params.batch_size, num_workers=0, collate_fn=pad_fn, drop_last=True)
 
     # --------------
     # Create model and optimizer
+    if params.artist_embedding_checkpoint is not None:
+        checkpoint = torch.load(params.artist_embedding_checkpoint)
+        artist_embedding_weights = checkpoint['model_state_dict']['artist_encoder.weight']
+    else:
+        artist_embedding_weights = None
     if params.use_semantics:
         model = SemanticLyricsRNN(Data.vocab_len, Data.vocab_len, Data.PAD_ID, batch_size=params.batch_size, 
                             n_layers_S=params.n_layers_S, hidden_size_S=params.hidden_size_S, n_layers_L=params.n_layers_L, 
                             hidden_size_L=params.hidden_size_L, melody_len=params.max_mel_len,
                             word_embedding_size=params.word_embedding_size,
                             use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists, 
-                            artist_embedding_size=params.artist_embedding_size, use_noise=params.use_noise,
-                            use_melody=params.use_melody
+                            artist_embedding_size=params.artist_embedding_size, artist_embed_weights=artist_embedding_weights,
+                            use_noise=params.use_noise, use_melody=params.use_melody
                           ).to(device)
     else:
         model = LyricsRNN(Data.vocab_len, Data.vocab_len, Data.PAD_ID, batch_size=params.batch_size, 
                             n_layers=params.n_layers_L, hidden_size=params.hidden_size_L, melody_len=params.max_mel_len,
                             word_embedding_size=params.word_embedding_size,
                             use_artist=params.use_artist, embed_artist=params.embed_artist, num_artists=Data.num_artists, 
-                            artist_embedding_size=params.artist_embedding_size, use_melody=params.use_melody
+                            artist_embedding_size=params.artist_embedding_size, artist_embed_weights=artist_embedding_weights,
+                            use_melody=params.use_melody
                           ).to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=params.learning_rate)
@@ -185,7 +175,7 @@ def main():
 
         state = model.state_dict()
         state.update(loaded_dict)
-        model.load_state_dict(state)
+        model.load_state_dict(loaded_dict)
         
     # --------------
     # Helper functions
@@ -193,7 +183,7 @@ def main():
         if type(artist)==str:
             artist = Data.artists.index(artist)
 
-        if params.use_semantics or params.use_melody:
+        if params.use_semantics:
             if type(prime_str[0])==list:
                 inp = [[Data.word2id(w) for w in prime_line] for prime_line in prime_str]
             else:
@@ -255,9 +245,9 @@ def main():
     start_epoch = 1
 
     # Load checkpoint
-    #if params.load_model != None:
-    #    start_epoch = checkpoint['epoch']
-    #    all_losses = checkpoint['loss']
+    if params.load_model != None:
+        start_epoch = checkpoint['epoch']
+        all_losses = checkpoint['loss']
 
     for epoch in range(start_epoch, params.n_epochs + 1):
         for i, batch in enumerate(dataloader):
@@ -296,7 +286,7 @@ def main():
                 else:
                     sample_melody = None
                 if params.use_artist:
-                    for a in Data.artists:
+                    for a in Data.artists[0:5]:
                         log_str('Artist %s: %s\n'%(a, generate(artist=a, melody=sample_melody)))
                 else:
                     log_str(generate(melody=sample_melody)+'\n')
