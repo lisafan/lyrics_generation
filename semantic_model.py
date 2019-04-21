@@ -114,6 +114,7 @@ class SemanticLyricsRNN(nn.Module):
         else:
             if self.use_melody:
                 input,melody_input = input
+                artist_input = None
             else:
                 artist_input = None
                 melody_input = None
