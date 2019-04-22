@@ -14,7 +14,7 @@ import argparse
 import numpy as np
 import torch
 import tensorboardX
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from collections import Counter
 from torch import nn
 from torch.nn.utils import rnn
@@ -49,7 +49,8 @@ def get_hyperparameters():
     parser.add_argument("--vocab_size", default=10000, type=int)    
     parser.add_argument("--chunk_size", default=0, type=int)        # # of lines to use in one input (0 uses the entire song)
     parser.add_argument("--max_seq_len", default=50, type=int)      # max # of words for input and output seq
-    parser.add_argument("--max_mel_len", default=40, type=int)      # max # of notes for melody sequences
+    parser.add_argument("--max_mel_len", default=40, type=int)      # max # of time_steps for melody sequences
+    parser.add_argument("--mel_t_step", default=0.1, type=float)    # size of melody sequence time_stepparser.add_argument("--max_line_len", default=5, type=int)      # max # of lines for input and output seq when using semantic RNN
     parser.add_argument("--max_line_len", default=5, type=int)      # max # of lines for input and output seq when using semantic RNN
     parser.add_argument("--use_artist", default="True", type=str2bool)   # use artist info in input
     parser.add_argument("--use_semantics", default="True", type=str2bool)   # use semantic RNN
@@ -109,12 +110,12 @@ def main():
                          chunk_size=params.chunk_size, max_line_len=params.max_line_len,
                          max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
                          use_semantics=params.use_semantics, use_artist=params.use_artist,
-                         use_melody=params.use_melody)
+                         use_melody=params.use_melody, melody_tstep=params.mel_t_step)
     #print(Data[np.random.randint(len(Data))], len(Data))
     #exit()
     log_str("\n%d batches per epoch\n"%(len(Data)/params.batch_size))
 
-    if params.use_semantics:
+    if params.use_semantics or params.use_melody:
         pad_fn = line_padding_fn
     else:
         pad_fn = padding_fn
@@ -128,7 +129,7 @@ def main():
                             chunk_size=params.chunk_size,max_line_len=params.max_line_len,
                             max_seq_len=params.max_seq_len, max_mel_len=params.max_mel_len,
                             use_semantics=params.use_semantics, use_artist=params.use_artist,
-                            use_melody=params.use_melody)
+                            use_melody=params.use_melody, melody_tstep=params.mel_t_step)
     val_dataloader = DataLoader(ValData,  batch_size=params.batch_size, num_workers=0, collate_fn=pad_fn, drop_last=True)
 
     # --------------
@@ -183,7 +184,7 @@ def main():
         if type(artist)==str:
             artist = Data.artists.index(artist)
 
-        if params.use_semantics:
+        if params.use_semantics or params.use_melody:
             if type(prime_str[0])==list:
                 inp = [[Data.word2id(w) for w in prime_line] for prime_line in prime_str]
             else:
