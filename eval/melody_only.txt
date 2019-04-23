@@ -1,1057 +1,807 @@
-Evaluations for checkpoints/melody_only-e00010.pt
-using lyrics/input_files/filtered_dali_val.pkl:
+Evaluations for checkpoints/melody_only_full_dali/melody_only_full_dali-e00018.pt
+using lyrics/input_files/dali_val.pkl:
 
-Perplexity = 374.226
+Perplexity = 91.761
 
 50 generated samples:
 
 (1)
-Melody source: Sound Of The Underground by []
+Melody source: Celebrity Status by []
 target lyrics:
-<START> out to the electric night
-<START> where the bass line jumps in the backstreet lights
-<START> the beat goes around and round
-<START> it 's the sound
-<START> of the under sound of the underground
-generated lyrics:
- <START> even him no dee
+  <START> you do n't want to sever ,
+  <START> all the work to impress ,
+  <START> charming girls out of their dresses , and
+  <START> and smiling pretty ,
+  <START> well pretty will swallow you forever
 
- <START> what , your die
-
- <START> when am burning
-
- <START> i 's gon made
-
- <START> i you left your see ,
-
-
+generated lyrics: 
+  <START> you can never need it get to let you down <EOL>
+  <START> say <EOL>
+  <START> when the little eye <EOL>
+  <START> 'cause you ca n't know <EOL>
+  <START> just 's just na na fa na na na na fa na na n't a me <EOL>
 
 (2)
-Melody source: The State Of Massachusetts by []
+Melody source: Ever Dream by []
 target lyrics:
-<START> the judges took your rights
-<START> you can have your children
-<START> or the night
-<START> the poison stole your babies
-<START> the judges took your rights
-generated lyrics:
- <START> come you wan 's name
+  <START> my love , it lies so deep
+  <START> ever dream of me
+  <START> ever felt away with me
+  <START> just once that all i need
+  <START> entwined infinding you one day
 
- <START> all ,
-
- <START> oh <UNK>
-
- <START> from
-
- <START> i smell only
-
-
+generated lyrics: 
+  <START> have me 's fantasy <EOL>
+  <START> this i can always keep my reason <EOL>
+  <START> and i never got the life to love out <EOL>
+  <START> so i feel the little man , <EOL>
+  <START> i need you change to her <EOL>
 
 (3)
-Melody source: The State Of Massachusetts by []
+Melody source: Forever Not Yours by []
 target lyrics:
-<START> mother loved them both the same ,
-<START> at least that 's what she said
-<START> i do n't predict the future ,
-<START> i do n't care about the past
-<START> send them both to dss ,
-generated lyrics:
- <START> so say getting the you
+  <START> forever not yours
+  <START> it wo n't be long now
+  <START> forever not yours
+  <START> memories they keep coming through
+  <START> the good ones hurt more
 
- <START> is i me it a sad
-
- <START> in , the her
-
- <START> i 're fall for in
-
- <START> oh you 's know
-
-
+generated lyrics: 
+  <START> but i do n't believe me you 're on the same <EOL>
+  <START> tonight <EOL>
+  <START> are it feels not right <EOL>
+  <START> i may make an time <EOL>
+  <START> you must see with my heart <EOL>
 
 (4)
-Melody source: ...But Home Is Nowhere by []
+Melody source: Who Knows by []
 target lyrics:
-<START> this is my line ,
-<START> this is eternal
-<START> how did i ever end up here ?
-<START> discarnate ,
-<START> preternatural
-generated lyrics:
- <START> <UNK>
+  <START> do what you do
+  <START> just keep on laughin '
+  <START> one thing 's true
+  <START> there 's always a brandnewday
+  <START> i 'm gon na live today
 
- <START> all you
-
- <START> what an your 's did
-
- <START> you do <UNK>
-
- <START> when man about baby
-
-
+generated lyrics: 
+  <START> what it 's , , <EOL>
+  <START> sweet it 's <EOL>
+  <START> i talk it <EOL>
+  <START> i wish you just find the smile <EOL>
+  <START> hey . <EOL>
 
 (5)
-Melody source: Runaway by []
+Melody source: Calling You by []
 target lyrics:
-<START> with you , no never have
-<START> i 'm never gon na stop falling in love , with you
-<START> close the door . lay down upon the floor ,
-<START> and by candlelight ,
-<START> make love to me through the night
-generated lyrics:
- <START> you 're find that 'm keeps
+  <START> the rhythm 's calling you
+  <START> loose controoool
+  <START> the rhythm 's calling you
+  <START> calling you
+  <START> calling you
 
- <START> there
-
- <START> of did you 'm no me
-
- <START> know my dawn
-
- <START> we facade your hometown that love
-
-
+generated lyrics: 
+  <START> but you 'm older <EOL>
+  <START> for your end of the record in the eyes <EOL>
+  <START> <UNK> ru , <EOL>
+  <START> got me , <EOL>
+  <START> your way <EOL>
 
 (6)
-Melody source: L.A. Woman by []
+Melody source: Linoleum by []
 target lyrics:
-<START> mmm yeah
-<START> well i just got into town about an hour ago
-<START> i took a look around see which
-<START> way the wind blow
-<START> with a little girl in a hollywood bungalow
-generated lyrics:
- <START> hold the ca house
+  <START> playin ' with a grin
+  <START> singing gibberish
+  <START> that 's me on the back of the bus
+  <START> that 's me in the cell
+  <START> that 's me inside your head
 
- <START> that your you good
-
- <START> still 're so think and
-
- <START> <UNK> , are
-
- <START> but ca hour
-
-
+generated lyrics: 
+  <START> and the world was 'til <EOL>
+  <START> i 'll get to again no <EOL>
+  <START> you 've hold you inside <EOL>
+  <START> i 'm gon na love the side <EOL>
+  <START> it 's not ' to be <EOL>
 
 (7)
-Melody source: Everything Counts by []
+Melody source: Lullaby by []
 target lyrics:
-<START> everything counts in large amounts
-<START> the grabbing hands grab all they can
-<START> everything counts in large amounts
-<START> the grabbing hands grab all they can
-<START> everything counts in large a
-generated lyrics:
- <START> who i gon the covers
+  <START> darkness covers all the land ,
+  <START> sounds of day
+  <START> are gone
+  <START> but love is all around you now ,
+  <START> and will be 'till the dawn
 
- <START> i i were have run
-
- <START> that lend i round to a see
-
- <START> this solitude to the
-
- <START> you love
-
-
+generated lyrics: 
+  <START> man it have the thing and please the long <EOL>
+  <START> and you 've been mine <EOL>
+  <START> have i will it say it <EOL>
+  <START> to bloom but she make you <EOL>
+  <START> i 'm like and in me <EOL>
 
 (8)
-Melody source: Miss Movin' On by []
+Melody source: Hear My Call by []
 target lyrics:
-<START> now i 'm no longer afraid
-<START> it 's independence day
-<START> it 's independence day
-<START> i 'll
-<START> never be that girl again
-generated lyrics:
- <START> uh the party looking
+  <START> take my hand now
+  <START> or fake it somehow
+  <START> because i just ca n't take the truth
+  <START> hear me calling your name
+  <START> i feel i 'm depending onyou
 
- <START> you will soon claim away
-
- <START> do and so light
-
- <START> oh
-
- <START> we 's never the you gone you
-
-
+generated lyrics: 
+  <START> ( <EOL>
+  <START> you can love you <EOL>
+  <START> they 'm gon na lay my all <EOL>
+  <START> the another all i 're out <EOL>
+  <START> <UNK> someone <EOL>
 
 (9)
-Melody source: A View To A Kill by []
+Melody source: Time Stand Still by []
 target lyrics:
-<START> could it be the whole world opening wide
-<START> a sacred why ?
-<START> a mystery gaping inside
-<START> the weekends why ?
-<START> until we dance into the fire
-generated lyrics:
- <START> and ai n't fire
+  <START> no matter what i pretend
+  <START> like some pilgrim
+  <START> who learns to transcend
+  <START> learns to live as if each step was the end
+  <START> i 'm not looking back
 
- <START> wo a 's
-
- <START> imaginations i urge no
-
- <START> <UNK> the you na
-
- <START> i heard love to ,
-
-
+generated lyrics: 
+  <START> is this bad sound <EOL>
+  <START> it reason <EOL>
+  <START> crying <EOL>
+  <START> remedy is <EOL>
+  <START> and you say to think <EOL>
 
 (10)
-Melody source: The Day Before You Came by []
+Melody source: Denis by []
 target lyrics:
-<START> i must have opened my front door
-<START> at eight o ' clock or so
-<START> and stopped along the way
-<START> to buy some chinese food to gooo
-<START> i 'm sure i had my dinner watching
-generated lyrics:
- <START> when in
+  <START> you
+  <START> when you smile it 's like a dream
+  <START> and i 'm so lucky 'cause i find a boy like you
+  <START> denis , denis
+  <START> avec tes yeux si bleux
 
- <START> i drive those you be 's
-
- <START> and know
-
- <START> you way n't next the .
-
- <START> i 'll last rejected young
-
-
+generated lyrics: 
+  <START> i know much <EOL>
+  <START> i ca n't do na get and alone <EOL>
+  <START> and night <UNK> warm them to keep me <EOL>
+  <START> oh <EOL>
+  <START> what i wo n't know <EOL>
 
 (11)
-Melody source: Too Much To Ask by []
+Melody source: Russian Roulette by []
 target lyrics:
-<START> ev'ry time i try to make you laugh ,
-<START> you stand like a stone ,
-<START> alone in your zone
-<START> is was too much that i askin ' for ?
-<START> yeah yeah yeah yeah
-generated lyrics:
- <START> when now n't see away i head
+  <START> and then i get
+  <START> a scary thought :
+  <START> that he 's here
+  <START> means he 's never lost ,
+  <START> and you can see my heart
 
- <START> we 'm to on
-
- <START> it 'm a na gon <UNK>
-
- <START> i kind the want of cause <UNK> ,
-
- <START> before you 'll a 'm i morning know ,
-
-
+generated lyrics: 
+  <START> it 's alone <EOL>
+  <START> you 'm wasting you , <EOL>
+  <START> revolution 's <UNK> <EOL>
+  <START> <UNK> i just been a words <EOL>
+  <START> a stars of the dream <EOL>
 
 (12)
-Melody source: Can You Feel The Love Tonight II by []
+Melody source: My Baby Just Cares For Me by []
 target lyrics:
-<START> there 's a time for ev'ryone
-<START> if they only learn
-<START> that the twisting kaleidoscope
-<START> moves us all in turn
-<START> there 's a rhyme and reason
-generated lyrics:
- <START> you the
+  <START> my baby do n't care for shows .
+  <START> my baby do n't care for clothes
+  <START> my baby just cares
+  <START> for me .
+  <START> my baby do n't care for
 
- <START> oh
-
- <START> i do you n't 're 'll
-
- <START> well you you the the 's
-
- <START> i were to you time my a turnin
-
-
+generated lyrics: 
+  <START> why you want to kill <EOL>
+  <START> i 're so the one rose <EOL>
+  <START> go baby <EOL>
+  <START> <UNK> <EOL>
+  <START> i 'll let my everlasting <EOL>
 
 (13)
-Melody source: Pieces Of A Dream by []
+Melody source: I Promise by []
 target lyrics:
-<START> were here with me
-<START> and now
-<START> somehow all that 's left are
-<START> pieces of a
-<START> dream
-generated lyrics:
- <START> oh ' little
+  <START> when you call me
+  <START> in the middle of the night ?
+  <START> will i keep the rain from falling
+  <START> down into your light ?
+  <START> i promise i promise
 
- <START> and 'll n't all all
-
- <START> i 'm way you 's be made
-
- <START> but i met you she always
-
- <START> oh me
-
-
+generated lyrics: 
+  <START> she likes to <EOL>
+  <START> and you wan na be alone <EOL>
+  <START> much in the night <EOL>
+  <START> i 'm so <UNK> <UNK> of me <EOL>
+  <START> do n't know and makes me <EOL>
 
 (14)
-Melody source: Fly by []
+Melody source: I Kissed A Girl-Spoof by []
 target lyrics:
-<START> no irritation
-<START> no , not the slightest doubt
-<START> we go at once quick ,
-<START> we better hurry
-<START> there from the road i sense
-generated lyrics:
- <START> life me ,
+  <START> i wish she had planted one on me twice
+  <START> it was my sin
+  <START> soft wrinkled skin
+  <START> stretched saggy chin
+  <START> a toothless grin
 
- <START> to had like at
-
- <START> come , of
-
- <START> when i a my it
-
- <START> if are to mistakes
-
-
+generated lyrics: 
+  <START> i 'll have a fool <EOL>
+  <START> so could can stand to na i <EOL>
+  <START> i 'm gon na be bridges <EOL>
+  <START> i do n't get you <EOL>
+  <START> i have n't let , for the pain <UNK> <EOL>
 
 (15)
-Melody source: Friends In Low Places by []
+Melody source: Forever by []
 target lyrics:
-<START> and the fear in his eyes
-<START> when i took his glass of champagne
-<START> i toasted you said honey we may bethrough
-<START> but you 'll never hear me complain
-<START> 'cause i got friends in low places
-generated lyrics:
- <START> through and know
+  <START> forever , ever , ever
+  <START> forever , ever , ever
+  <START> forever girl
+  <START> ever , ever , ever
+  <START> forever , ever , ever
 
- <START> oh
-
- <START> i 's never your a na breathing
-
- <START> it only i all it stop
-
- <START> yeah i too take you be be
-
-
+generated lyrics: 
+  <START> if it 's no other <EOL>
+  <START> ( <UNK> <EOL>
+  <START> two by a scene ... <EOL>
+  <START> i 'm everything <EOL>
+  <START> hey ) <EOL>
 
 (16)
-Melody source: Out From Under by []
+Melody source: Mighty Quinn by []
 target lyrics:
-<START> i 'll get it all figured out
-<START> when i 'm out from under
-<START> from under
-<START> from under
-<START> from under
-generated lyrics:
- <START> i 're do
+  <START> there 's someone on ev'ryone 's toes ,
+  <START> but when quinn the eskimo gets here ,
+  <START> ev'rybody 's gon na wan na doze
+  <START> come all without ,
+  <START> come all within ,
 
- <START> you show to the say
-
- <START> do
-
- <START> i walk n't me
-
- <START> if <UNK>
-
-
+generated lyrics: 
+  <START> and i 'm not the call <EOL>
+  <START> but you are building <EOL>
+  <START> i refuse , your way <EOL>
+  <START> and a stars of your way <EOL>
+  <START> i 're too longer enough <EOL>
 
 (17)
-Melody source: Careless Whisper by []
+Melody source: Ikea by []
 target lyrics:
-<START> oh
-<START> never without your love
-<START> tonight the music
-<START> seems so loud
-<START> i wish that we could
-generated lyrics:
- <START> and i only
+  <START> i was a doubter just like you
+  <START> till i saw the american dream come true
+  <START> in new jersey
+  <START> they got a goddamned swedish parade
+  <START> ikea :
 
- <START> and ai your that
-
- <START> never i 'll a the do
-
- <START> you best to
-
- <START> trying the they be
-
-
+generated lyrics: 
+  <START> she 's a <EOL>
+  <START> and i just want it <EOL>
+  <START> for you too i <EOL>
+  <START> <UNK> to we see <EOL>
+  <START> by any <UNK> <EOL>
 
 (18)
-Melody source: Sound Of The Underground by []
+Melody source: My Girl by []
 target lyrics:
-<START> it 's the static from the floor below
-<START> and then it drops and catches like fire
-<START> it 's a sound i , it 's a sound
-<START> it 's the sound of the underground
-<START> the beat of the drum goes round and around
-generated lyrics:
- <START> you 's na letter my fall
+  <START> we hardly said a word
+  <START> i tried and tried but i could not be heard
+  <START> why ca n't i explain ?
+  <START> why do i feel this pain ?
+  <START> 'cos everything i say
 
- <START> i you a 'm time like
-
- <START> you got you so the
-
- <START> do ,
-
- <START> i a for at
-
-
+generated lyrics: 
+  <START> all the night tomorrow <EOL>
+  <START> you are like you <EOL>
+  <START> and i 're no more in you <EOL>
+  <START> stay you know , <EOL>
+  <START> hate to the ground , <EOL>
 
 (19)
-Melody source: Out From Under by []
+Melody source: We Don't Care Anymore by []
 target lyrics:
-<START> try
-<START> so let just
-<START> say goodbye
-<START> forever
-<START> i do n't wan na dream about
-generated lyrics:
- <START> oh
+  <START> to keep them satisfied
+  <START> the shadows of our past ,
+  <START> hard to ignore
+  <START> but judgment means nothing
+  <START> that 's not what we 're fighting for
 
- <START> and wo it so
-
- <START> i 's 'm them
-
- <START> it know n't na here
-
- <START> and think things
-
-
+generated lyrics: 
+  <START> if i ca n't say how it 's ' <EOL>
+  <START> i 'm letting on life or devotion <EOL>
+  <START> where is cause <UNK> <EOL>
+  <START> i 've n't feel to 'cause <EOL>
+  <START> i 'm building on you <EOL>
 
 (20)
-Melody source: ...But Home Is Nowhere by []
+Melody source: The Great Pretender by []
 target lyrics:
-<START> to this nature so unnatural
-<START> i remain alone
-<START> twentysix years end ,
-<START> still speaking in these tongues
-<START> such revelations
-generated lyrics:
- <START> love
+  <START> i seem to be
+  <START> what i 'm not youuu seeee
+  <START> i 'm wearing my heart like a crown
+  <START> preteending that you 're
+  <START> pretending that youuuu 're
 
- <START> i have in the you
-
- <START> i 's garden the be all
-
- <START> to 's been <UNK> .
-
- <START> let a <UNK>
-
-
+generated lyrics: 
+  <START> i save ta all you out a life and lonely <EOL>
+  <START> bulletproof to n't ever na i <EOL>
+  <START> on the yo <EOL>
+  <START> the she where you can say <EOL>
+  <START> do n't you see <EOL>
 
 (21)
-Melody source: Vienna by []
+Melody source: Give 'Em Hell, Kid by []
 target lyrics:
-<START> mmh mmh
-<START> where 's the fire , what 's the hurry about ?
-<START> you better cool it off before you burn it out
-<START> you got so much to do and only
-<START> so many hours in a day
-generated lyrics:
- <START> we do
+  <START> so come on
+  <START> show me how
+  <START> 'cause i mean this more than words could
+  <START> ever say
+  <START> they say
 
- <START> <UNK> ,
-
- <START> do my 'm like of
-
- <START> we night ' ,
-
- <START> but not a while permission
-
-
+generated lyrics: 
+  <START> take a corner <EOL>
+  <START> i wan na feel <EOL>
+  <START> so i 'm gon na hear me , <EOL>
+  <START> while i 're getting to do <EOL>
+  <START> and i know <EOL>
 
 (22)
-Melody source: Jerusalem by []
+Melody source: Big Bang by []
 target lyrics:
-<START> you might be the one i 'm waiting for
-<START> i think we 've met somewhere for sure
-<START> chasing shadows leaves you feeling blue
-<START> this situation needs a cure
-<START> new assassins , new messiahs
-generated lyrics:
- <START> go
+  <START> this is n't another new fashion ,
+  <START> or a new wave plastic trend .
+  <START> everybody 's searching for something
+  <START> but in the meantime let 's all just pretend .
+  <START> i 've got this feeling
 
- <START> and n't be i song
-
- <START> when girl a a stand the
-
- <START> i 's i never it die
-
- <START> that know i na so
-
-
+generated lyrics: 
+  <START> right , <EOL>
+  <START> i 'm all <EOL>
+  <START> and you want <EOL>
+  <START> in the crazy in the name <EOL>
+  <START> i hold the girl <EOL>
 
 (23)
-Melody source: It Was A Very Good Year by []
+Melody source: Two-Headed Boy by []
 target lyrics:
-<START> when i was twentyone
-<START> it was a very good year
-<START> it was a very good year
-<START> for city girls
-<START> who lived up the stair
-generated lyrics:
- <START> <UNK> here
+  <START> there 's no reason to grieve
+  <START> the world that you need is wrapped in gold
+  <START> silver sleeves left
+  <START> beneath christmas trees in the snow
+  <START> and i will take you and leave you alone
 
- <START> i you no on me
-
- <START> <UNK> more no love
-
- <START> always makin to the down
-
- <START> my i 've see
-
-
+generated lyrics: 
+  <START> he n't do do do me <EOL>
+  <START> love <UNK> just the tale <EOL>
+  <START> and you still give me let you <EOL>
+  <START> i 're never just na feel my <UNK> <EOL>
+  <START> whenever i could be i <EOL>
 
 (24)
-Melody source: A View To A Kill by []
+Melody source: I Kissed A Girl-Spoof by []
 target lyrics:
-<START> drench you skin with lovers rosy stain
-<START> a chance to find the phoenix for the flame
-<START> a chance to die..
-<START> but can we dance into the fire
-<START> that fatal kiss is all we need
-generated lyrics:
- <START> no road wo good
+  <START> i kissed a girl and i liked it
+  <START> taste of her denture cream
+  <START> if i had a drink she would have spiked it
+  <START> but it 's okay with me
+  <START> i was enticed
 
- <START> wrong n't 've the i so a
-
- <START> i 's 're blue
-
- <START> my walls <UNK>
-
- <START> something a you 'll know
-
-
+generated lyrics: 
+  <START> and i 'm only waiting <EOL>
+  <START> for the door <EOL>
+  <START> do n't do n't have <EOL>
+  <START> and i 've n't give and <EOL>
+  <START> someone , now eh <EOL>
 
 (25)
-Melody source: Blue Savannah by []
+Melody source: Crazy Chick by []
 target lyrics:
-<START> sweet to surrender to you only .
-<START> i send my love to you.woa ... .h ...
-<START> savannah song ... ... to you only
-<START> i send my love to you.woa.. , .h ...
-<START> savannah song ... ... to you only
-generated lyrics:
- <START> with you in <UNK> , me
+  <START> i need professional help
+  <START> help
+  <START> you driving me
+  <START> to insanity
+  <START> all the things you do
 
- <START> i 's want n't strength
-
- <START> and does for me you days
-
- <START> i 'm be one far
-
- <START> dee he be
-
-
+generated lyrics: 
+  <START> i left a promises and <EOL>
+  <START> <UNK> ... <EOL>
+  <START> and in of you so <EOL>
+  <START> it 's just give to <EOL>
+  <START> and the place that a <EOL>
 
 (26)
-Melody source: L.A. Woman by []
+Melody source: Lilac Wine by []
 target lyrics:
-<START> la woman
-<START> la woman
-<START> la woman sunday afternoon
-<START> la woman sunday afternoon
-<START> la woman sunday afternoon
-generated lyrics:
- <START> now night oh
+  <START> lilac wine
+  <START> is sweet and heady
+  <START> where 's my love ?
+  <START> lilac wine
+  <START> i feel unsteady , where 's my love ?
 
- <START> i am in
-
- <START> and want you see a i knew
-
- <START> we die and cry like to hold
-
- <START> you 'll i be of
-
-
+generated lyrics: 
+  <START> a beautiful i do n't gave it <EOL>
+  <START> never 's no romance on me <EOL>
+  <START> i 'll hear me home <EOL>
+  <START> as i 'm <UNK> down <EOL>
+  <START> of them you 'll be before only the love <EOL>
 
 (27)
-Melody source: Stricken by []
+Melody source: Cara Mia by []
 target lyrics:
-<START> you walk on like a woman in suffering ,
-<START> wo n't even bother now to tell me why .
-<START> you come alone , letting all of us
-<START> savor the moment ,
-<START> leaving me broken another time .
-generated lyrics:
- <START> always , ,
+  <START> cara cara mia
+  <START> how can you leave me now ?
+  <START> we can be happy again
+  <START> do n't you feel that it 's
+  <START> burning inside , burning inside ?
 
- <START> from you act why
-
- <START> an it could
-
- <START> eat the surrender
-
- <START> i 'll kissed it will
-
-
+generated lyrics: 
+  <START> this skin <EOL>
+  <START> is <UNK> <EOL>
+  <START> or decided will go <EOL>
+  <START> lookin n't let me <EOL>
+  <START> <UNK> bright <EOL>
 
 (28)
-Melody source: Until You're Mine by []
+Melody source: Begin Again by []
 target lyrics:
-<START> i 'm ready to begin
-<START> our waiting has to end
-<START> right now it 's too late
-<START> i 've got to find a way , yeah
-<START> mine
-generated lyrics:
- <START> give ,
+  <START> turn the lock and put my headphones on ,
+  <START> he always said he did n't get this song ,
+  <START> but i do ,
+  <START> i do .
+  <START> walked in expecting you 'd be late ,
 
- <START> would 're be ca time
-
- <START> i have too now
-
- <START> if really you you time
-
- <START> you 's it be
-
-
+generated lyrics: 
+  <START> just 's in the loving in it <EOL>
+  <START> oh i 'm just sad your cool , <EOL>
+  <START> she 's a heart <EOL>
+  <START> i can let your feeling <EOL>
+  <START> do n't believe , , <EOL>
 
 (29)
-Melody source: Hold On Tight by []
+Melody source: If I Ain't Got You by []
 target lyrics:
-<START> acchroches toi a ton reve
-<START> when you get so down , that you ca n't get up
-<START> and you want so much , but you 're all out of luck
-<START> when you 're so downhearted and misunderstood
-<START> just over and over and over you could
-generated lyrics:
- <START> i 'd you it the sleep
+  <START> some people want diamond rings
+  <START> some just want everything
+  <START> but everything means nothing
+  <START> if i ai n't got you , yeah
+  <START> if i ai n't got you with me baby
 
- <START> and 'm should of n't be i mind
-
- <START> and know to time late my 'm put a want
-
- <START> it could , is your do
-
- <START> it , taking please the
-
-
+generated lyrics: 
+  <START> on a <UNK> of me <EOL>
+  <START> my clothes 's <UNK> <EOL>
+  <START> you do n't want to all i <EOL>
+  <START> and 's i told the words <EOL>
+  <START> you used you <EOL>
 
 (30)
-Melody source: Friends In Low Places by []
+Melody source: The Lover After Me by []
 target lyrics:
-<START> but then
-<START> i 've been there before
-<START> everything 's all right
-<START> i 'll just say good night
-<START> and i 'll show myself to the door
-generated lyrics:
- <START> its again
+  <START> and i ca n't move on
+  <START> ever since you 've been gone
+  <START> the lights go out the same
+  <START> the only diff'rence is
+  <START> you call another name
 
- <START> well all
-
- <START> i justify it know now
-
- <START> i you you come me
-
- <START> did got think , with like
-
-
+generated lyrics: 
+  <START> with your day <UNK> <EOL>
+  <START> my bomb of the pride . <EOL>
+  <START> that i have my love <EOL>
+  <START> after i wan na be i fall <EOL>
+  <START> these gon na know <EOL>
 
 (31)
-Melody source: Stricken by []
+Melody source: A Talk With George by []
 target lyrics:
-<START> done to me .
-<START> i wan na know , if i heal inside .
-<START> i ca n't go on with the holocaust
-<START> about to happen ,
-<START> seeing you laughing another time .
-generated lyrics:
- <START> you you do
+  <START> with hunter s . and jackie o .
+  <START> and when they shoot poor bobby down
+  <START> you wrestle sirhan to the ground
+  <START> love your friends
+  <START> and miss them when they go
 
- <START> all the 's only
-
- <START> just na make n't man
-
- <START> i heart a ev'ry
-
- <START> to you life some you all
-
-
+generated lyrics: 
+  <START> and you be the places i 'm gon na regret <EOL>
+  <START> i can be here <EOL>
+  <START> and you got the <UNK> <EOL>
+  <START> and pull you <EOL>
+  <START> hear faith it n't be <EOL>
 
 (32)
-Melody source: Runaway by []
+Melody source: Picture by []
 target lyrics:
-<START> i 'm never gon na stop falling in love , with you
-<START> fallen in love ,
-<START> with you , no never have ,
-<START> i 'm never gon na stop falling in love ,
-<START> with you
-generated lyrics:
- <START> i 'm did enough to after
+  <START> i ca n't look at you
+  <START> while i 'm lying next to her
+  <START> i called you last night in the hotel ,
+  <START> everyone knows
+  <START> but they wo n't tell ,
 
- <START> i as i got a the
-
- <START> to do there hardest 's a when
-
- <START> every i fall you mind ,
-
- <START> i 'm see of
-
-
+generated lyrics: 
+  <START> i ca n't let my <UNK> <EOL>
+  <START> but i walk the life down , <EOL>
+  <START> in at the storm dance <EOL>
+  <START> da i was <EOL>
+  <START> tryin a <UNK> i <EOL>
 
 (33)
-Melody source: Head Over Feet by []
+Melody source: I Kissed A Girl-Spoof by []
 target lyrics:
-<START> than i gave you credit for
-<START> that 's not lip service
-<START> you 've already won me over
-<START> in spite of me
-<START> and do n't be alarmed if i fall
-generated lyrics:
- <START> you ca be time of
+  <START> i kissed a girl and i liked it
+  <START> taste of her denture cream
+  <START> if i had a drink she would have spiked it
+  <START> but it 's okay with me
+  <START> i was enticed
 
- <START> and can all you hold
-
- <START> do i guess n't way
-
- <START> you magic me
-
- <START> a 've you na have
-
-
+generated lyrics: 
+  <START> i 'm pulling that i 'm impossible it grow <EOL>
+  <START> but i 're going is you 'll got <EOL>
+  <START> and you would seen to love you <EOL>
+  <START> now , keep no long was <EOL>
+  <START> you know you 're <UNK> <EOL>
 
 (34)
-Melody source: Blaze Of Glory by []
+Melody source: Losing The Ground by []
 target lyrics:
-<START> you ask me if i 've known love
-<START> and what it 's like to sing songs in the rain
-<START> well , i 've seen love come ,
-<START> i 've seen it shot down ,
-<START> i 've seen it die in vain
-generated lyrics:
- <START> you ca a try
+  <START> it descends on me
+  <START> now i waste my time
+  <START> without your love
+  <START> no
+  <START> ca n't help me anymore
 
- <START> ca you you call mercy
-
- <START> there you 's the
-
- <START> i do back
-
- <START> oh she n't
-
-
+generated lyrics: 
+  <START> they thought is i 'm <EOL>
+  <START> and i was waiting you 'll recognise you <EOL>
+  <START> love , and you did n't breathe , <EOL>
+  <START> and the name <EOL>
+  <START> if i will say <EOL>
 
 (35)
-Melody source: Head Over Feet by []
+Melody source: The Great Pretender by []
 target lyrics:
-<START> i am aware now
-<START> you 've already won me over
-<START> in spite of me
-<START> and do n't be alarmed if i fall
-<START> head over feet
-generated lyrics:
- <START> i burn n't world to 're only
+  <START> i pretend too much
+  <START> i 'm lonely but nooone can tell
+  <START> oh yeeees i 'm the great pretender
+  <START> adrift in a world of my own
+  <START> i play the game , but to my real shame
 
- <START> <UNK> the harvest and do think
-
- <START> of oh was think
-
- <START> to all to need blue i can sure
-
- <START> i a my so your na
-
-
+generated lyrics: 
+  <START> i 'm wrong <EOL>
+  <START> i 'd make my life of those the mind <EOL>
+  <START> i 'm looking the line <EOL>
+  <START> <UNK> the <UNK> <EOL>
+  <START> when our all your word <EOL>
 
 (36)
-Melody source: ...But Home Is Nowhere by []
+Melody source: Self Esteem by []
 target lyrics:
-<START> absent of grace ,
-<START> marked as infernal
-<START> ungranted in dead time left me disowned
-<START> to this nature , so unnatural
-<START> i remain alone
-generated lyrics:
- <START> to n't worth
+  <START> than i 'd like to admit
+  <START> late at night
+  <START> she knocks on my door
+  <START> she 's drunk again
+  <START> and looking to score
 
- <START> oh n't mountain
-
- <START> <UNK> n't 're you man
-
- <START> to the baby you i 's got
-
- <START> i 'll <UNK> i na
-
-
+generated lyrics: 
+  <START> <UNK> and <UNK> <EOL>
+  <START> i want <EOL>
+  <START> we can spend you left <EOL>
+  <START> but i know you 'm not you <EOL>
+  <START> mamamamarry it go , <EOL>
 
 (37)
-Melody source: A Little Less Sixteen Candles, A Little More "Touch Me" by []
+Melody source: Forever Yours by []
 target lyrics:
-<START> for hanging in
-<START> so say , what are you waiting for ?
-<START> kiss her , kiss her
-<START> i set my clocks early
-<START> 'cause i know i 'm always late
-generated lyrics:
- <START> to i
+  <START> shame on you baby
+  <START> forever yours
+  <START> i will find something more
+  <START> someone i am made for
+  <START> shame on you baby
 
- <START> i do have
-
- <START> from
-
- <START> keep the a been
-
- <START> i 'm only it in
-
-
+generated lyrics: 
+  <START> if got it go <EOL>
+  <START> i 'll always stop to you <EOL>
+  <START> praying and all <EOL>
+  <START> of your heart on me <EOL>
+  <START> have the <UNK> we 're afraid <EOL>
 
 (38)
-Melody source: L.A. Woman by []
+Melody source: Shy by []
 target lyrics:
-<START> drive through your suburbs
-<START> into your blues
-<START> into your blues yeah
-<START> into your blue blue blue
-<START> into your blues
-generated lyrics:
- <START> it you hit n't miss
+  <START> i can see how you are beautiful
+  <START> can you feel my eyes on you
+  <START> i 'm shy and turn my head away
+  <START> working late in diner citylite
+  <START> i see that you get home alright
 
- <START> of
-
- <START> 'cause not do
-
- <START> and thought now it sleeping
-
- <START> i got
-
-
+generated lyrics: 
+  <START> of it seem away go ? <EOL>
+  <START> i 've got it have you close <EOL>
+  <START> <UNK> the life <EOL>
+  <START> cry , , <EOL>
+  <START> it 're one around <EOL>
 
 (39)
-Melody source: The State Of Massachusetts by []
+Melody source: One Week by []
 target lyrics:
-<START> you can have your children
-<START> or the night
-<START> i suppose you 've been a victim
-<START> i suspect you may have lied
-<START> you 've lost all ambition
-generated lyrics:
- <START> the time n't try'n the truth to
+  <START> 'til you say you 're sorry
+  <START> chickity china
+  <START> the chinese chicken
+  <START> you have a drumstick
+  <START> and your brain stops tickin '
 
- <START> do n't ai feel
-
- <START> always the follow alright
-
- <START> i long just have how
-
- <START> so 'm 's love
-
-
+generated lyrics: 
+  <START> i believe <EOL>
+  <START> you break you <EOL>
+  <START> are i 'm much <EOL>
+  <START> you you n't know <EOL>
+  <START> ah i mean the <EOL>
 
 (40)
-Melody source: The Night by []
+Melody source: Tears Of The Dragon by []
 target lyrics:
-<START> give into the night
-<START> night
-<START> night
-<START> night
-<START> give into the night
-generated lyrics:
- <START> like for explodes and phone all out
+  <START> release the wave ,
+  <START> let it wash over me !
+  <START> to face the fear i once believed .
+  <START> the tears of the dragon ,
+  <START> for you and for me .
 
- <START> how we i 'm for your fall
-
- <START> do all
-
- <START> i i a n't na you
-
- <START> always do
-
-
+generated lyrics: 
+  <START> i wonder that . <EOL>
+  <START> oh i 're you <EOL>
+  <START> this , let the place <EOL>
+  <START> i ca n't get a <EOL>
+  <START> i 'll be alright <EOL>
 
 (41)
-Melody source: A View To A Kill by []
+Melody source: Buried Alive by []
 target lyrics:
-<START> dance into the fire
-<START> that fatal kiss is all we need
-<START> dance into the fire
-<START> when all we see
-<START> is the view to a kill
-generated lyrics:
- <START> when 'm your information
+  <START> psycho lunatic
+  <START> crushing you with hands of fate
+  <START> shame to find out
+  <START> when it 's too late
+  <START> but you 're all the same
 
- <START> ooh pages love one that the
-
- <START> on the 's cruel me me
-
- <START> there it the lie
-
- <START> now it local an to falling
-
-
+generated lyrics: 
+  <START> i 'm losing my <EOL>
+  <START> oh , <EOL>
+  <START> but i feel away <EOL>
+  <START> i were okay <EOL>
+  <START> a far heart <EOL>
 
 (42)
-Melody source: Stricken by []
+Melody source: All Night Long (All Night) by []
 target lyrics:
-<START> when the heart is cold there 's no hope and
-<START> we know
-<START> that i am crippled by all that you 've
-<START> done .
-<START> into the abyss will i run .
-generated lyrics:
- <START> oh again i 's just that go
+  <START> come on and sing along
+  <START> we 're going to party , karamu , fiesta
+  <START> forever .
+  <START> come on and sing along .
+  <START> all night long
 
- <START> and do that start
-
- <START> oh they is one maybe
-
- <START> what all of
-
- <START> i you a <UNK>
-
-
+generated lyrics: 
+  <START> i make <UNK> you can feel to <EOL>
+  <START> she fakers <EOL>
+  <START> to wo n't no like <EOL>
+  <START> i 'm the perfect of me <EOL>
+  <START> let it let you <EOL>
 
 (43)
-Melody source: A Little Less Sixteen Candles, A Little More "Touch Me" by []
+Melody source: Maybellene I Hofteholder by []
 target lyrics:
-<START> but you ca n't blame me
-<START> for hanging in
-<START> so say , what are you waiting for ?
-<START> kiss her , kiss her
-<START> i set my clocks early
-generated lyrics:
- <START> the tell n't take for
+  <START> as i 'm smoking you out again ...
+  <START> see you dancing for the young ones oh oh oh
+  <START> maybelenne i hofteholder .
+  <START> see you dancing for the young ones oh oh oh
+  <START> maybelenne i hofteholder .
 
- <START> i way the lie no
-
- <START> and end my go
-
- <START> you want me all
-
- <START> not you got you life
-
-
+generated lyrics: 
+  <START> with the hand . <EOL>
+  <START> i 're there n't hold you <EOL>
+  <START> and this i will n't forget the <UNK> ? <EOL>
+  <START> do n't you know that i wake <EOL>
+  <START> so the pain was to i 're <UNK> <EOL>
 
 (44)
-Melody source: Jerusalem by []
+Melody source: We, Animals by []
 target lyrics:
-<START> waiting on this empty street
-<START> watching river 's waves go by
-<START> feeling mellow , lighting a cigarette
-<START> silver moon floats through the night
-<START> eris , princess of the isles
-generated lyrics:
- <START> i na ca go you
+  <START> oh yes , you 're just an animal
+  <START> oh yeah you 're just an animal
+  <START> we cry just for what is right
+  <START> we left what we would need to fight
+  <START> against all immorality
 
- <START> we might the
-
- <START> the 's only that dreams back the <UNK>
-
- <START> you think what the it a
-
- <START> the pride my sky
-
-
+generated lyrics: 
+  <START> oh <EOL>
+  <START> i ca n't know , if like <EOL>
+  <START> oh it 's more <EOL>
+  <START> we 're so <UNK> in the eyes i ca n't stop <EOL>
+  <START> one i do n't need <EOL>
 
 (45)
-Melody source: This Means War by []
+Melody source: Some Like It Cold by []
 target lyrics:
-<START> i 'll take it all away
-<START> another thought i ca n't control
-<START> this means war
-<START> this means war
-<START> this means war
-generated lyrics:
- <START> do they say
+  <START> cause everytime i speak
+  <START> i see your walls falling
+  <START> but now i dare
+  <START> so show me how
+  <START> to play this game
 
- <START> just you n't would back for you the means
-
- <START> i 'll has my forgot and all
-
- <START> from those
-
- <START> ( girl you <UNK>
-
-
+generated lyrics: 
+  <START> you 'll run the brand sun <EOL>
+  <START> the <UNK> is dry <EOL>
+  <START> i do n't want the own you 're got me <EOL>
+  <START> you are busy <EOL>
+  <START> i am off <EOL>
 
 (46)
-Melody source: Out From Under by []
+Melody source: When I Get Home You're So Dead by []
 target lyrics:
-<START> growing deeper
-<START> and much darker every day
-<START> watch me now
-<START> and i 'll be
-<START> someone new
-generated lyrics:
- <START> that i same a have
+  <START> so pull the trigger
+  <START> it never gets closer
+  <START> you want to start over
+  <START> but never start over
+  <START> pull the trigger
 
- <START> the loaded n't , the me
-
- <START> how i believe
-
- <START> oh
-
- <START> i 've 're
-
-
+generated lyrics: 
+  <START> the way <EOL>
+  <START> but i 'm got the tv <EOL>
+  <START> <UNK> to me <EOL>
+  <START> i 've be living <EOL>
+  <START> we 'm gon na wan na make <EOL>
 
 (47)
-Melody source: Out From Under by []
+Melody source: Enjoy The Silence by []
 target lyrics:
-<START> and far away
-<START> but it never disappears
-<START> try to put it in the past
-<START> hold on to myself and
-<START> do n't look back
-generated lyrics:
- <START> my why ca told ,
+  <START> words are very unnecessary
+  <START> theycan only do harm
+  <START> all i ever wanted
+  <START> all i ever needed
+  <START> is here in my arms
 
- <START> that 's wait to to my
-
- <START> i 'm a ever 're a
-
- <START> everybody i life
-
- <START> and 'm got what you
-
-
+generated lyrics: 
+  <START> still 's our saint <UNK> <EOL>
+  <START> to 's the matter you 'm waiting <EOL>
+  <START> in a heart <EOL>
+  <START> of it you need <EOL>
+  <START> it i see to get <EOL>
 
 (48)
-Melody source: Prayer by []
+Melody source: Big City Life by []
 target lyrics:
-<START> burn me alive , inside
-<START> living my life 's not hard enough
-<START> take everything away
-<START> ahhh
-<START> return to me , return to me ,
-generated lyrics:
- <START> savor i did <UNK> my let
+  <START> pressure nah ease up
+  <START> no matter how hard me try .
+  <START> big city life ,
+  <START> here my heart have no base ,
+  <START> and right now babylon de pon me case .
 
- <START> with took will could come
-
- <START> step to 's a learn ?
-
- <START> it do
-
- <START> i 'll stay up
-
-
+generated lyrics: 
+  <START> and it 's <EOL>
+  <START> and i think <EOL>
+  <START> to n't be me <EOL>
+  <START> it 's a outlaw <EOL>
+  <START> ( and see , <EOL>
 
 (49)
-Melody source: The Miracle Of Love by []
+Melody source: Given Up by []
 target lyrics:
-<START> when the miracle of love
-<START> comes your way again
-<START> the miracle of love
-<START> will take away your pain
-<START> when the miracle of love
-generated lyrics:
- <START> to 's gon 's that na same
+  <START> i hyperventilate
+  <START> looking for help somehow somewhere
+  <START> and no one cares
+  <START> i 'm my own worst enemy
+  <START> i 've given up ...
 
- <START> so i leaving psycho
-
- <START> sweetest *** and me be me run
-
- <START> that anything are you return you the of you on
-
- <START> even to a to talk
-
-
+generated lyrics: 
+  <START> stick <EOL>
+  <START> is they 'm always <EOL>
+  <START> i ca n't make you , <EOL>
+  <START> you 'll take on the face <EOL>
+  <START> for you <EOL>
 
 (50)
-Melody source: This Means War by []
+Melody source: Disappear by []
 target lyrics:
-<START> this means war
-<START> this means war
-<START> this means war
-<START> lash your tongue of bane
-<START> carry me to nowhere
-generated lyrics:
- <START> when you 've wan me
+  <START> dootn doo_ doo
+  <START> doo dootn doo doo
+  <START> doo doo doo doo_ doo doo doo doo
+  <START> say if i could
+  <START> look into myself and reason
 
- <START> your 's the and
-
- <START> said you 've smoke ?
-
- <START> and need the bring
-
- <START> do used wrong in
-
-
+generated lyrics: 
+  <START> why the smoke <EOL>
+  <START> <UNK> and <EOL>
+  <START> never n't put your way <EOL>
+  <START> you 'll love this time <EOL>
+  <START> there you hold you anymore i 'm wishing , down <EOL>
 
