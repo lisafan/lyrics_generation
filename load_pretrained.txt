@@ -1,9 +1,0 @@
-# used to load pretrained weights to a new model
-# list of tab separated pairs of parameter + save model path
-# use '#' to comment out lines
-# dimensions from loaded files must match dimesions of new model
-artist_encoder	checkpoints/artist_embed/artist_embed-e00009.pt
-word_encoder	checkpoints/artist_embed/artist_embed-e00009.pt
-semantic_lstm	checkpoints/semantic_only/semnatic_only-e00007.pt
-# lyrics_lstm	temp/temp-e00001.pt
-# linear		temp/temp-e00001.pt
